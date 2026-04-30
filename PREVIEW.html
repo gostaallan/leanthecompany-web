@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LeanTheCompany — Preview</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink:   { DEFAULT: '#1A1A1A', mid: '#2A3240', soft: '#4A5568' },
+          amber: { DEFAULT: '#C97B0E', light: '#E8B84B', pale: '#FDF6E3' },
+          cream: '#F7F2E7',
+          smoke: '#F4F2EE',
+          rule:  '#E2DDD5',
+        },
+        fontFamily: {
+          sans:  ['"DM Sans"', 'system-ui', 'sans-serif'],
+          serif: ['"DM Serif Display"', 'Georgia', 'serif'],
+          mono:  ['"JetBrains Mono"', 'Courier New', 'monospace'],
+        },
+        maxWidth: { content: '1120px' },
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background-color: #F7F2E7; color: #1A1A1A; font-family: 'DM Sans', system-ui, sans-serif; }
+  h1, h2, h3, h4 { font-family: 'DM Serif Display', Georgia, serif; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+  .section { padding-top: 5rem; padding-bottom: 5rem; }
+  @media (min-width: 768px) { .section { padding-top: 7rem; padding-bottom: 7rem; } }
+  .label-caps { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: #C97B0E; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="bg-cream/80 backdrop-blur sticky top-0 z-40 border-b border-rule/60">
+  <div class="wrap flex items-center justify-between py-4">
+    <a href="#top" class="flex items-center gap-3 group">
+      <svg viewBox="0 0 400 400" width="28" height="28" class="shrink-0">
+        <rect x="20"  y="110" width="100" height="180" rx="10" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+        <rect x="150" y="110" width="100" height="180" rx="10" fill="#C97B0E"/>
+        <rect x="280" y="110" width="100" height="180" rx="10" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+        <polygon points="123,190 145,200 123,210" fill="#1A1A1A"/>
+        <polygon points="253,190 275,200 253,210" fill="#1A1A1A"/>
+      </svg>
+      <span class="font-mono text-sm font-bold tracking-tight">LeanTheCompany</span>
+    </a>
+    <div class="hidden md:flex items-center gap-7 font-mono text-sm">
+      <a href="#forwhom"   class="text-ink-soft hover:text-amber-DEFAULT transition-colors">For Whom</a>
+      <a href="#problem"   class="text-ink-soft hover:text-amber-DEFAULT transition-colors">The Problem</a>
+      <a href="#platform"  class="text-ink-soft hover:text-amber-DEFAULT transition-colors">Platform</a>
+      <a href="#diagnostic" class="text-ink-soft hover:text-amber-DEFAULT transition-colors">Diagnostic</a>
+      <a href="#pricing"   class="text-ink-soft hover:text-amber-DEFAULT transition-colors">Pricing</a>
+      <a href="#about"     class="text-ink-soft hover:text-amber-DEFAULT transition-colors">About</a>
+      <a href="https://emprowa.com" target="_blank" rel="noopener" class="text-ink-soft/70 hover:text-amber-DEFAULT transition-colors">Part of Emprowa ↗</a>
+      <a href="#diagnostic" class="px-4 py-2 rounded-md font-medium text-white transition-colors" style="background:#1A1A1A;" onmouseover="this.style.background='#C97B0E'" onmouseout="this.style.background='#1A1A1A'">Get early access →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="top" class="section pt-24 md:pt-32 pb-20">
+  <div class="wrap">
+    <div class="grid lg:grid-cols-[1.4fr_1fr] gap-12 lg:gap-16 items-start">
+
+      <!-- Left -->
+      <div>
+        <p class="label-caps mb-6 flex items-center gap-3">
+          <span class="w-7 h-px inline-block" style="background:#C97B0E;"></span>
+          LEAN TRANSFORMATION PLATFORM
+        </p>
+        <h1 class="font-serif text-4xl md:text-6xl leading-[1.05] mb-6">
+          Lean the company,<br/>
+          <span style="color:#C97B0E;">before the chaos wins.</span>
+        </h1>
+        <p class="text-lg md:text-xl leading-relaxed mb-10 max-w-2xl" style="color:#4A5568;">
+          Two canvases — Value Stream Mapping for the shop floor, Makigami for the back office — make every delay, handoff and shadow workflow visible in one morning. Ship a pilot by Friday.
+        </p>
+
+        <div class="flex flex-wrap gap-4 mb-10">
+          <a href="#diagnostic" class="px-6 py-3 rounded-md font-mono text-sm font-medium text-white transition-colors" style="background:#1A1A1A;" onmouseover="this.style.background='#C97B0E'" onmouseout="this.style.background='#1A1A1A'">
+            Get your Chaos Score →
+          </a>
+          <a href="#pricing" class="px-6 py-3 rounded-md font-mono text-sm font-medium border-2 transition-colors" style="border-color:#1A1A1A; color:#1A1A1A;" onmouseover="this.style.borderColor='#C97B0E'; this.style.color='#C97B0E'" onmouseout="this.style.borderColor='#1A1A1A'; this.style.color='#1A1A1A'">
+            Reserve a founding seat
+          </a>
+        </div>
+
+        <!-- Proof bar -->
+        <div class="grid grid-cols-3 gap-6 pt-8 border-t border-rule">
+          <div>
+            <div class="font-serif text-3xl text-ink mb-1">25+</div>
+            <div class="font-mono text-xs uppercase tracking-wider leading-relaxed" style="color:#4A5568;">Years of Lean, hands on the shop floor</div>
+          </div>
+          <div>
+            <div class="font-serif text-3xl text-ink mb-1">2</div>
+            <div class="font-mono text-xs uppercase tracking-wider leading-relaxed" style="color:#4A5568;">Canvases: VSM + Makigami in one tool</div>
+          </div>
+          <div>
+            <div class="font-serif text-3xl text-ink mb-1" style="color:#C97B0E;">100</div>
+            <div class="font-mono text-xs uppercase tracking-wider leading-relaxed" style="color:#4A5568;">Founding seats — lifetime price-lock + Founders' Roundtable</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right — founder mini card -->
+      <div class="bg-white border border-rule rounded-lg p-6 md:p-8">
+        <div class="flex items-center gap-4 mb-5">
+          <div class="w-16 h-16 rounded-full overflow-hidden shrink-0" style="border:2px solid #C97B0E; background:#F4F2EE;">
+            <div class="w-full h-full flex items-center justify-center font-serif text-xl">GS</div>
+          </div>
+          <div>
+            <p class="font-serif text-lg leading-tight">Gösta Seuranen</p>
+            <p class="font-mono text-xs uppercase tracking-widest" style="color:#C97B0E;">Founder · Sensei</p>
+          </div>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#4A5568;">
+          27 years on factory floors — Tetra Pak, Stora Enso, Oatly, Nobia, Galderma. Now a platform, not a consulting retainer.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOR WHOM -->
+<section id="forwhom" class="section" style="background:#F4F2EE;">
+  <div class="wrap">
+    <div class="max-w-3xl mb-14">
+      <p class="label-caps mb-4 flex items-center gap-3">
+        <span class="w-7 h-px inline-block" style="background:#C97B0E;"></span>
+        FOR WHOM
+      </p>
+      <h2 class="font-serif text-3xl md:text-5xl mb-6 leading-[1.1]">
+        Three moments when processes break faster than org charts can fix them.
+      </h2>
+      <p class="text-base md:text-lg leading-relaxed" style="color:#4A5568;">
+        VSM works for any company producing goods. Makigami works for any admin process. These tools are universal — but three trigger situations burn the loudest right now.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 mb-10">
+      <div class="bg-white border border-rule rounded-lg p-7 flex flex-col">
+        <p class="font-mono text-xs uppercase tracking-widest mb-4" style="color:#C97B0E;">Trigger 01</p>
+        <h3 class="font-serif text-2xl text-ink mb-4 leading-tight">The Returning Factory</h3>
+        <p class="text-sm leading-relaxed" style="color:#4A5568;">
+          You're bringing production back to Europe or the US. The old muscle memory is in China, your new operators are fresh, and every supplier change exposes a hidden dependency. Map the flow before you pour concrete.
+        </p>
+      </div>
+      <div class="bg-white border border-rule rounded-lg p-7 flex flex-col">
+        <p class="font-mono text-xs uppercase tracking-widest mb-4" style="color:#C97B0E;">Trigger 02</p>
+        <h3 class="font-serif text-2xl text-ink mb-4 leading-tight">The Demand Surge</h3>
+        <p class="text-sm leading-relaxed" style="color:#4A5568;">
+          Pharma, defense, medtech, energy — demand just doubled. Capacity didn't. Overtime masks the waste; VSM + Makigami show where hours actually disappear so you add throughput, not headcount.
+        </p>
+      </div>
+      <div class="bg-white border border-rule rounded-lg p-7 flex flex-col">
+        <p class="font-mono text-xs uppercase tracking-widest mb-4" style="color:#C97B0E;">Trigger 03</p>
+        <h3 class="font-serif text-2xl text-ink mb-4 leading-tight">The Outgrown Process</h3>
+        <p class="text-sm leading-relaxed" style="color:#4A5568;">
+          You grew by patching. Ten years of workarounds, three ERP migrations, four re-orgs — and nobody can draw the current state end-to-end. Before the next change, make the chaos visible.
+        </p>
+      </div>
+    </div>
+
+    <!-- Consultant strip -->
+    <div class="flex flex-wrap items-center justify-between gap-4 p-5 rounded-lg" style="background:#FDF6E3; border:1px solid #E2DDD5;">
+      <p class="text-sm" style="color:#1A1A1A;">
+        <span class="font-medium">Consultants &amp; Lean coaches:</span> use LeanTheCompany with your own clients.
+      </p>
+      <a href="#contact" class="font-mono text-sm font-medium" style="color:#C97B0E;">Talk to us →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section id="problem" class="section">
+  <div class="wrap">
+    <div class="max-w-3xl mb-14">
+      <p class="label-caps mb-4 flex items-center gap-3">
+        <span class="w-7 h-px inline-block" style="background:#C97B0E;"></span>
+        THE PROBLEM
+      </p>
+      <h2 class="font-serif text-3xl md:text-5xl mb-6 leading-[1.1]">
+        You don't have a people problem. You have an invisibility problem.
+      </h2>
+      <blockquote class="border-l-2 pl-6 mb-6 italic font-serif text-lg" style="border-color:#C97B0E; color:#1A1A1A;">
+        "Where there is no standard, there can be no kaizen." — Taiichi Ohno
+      </blockquote>
+      <p class="text-base md:text-lg leading-relaxed" style="color:#4A5568;">
+        Every factory and every office runs on three kinds of waste that nobody writes down because nobody can see them. Until you draw them.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="flex flex-col">
+        <p class="font-mono text-xs uppercase tracking-widest mb-3" style="color:#C97B0E;">01 · Chaos</p>
+        <h3 class="font-serif text-xl text-ink mb-3 leading-tight">Nobody knows the real process.</h3>
+        <p class="text-sm leading-relaxed" style="color:#4A5568;">
+          Ask five people to describe the order-to-ship flow and you'll get five different maps. The one on the wall is three years and two ERPs out of date. Decisions get made against fiction.
+        </p>
+      </div>
+      <div class="flex flex-col">
+        <p class="font-mono text-xs uppercase tracking-widest mb-3" style="color:#C97B0E;">02 · Handoffs</p>
+        <h3 class="font-serif text-xl text-ink mb-3 leading-tight">Handoffs eat more time than the work.</h3>
+        <p class="text-sm leading-relaxed" style="color:#4A5568;">
+          The machine cycle is 40 seconds. The order spends 11 days between people, inboxes and "waiting for clarification." Speed lives in the white space, not the value-added steps.
+        </p>
+      </div>
+      <div class="flex flex-col">
+        <p class="font-mono text-xs uppercase tracking-widest mb-3" style="color:#C97B0E;">03 · Shadow</p>
+        <h3 class="font-serif text-xl text-ink mb-3 leading-tight">Half the work isn't in any system.</h3>
+        <p class="text-sm leading-relaxed" style="color:#4A5568;">
+          Senior operators and admins run parallel spreadsheets, side-channel chats and heroic workarounds. When they leave, the knowledge leaves. When they stay, the knowledge never scales.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORM -->
+<section id="platform" class="section" style="background:#F4F2EE;">
+  <div class="wrap">
+    <div class="max-w-3xl mb-14">
+      <p class="label-caps mb-4 flex items-center gap-3">
+        <span class="w-7 h-px inline-block" style="background:#C97B0E;"></span>
+        THE PLATFORM
+      </p>
+      <h2 class="font-serif text-3xl md:text-5xl mb-6 leading-[1.1]">
+        Two canvases. One sensei. Built for people who actually run the floor.
+      </h2>
+      <p class="text-base md:text-lg leading-relaxed" style="color:#4A5568;">
+        LeanTheCompany is being built as a browser-based lean transformation platform. No consulting retainer, no six-month rollout — designed to get you mapping in ten minutes, coaching yourself with an embedded sensei trained on 25+ years of shop-floor kaizen. <span class="font-mono text-xs uppercase tracking-widest" style="color:#C97B0E;">Founding-100 cohort opens 2026.</span>
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="bg-white border border-rule rounded-lg p-6 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-serif text-xl text-ink leading-tight">Value Stream Mapping canvas</h3>
+          <span class="font-mono text-[10px] uppercase tracking-widest px-2 py-0.5 rounded border" style="border-color:#4A5568; color:#4A5568;">In dev</span>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#4A5568;">
+          Drag-and-drop process boxes, inventory triangles, kaizen bursts and information flows. Cycle time, lead time and %C&amp;A calculate themselves. Current state, future state, side by side.
+        </p>
+      </div>
+      <div class="bg-white border border-rule rounded-lg p-6 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-serif text-xl text-ink leading-tight">Makigami canvas for admin flow</h3>
+          <span class="font-mono text-[10px] uppercase tracking-widest px-2 py-0.5 rounded border" style="border-color:#4A5568; color:#4A5568;">In dev</span>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#4A5568;">
+          Swim-lane the invisible back office — sales, engineering, purchasing, finance. See every handoff, every decision, every waiting triangle that doesn't show up on the shop floor.
+        </p>
+      </div>
+      <div class="bg-white border border-rule rounded-lg p-6 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-serif text-xl text-ink leading-tight">Embedded AI Sensei</h3>
+          <span class="font-mono text-[10px] uppercase tracking-widest px-2 py-0.5 rounded border" style="border-color:#4A5568; color:#4A5568;">In dev</span>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#4A5568;">
+          Ask "where's my biggest waste?" and get a direct answer, not a textbook. Trained on Ohno, Rother and three decades of field notes — Japanese in tone, pragmatic in delivery.
+        </p>
+      </div>
+      <div class="bg-white border border-rule rounded-lg p-6 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-serif text-xl text-ink leading-tight">Kaizen tracker</h3>
+          <span class="font-mono text-[10px] uppercase tracking-widest px-2 py-0.5 rounded border" style="border-color:#4A5568; color:#4A5568;">In dev</span>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#4A5568;">
+          Turn insights into PDCA cycles with owners, deadlines, before/after photos. Nothing gets lost in email. Nothing gets celebrated too early.
+        </p>
+      </div>
+      <div class="bg-white border border-rule rounded-lg p-6 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-serif text-xl text-ink leading-tight">Transformation war room</h3>
+          <span class="font-mono text-[10px] uppercase tracking-widest px-2 py-0.5 rounded border" style="border-color:#4A5568; color:#4A5568;">In dev</span>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#4A5568;">
+          A shared canvas for the steering team — goals, pilots, results — so the CEO, the plant manager and the Lean coach all see the same truth at the same time.
+        </p>
+      </div>
+      <div class="bg-white border border-rule rounded-lg p-6 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-serif text-xl text-ink leading-tight">One-page A3 report</h3>
+          <span class="font-mono text-[10px] uppercase tracking-widest px-2 py-0.5 rounded border" style="border-color:#4A5568; color:#4A5568;">In dev</span>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#4A5568;">
+          Export every pilot as a printable A3 in English, Swedish or Chinese. The universal language of Toyota, fit for your next management review.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIAGNOSTIC -->
+<section id="diagnostic" class="section">
+  <div class="wrap">
+    <div class="grid lg:grid-cols-[1fr_1fr] gap-12 lg:gap-16 items-start">
+
+      <div>
+        <p class="label-caps mb-4 flex items-center gap-3">
+          <span class="w-7 h-px inline-block" style="background:#C97B0E;"></span>
+          FREE DIAGNOSTIC
+        </p>
+        <h2 class="font-serif text-3xl md:text-5xl mb-6 leading-[1.1]">
+          Get your Chaos Score in 5 questions.
+        </h2>
+        <p class="text-base md:text-lg leading-relaxed mb-8" style="color:#4A5568;">
+          A short, pragmatic self-assessment. Answer five questions about your current flow — I'll send back a one-page PDF with your Chaos Score, your three biggest leaks, and where to start mapping.
+        </p>
+
+        <div class="space-y-4">
+          <div class="grid grid-cols-[auto_1fr] gap-4 items-start">
+            <span class="w-7 h-7 rounded-full flex items-center justify-center font-mono text-xs font-bold shrink-0 mt-0.5" style="background:#1A1A1A; color:#fff;">1</span>
+            <div>
+              <p class="font-serif text-lg text-ink leading-tight">Inventory between steps</p>
+              <p class="text-sm" style="color:#4A5568;">How many days does a typical order spend waiting versus being worked on?</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-[auto_1fr] gap-4 items-start">
+            <span class="w-7 h-7 rounded-full flex items-center justify-center font-mono text-xs font-bold shrink-0 mt-0.5" style="background:#1A1A1A; color:#fff;">2</span>
+            <div>
+              <p class="font-serif text-lg text-ink leading-tight">Handoffs per order</p>
+              <p class="text-sm" style="color:#4A5568;">How many different people or systems touch an order from quote to ship?</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-[auto_1fr] gap-4 items-start">
+            <span class="w-7 h-7 rounded-full flex items-center justify-center font-mono text-xs font-bold shrink-0 mt-0.5" style="background:#1A1A1A; color:#fff;">3</span>
+            <div>
+              <p class="font-serif text-lg text-ink leading-tight">Shadow spreadsheets</p>
+              <p class="text-sm" style="color:#4A5568;">How many critical Excel files live on personal drives instead of systems of record?</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-[auto_1fr] gap-4 items-start">
+            <span class="w-7 h-7 rounded-full flex items-center justify-center font-mono text-xs font-bold shrink-0 mt-0.5" style="background:#1A1A1A; color:#fff;">4</span>
+            <div>
+              <p class="font-serif text-lg text-ink leading-tight">Decision cycle time</p>
+              <p class="text-sm" style="color:#4A5568;">When a problem surfaces on the floor, how long until someone empowered actually decides?</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-[auto_1fr] gap-4 items-start">
+            <span class="w-7 h-7 rounded-full flex items-center justify-center font-mono text-xs font-bold shrink-0 mt-0.5" style="background:#1A1A1A; color:#fff;">5</span>
+            <div>
+              <p class="font-serif text-lg text-ink leading-tight">Standardised work</p>
+              <p class="text-sm" style="color:#4A5568;">What percentage of your key operations have a one-page standard everyone follows?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form preview — wired to live Formspree endpoint -->
+      <div class="bg-white border border-rule rounded-lg p-6 md:p-8">
+        <h3 class="font-serif text-2xl text-ink mb-3">Request your Chaos Score</h3>
+        <p class="text-sm mb-6" style="color:#4A5568;">
+          I'll send the 5-question form and your personalised PDF within 24 hours. No sales call unless you ask for one.
+        </p>
+        <form id="chaos-score-form" action="https://formspree.io/f/xqewvgvz" method="POST" class="space-y-3">
+          <input type="hidden" name="_subject" value="LeanTheCompany — Chaos Score request" />
+          <input type="hidden" name="source"   value="chaos-score-preview" />
+
+          <input name="name"    type="text"  required placeholder="Your name"            class="w-full px-4 py-3 rounded-md bg-cream border border-rule font-mono text-sm focus:outline-none focus:border-amber-DEFAULT" />
+          <input name="email"   type="email" required placeholder="Work email"           class="w-full px-4 py-3 rounded-md bg-cream border border-rule font-mono text-sm focus:outline-none focus:border-amber-DEFAULT" />
+          <input name="company" type="text"           placeholder="Company (optional)"   class="w-full px-4 py-3 rounded-md bg-cream border border-rule font-mono text-sm focus:outline-none focus:border-amber-DEFAULT" />
+          <select name="role" required class="w-full px-4 py-3 rounded-md bg-cream border border-rule font-mono text-sm focus:outline-none focus:border-amber-DEFAULT">
+            <option value="" disabled selected>Your role</option>
+            <option>CEO / Owner</option>
+            <option>Plant / Ops Manager</option>
+            <option>Lean / CI Lead</option>
+            <option>Quality / Engineering</option>
+            <option>Consultant / Coach</option>
+            <option>Other</option>
+          </select>
+          <label class="flex items-start gap-3 text-xs leading-relaxed" style="color:#4A5568;">
+            <input type="checkbox" name="consent" required class="mt-0.5" />
+            I'd like to receive the Chaos Score and occasional emails from LeanTheCompany. You can unsubscribe anytime.
+          </label>
+          <button type="submit" class="w-full px-6 py-3 rounded-md font-mono text-sm font-medium text-white transition-colors" style="background:#1A1A1A;" onmouseover="this.style.background='#C97B0E'" onmouseout="this.style.background='#1A1A1A'">
+            Send me my Chaos Score
+          </button>
+          <p id="chaos-score-status" class="font-mono text-xs text-center mt-2" style="color:#4A5568;">
+            Your answers stay with the founder. No tracking, no resell, no drip campaign nonsense.
+          </p>
+        </form>
+        <script>
+        (function () {
+          var form = document.getElementById('chaos-score-form');
+          var status = document.getElementById('chaos-score-status');
+          form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            status.style.color = '#4A5568';
+            status.textContent = 'Sending…';
+            try {
+              var res = await fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+              });
+              if (res.ok) {
+                form.innerHTML = '<div class="bg-cream border border-amber-DEFAULT/40 rounded p-5"><p class="font-serif text-lg text-ink mb-1">Got it — thanks.</p><p class="text-sm" style="color:#4A5568;">Your Chaos Score lands in your inbox within 24 hours. Hand-crafted, not auto-generated.</p></div>';
+              } else {
+                status.style.color = '#B91C1C';
+                status.textContent = 'Something went wrong. Please email gosta@leanthecompany.com directly.';
+              }
+            } catch (err) {
+              status.style.color = '#B91C1C';
+              status.textContent = 'Network error. Please email gosta@leanthecompany.com directly.';
+            }
+          });
+        })();
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section" style="background:#F4F2EE;">
+  <div class="wrap">
+    <div class="max-w-3xl mb-14">
+      <p class="label-caps mb-4 flex items-center gap-3">
+        <span class="w-7 h-px inline-block" style="background:#C97B0E;"></span>
+        WHAT'S COMING
+      </p>
+      <h2 class="font-serif text-3xl md:text-5xl mb-6 leading-[1.1]">
+        Three ways to use it. One product, built once.
+      </h2>
+      <p class="text-base md:text-lg leading-relaxed" style="color:#4A5568;">
+        We're not selling the platform yet — we're building it. The first 100 founding members get 14 days free when it opens, then their price locked for life. Privilege, not discount.
+      </p>
+    </div>
+
+    <!-- Founding banner -->
+    <div class="rounded-lg p-6 md:p-8 mb-10" style="background:#1A1A1A; color:#F7F2E7;">
+      <div class="flex flex-wrap items-start justify-between gap-6">
+        <div class="max-w-3xl">
+          <p class="font-mono text-xs uppercase tracking-widest mb-3" style="color:#E8B84B;">FOUNDING 100 · 100 SEATS</p>
+          <h3 class="font-serif text-2xl md:text-3xl mb-4 leading-tight">
+            Be one of the first 100. Pay full price. Lock that price forever.
+          </h3>
+          <p class="text-sm md:text-base leading-relaxed" style="color:rgba(247,242,231,0.8);">
+            When access opens, founding members get 14 days free — no card. Cell and Consultant founders then pay full price, and that price never moves for them, ever. Practitioner stays free forever for the founding 100. You also get a quarterly Founders' Roundtable with me, your company on the Founding 100 honour roll (with permission), and first call on every new module before it ships. We chose privilege over discount because customers who pay full price build a sharper product.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tier cards -->
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <!-- Practitioner -->
+      <div class="bg-white border border-rule rounded-lg p-7 flex flex-col">
+        <p class="font-mono text-xs uppercase tracking-widest mb-3" style="color:#C97B0E;">Practitioner</p>
+        <h3 class="font-serif text-2xl text-ink mb-2">For the individual</h3>
+        <p class="text-sm leading-relaxed mb-5" style="color:#4A5568;">
+          For the operator, engineer or Lean coach who wants to draw their first VSM tonight, on their own laptop, with nobody asking permission.
+        </p>
+        <p class="font-serif text-2xl text-ink mb-5" style="color:#C97B0E;">Free forever <span class="font-sans text-xs uppercase tracking-widest" style="color:#4A5568;">for founding 100</span></p>
+        <ul class="space-y-2 mb-6 text-sm flex-1" style="color:#4A5568;">
+          <li class="flex gap-2"><span style="color:#C97B0E;">✓</span> 1 VSM canvas + 1 Makigami canvas</li>
+          <li class="flex gap-2"><span style="color:#C97B0E;">✓</span> Export to A3 PDF (EN / SV / ZH)</li>
+          <li class="flex gap-2"><span style="color:#C97B0E;">✓</span> AI Sensei — 20 questions / month</li>
+          <li class="flex gap-2"><span style="color:#C97B0E;">✓</span> Private workspace, no team sharing</li>
+          <li class="flex gap-2"><span style="color:#C97B0E;">✓</span> Community forum access</li>
+          <li class="flex gap-2"><span style="color:#C97B0E;">✓</span> Free forever for founding members</li>
+        </ul>
+        <button class="w-full py-3 rounded-md font-mono text-sm font-medium border-2 transition-colors" style="border-color:#1A1A1A; color:#1A1A1A;" onmouseover="this.style.background='#1A1A1A'; this.style.color='#fff'" onmouseout="this.style.background='transparent'; this.style.color='#1A1A1A'">
+          Reserve a free seat
+        </button>
+      </div>
+
+      <!-- Cell — featured -->
+      <div class="rounded-lg p-7 flex flex-col" style="background:#1A1A1A; color:#F7F2E7; border:2px solid #C97B0E;">
+        <div class="flex items-center justify-between mb-3">
+          <p class="font-mono text-xs uppercase tracking-widest" style="color:#E8B84B;">Transformation Cell</p>
+          <span class="font-mono text-[10px] uppercase tracking-widest px-2 py-0.5 rounded" style="background:#C97B0E; color:#fff;">Most popular</span>
+        </div>
+        <h3 class="font-serif text-2xl mb-2">For the plant cell</h3>
+        <p class="text-sm leading-relaxed mb-5" style="color:rgba(247,242,231,0.8);">
+          Up to 8 seats — flat fee, scales per seat above. Shared canvases, real roles, no more screenshots in WhatsApp.
+        </p>
+        <p class="font-serif text-2xl mb-5">Coming soon <span class="font-sans text-xs uppercase tracking-widest" style="color:rgba(247,242,231,0.6);">price reveal at launch</span></p>
+        <ul class="space-y-2 mb-6 text-sm flex-1" style="color:rgba(247,242,231,0.85);">
+          <li class="flex gap-2"><span style="color:#E8B84B;">✓</span> Up to 8 seats per Cell — scales per seat above that</li>
+          <li class="flex gap-2"><span style="color:#E8B84B;">✓</span> Unlimited canvases, unlimited kaizens</li>
+          <li class="flex gap-2"><span style="color:#E8B84B;">✓</span> Shared workspace, roles &amp; permissions</li>
+          <li class="flex gap-2"><span style="color:#E8B84B;">✓</span> AI Sensei — unlimited questions</li>
+          <li class="flex gap-2"><span style="color:#E8B84B;">✓</span> Kaizen tracker with PDCA cycles</li>
+          <li class="flex gap-2"><span style="color:#E8B84B;">✓</span> War-room dashboard for the steering team</li>
+          <li class="flex gap-2"><span style="color:#E8B84B;">✓</span> Email support directly from the founder</li>
+          <li class="flex gap-2"><span style="color:#E8B84B;">✓</span> Founding price locked for life</li>
+        </ul>
+        <button class="w-full py-3 rounded-md font-mono text-sm font-medium transition-colors" style="background:#C97B0E; color:#fff;" onmouseover="this.style.background='#E8B84B'" onmouseout="this.style.background='#C97B0E'">
+          Reserve a Cell seat
+        </button>
+      </div>
+
+      <!-- Consultant -->
+      <div class="bg-white border border-rule rounded-lg p-7 flex flex-col">
+        <p class="font-mono text-xs uppercase tracking-widest mb-3" style="color:#C97B0E;">Consultant</p>
+        <h3 class="font-serif text-2xl text-ink mb-2">For the coach or firm</h3>
+        <p class="text-sm leading-relaxed mb-5" style="color:#4A5568;">
+          For Lean coaches and consultancies running LeanTheCompany inside client engagements. Multi-client, white-label, with a clean handoff at the end.
+        </p>
+        <p class="font-serif text-2xl text-ink mb-5">Coming soon <span class="font-sans text-xs uppercase tracking-widest" style="color:#4A5568;">price reveal at launch</span></p>
+        <ul class="space-y-2 mb-6 text-sm flex-1" style="color:#4A5568;">
+          <li class="flex gap-2"><span style="color:#C97B0E;">✓</span> Everything in Transformation Cell</li>
+          <li class="flex gap-2"><span style="color:#C97B0E;">✓</span> Multi-client workspaces</li>
+          <li class="flex gap-2"><span style="color:#C97B0E;">✓</span> White-label A3 export</li>
+          <li class="flex gap-2"><span style="color:#C97B0E;">✓</span> Client offboarding to Practitioner tier</li>
+          <li class="flex gap-2"><span style="color:#C97B0E;">✓</span> Founder Slack channel + monthly partner call</li>
+          <li class="flex gap-2"><span style="color:#C97B0E;">✓</span> Revenue share on referred client seats</li>
+          <li class="flex gap-2"><span style="color:#C97B0E;">✓</span> Founding price locked for life</li>
+        </ul>
+        <button class="w-full py-3 rounded-md font-mono text-sm font-medium border-2 transition-colors" style="border-color:#1A1A1A; color:#1A1A1A;" onmouseover="this.style.background='#1A1A1A'; this.style.color='#fff'" onmouseout="this.style.background='transparent'; this.style.color='#1A1A1A'">
+          Reserve a consultant seat
+        </button>
+      </div>
+    </div>
+
+    <!-- Partner note -->
+    <div class="text-center mt-10">
+      <p class="text-sm" style="color:#4A5568;">
+        Running Lean inside a consultancy, an OEM academy, or a university programme?
+        <a href="#contact" class="font-mono font-medium ml-1" style="color:#C97B0E;">Let's talk partnership →</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="max-w-4xl">
+      <p class="label-caps mb-4 flex items-center gap-3">
+        <span class="w-7 h-px inline-block" style="background:#C97B0E;"></span>
+        ABOUT THE FOUNDER
+      </p>
+      <h2 class="font-serif text-3xl md:text-5xl mb-6 leading-[1.1]">
+        Three industries. One repeating problem. That's why this exists.
+      </h2>
+
+      <div class="grid md:grid-cols-[auto_1fr] gap-8 md:gap-12 items-start mb-10">
+        <div class="w-32 h-32 rounded-full overflow-hidden shrink-0" style="border:2px solid #C97B0E; background:#F4F2EE;">
+          <div class="w-full h-full flex items-center justify-center font-serif text-3xl">GS</div>
+        </div>
+        <div>
+          <p class="font-serif text-xl text-ink mb-2">Gösta Seuranen.</p>
+          <p class="font-mono text-xs uppercase tracking-widest mb-4" style="color:#C97B0E;">
+            Engineer, operator, coach. Malmö ↔ Shanghai. 25+ years on the shop floor before I wrote a line of code.
+          </p>
+          <p class="text-base leading-relaxed" style="color:#4A5568;">
+            Ten years at Tetra Pak. Five at Efeso Consulting. Twelve more as an Efeso contractor running WCOM and TPM rollouts at Stora Enso, SCA, BillerudKorsnäs, Oatly, Galderma and Nobia — Sweden, Finland, the Netherlands, the United States, China, UK. Different industries — the same three problems on every shop floor.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bio paragraphs -->
+      <div class="space-y-4 text-base leading-relaxed mb-10" style="color:#4A5568;">
+        <p>I started at Tetra Pak in 1999 and spent a decade inside one of the world's most disciplined food-packaging machinery businesses. Lean wasn't an initiative there — it was how the lifts worked, how meetings ended, how line-side parts were laid out. That's where I learned the trade.</p>
+        <p>From 2009 to 2014 I was at Efeso Consulting, running lean transformations across Europe and Asia. During those same years I also took operator stints at FrieslandCampina and Heineken via Asia Pacific Breweries. Same period, two angles — client-side and consultant-side. The same three failure patterns showed up in every diagnostic.</p>
+        <p>From 2014 onwards I've worked as an Efeso contractor leading WCOM and TPM rollouts — Stora Enso across Sweden, Finland and China; SCA and BillerudKorsnäs in Sweden; Oatly across Sweden, the Netherlands, the US and China (they hired me direct for a stretch); Galderma in pharma; Nobia in kitchens, UK and Sweden. Twelve more years of the same diagnostics, refined into a method I could run in any plant in any sector.</p>
+        <p>Consultants solve this one plant at a time, at €2,000 a day, and the moment they leave the gravity reasserts. I wanted a tool a 26-year-old shift supervisor could open on a Sunday evening, map her own line, and walk in Monday with a better standard. That is what LeanTheCompany is.</p>
+      </div>
+
+      <!-- Credentials -->
+      <div class="grid md:grid-cols-2 gap-5 pt-8 border-t border-rule">
+        <div class="bg-cream border border-rule rounded-lg p-5">
+          <p class="font-mono text-xs uppercase tracking-widest mb-2" style="color:#C97B0E;">Education</p>
+          <p class="font-serif text-base text-ink mb-1">MSc Electrical Engineering</p>
+          <p class="text-sm leading-relaxed" style="color:#4A5568;">Lund University of Technology (LTH). Systems, control, measurement — the numerical spine under every good lean diagnosis.</p>
+        </div>
+        <div class="bg-cream border border-rule rounded-lg p-5">
+          <p class="font-mono text-xs uppercase tracking-widest mb-2" style="color:#C97B0E;">MBA</p>
+          <p class="font-serif text-base text-ink mb-1">Uppsala University</p>
+          <p class="text-sm leading-relaxed" style="color:#4A5568;">Built the commercial and leadership lens on top of the engineering one.</p>
+        </div>
+        <div class="bg-cream border border-rule rounded-lg p-5">
+          <p class="font-mono text-xs uppercase tracking-widest mb-2" style="color:#C97B0E;">Operator track record</p>
+          <p class="font-serif text-base text-ink mb-1">Stora Enso · SCA · BillerudKorsnäs · Oatly · Galderma · Nobia</p>
+          <p class="text-sm leading-relaxed" style="color:#4A5568;">Six blue-chip WCOM and TPM rollouts as an Efeso contractor. On top of ten years inside Tetra Pak, five at Efeso direct, and operator stints at FrieslandCampina and Heineken APB.</p>
+        </div>
+        <div class="bg-cream border border-rule rounded-lg p-5">
+          <p class="font-mono text-xs uppercase tracking-widest mb-2" style="color:#C97B0E;">Geography</p>
+          <p class="font-serif text-base text-ink mb-1">China &amp; SE Asia 2004–2014</p>
+          <p class="text-sm leading-relaxed" style="color:#4A5568;">A decade based out of Shanghai and across Asia Pacific. Mandarin-capable. Comfortable where schematics, standards and soy sauce meet.</p>
+        </div>
+      </div>
+
+      <a href="https://www.linkedin.com/in/gostaseuranen/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-8 font-mono text-sm font-medium" style="color:#C97B0E;">
+        Connect on LinkedIn →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ALSO FROM EMPROWA -->
+<section id="family" class="section" style="background:#F4F2EE;">
+  <div class="wrap">
+    <div class="max-w-3xl mb-10">
+      <p class="label-caps mb-4 flex items-center gap-3">
+        <span class="w-7 h-px inline-block" style="background:#C97B0E;"></span>
+        ALSO FROM EMPROWA
+      </p>
+      <h2 class="font-serif text-3xl md:text-4xl leading-[1.1] mb-4">
+        One operator. Two platforms. Same discipline.
+      </h2>
+      <p class="text-base leading-relaxed" style="color:#4A5568;">
+        LeanTheCompany makes the flow visible. TPM-OS makes the equipment reliable. Built side by side, under the Emprowa umbrella, by the same hands.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- TPM-OS card -->
+      <a href="https://tpm-os.com" target="_blank" rel="noopener" class="block bg-white border border-rule rounded-lg p-7 hover:border-amber-DEFAULT transition-colors group">
+        <div class="flex items-start justify-between mb-5">
+          <svg viewBox="0 0 400 400" width="56" height="56">
+            <rect x="60"  y="80"  width="60" height="220" rx="8" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+            <rect x="170" y="80"  width="60" height="220" rx="8" fill="#C97B0E"/>
+            <rect x="280" y="80"  width="60" height="220" rx="8" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+            <rect x="40"  y="312" width="320" height="32" rx="6" fill="#1A1A1A"/>
+          </svg>
+        </div>
+        <h3 class="font-serif text-2xl text-ink mb-2">TPM-OS</h3>
+        <p class="font-mono text-xs uppercase tracking-widest mb-4" style="color:#C97B0E;">
+          The Digital Operating System for World Class Manufacturing
+        </p>
+        <p class="text-sm leading-relaxed mb-5" style="color:#4A5568;">
+          A field-tested platform designed to boost and stabilise your OEE — TPM pillars and autonomous-maintenance routines for plants ready to digitise their improvement rhythm. Launching 2026.
+        </p>
+        <p class="font-mono text-xs uppercase tracking-wider mb-5 pb-5 border-b border-rule" style="color:#4A5568;">
+          For: Maintenance leads · Plant managers · TPM pillar champions
+        </p>
+        <span class="inline-flex items-center gap-2 font-mono text-sm font-medium text-ink group-hover:text-amber-DEFAULT transition-colors">
+          Visit tpm-os.com →
+        </span>
+      </a>
+
+      <!-- Emprowa parent card -->
+      <a href="https://emprowa.com" target="_blank" rel="noopener" class="block bg-white border border-rule rounded-lg p-7 hover:border-amber-DEFAULT transition-colors group">
+        <div class="flex items-start justify-between mb-5">
+          <svg viewBox="0 0 400 400" width="56" height="56">
+            <rect x="80" y="80"  width="32"  height="240" fill="#1A1A1A"/>
+            <rect x="80" y="80"  width="200" height="32"  fill="#1A1A1A"/>
+            <rect x="80" y="184" width="150" height="32"  fill="#C97B0E"/>
+            <rect x="80" y="288" width="200" height="32"  fill="#1A1A1A"/>
+          </svg>
+        </div>
+        <h3 class="font-serif text-2xl text-ink mb-2">Emprowa</h3>
+        <p class="font-mono text-xs uppercase tracking-widest mb-4" style="color:#C97B0E;">
+          The umbrella · Operator-built systems
+        </p>
+        <p class="text-sm leading-relaxed mb-5" style="color:#4A5568;">
+          The holding company behind LeanTheCompany and TPM-OS. Founded in Malmö in 2014 to bridge the gap between high-level industrial strategy and shop-floor reality.
+        </p>
+        <p class="font-mono text-xs uppercase tracking-wider mb-5 pb-5 border-b border-rule" style="color:#4A5568;">
+          For: Operators, Lean coaches, Plant directors
+        </p>
+        <span class="inline-flex items-center gap-2 font-mono text-sm font-medium text-ink group-hover:text-amber-DEFAULT transition-colors">
+          Visit emprowa.com →
+        </span>
+      </a>
+    </div>
+
+    <p class="text-sm mt-6 max-w-3xl leading-relaxed" style="color:#4A5568;">
+      Lean and TPM are two ways of looking at the same factory. Some plants need both. We built one platform for each, on purpose, so each one stays fit for its audience.
+    </p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section" style="background:#1A1A1A; color:#F7F2E7;">
+  <div class="wrap">
+    <div class="max-w-3xl">
+      <p class="font-mono text-xs uppercase tracking-widest mb-4" style="color:#E8B84B;">
+        NEXT STEP
+      </p>
+      <h2 class="font-serif text-4xl md:text-6xl leading-[1.05] mb-6">
+        Stop firefighting.<br/>
+        <span style="color:#E8B84B;">Start piloting.</span>
+      </h2>
+      <p class="text-lg md:text-xl leading-relaxed mb-10" style="color:rgba(247,242,231,0.8);">
+        Pick one value stream. Draw it with me this week. Ship your first visible improvement before the month is out.
+      </p>
+      <div class="flex flex-wrap gap-4 mb-6">
+        <a href="#diagnostic" class="px-6 py-3 rounded-md font-mono text-sm font-medium transition-colors" style="background:#C97B0E; color:#fff;" onmouseover="this.style.background='#E8B84B'" onmouseout="this.style.background='#C97B0E'">
+          Get your Chaos Score →
+        </a>
+        <a href="#pricing" class="px-6 py-3 rounded-md font-mono text-sm font-medium border-2 transition-colors" style="border-color:#F7F2E7; color:#F7F2E7;" onmouseover="this.style.borderColor='#E8B84B'; this.style.color='#E8B84B'" onmouseout="this.style.borderColor='#F7F2E7'; this.style.color='#F7F2E7'">
+          Reserve a founding seat
+        </a>
+      </div>
+      <p class="font-mono text-xs" style="color:rgba(247,242,231,0.5);">
+        No login wall. No sales call. No obligation.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#1A1A1A; color:#F7F2E7; border-top:1px solid rgba(247,242,231,0.1);" class="pt-20 pb-10 px-6">
+  <div class="wrap">
+
+    <div class="grid md:grid-cols-[1.4fr_1fr_1fr_1fr] gap-12 pb-12" style="border-bottom:1px solid rgba(247,242,231,0.1);">
+
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-3 mb-5">
+          <svg viewBox="0 0 400 400" width="28" height="28">
+            <rect x="20"  y="110" width="100" height="180" rx="10" fill="none" stroke="#F7F2E7" stroke-width="14"/>
+            <rect x="150" y="110" width="100" height="180" rx="10" fill="#C97B0E"/>
+            <rect x="280" y="110" width="100" height="180" rx="10" fill="none" stroke="#F7F2E7" stroke-width="14"/>
+            <polygon points="123,190 145,200 123,210" fill="#F7F2E7"/>
+            <polygon points="253,190 275,200 253,210" fill="#F7F2E7"/>
+          </svg>
+          <span class="font-mono text-base font-bold tracking-tight">LeanTheCompany</span>
+        </div>
+        <p class="text-sm leading-relaxed max-w-sm" style="color:rgba(247,242,231,0.6);">
+          Lean Transformation Platform for the manufacturing industry. Built by a factory engineer, not a software studio.
+        </p>
+      </div>
+
+      <!-- Platform -->
+      <div>
+        <h4 class="font-mono text-xs uppercase tracking-widest mb-4" style="color:#E8B84B;">Platform</h4>
+        <ul class="space-y-2 list-none">
+          <li><a href="#platform"   class="text-sm transition-colors" style="color:rgba(247,242,231,0.6);" onmouseover="this.style.color='#E8B84B'" onmouseout="this.style.color='rgba(247,242,231,0.6)'">How it works</a></li>
+          <li><a href="#pricing"    class="text-sm transition-colors" style="color:rgba(247,242,231,0.6);" onmouseover="this.style.color='#E8B84B'" onmouseout="this.style.color='rgba(247,242,231,0.6)'">Pricing</a></li>
+          <li><a href="#diagnostic" class="text-sm transition-colors" style="color:rgba(247,242,231,0.6);" onmouseover="this.style.color='#E8B84B'" onmouseout="this.style.color='rgba(247,242,231,0.6)'">Chaos Score</a></li>
+        </ul>
+      </div>
+
+      <!-- Learn -->
+      <div>
+        <h4 class="font-mono text-xs uppercase tracking-widest mb-4" style="color:#E8B84B;">Learn</h4>
+        <ul class="space-y-2 list-none">
+          <li><a href="#problem" class="text-sm transition-colors" style="color:rgba(247,242,231,0.6);" onmouseover="this.style.color='#E8B84B'" onmouseout="this.style.color='rgba(247,242,231,0.6)'">The problem</a></li>
+          <li><a href="#forwhom" class="text-sm transition-colors" style="color:rgba(247,242,231,0.6);" onmouseover="this.style.color='#E8B84B'" onmouseout="this.style.color='rgba(247,242,231,0.6)'">For whom</a></li>
+          <li><a href="#about"   class="text-sm transition-colors" style="color:rgba(247,242,231,0.6);" onmouseover="this.style.color='#E8B84B'" onmouseout="this.style.color='rgba(247,242,231,0.6)'">About the founder</a></li>
+        </ul>
+      </div>
+
+      <!-- Family -->
+      <div>
+        <h4 class="font-mono text-xs uppercase tracking-widest mb-4" style="color:#E8B84B;">Family</h4>
+        <ul class="space-y-2 list-none">
+          <li><a href="https://emprowa.com"        target="_blank" rel="noopener" class="text-sm transition-colors" style="color:rgba(247,242,231,0.6);" onmouseover="this.style.color='#E8B84B'" onmouseout="this.style.color='rgba(247,242,231,0.6)'">Emprowa.com ↗</a></li>
+          <li><a href="https://tpm-os.com"         target="_blank" rel="noopener" class="text-sm transition-colors" style="color:rgba(247,242,231,0.6);" onmouseover="this.style.color='#E8B84B'" onmouseout="this.style.color='rgba(247,242,231,0.6)'">TPM-OS.com ↗</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="pt-8 flex flex-wrap items-center justify-between gap-4 font-mono text-xs" style="color:rgba(247,242,231,0.4);">
+      <p>Made with care in Malmö &amp; Shanghai · A KH 4 LeanTheCompany venture · Emprowa AB · VAT SE556966101901</p>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── CSS custom properties (kept in sync with Tailwind tokens) ───────── */
+:root {
+  --ink:        #0D1117;
+  --ink-mid:    #2A3240;
+  --ink-soft:   #4A5568;
+  --smoke:      #F4F2EE;
+  --white:      #FFFFFF;
+  --amber:      #B07D20;
+  --amber-lt:   #E8B84B;
+  --amber-pale: #FDF6E3;
+  --teal:       #1A6B6B;
+  --teal-lt:    #2A9090;
+  --rule:       #E2DDD5;
+  --radius:     4px;
+  --max:        1120px;
+}
+
+/* ── Base resets ─────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--white);
+  color: var(--ink);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  line-height: 1.65;
+}
+
+/* ── Typography helpers ──────────────────────────────────────────────── */
+@layer components {
+  .heading-display {
+    @apply font-serif font-normal tracking-tight leading-tight;
+  }
+  .heading-section {
+    @apply font-serif font-normal text-3xl leading-snug;
+  }
+  .label-caps {
+    @apply font-mono text-xs font-semibold tracking-widest uppercase text-amber;
+  }
+  .body-lead {
+    @apply text-lg text-ink-mid leading-relaxed;
+  }
+  .wrap {
+    @apply max-w-content mx-auto px-6 md:px-8;
+  }
+  .section {
+    @apply py-20 px-6;
+  }
+  .section-alt {
+    @apply bg-smoke;
+  }
+  .section-dark {
+    @apply bg-ink text-white;
+  }
+}

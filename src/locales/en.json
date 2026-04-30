@@ -1,0 +1,330 @@
+{
+  "nav": {
+    "forWhom": "For Whom",
+    "problem": "The Problem",
+    "platform": "Platform",
+    "diagnostic": "Diagnostic",
+    "pricing": "Pricing",
+    "about": "About",
+    "cta": "Get early access"
+  },
+  "hero": {
+    "eyebrow": "Lean Transformation Platform",
+    "headline": "Lean the company,",
+    "headlineSub": "before the chaos wins.",
+    "lead": "Two canvases — Value Stream Mapping for the shop floor, Makigami for the back office — make every delay, handoff and shadow workflow visible in one morning. Ship a pilot by Friday.",
+    "ctaPrimary": "Get your Chaos Score",
+    "ctaSecondary": "Reserve a founding seat",
+    "founderTitle": "Founder · Sensei",
+    "founderBio": "27 years on factory floors — Tetra Pak, Stora Enso, Oatly, Nobia, Galderma. Now a platform, not a consulting retainer.",
+    "proof": {
+      "years": "25+",
+      "yearsLabel": "Years of Lean, hands on the shop floor",
+      "canvases": "2",
+      "canvasesLabel": "Canvases: VSM + Makigami in one tool",
+      "start": "100",
+      "startLabel": "Founding seats — lifetime price-lock + Founders' Roundtable"
+    }
+  },
+  "forWhom": {
+    "eyebrow": "For Whom",
+    "headline": "Three moments when processes break faster than org charts can fix them.",
+    "lead": "VSM works for any company producing goods. Makigami works for any admin process. These tools are universal — but three trigger situations burn the loudest right now.",
+    "cards": {
+      "reshoring": {
+        "title": "The Returning Factory",
+        "body": "You're bringing production back to Europe or the US. The old muscle memory is in China, your new operators are fresh, and every supplier change exposes a hidden dependency. Map the flow before you pour concrete."
+      },
+      "surge": {
+        "title": "The Demand Surge",
+        "body": "Pharma, defense, medtech, energy — demand just doubled. Capacity didn't. Overtime masks the waste; VSM + Makigami show where hours actually disappear so you add throughput, not headcount."
+      },
+      "outgrown": {
+        "title": "The Outgrown Process",
+        "body": "You grew by patching. Ten years of workarounds, three ERP migrations, four re-orgs — and nobody can draw the current state end-to-end. Before the next change, make the chaos visible."
+      }
+    },
+    "consultantStrip": "Consultants & Lean coaches: use LeanTheCompany with your own clients.",
+    "consultantCta": "Talk to us"
+  },
+  "problem": {
+    "eyebrow": "The Problem",
+    "headline": "You don't have a people problem. You have an invisibility problem.",
+    "quote": "\"Where there is no standard, there can be no kaizen.\" — Taiichi Ohno",
+    "lead": "Every factory and every office runs on three kinds of waste that nobody writes down because nobody can see them. Until you draw them.",
+    "items": {
+      "chaos": {
+        "label": "01 · Chaos",
+        "title": "Nobody knows the real process.",
+        "body": "Ask five people to describe the order-to-ship flow and you'll get five different maps. The one on the wall is three years and two ERPs out of date. Decisions get made against fiction."
+      },
+      "handoffs": {
+        "title": "Handoffs eat more time than the work.",
+        "label": "02 · Handoffs",
+        "body": "The machine cycle is 40 seconds. The order spends 11 days between people, inboxes and \"waiting for clarification.\" Speed lives in the white space, not the value-added steps."
+      },
+      "shadow": {
+        "label": "03 · Shadow",
+        "title": "Half the work isn't in any system.",
+        "body": "Senior operators and admins run parallel spreadsheets, side-channel chats and heroic workarounds. When they leave, the knowledge leaves. When they stay, the knowledge never scales."
+      }
+    }
+  },
+  "platform": {
+    "eyebrow": "The Platform",
+    "headline": "Two canvases. One sensei. Built for people who actually run the floor.",
+    "lead": "LeanTheCompany is a browser-based lean transformation platform. No consulting retainer, no six-month rollout — start mapping in ten minutes, coach yourself with an embedded sensei trained on 25+ years of shop-floor kaizen.",
+    "status": {
+      "live": "Live",
+      "dev": "In development"
+    },
+    "items": {
+      "vsm": {
+        "title": "Value Stream Mapping canvas",
+        "body": "Drag-and-drop process boxes, inventory triangles, kaizen bursts and information flows. Cycle time, lead time and %C&A calculate themselves. Current state, future state, side by side."
+      },
+      "makigami": {
+        "title": "Makigami canvas for admin flow",
+        "body": "Swim-lane the invisible back office — sales, engineering, purchasing, finance. See every handoff, every decision, every waiting triangle that doesn't show up on the shop floor."
+      },
+      "sensei": {
+        "title": "Embedded AI Sensei",
+        "body": "Ask \"where's my biggest waste?\" and get a direct answer, not a textbook. Trained on Ohno, Rother and three decades of field notes — Japanese in tone, pragmatic in delivery."
+      },
+      "tracker": {
+        "title": "Kaizen tracker",
+        "body": "Turn insights into PDCA cycles with owners, deadlines, before/after photos. Nothing gets lost in email. Nothing gets celebrated too early."
+      },
+      "warroom": {
+        "title": "Transformation war room",
+        "body": "A shared canvas for the steering team — goals, pilots, results — so the CEO, the plant manager and the Lean coach all see the same truth at the same time."
+      },
+      "report": {
+        "title": "One-page A3 report",
+        "body": "Export every pilot as a printable A3 in English, Swedish or Chinese. The universal language of Toyota, fit for your next management review."
+      }
+    }
+  },
+  "whatsComing": {
+    "eyebrow": "What you get",
+    "headline": "What unlocks the moment you sign in.",
+    "lead": "Hover any preview to see it come together. These are the four surfaces founding members get on launch day — VSM, Makigami, the AI sensei, and the export every shop floor in the world recognises.",
+    "previews": {
+      "vsm": {
+        "tag": "Live at launch",
+        "title": "Value Stream Mapping canvas",
+        "body": "Drag process boxes, draw flow arrows, drop inventory triangles. Cycle time, lead time and %C&A roll up automatically. The first canvas every founding member draws."
+      },
+      "makigami": {
+        "tag": "Live at launch",
+        "title": "Makigami swim-lane canvas",
+        "body": "The back-office twin. Sales, engineering, purchasing — every handoff and every wait the shop floor never sees. Print it on the wall and the whole organisation suddenly speaks the same language."
+      },
+      "sensei": {
+        "tag": "Live at launch",
+        "title": "Embedded AI Sensei",
+        "body": "Ask in plain English, Swedish or Mandarin. Trained on Ohno, Rother and three decades of field notes. Pragmatic, not preachy. Cites its sources so the operator can push back."
+      },
+      "pdf": {
+        "tag": "Live at launch",
+        "title": "One-page A3 export",
+        "body": "The universal language of every Toyota Production System review on Earth. Print it. Pin it. Walk it. Founding members ship A3s in EN, SV and ZH from day one."
+      }
+    },
+    "foundingNote": "Reserve a founding seat — 14 days free, then your price locked for life. 100 seats only.",
+    "foundingCta": "Reserve your seat"
+  },
+  "diagnostic": {
+    "eyebrow": "Free Diagnostic",
+    "headline": "Get your Chaos Score in 5 questions.",
+    "lead": "A short, pragmatic self-assessment. Answer five questions about your current flow — I'll send back a one-page PDF with your Chaos Score, your three biggest leaks, and where to start mapping.",
+    "steps": {
+      "inventory": {
+        "title": "Inventory between steps",
+        "body": "How many days does a typical order spend waiting versus being worked on?"
+      },
+      "handoffs": {
+        "title": "Handoffs per order",
+        "body": "How many different people or systems touch an order from quote to ship?"
+      },
+      "shadow": {
+        "title": "Shadow spreadsheets",
+        "body": "How many critical Excel files live on personal drives instead of systems of record?"
+      },
+      "decisions": {
+        "title": "Decision cycle time",
+        "body": "When a problem surfaces on the floor, how long until someone empowered actually decides?"
+      },
+      "standards": {
+        "title": "Standardised work",
+        "body": "What percentage of your key operations have a one-page standard everyone follows?"
+      }
+    },
+    "form": {
+      "title": "Request your Chaos Score",
+      "description": "I'll send the 5-question form and your personalised PDF within 24 hours. No sales call unless you ask for one.",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "Work email",
+      "companyPlaceholder": "Company (optional)",
+      "rolePlaceholder": "Your role",
+      "roles": [
+        "CEO / Owner",
+        "Plant / Ops Manager",
+        "Lean / CI Lead",
+        "Quality / Engineering",
+        "Consultant / Coach",
+        "Other"
+      ],
+      "consent": "I'd like to receive the Chaos Score and occasional emails from LeanTheCompany. You can unsubscribe anytime.",
+      "submit": "Send me my Chaos Score",
+      "loading": "Sending…",
+      "thanksTitle": "Got it. Check your inbox.",
+      "thanksBody": "Your Chaos Score questionnaire is on its way. Reply to that email if it doesn't land within 24 hours.",
+      "error": "Something went wrong. Please email hello@leanthecompany.com and we'll help.",
+      "noEndpoint": "Form endpoint not configured yet. Please email hello@leanthecompany.com.",
+      "meta": "Your answers stay with the founder. No tracking, no resell, no drip campaign nonsense."
+    }
+  },
+  "pricing": {
+    "eyebrow": "What's coming",
+    "headline": "Three ways to use it. One product, built once.",
+    "lead": "We're not selling the platform yet — we're building it. The first 100 founding members get 14 days free when it opens, then their price locked for life. Privilege, not discount.",
+    "comingSoon": "Coming soon",
+    "founding": {
+      "eyebrow": "Founding 100",
+      "headline": "Be one of the first 100. Pay full price. Lock that price forever.",
+      "body": "When access opens, founding members get 14 days free — no card. Cell and Consultant founders then pay full price, and that price never moves for them, ever. Practitioner stays free forever for the founding 100. You also get a quarterly Founders' Roundtable with me, your company on the Founding 100 honour roll (with permission), and first call on every new module before it ships. We chose privilege over discount because customers who pay full price build a sharper product.",
+      "spots": "100 founding seats"
+    },
+    "tiers": {
+      "practitioner": {
+        "title": "Practitioner",
+        "audience": "For the individual",
+        "desc": "For the operator, engineer or Lean coach who wants to draw their first VSM tonight, on their own laptop, with nobody asking permission.",
+        "cta": "Reserve a free seat",
+        "features": [
+          "1 VSM canvas + 1 Makigami canvas",
+          "Export to A3 PDF (EN / SV / ZH)",
+          "AI Sensei — 20 questions / month",
+          "Private workspace, no team sharing",
+          "Community forum access",
+          "Free forever for founding members"
+        ]
+      },
+      "cell": {
+        "title": "Transformation Cell",
+        "audience": "Up to 8 seats — flat fee, scales per seat above",
+        "desc": "For the plant cell running Lean across shifts and functions. One flat fee for the team, no procurement headache. Shared canvases, real roles, no more screenshots in WhatsApp.",
+        "cta": "Reserve a Cell seat",
+        "features": [
+          "Up to 8 seats per Cell — scales per seat above that",
+          "Unlimited canvases, unlimited kaizens",
+          "Shared workspace, roles & permissions",
+          "AI Sensei — unlimited questions",
+          "Kaizen tracker with PDCA cycles",
+          "War-room dashboard for the steering team",
+          "Email support directly from the founder",
+          "Founding price locked for life"
+        ]
+      },
+      "consultant": {
+        "title": "Consultant",
+        "audience": "For the coach or firm",
+        "desc": "For Lean coaches and consultancies running LeanTheCompany inside client engagements. Multi-client, white-label, with a clean handoff at the end.",
+        "cta": "Reserve a consultant seat",
+        "features": [
+          "Everything in Transformation Cell",
+          "Multi-client workspaces",
+          "White-label A3 export",
+          "Client offboarding to Practitioner tier",
+          "Founder Slack channel + monthly partner call",
+          "Revenue share on referred client seats",
+          "Founding price locked for life"
+        ]
+      }
+    },
+    "form": {
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "Work email",
+      "loading": "Reserving your seat…",
+      "thanksTitle": "Seat reserved.",
+      "thanksBody": "I'll email you the moment we open access — and you'll be in the founding 100. No drip emails in between.",
+      "error": "Something went wrong. Please email hello@leanthecompany.com.",
+      "noEndpoint": "Reservation endpoint not configured yet. Please email hello@leanthecompany.com."
+    },
+    "partnerNote": "Running Lean inside a consultancy, an OEM academy, or a university programme?",
+    "partnerCta": "Let's talk partnership →"
+  },
+  "about": {
+    "eyebrow": "About the Founder",
+    "headline": "Three industries. One repeating problem. That's why this exists.",
+    "title": "Founder · Sensei",
+    "tagline": "Engineer, operator, coach. Malmö ↔ Shanghai. 25+ years on the shop floor before I wrote a line of code.",
+    "linkedinCta": "Connect on LinkedIn",
+    "lead": "Ten years at Tetra Pak. Five at Efeso Consulting. Twelve more as an Efeso contractor running WCOM and TPM rollouts at Stora Enso, SCA, BillerudKorsnäs, Oatly, Galderma and Nobia — Sweden, Finland, the Netherlands, the United States, China, UK. Different industries — the same three problems on every shop floor.",
+    "bio": [
+      "I started at Tetra Pak in 1999 and spent a decade inside one of the world's most disciplined food-packaging machinery businesses. Lean wasn't an initiative there — it was how the lifts worked, how meetings ended, how line-side parts were laid out. That's where I learned the trade.",
+      "From 2009 to 2014 I was at Efeso Consulting, running lean transformations across Europe and Asia. During those same years I also took operator stints at FrieslandCampina and Heineken via Asia Pacific Breweries. Same period, two angles — client-side and consultant-side. The same three failure patterns showed up in every diagnostic. Nobody could see the real flow. Handoffs ate more time than the work. The best operators ran shadow systems that left with them when they retired.",
+      "From 2014 onwards I've worked as an Efeso contractor leading WCOM (World Class Operations Management) and TPM rollouts. Stora Enso across Sweden, Finland and China. SCA and BillerudKorsnäs in Sweden — three forest & packaging giants, each running the same playbook against the same gravity. Oatly across their plants in Sweden, the Netherlands, the United States and China — building the daily management system and pillar structure that scaled with them through Covid, when they were one of the few clients who could still get me onto site (they hired me direct for a stretch). Galderma in pharma. Nobia in kitchens, UK and Sweden. Twelve more years of the same diagnostics, refined into a method I could run in any plant in any sector.",
+      "Consultants solve this one plant at a time, at €2,000 a day, and the moment they leave the gravity reasserts. I wanted a tool a 26-year-old shift supervisor could open on a Sunday evening, map her own line, and walk in Monday with a better standard. That is what LeanTheCompany is."
+    ],
+    "credentials": {
+      "edu": {
+        "title": "MSc Electrical Engineering",
+        "body": "Lund University of Technology (LTH). Systems, control, measurement — the numerical spine under every good lean diagnosis."
+      },
+      "mba": {
+        "title": "MBA",
+        "body": "Uppsala University. Built the commercial and leadership lens on top of the engineering one."
+      },
+      "lean": {
+        "title": "Stora Enso · SCA · BillerudKorsnäs · Oatly · Galderma · Nobia",
+        "body": "Six blue-chip WCOM and TPM rollouts as an Efeso contractor (Oatly even brought me in-house for a stretch). On top of ten years inside Tetra Pak, five at Efeso direct, and operator stints at FrieslandCampina and Heineken APB."
+      },
+      "china": {
+        "title": "China & SE Asia 2004–2014",
+        "body": "A decade based out of Shanghai and across Asia Pacific. Mandarin-capable. Comfortable where schematics, standards and soy sauce meet."
+      }
+    },
+    "geo": {
+      "malmo": "Malmö, SE",
+      "china": "Shanghai",
+      "seasia": "SE Asia",
+      "europe": "Europe"
+    }
+  },
+  "finalCta": {
+    "eyebrow": "Next step",
+    "headline": "Stop firefighting.",
+    "headlineSub": "Start piloting.",
+    "lead": "Pick one value stream. Draw it with me this week. Ship your first visible improvement before the month is out.",
+    "ctaPrimary": "Get your Chaos Score",
+    "ctaSecondary": "Reserve a founding seat",
+    "meta": "No login wall. No sales call. No obligation."
+  },
+  "footer": {
+    "tagline": "Lean Transformation Platform for the manufacturing industry. Built by a factory engineer, not a software studio.",
+    "linkedin": "Follow Gösta on LinkedIn",
+    "copyright": "Made with care in Malmö & Shanghai",
+    "disclaimer": "LeanTheCompany is an independent product. Lean, Toyota Production System, Value Stream Mapping, Makigami and kaizen are methodologies developed over decades by practitioners across the world; we stand on their shoulders and cite them where we can. Every pilot and every result shown has the customer's permission.",
+    "cols": {
+      "product": {
+        "title": "Platform",
+        "platform": "How it works",
+        "pricing": "Pricing",
+        "diagnostic": "Chaos Score"
+      },
+      "learn": {
+        "title": "Learn",
+        "problem": "The problem",
+        "forWhom": "For whom",
+        "about": "About the founder"
+      },
+      "family": {
+        "title": "Family",
+        "contact": "Contact"
+      }
+    },
+    "legal": "A KH 4 LeanTheCompany venture · Emprowa AB · VAT SE556966101901 · Malmö, Sweden"
+  }
+}
