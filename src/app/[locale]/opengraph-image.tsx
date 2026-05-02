@@ -1,7 +1,9 @@
 import { ImageResponse } from 'next/og'
 
-// Next.js convention: served as /opengraph-image when shared on
-// LinkedIn, X, Slack, etc. Generated at build time — no PNG to manage.
+// Next.js convention: this file lives inside the [locale] segment so it
+// applies to /en, /sv, /zh — the actual served pages. The previous root-level
+// version was unreachable because middleware redirects "/" to "/<locale>",
+// causing LinkedIn to fall back to the largest image on the page (a portrait).
 export const runtime = 'edge'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
