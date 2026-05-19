@@ -193,7 +193,7 @@
     "founding": {
       "eyebrow": "Founding 100",
       "headline": "Be one of the first 100. Pay full price. Lock that price forever.",
-      "body": "When access opens, founding members get 14 days free — no card. Cell and Consultant founders then pay full price, and that price never moves for them, ever. Practitioner stays free forever for the founding 100. You also get a quarterly Founders' Roundtable with me, your company on the Founding 100 honour roll (with permission), and first call on every new module before it ships. We chose privilege over discount because customers who pay full price build a sharper product.",
+      "body": "When access opens, founding members get 14 days free — no card. After that, founders pay their tier's full founding rate — and that price never moves for them, ever. You also get a quarterly Founders' Roundtable with me, your company on the Founding 100 honour roll (with permission), and first call on every new module before it ships. We chose privilege over discount because customers who pay full price build a sharper product. Cancel anytime — no long-term commitment from your side, only the price-lock from ours.",
       "spots": "100 founding seats"
     },
     "tiers": {
@@ -201,14 +201,14 @@
         "title": "Practitioner",
         "audience": "For the individual",
         "desc": "For the operator, engineer or Lean coach who wants to draw their first VSM tonight, on their own laptop, with nobody asking permission.",
-        "cta": "Reserve a free seat",
+        "cta": "Reserve a Practitioner seat",
         "features": [
-          "1 VSM canvas + 1 Makigami canvas",
+          "Unlimited Makigami + VSM canvases",
           "Export to A3 PDF (EN / SV / ZH)",
-          "AI Sensei — 20 questions / month",
+          "AI Sensei — 50 questions / month",
           "Private workspace, no team sharing",
           "Community forum access",
-          "Free forever for founding members"
+          "€19 / month — locked for life for founding members"
         ]
       },
       "cell": {

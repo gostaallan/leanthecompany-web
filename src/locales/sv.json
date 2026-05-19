@@ -193,7 +193,7 @@
     "founding": {
       "eyebrow": "De första 100",
       "headline": "Bli en av de första 100. Betala fullt pris. Lås det priset för evigt.",
-      "body": "När åtkomsten öppnar får grundarmedlemmarna 14 dagar gratis — utan kort. Grundare på Cell- och Consultant-nivå betalar sedan fullt pris, och det priset rör sig aldrig för dem. Practitioner förblir gratis för alltid för de första 100. Du får också en kvartalsvis Grundarrunda med mig, ditt företag på den officiella Founding 100-tavlan (med ditt godkännande), och första tjing på varje ny modul innan den lanseras. Vi valde privilegium framför rabatt — kunder som betalar fullt pris bygger en skarpare produkt.",
+      "body": "När åtkomsten öppnar får grundarmedlemmarna 14 dagar gratis — utan kort. Därefter betalar grundare sitt grundarpris för respektive nivå — och det priset rör sig aldrig för dem. Du får också en kvartalsvis Grundarrunda med mig, ditt företag på den officiella Founding 100-tavlan (med ditt godkännande), och första tjing på varje ny modul innan den lanseras. Vi valde privilegium framför rabatt — kunder som betalar fullt pris bygger en skarpare produkt. Säg upp när du vill — ingen långsiktig bindning från din sida, bara prislåsningen från vår.",
       "spots": "100 grundarplatser"
     },
     "tiers": {
@@ -201,14 +201,14 @@
         "title": "Practitioner",
         "audience": "För dig som individ",
         "desc": "För operatören, ingenjören eller Lean-coachen som vill rita sin första VSM ikväll, på sin egen laptop, utan att be någon om lov.",
-        "cta": "Boka en gratisplats",
+        "cta": "Reservera en Practitioner-plats",
         "features": [
-          "1 VSM-canvas + 1 Makigami-canvas",
+          "Obegränsade Makigami + VSM-canvasar",
           "Export till A3-PDF (EN / SV / ZH)",
-          "AI-sensei — 20 frågor / månad",
+          "AI-sensei — 50 frågor / månad",
           "Privat workspace, ingen team-delning",
           "Tillgång till community-forum",
-          "Gratis för alltid för grundarmedlemmar"
+          "€19 / månad — låst för livet för grundarmedlemmar"
         ]
       },
       "cell": {
