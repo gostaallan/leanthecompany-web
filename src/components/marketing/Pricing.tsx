@@ -168,8 +168,13 @@ export function Pricing() {
           })}
         </div>
 
+        {/* Metering note — explains why Sensei is capped + top-up, so a limit reads as fair */}
+        <p className="text-center text-sm text-ink-soft mt-10 max-w-2xl mx-auto">
+          {t('meteringNote')}
+        </p>
+
         {/* Partner strip */}
-        <p className="text-center text-sm text-ink-soft mt-10">
+        <p className="text-center text-sm text-ink-soft mt-6">
           {t('partnerNote')}{' '}
           <a href="mailto:hello@leanthecompany.com" className="font-semibold text-amber-DEFAULT hover:text-ink transition-colors">
             {t('partnerCta')}

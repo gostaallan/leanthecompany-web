@@ -196,6 +196,7 @@
       "body": "När åtkomsten öppnar får grundarmedlemmarna 30 dagar gratis — utan kort. Därefter betalar grundare sitt grundarpris för respektive nivå — och det priset rör sig aldrig för dem. Du får också en kvartalsvis Grundarrunda med mig, ditt företag på den officiella Founding 100-tavlan (med ditt godkännande), och första tjing på varje ny modul innan den lanseras. Vi valde privilegium framför rabatt — kunder som betalar fullt pris bygger en skarpare produkt. Säg upp när du vill — ingen långsiktig bindning från din sida, bara prislåsningen från vår.",
       "spots": "100 grundarplatser"
     },
+    "meteringNote": "Sensei drivs av riktig AI, så vi mäter den — och du kan fylla på när som helst. Lagring kostar nästan inget, så canvas är inte begränsade på team-planer. Inga överraskningar på fakturan, någonsin.",
     "tiers": {
       "practitioner": {
         "title": "Practitioner",
@@ -203,9 +204,9 @@
         "desc": "För operatören, ingenjören eller Lean-coachen som vill rita sin första VSM ikväll, på sin egen laptop, utan att be någon om lov.",
         "cta": "Reservera en Practitioner-plats",
         "features": [
-          "Obegränsade Makigami + VSM-canvasar",
+          "Upp till 15 canvas (Makigami idag, VSM när det landar)",
           "Export till A3-PDF (EN / SV / ZH)",
-          "AI-sensei — 50 frågor / månad",
+          "AI-sensei — 50 frågor / månad · fyll på när som helst",
           "Privat workspace, ingen team-delning",
           "Tillgång till community-forum",
           "€19 / månad — låst för livet för grundarmedlemmar"
@@ -218,13 +219,13 @@
         "cta": "Boka en cellplats",
         "features": [
           "Upp till 8 platser per cell — skalar per plats över det",
-          "Obegränsat antal canvas, obegränsat antal kaizen",
+          "Obegränsat antal canvas & kaizen (fair use)",
           "Delat workspace, roller och behörigheter",
-          "AI-sensei — obegränsade frågor",
+          "AI-sensei — 300 frågor / månad, delat i teamet · fyll på när som helst",
           "Kaizen-tracker med PDCA-cykler",
-          "Warroom-dashboard för styrgruppen",
+          "Compass & North Star-dashboard för styrgruppen",
           "E-postsupport direkt från grundaren",
-          "Grundarpris låst för livet"
+          "€149 / månad — låst för livet för grundarmedlemmar"
         ]
       },
       "consultant": {
@@ -234,12 +235,13 @@
         "cta": "Boka en konsultplats",
         "features": [
           "Allt i Transformationscell",
+          "AI-sensei — 600 frågor / månad, delat (≈150 per aktiv kund) · fyll på när som helst",
           "Fler-kunds-workspaces",
           "White-label A3-export",
           "Kund-offboarding till Practitioner-nivå",
           "Grundarens Slack-kanal + månatligt partnersamtal",
           "Intäktsdelning för hänvisade kundplatser",
-          "Grundarpris låst för livet"
+          "€99 / månad — låst för livet för grundarmedlemmar"
         ]
       }
     },

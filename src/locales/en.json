@@ -190,6 +190,7 @@
     "headline": "Three ways to use it. One product, built once.",
     "lead": "We're not selling the platform yet — we're building it. The first 100 founding members get 30 days free when it opens, then their price locked for life. Privilege, not discount.",
     "comingSoon": "Coming soon",
+    "meteringNote": "Sensei runs on real AI, so we meter it — and you can top up anytime. Storage doesn't, so canvases aren't capped on team plans. No surprise bills, ever.",
     "founding": {
       "eyebrow": "Founding 100",
       "headline": "Be one of the first 100. Pay full price. Lock that price forever.",
@@ -203,9 +204,9 @@
         "desc": "For the operator, engineer or Lean coach who wants to draw their first VSM tonight, on their own laptop, with nobody asking permission.",
         "cta": "Reserve a Practitioner seat",
         "features": [
-          "Unlimited Makigami + VSM canvases",
+          "Up to 15 canvases (Makigami today, VSM as it lands)",
           "Export to A3 PDF (EN / SV / ZH)",
-          "AI Sensei — 50 questions / month",
+          "AI Sensei — 50 questions / month · top up anytime",
           "Private workspace, no team sharing",
           "Community forum access",
           "€19 / month — locked for life for founding members"
@@ -218,13 +219,13 @@
         "cta": "Reserve a Cell seat",
         "features": [
           "Up to 8 seats per Cell — scales per seat above that",
-          "Unlimited canvases, unlimited kaizens",
+          "Unlimited canvases & kaizens (fair use)",
           "Shared workspace, roles & permissions",
-          "AI Sensei — unlimited questions",
+          "AI Sensei — 300 questions / month, pooled across the team · top up anytime",
           "Kaizen tracker with PDCA cycles",
-          "War-room dashboard for the steering team",
+          "Compass & North Star dashboard for the steering team",
           "Email support directly from the founder",
-          "Founding price locked for life"
+          "€149 / month — locked for life for founding members"
         ]
       },
       "consultant": {
@@ -234,12 +235,13 @@
         "cta": "Reserve a consultant seat",
         "features": [
           "Everything in Transformation Cell",
+          "AI Sensei — 600 questions / month, pooled (≈150 per active client) · top up anytime",
           "Multi-client workspaces",
           "White-label A3 export",
           "Client offboarding to Practitioner tier",
           "Founder Slack channel + monthly partner call",
           "Revenue share on referred client seats",
-          "Founding price locked for life"
+          "€99 / month — locked for life for founding members"
         ]
       }
     },
