@@ -253,8 +253,8 @@ function PdfIllustration() {
 }
 
 const PREVIEWS = [
-  { key: 'vsm',      Illustration: VsmIllustration      },
   { key: 'makigami', Illustration: MakigamiIllustration },
+  { key: 'vsm',      Illustration: VsmIllustration      },
   { key: 'sensei',   Illustration: SenseiIllustration   },
   { key: 'pdf',      Illustration: PdfIllustration      },
 ] as const

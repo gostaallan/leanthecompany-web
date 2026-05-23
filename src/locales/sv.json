@@ -9,19 +9,19 @@
     "cta": "Få tidig tillgång"
   },
   "hero": {
-    "eyebrow": "Plattform för Lean-transformation",
-    "headline": "Lean the company,",
-    "headlineSub": "innan kaoset vinner.",
-    "lead": "Två canvas — Value Stream Mapping för verkstaden, Makigami för kontoret — gör varje fördröjning, överlämning och skuggprocess synlig på en förmiddag. Kör igång en pilot redan i fredags.",
+    "eyebrow": "AI Readiness Engine",
+    "headline": "Kartlägg processen",
+    "headlineSub": "innan du automatiserar.",
+    "lead": "Riktar du AI mot en kaotisk process fixar du den inte — du skalar upp kaoset i blixtfart. LTC-OS lyfter ut kunskapen ur folks huvuden och in i en dokumenterad, AI-läsbar karta: vem gör vad, var tiden går och var arbetet faktiskt sker.",
     "ctaPrimary": "Få din Chaos Score",
     "ctaSecondary": "Boka en grundarplats",
     "founderTitle": "Grundare · Sensei",
-    "founderBio": "27 år på verkstadsgolv — Tetra Pak, Stora Enso, Oatly, Nobia, Galderma. Nu en plattform — inte ett konsultavtal.",
+    "founderBio": "25+ år på verkstadsgolv — Tetra Pak, Stora Enso, Oatly, Nobia, Galderma. Nu en plattform — inte ett konsultavtal.",
     "proof": {
       "years": "25+",
       "yearsLabel": "År av Lean, med händerna på verkstadsgolvet",
-      "canvases": "2",
-      "canvasesLabel": "Canvas: VSM + Makigami i ett verktyg",
+      "canvases": "10 min",
+      "canvasesLabel": "Från inloggning till din första kartlagda process",
       "start": "100",
       "startLabel": "Grundarplatser — livstidslåst pris + Grundarrunda"
     }
@@ -29,15 +29,15 @@
   "forWhom": {
     "eyebrow": "För vem",
     "headline": "Tre ögonblick då processen brister snabbare än organisationsträdet hinner reparera.",
-    "lead": "VSM fungerar för alla som tillverkar varor. Makigami fungerar för alla administrativa processer. Verktygen är universella — men tre triggersituationer brinner hårdast just nu.",
+    "lead": "Makigami fungerar för alla administrativa processer. VSM fungerar för alla som tillverkar varor. Verktygen är universella — men tre triggersituationer brinner hårdast just nu.",
     "cards": {
       "reshoring": {
-        "title": "Fabriken som kommer hem",
-        "body": "Du flyttar tillbaka produktion till Europa eller USA. Den gamla muskelminnen sitter i Kina, dina nya operatörer är färska, och varje leverantörsbyte avslöjar ett dolt beroende. Kartlägg flödet innan du gjuter betongen."
+        "title": "AI-direktivet",
+        "body": "Ledningen vill ha AI i varje process till nästa kvartal. Men en modell kan bara automatisera det som är kartlagt — riktar du den mot en kaotisk process skalar du upp kaoset, inte resultatet. Kartlägg flödet först, automatisera sedan den del som faktiskt är redo."
       },
       "surge": {
         "title": "Efterfrågechocken",
-        "body": "Pharma, försvar, medtech, energi — efterfrågan dubblades. Kapaciteten gjorde inte det. Övertid döljer slöseriet; VSM + Makigami visar var timmarna faktiskt försvinner så du ökar throughput, inte headcount."
+        "body": "Pharma, försvar, medtech, energi — efterfrågan dubblades. Kapaciteten gjorde inte det. Övertid döljer slöseriet; att kartlägga flödet visar var timmarna faktiskt försvinner så du ökar throughput, inte headcount."
       },
       "outgrown": {
         "title": "Processen du vuxit ur",
@@ -72,7 +72,7 @@
   },
   "platform": {
     "eyebrow": "Plattformen",
-    "headline": "Två canvas. En sensei. Byggt för dem som faktiskt driver golvet.",
+    "headline": "En canvas för att kartlägga arbetet. En sensei som ifrågasätter det. Byggt för alla som gör sig redo att automatisera.",
     "lead": "LeanTheCompany är en webbaserad plattform för Lean-transformation. Ingen konsultretainer, ingen sex-månaders rollout — börja kartlägga på tio minuter, coacha dig själv med en inbäddad sensei tränad på 25+ år av kaizen från verkstadsgolvet.",
     "status": {
       "live": "Live",
@@ -96,8 +96,8 @@
         "body": "Förvandla insikter till PDCA-cykler med ägare, deadlines, före/efter-bilder. Inget försvinner i mejl. Inget firas för tidigt."
       },
       "warroom": {
-        "title": "Transformations-warroom",
-        "body": "En delad canvas för styrgruppen — mål, piloter, resultat — så att vd, platschef och Lean-coach ser samma sanning samtidigt."
+        "title": "Compass & North Star",
+        "body": "Sätt North Star och värdeprioriteringarna högst upp, så att varje karta och varje pilot under hänger ihop med vad verksamheten faktiskt behöver. Vd, platschef och Lean-coach läser äntligen från samma sanning."
       },
       "report": {
         "title": "En-sidig A3-rapport",
@@ -107,26 +107,26 @@
   },
   "whatsComing": {
     "eyebrow": "Det du får",
-    "headline": "Det här öppnar sig i samma stund du loggar in.",
-    "lead": "Håll musen över en förhandsvisning så ser du den ta form. Det här är de fyra ytorna grundarmedlemmarna får på lanseringsdagen — VSM, Makigami, AI-sensei och exporten varje verkstadsgolv i världen känner igen.",
+    "headline": "Det här är live idag — och det här kommer härnäst.",
+    "lead": "Makigami är live i samma stund du loggar in. Value-stream-canvasen, den inbäddade sensein och en-sidiga A3-exporten landar under Founding-100-bygget. Håll musen över en förhandsvisning så ser du vart var och en är på väg.",
     "previews": {
       "vsm": {
-        "tag": "Live vid lansering",
+        "tag": "Under utveckling",
         "title": "Value Stream Mapping-canvas",
         "body": "Dra processrutor, rita flödespilar, släpp lagertrianglar. Cykeltid, ledtid och %C&A räknas själva. Den första canvas varje grundarmedlem ritar."
       },
       "makigami": {
-        "tag": "Live vid lansering",
+        "tag": "Live nu",
         "title": "Makigami-canvas med simbanor",
         "body": "Kontorsmotsvarigheten. Sälj, konstruktion, inköp — varje överlämning och varje vänta som verkstadsgolvet aldrig ser. Skriv ut den på väggen och hela organisationen pratar samma språk."
       },
       "sensei": {
-        "tag": "Live vid lansering",
+        "tag": "Under utveckling",
         "title": "Inbäddad AI-sensei",
         "body": "Fråga på engelska, svenska eller mandarin. Tränad på Ohno, Rother och tre decennier av fältanteckningar. Pragmatisk, inte predikande. Refererar sina källor så att operatören kan ifrågasätta."
       },
       "pdf": {
-        "tag": "Live vid lansering",
+        "tag": "Under utveckling",
         "title": "En-sidig A3-export",
         "body": "Det universella språket för varje TPS-genomgång på jorden. Skriv ut. Sätt upp. Gå igenom. Grundarmedlemmar levererar A3:or på EN, SV och ZH från dag ett."
       }
@@ -303,7 +303,7 @@
     "meta": "Ingen inloggningsvägg. Inget säljsamtal. Inget åtagande."
   },
   "footer": {
-    "tagline": "Plattform för Lean-transformation för tillverkningsindustrin. Byggt av en fabriksingenjör, inte en mjukvarustudio.",
+    "tagline": "The AI Readiness Engine — kartlägg dina processer innan du automatiserar. Byggt av en fabriksingenjör, inte en mjukvarustudio.",
     "linkedin": "Följ Gösta på LinkedIn",
     "copyright": "Gjort med omsorg i Malmö & Shanghai",
     "disclaimer": "LeanTheCompany är en oberoende produkt. Lean, Toyota Production System, Value Stream Mapping, Makigami och kaizen är metoder som utvecklats över decennier av praktiker över hela världen; vi står på deras axlar och refererar dem där vi kan. Varje pilot och varje resultat som visas har kundens tillåtelse.",

@@ -7,7 +7,7 @@ import { ImageResponse } from 'next/og'
 export const runtime = 'edge'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
-export const alt = 'LeanTheCompany — Lean Transformation Platform for Manufacturing'
+export const alt = 'LeanTheCompany — The AI Readiness Engine'
 
 export default function OpengraphImage() {
   return new ImageResponse(
@@ -57,7 +57,7 @@ export default function OpengraphImage() {
               textTransform: 'uppercase',
             }}
           >
-            Lean Transformation Platform · Founding-100 cohort
+            The AI Readiness Engine · Founding-100 cohort
           </div>
           <div
             style={{
@@ -68,7 +68,7 @@ export default function OpengraphImage() {
               maxWidth: 1000,
             }}
           >
-            Run your Lean transformation as a system, not a slogan.
+            Map it before you automate it.
           </div>
         </div>
 
@@ -86,7 +86,7 @@ export default function OpengraphImage() {
           }}
         >
           <span>leanthecompany.com</span>
-          <span>VSM · Makigami · Kaizen · A3 — with AI sensei</span>
+          <span>The map your AI actually needs</span>
         </div>
       </div>
     ),

@@ -12,12 +12,12 @@ interface PlatformItem {
 }
 
 const ITEMS: readonly PlatformItem[] = [
-  { key: 'vsm',       status: 'dev' },
-  { key: 'makigami',  status: 'dev' },
-  { key: 'sensei',    status: 'dev' },
-  { key: 'tracker',   status: 'dev' },
-  { key: 'warroom',   status: 'dev' },
-  { key: 'report',    status: 'dev' },
+  { key: 'makigami',  status: 'live' },
+  { key: 'vsm',       status: 'dev'  },
+  { key: 'sensei',    status: 'dev'  },
+  { key: 'tracker',   status: 'dev'  },
+  { key: 'warroom',   status: 'live' },
+  { key: 'report',    status: 'dev'  },
 ]
 
 export function Platform() {

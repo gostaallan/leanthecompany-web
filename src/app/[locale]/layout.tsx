@@ -24,18 +24,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: {
-      default:  'LeanTheCompany — Lean Transformation Platform for Manufacturing',
+      default:  'LeanTheCompany — The AI Readiness Engine: Map Before You Automate',
       template: '%s | LeanTheCompany',
     },
     description: t('lead'),
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://leanthecompany.com'),
     openGraph: {
-      type:     'website',
-      siteName: 'LeanTheCompany',
-      locale:   locale === 'zh' ? 'zh_CN' : locale === 'sv' ? 'sv_SE' : 'en_GB',
+      type:        'website',
+      siteName:    'LeanTheCompany',
+      title:       'LeanTheCompany — The AI Readiness Engine',
+      description: t('lead'),
+      locale:      locale === 'zh' ? 'zh_CN' : locale === 'sv' ? 'sv_SE' : 'en_GB',
     },
     twitter: {
-      card: 'summary_large_image',
+      card:        'summary_large_image',
+      title:       'LeanTheCompany — The AI Readiness Engine',
+      description: t('lead'),
     },
     robots: {
       index: true,
