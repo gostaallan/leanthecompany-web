@@ -230,18 +230,18 @@
       },
       "consultant": {
         "title": "Consultant",
-        "audience": "För coachen eller byrån",
-        "desc": "För Lean-coacher och konsultbyråer som kör LeanTheCompany inuti kunduppdrag. Fler kunder, white-label och en ren överlämning i slutet.",
+        "audience": "För coachen eller byrån · betala ner det via hänvisningar",
+        "desc": "För Lean-coacher och konsultbyråer som kör LeanTheCompany inuti kunduppdrag. Fler kunder, white-label och en ren överlämning i slutet. En dag av din fakturering täcker hela året.",
         "cta": "Boka en konsultplats",
         "features": [
           "Allt i Transformationscell",
-          "AI-sensei — 600 frågor / månad, delat (≈150 per aktiv kund) · fyll på när som helst",
+          "AI-sensei — 150 frågor / månad per aktiv kund · fyll på när som helst",
           "Fler-kunds-workspaces",
           "White-label A3-export",
           "Kund-offboarding till Practitioner-nivå",
           "Grundarens Slack-kanal + månatligt partnersamtal",
-          "Intäktsdelning för hänvisade kundplatser",
-          "€99 / månad — låst för livet för grundarmedlemmar"
+          "Intäktsdelning för varje kundplats du hänvisar — betala ner det, ända till noll",
+          "€199 / månad — låst för livet för grundarmedlemmar"
         ]
       }
     },

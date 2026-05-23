@@ -230,18 +230,18 @@
       },
       "consultant": {
         "title": "Consultant",
-        "audience": "For the coach or firm",
-        "desc": "For Lean coaches and consultancies running LeanTheCompany inside client engagements. Multi-client, white-label, with a clean handoff at the end.",
+        "audience": "For the coach or firm · earn it down via referrals",
+        "desc": "For Lean coaches and consultancies running LeanTheCompany inside client engagements. Multi-client, white-label, with a clean handoff at the end. A day of your billing covers the whole year.",
         "cta": "Reserve a consultant seat",
         "features": [
           "Everything in Transformation Cell",
-          "AI Sensei — 600 questions / month, pooled (≈150 per active client) · top up anytime",
+          "AI Sensei — 150 questions / month per active client · top up anytime",
           "Multi-client workspaces",
           "White-label A3 export",
           "Client offboarding to Practitioner tier",
           "Founder Slack channel + monthly partner call",
-          "Revenue share on referred client seats",
-          "€99 / month — locked for life for founding members"
+          "Revenue share on every client seat you refer — earn it down, potentially to zero",
+          "€199 / month — locked for life for founding members"
         ]
       }
     },
