@@ -198,27 +198,27 @@
       "spots": "100 founding seats"
     },
     "tiers": {
-      "practitioner": {
-        "title": "Practitioner",
-        "audience": "For the individual",
-        "desc": "For the operator, engineer or Lean coach who wants to draw their first VSM tonight, on their own laptop, with nobody asking permission.",
-        "cta": "Reserve a Practitioner seat",
+      "contributor": {
+        "title": "Contributor",
+        "audience": "For the people who do the work",
+        "desc": "For the operator, analyst or team lead who wants to map their first process tonight — on their own laptop, with nobody asking permission. Start where the work actually happens.",
+        "cta": "Reserve a Contributor seat",
         "features": [
           "Up to 15 canvases (Makigami today, VSM as it lands)",
           "Export to A3 PDF (EN / SV / ZH)",
           "AI Sensei — 50 questions / month · top up anytime",
-          "Private workspace, no team sharing",
+          "Private workspace — just you",
           "Community forum access",
           "€19 / month — locked for life for founding members"
         ]
       },
-      "cell": {
-        "title": "Transformation Cell",
-        "audience": "Up to 8 seats — flat fee, scales per seat above",
-        "desc": "For the plant cell running Lean across shifts and functions. One flat fee for the team, no procurement headache. Shared canvases, real roles, no more screenshots in WhatsApp.",
-        "cta": "Reserve a Cell seat",
+      "processOwner": {
+        "title": "Process Owner",
+        "audience": "For the people who own the process",
+        "desc": "For the manager or team that owns a process end to end — across departments, sites or shifts. One flat fee, no procurement headache. Shared canvases, real roles, one source of truth instead of a folder of screenshots.",
+        "cta": "Reserve a Process Owner seat",
         "features": [
-          "Up to 8 seats per Cell — scales per seat above that",
+          "Up to 8 seats per team — scales per seat above that",
           "Unlimited canvases & kaizens (fair use)",
           "Shared workspace, roles & permissions",
           "AI Sensei — 300 questions / month, pooled across the team · top up anytime",
@@ -228,19 +228,19 @@
           "€149 / month — locked for life for founding members"
         ]
       },
-      "consultant": {
-        "title": "Consultant",
-        "audience": "For the coach or firm · earn it down via referrals",
-        "desc": "For Lean coaches and consultancies running LeanTheCompany inside client engagements. Multi-client, white-label, with a clean handoff at the end. A day of your billing covers the whole year.",
-        "cta": "Reserve a consultant seat",
+      "architect": {
+        "title": "Architect",
+        "audience": "For the people who design the system",
+        "desc": "For the continuous-improvement lead, business architect or external partner running LeanTheCompany across many teams or clients. Multi-workspace, white-label, with a clean handoff at the end.",
+        "cta": "Reserve an Architect seat",
         "features": [
-          "Everything in Transformation Cell",
+          "Everything in Process Owner",
           "AI Sensei — 150 questions / month per active client · top up anytime",
-          "Multi-client workspaces",
+          "Multi-workspace (clients or business units)",
           "White-label A3 export",
-          "Client offboarding to Practitioner tier",
+          "Workspace handoff to a Contributor seat",
           "Founder Slack channel + monthly partner call",
-          "Revenue share on every client seat you refer — earn it down, potentially to zero",
+          "Revenue share on every seat you refer — earn it down, potentially to zero",
           "€199 / month — locked for life for founding members"
         ]
       }

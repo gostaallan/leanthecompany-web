@@ -198,27 +198,27 @@
     },
     "meteringNote": "Sensei drivs av riktig AI, så vi mäter den — och du kan fylla på när som helst. Lagring kostar nästan inget, så canvas är inte begränsade på team-planer. Inga överraskningar på fakturan, någonsin.",
     "tiers": {
-      "practitioner": {
-        "title": "Practitioner",
-        "audience": "För dig som individ",
-        "desc": "För operatören, ingenjören eller Lean-coachen som vill rita sin första VSM ikväll, på sin egen laptop, utan att be någon om lov.",
-        "cta": "Reservera en Practitioner-plats",
+      "contributor": {
+        "title": "Contributor",
+        "audience": "För dem som gör jobbet",
+        "desc": "För operatören, analytikern eller teamledaren som vill kartlägga sin första process ikväll — på sin egen laptop, utan att be någon om lov. Börja där arbetet faktiskt sker.",
+        "cta": "Reservera en Contributor-plats",
         "features": [
           "Upp till 15 canvas (Makigami idag, VSM när det landar)",
           "Export till A3-PDF (EN / SV / ZH)",
           "AI-sensei — 50 frågor / månad · fyll på när som helst",
-          "Privat workspace, ingen team-delning",
+          "Privat workspace — bara du",
           "Tillgång till community-forum",
           "€19 / månad — låst för livet för grundarmedlemmar"
         ]
       },
-      "cell": {
-        "title": "Transformationscell",
-        "audience": "Upp till 8 platser — fast pris, skalar per plats över det",
-        "desc": "För transformationscellen som kör Lean över skift och funktioner. Ett fast pris för teamet, ingen inköpsavdelning som behöver blandas in. Delade canvas, riktiga roller, inga fler skärmdumpar i WhatsApp.",
-        "cta": "Boka en cellplats",
+      "processOwner": {
+        "title": "Process Owner",
+        "audience": "För dem som äger processen",
+        "desc": "För chefen eller teamet som äger en process från början till slut — över avdelningar, anläggningar eller skift. Ett fast pris, ingen inköpsavdelning som behöver blandas in. Delade canvas, riktiga roller, en sanningskälla i stället för en mapp med skärmdumpar.",
+        "cta": "Boka en Process Owner-plats",
         "features": [
-          "Upp till 8 platser per cell — skalar per plats över det",
+          "Upp till 8 platser per team — skalar per plats över det",
           "Obegränsat antal canvas & kaizen (fair use)",
           "Delat workspace, roller och behörigheter",
           "AI-sensei — 300 frågor / månad, delat i teamet · fyll på när som helst",
@@ -228,19 +228,19 @@
           "€149 / månad — låst för livet för grundarmedlemmar"
         ]
       },
-      "consultant": {
-        "title": "Consultant",
-        "audience": "För coachen eller byrån · betala ner det via hänvisningar",
-        "desc": "För Lean-coacher och konsultbyråer som kör LeanTheCompany inuti kunduppdrag. Fler kunder, white-label och en ren överlämning i slutet. En dag av din fakturering täcker hela året.",
-        "cta": "Boka en konsultplats",
+      "architect": {
+        "title": "Architect",
+        "audience": "För dem som designar systemet",
+        "desc": "För den ständiga-förbättringsledaren, verksamhetsarkitekten eller externa partnern som kör LeanTheCompany över många team eller kunder. Flera workspaces, white-label och en ren överlämning i slutet.",
+        "cta": "Boka en Architect-plats",
         "features": [
-          "Allt i Transformationscell",
+          "Allt i Process Owner",
           "AI-sensei — 150 frågor / månad per aktiv kund · fyll på när som helst",
-          "Fler-kunds-workspaces",
+          "Flera workspaces (kunder eller affärsenheter)",
           "White-label A3-export",
-          "Kund-offboarding till Practitioner-nivå",
+          "Överlämning av workspace till en Contributor-plats",
           "Grundarens Slack-kanal + månatligt partnersamtal",
-          "Intäktsdelning för varje kundplats du hänvisar — betala ner det, ända till noll",
+          "Intäktsdelning för varje plats du hänvisar — betala ner det, ända till noll",
           "€199 / månad — låst för livet för grundarmedlemmar"
         ]
       }

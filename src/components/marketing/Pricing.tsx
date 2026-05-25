@@ -7,9 +7,9 @@ import { cn } from '@/lib/utils'
 import { useState, type FormEvent } from 'react'
 
 const TIERS = [
-  { key: 'practitioner', highlight: false },
-  { key: 'cell',         highlight: true  },
-  { key: 'consultant',   highlight: false },
+  { key: 'contributor',  highlight: false },
+  { key: 'processOwner', highlight: true  },
+  { key: 'architect',    highlight: false },
 ] as const
 
 export function Pricing() {
