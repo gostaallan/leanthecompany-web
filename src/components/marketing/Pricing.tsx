@@ -8,6 +8,7 @@ import { useState, type FormEvent } from 'react'
 
 const TIERS = [
   { key: 'contributor',  highlight: false },
+  { key: 'consultant',   highlight: false },
   { key: 'processOwner', highlight: true  },
   { key: 'architect',    highlight: false },
 ] as const
@@ -86,7 +87,7 @@ export function Pricing() {
           </span>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
           {TIERS.map(({ key, highlight }) => {
             const features = t.raw(`tiers.${key}.features`) as string[]
             return (

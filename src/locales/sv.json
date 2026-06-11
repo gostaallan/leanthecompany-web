@@ -9,10 +9,10 @@
     "cta": "Få tidig tillgång"
   },
   "hero": {
-    "eyebrow": "AI Readiness Engine",
-    "headline": "Kartlägg processen",
-    "headlineSub": "innan du automatiserar.",
-    "lead": "Riktar du AI mot en kaotisk process fixar du den inte — du skalar upp kaoset i blixtfart. LTC-OS lyfter ut kunskapen ur folks huvuden och in i en dokumenterad, AI-läsbar karta: vem gör vad, var tiden går och var arbetet faktiskt sker.",
+    "eyebrow": "Lean-plattformen för fabrik och kontor",
+    "headline": "Två canvaser. Fyra kartor.",
+    "headlineSub": "En sanning.",
+    "lead": "Value Stream Mapping för varuflödet. Makigami för kontoret. Båda i nuläge och börläge — med takttid, ledtid och slöseri beräknade live medan du ritar. Kartan som räknar själv, och en inbäddad sensei som ifrågasätter den.",
     "ctaPrimary": "Få din Chaos Score",
     "ctaSecondary": "Boka en grundarplats",
     "founderTitle": "Grundare · Sensei",
@@ -44,7 +44,7 @@
         "body": "Du växte genom att lappa och laga. Tio år av workarounds, tre ERP-migreringar, fyra omorganisationer — och ingen kan rita nuläget hela vägen. Innan nästa förändring: gör kaoset synligt."
       }
     },
-    "consultantStrip": "Konsulter och Lean-coacher: använd LeanTheCompany hos era egna kunder.",
+    "consultantStrip": "Konsulter och Lean-coacher: kör LeanTheCompany över hela er kundstock — fler arbetsytor, white-label-A3:or, intäktsdelning på värvade platser.",
     "consultantCta": "Hör av dig"
   },
   "problem": {
@@ -72,10 +72,10 @@
   },
   "platform": {
     "eyebrow": "Plattformen",
-    "headline": "En canvas för att kartlägga arbetet. En sensei som ifrågasätter det. Byggt för alla som gör sig redo att automatisera.",
-    "lead": "LeanTheCompany är en webbaserad plattform för Lean-transformation. Ingen konsultretainer, ingen sex-månaders rollout — börja kartlägga på tio minuter, coacha dig själv med en inbäddad sensei tränad på 25+ år av kaizen från verkstadsgolvet.",
+    "headline": "Kartan som räknar själv.",
+    "lead": "Ett ritverktyg ritar. LeanTheCompany räknar: takttid, effektiv cykeltid, lagertäckning, ur-takt-flaggor — live, varje gång kartan ändras. Webbaserat, ingen konsultretainer, ingen sex-månaders rollout. Börja kartlägga på tio minuter, coacha dig själv med en inbäddad sensei tränad på 25+ år av kaizen från verkstadsgolvet.",
     "status": {
-      "live": "Live",
+      "live": "Live i beta",
       "dev": "Under utveckling"
     },
     "items": {
@@ -89,7 +89,7 @@
       },
       "sensei": {
         "title": "Inbäddad AI-sensei",
-        "body": "Fråga \"var är mitt största slöseri?\" och få ett direkt svar — inte en lärobok. Tränad på Ohno, Rother och tre decennier av fältanteckningar. Japansk i tonen, pragmatisk i leveransen."
+        "body": "Fråga \"var är mitt största slöseri?\" och få ett direkt svar grundat i din egen karta — din takt, dina överlämningar, dina förluster. Ingen chatbot med lean-böcker i prompten: en coach som läser det du ritat."
       },
       "tracker": {
         "title": "Kaizen-tracker",
@@ -108,12 +108,12 @@
   "whatsComing": {
     "eyebrow": "Det du får",
     "headline": "Det här är live idag — och det här kommer härnäst.",
-    "lead": "Makigami är live i samma stund du loggar in. Value-stream-canvasen, den inbäddade sensein och en-sidiga A3-exporten landar under Founding-100-bygget. Håll musen över en förhandsvisning så ser du vart var och en är på väg.",
+    "lead": "Makigami, value-stream-canvasen, den inbäddade sensein och kaizen-trackern är live i beta idag. En-sidiga A3-exporten landar under Founding-100-bygget. Håll musen över en förhandsvisning så ser du vart var och en är på väg.",
     "previews": {
       "vsm": {
-        "tag": "Under utveckling",
+        "tag": "Live i beta",
         "title": "Value Stream Mapping-canvas",
-        "body": "Dra processrutor, rita flödespilar, släpp lagertrianglar. Cykeltid, ledtid och %C&A räknas själva. Den första canvas varje grundarmedlem ritar."
+        "body": "Dra processrutor, rita flödespilar, släpp lagertrianglar och kanban-loopar. Takt, ledtid och lagertäckning räknas själva — nuläge och börläge, sida vid sida."
       },
       "makigami": {
         "tag": "Live nu",
@@ -121,7 +121,7 @@
         "body": "Kontorsmotsvarigheten. Sälj, konstruktion, inköp — varje överlämning och varje vänta som verkstadsgolvet aldrig ser. Skriv ut den på väggen och hela organisationen pratar samma språk."
       },
       "sensei": {
-        "tag": "Under utveckling",
+        "tag": "Live i beta",
         "title": "Inbäddad AI-sensei",
         "body": "Fråga på engelska, svenska eller mandarin. Tränad på Ohno, Rother och tre decennier av fältanteckningar. Pragmatisk, inte predikande. Refererar sina källor så att operatören kan ifrågasätta."
       },
@@ -210,6 +210,21 @@
           "Privat workspace — bara du",
           "Tillgång till community-forum",
           "€19 / månad — låst för livet för grundarmedlemmar"
+        ]
+      },
+      "consultant": {
+        "title": "Consultant",
+        "audience": "För dem som coachar jobbet",
+        "desc": "För den fristående konsulten eller Lean-coachen med sina första kunder. Varje kund i en egen, strikt separerad workspace — kliv in i workshopen med en levande canvas i stället för en PowerPoint, för mindre än en timme av ditt dagsarvode per månad.",
+        "cta": "Reservera en Consultant-plats",
+        "features": [
+          "Allt i Contributor",
+          "3 kund-workspaces, strikt åtskilda",
+          "Upp till 15 canvas per workspace",
+          "AI-sensei — 100 frågor / månad, delade · fyll på när som helst",
+          "Kaizen-tracker med PDCA-cykler",
+          "A3-export med LeanTheCompany-sidfot — white-label hör till Architect",
+          "€69 / månad — låst för livet för grundarmedlemmar"
         ]
       },
       "processOwner": {
@@ -305,7 +320,7 @@
     "meta": "Ingen inloggningsvägg. Inget säljsamtal. Inget åtagande."
   },
   "footer": {
-    "tagline": "The AI Readiness Engine — kartlägg dina processer innan du automatiserar. Byggt av en fabriksingenjör, inte en mjukvarustudio.",
+    "tagline": "Två canvaser. Fyra kartor. En sanning. Byggt av en fabriksingenjör, inte en mjukvarustudio.",
     "linkedin": "Följ Gösta på LinkedIn",
     "copyright": "Gjort med omsorg i Malmö & Shanghai",
     "disclaimer": "LeanTheCompany är en oberoende produkt. Lean, Toyota Production System, Value Stream Mapping, Makigami och kaizen är metoder som utvecklats över decennier av praktiker över hela världen; vi står på deras axlar och refererar dem där vi kan. Varje pilot och varje resultat som visas har kundens tillåtelse.",

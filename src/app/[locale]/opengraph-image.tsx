@@ -7,7 +7,7 @@ import { ImageResponse } from 'next/og'
 export const runtime = 'edge'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
-export const alt = 'LeanTheCompany — The AI Readiness Engine'
+export const alt = 'LeanTheCompany — Two Canvases. Four Maps. One Truth.'
 
 export default function OpengraphImage() {
   return new ImageResponse(
@@ -57,7 +57,7 @@ export default function OpengraphImage() {
               textTransform: 'uppercase',
             }}
           >
-            The AI Readiness Engine · Founding-100 cohort
+            Two canvases · Four maps · Founding-100 cohort
           </div>
           <div
             style={{
@@ -68,7 +68,7 @@ export default function OpengraphImage() {
               maxWidth: 1000,
             }}
           >
-            Map it before you automate it.
+            The map that does the math.
           </div>
         </div>
 
@@ -86,7 +86,7 @@ export default function OpengraphImage() {
           }}
         >
           <span>leanthecompany.com</span>
-          <span>The map your AI actually needs</span>
+          <span>VSM + Makigami · Current + Future state</span>
         </div>
       </div>
     ),

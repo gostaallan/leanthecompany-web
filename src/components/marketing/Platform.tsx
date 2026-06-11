@@ -13,9 +13,9 @@ interface PlatformItem {
 
 const ITEMS: readonly PlatformItem[] = [
   { key: 'makigami',  status: 'live' },
-  { key: 'vsm',       status: 'dev'  },
-  { key: 'sensei',    status: 'dev'  },
-  { key: 'tracker',   status: 'dev'  },
+  { key: 'vsm',       status: 'live' },
+  { key: 'sensei',    status: 'live' },
+  { key: 'tracker',   status: 'live' },
   { key: 'warroom',   status: 'live' },
   { key: 'report',    status: 'dev'  },
 ]

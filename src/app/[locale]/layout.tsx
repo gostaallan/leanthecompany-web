@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: {
-      default:  'LeanTheCompany — The AI Readiness Engine: Map Before You Automate',
+      default:  'LeanTheCompany — Two Canvases. Four Maps. One Truth.',
       template: '%s | LeanTheCompany',
     },
     description: t('lead'),
@@ -32,13 +32,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       type:        'website',
       siteName:    'LeanTheCompany',
-      title:       'LeanTheCompany — The AI Readiness Engine',
+      title:       'LeanTheCompany — The Map That Does the Math',
       description: t('lead'),
       locale:      locale === 'zh' ? 'zh_CN' : locale === 'sv' ? 'sv_SE' : 'en_GB',
     },
     twitter: {
       card:        'summary_large_image',
-      title:       'LeanTheCompany — The AI Readiness Engine',
+      title:       'LeanTheCompany — The Map That Does the Math',
       description: t('lead'),
     },
     robots: {

@@ -9,10 +9,10 @@
     "cta": "Get early access"
   },
   "hero": {
-    "eyebrow": "The AI Readiness Engine",
-    "headline": "Map it",
-    "headlineSub": "before you automate it.",
-    "lead": "Point AI at a chaotic process and you don't fix it — you scale the chaos at lightning speed. LTC-OS gets the know-how out of people's heads and into a documented, AI-readable map: who does what, where the time goes, where the work actually happens.",
+    "eyebrow": "The lean platform for factory and office",
+    "headline": "Two canvases. Four maps.",
+    "headlineSub": "One truth.",
+    "lead": "Value Stream Mapping for the flow of goods. Makigami for the office. Each in current and future state — with takt time, lead time and waste calculated live while you draw. The map that does the math, and an embedded sensei that questions it.",
     "ctaPrimary": "Get your Chaos Score",
     "ctaSecondary": "Reserve a founding seat",
     "founderTitle": "Founder · Sensei",
@@ -44,7 +44,7 @@
         "body": "You grew by patching. Ten years of workarounds, three ERP migrations, four re-orgs — and nobody can draw the current state end-to-end. Before the next change, make the chaos visible."
       }
     },
-    "consultantStrip": "Consultants & Lean coaches: use LeanTheCompany with your own clients.",
+    "consultantStrip": "Consultants & Lean coaches: run LeanTheCompany across your whole client book — multi-workspace, white-label A3s, revenue share on referred seats.",
     "consultantCta": "Talk to us"
   },
   "problem": {
@@ -72,10 +72,10 @@
   },
   "platform": {
     "eyebrow": "The Platform",
-    "headline": "One canvas to map the work. One sensei to question it. Built for anyone getting ready to automate.",
-    "lead": "LeanTheCompany is a browser-based lean transformation platform. No consulting retainer, no six-month rollout — start mapping in ten minutes, coach yourself with an embedded sensei trained on 25+ years of shop-floor kaizen.",
+    "headline": "The map that does the math.",
+    "lead": "A drawing tool draws. LeanTheCompany computes: takt time, effective cycle time, inventory cover, out-of-takt flags — live, every time the map changes. Browser-based, no consulting retainer, no six-month rollout. Start mapping in ten minutes, coach yourself with an embedded sensei trained on 25+ years of shop-floor kaizen.",
     "status": {
-      "live": "Live",
+      "live": "Live in beta",
       "dev": "In development"
     },
     "items": {
@@ -89,7 +89,7 @@
       },
       "sensei": {
         "title": "Embedded AI Sensei",
-        "body": "Ask \"where's my biggest waste?\" and get a direct answer, not a textbook. Trained on Ohno, Rother and three decades of field notes — Japanese in tone, pragmatic in delivery."
+        "body": "Ask \"where's my biggest waste?\" and get a direct answer grounded in your own map — your takt, your handoffs, your losses. Not a chatbot with lean books in its prompt: a coach that reads what you drew."
       },
       "tracker": {
         "title": "Kaizen tracker",
@@ -108,12 +108,12 @@
   "whatsComing": {
     "eyebrow": "What you get",
     "headline": "What's live today — and what's landing next.",
-    "lead": "Makigami is live the moment you sign in. The value-stream canvas, the embedded sensei and the one-page A3 export are landing through the Founding-100 build. Hover any preview to see where each is headed.",
+    "lead": "Makigami, the value-stream canvas, the embedded sensei and the kaizen tracker are live in beta today. The one-page A3 export lands through the Founding-100 build. Hover any preview to see where each is headed.",
     "previews": {
       "vsm": {
-        "tag": "In development",
+        "tag": "Live in beta",
         "title": "Value Stream Mapping canvas",
-        "body": "Drag process boxes, draw flow arrows, drop inventory triangles. Cycle time, lead time and %C&A roll up automatically. The first canvas every founding member draws."
+        "body": "Drag process boxes, draw flow arrows, drop inventory triangles and kanban loops. Takt, lead time and inventory cover roll up automatically — current state and future state, side by side."
       },
       "makigami": {
         "tag": "Live now",
@@ -121,7 +121,7 @@
         "body": "The back-office twin. Sales, engineering, purchasing — every handoff and every wait the shop floor never sees. Print it on the wall and the whole organisation suddenly speaks the same language."
       },
       "sensei": {
-        "tag": "In development",
+        "tag": "Live in beta",
         "title": "Embedded AI Sensei",
         "body": "Ask in plain English, Swedish or Mandarin. Trained on Ohno, Rother and three decades of field notes. Pragmatic, not preachy. Cites its sources so the operator can push back."
       },
@@ -210,6 +210,21 @@
           "Private workspace — just you",
           "Community forum access",
           "€19 / month — locked for life for founding members"
+        ]
+      },
+      "consultant": {
+        "title": "Consultant",
+        "audience": "For the people who coach the work",
+        "desc": "For the independent consultant or Lean coach with a first client book. Each client in its own sealed workspace — walk into the workshop with a live canvas instead of a PowerPoint, for less than an hour of your day rate per month.",
+        "cta": "Reserve a Consultant seat",
+        "features": [
+          "Everything in Contributor",
+          "3 client workspaces, kept strictly separate",
+          "Up to 15 canvases per workspace",
+          "AI Sensei — 100 questions / month, pooled · top up anytime",
+          "Kaizen tracker with PDCA cycles",
+          "A3 export with LeanTheCompany footer — white-label lives in Architect",
+          "€69 / month — locked for life for founding members"
         ]
       },
       "processOwner": {
@@ -305,7 +320,7 @@
     "meta": "No login wall. No sales call. No obligation."
   },
   "footer": {
-    "tagline": "The AI Readiness Engine — map your processes before you automate. Built by a factory engineer, not a software studio.",
+    "tagline": "Two canvases. Four maps. One truth. Built by a factory engineer, not a software studio.",
     "linkedin": "Follow Gösta on LinkedIn",
     "copyright": "Made with care in Malmö & Shanghai",
     "disclaimer": "LeanTheCompany is an independent product. Lean, Toyota Production System, Value Stream Mapping, Makigami and kaizen are methodologies developed over decades by practitioners across the world; we stand on their shoulders and cite them where we can. Every pilot and every result shown has the customer's permission.",
