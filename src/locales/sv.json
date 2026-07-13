@@ -108,7 +108,7 @@
   "whatsComing": {
     "eyebrow": "Det du får",
     "headline": "Det här är live idag — och det här kommer härnäst.",
-    "lead": "Makigami, value-stream-canvasen, den inbäddade sensein och kaizen-trackern är live i beta idag. En-sidiga A3-exporten landar under Founding-100-bygget. Håll musen över en förhandsvisning så ser du vart var och en är på väg.",
+    "lead": "Makigami, value-stream-canvasen, den inbäddade sensein, kaizen-trackern och en-sidiga A3-exporten är alla live i beta idag. Det du ser nedan är den riktiga plattformen — verkliga skärmbilder, inte mockuper.",
     "previews": {
       "vsm": {
         "tag": "Live i beta",
@@ -126,9 +126,9 @@
         "body": "Fråga på engelska, svenska eller mandarin. Tränad på Ohno, Rother och tre decennier av fältanteckningar. Pragmatisk, inte predikande. Refererar sina källor så att operatören kan ifrågasätta."
       },
       "pdf": {
-        "tag": "Under utveckling",
+        "tag": "Live i beta",
         "title": "En-sidig A3-export",
-        "body": "Det universella språket för varje TPS-genomgång på jorden. Skriv ut. Sätt upp. Gå igenom. Grundarmedlemmar levererar A3:or på EN, SV och ZH från dag ett."
+        "body": "Det universella språket för varje TPS-genomgång på jorden. Skriv ut. Sätt upp. Gå igenom. Varje karta, kompass och kaizenrapport exporteras som profilerad A3 eller A4 — på EN, SV och ZH, redan idag."
       }
     },
     "foundingNote": "Boka en grundarplats — 30 dagar gratis, sedan ditt pris låst för livet. Endast 100 platser.",
@@ -342,6 +342,6 @@
         "contact": "Kontakt"
       }
     },
-    "legal": "Ett KH 4 LeanTheCompany-företag · Emprowa AB · Org.nr SE556966101901 · Malmö, Sverige"
+    "legal": "© 2026 LeanTheCompany · Emprowa AB · Momsreg.nr SE556966101901 · Malmö, Sverige"
   }
 }

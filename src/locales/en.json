@@ -108,7 +108,7 @@
   "whatsComing": {
     "eyebrow": "What you get",
     "headline": "What's live today — and what's landing next.",
-    "lead": "Makigami, the value-stream canvas, the embedded sensei and the kaizen tracker are live in beta today. The one-page A3 export lands through the Founding-100 build. Hover any preview to see where each is headed.",
+    "lead": "Makigami, the value-stream canvas, the embedded sensei, the kaizen tracker and the one-page A3 export are all live in beta today. What you see below is the real platform — actual screenshots, not mockups.",
     "previews": {
       "vsm": {
         "tag": "Live in beta",
@@ -126,9 +126,9 @@
         "body": "Ask in plain English, Swedish or Mandarin. Trained on Ohno, Rother and three decades of field notes. Pragmatic, not preachy. Cites its sources so the operator can push back."
       },
       "pdf": {
-        "tag": "In development",
+        "tag": "Live in beta",
         "title": "One-page A3 export",
-        "body": "The universal language of every Toyota Production System review on Earth. Print it. Pin it. Walk it. Founding members ship A3s in EN, SV and ZH from day one."
+        "body": "The universal language of every Toyota Production System review on Earth. Print it. Pin it. Walk it. Every map, compass and kaizen report exports as a branded A3 or A4 — in EN, SV and ZH, today."
       }
     },
     "foundingNote": "Reserve a founding seat — 30 days free, then your price locked for life. 100 seats only.",
@@ -342,6 +342,6 @@
         "contact": "Contact"
       }
     },
-    "legal": "A KH 4 LeanTheCompany venture · Emprowa AB · VAT SE556966101901 · Malmö, Sweden"
+    "legal": "© 2026 LeanTheCompany · Emprowa AB · VAT SE556966101901 · Malmö, Sweden"
   }
 }

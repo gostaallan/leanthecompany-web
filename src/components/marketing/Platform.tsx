@@ -17,7 +17,7 @@ const ITEMS: readonly PlatformItem[] = [
   { key: 'sensei',    status: 'live' },
   { key: 'tracker',   status: 'live' },
   { key: 'warroom',   status: 'live' },
-  { key: 'report',    status: 'dev'  },
+  { key: 'report',    status: 'live' },
 ]
 
 export function Platform() {
