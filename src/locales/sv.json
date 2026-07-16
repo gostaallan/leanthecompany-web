@@ -342,6 +342,8 @@
         "contact": "Kontakt"
       }
     },
-    "legal": "© 2026 LeanTheCompany · Emprowa AB · Momsreg.nr SE556966101901 · Malmö, Sverige"
+    "legal": "© 2026 LeanTheCompany · Emprowa AB · Momsreg.nr SE556966101901 · Malmö, Sverige",
+    "termsLink": "Användarvillkor",
+    "privacyLink": "Integritetspolicy"
   }
 }

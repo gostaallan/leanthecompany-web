@@ -342,6 +342,8 @@
         "contact": "联系我们"
       }
     },
-    "legal": "© 2026 LeanTheCompany · Emprowa AB · 增值税号 SE556966101901 · 瑞典马尔默"
+    "legal": "© 2026 LeanTheCompany · Emprowa AB · 增值税号 SE556966101901 · 瑞典马尔默",
+    "termsLink": "服务条款",
+    "privacyLink": "隐私政策"
   }
 }

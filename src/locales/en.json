@@ -342,6 +342,8 @@
         "contact": "Contact"
       }
     },
-    "legal": "© 2026 LeanTheCompany · Emprowa AB · VAT SE556966101901 · Malmö, Sweden"
+    "legal": "© 2026 LeanTheCompany · Emprowa AB · VAT SE556966101901 · Malmö, Sweden",
+    "termsLink": "Terms of Service",
+    "privacyLink": "Privacy Policy"
   }
 }

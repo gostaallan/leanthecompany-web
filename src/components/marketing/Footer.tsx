@@ -140,6 +140,20 @@ export function Footer() {
 
         <p className="text-[11px] text-white/40 mt-3 font-mono tracking-wide">
           {t('legal')}
+          {' · '}
+          <a
+            href="https://app.leanthecompany.com/terms"
+            className="underline decoration-white/20 hover:text-white/70 transition-colors"
+          >
+            {t('termsLink')}
+          </a>
+          {' · '}
+          <a
+            href="https://app.leanthecompany.com/privacy"
+            className="underline decoration-white/20 hover:text-white/70 transition-colors"
+          >
+            {t('privacyLink')}
+          </a>
         </p>
 
       </div>
