@@ -103,7 +103,7 @@ export function GembaDrill() {
           {phase === 'intro' && (
             <div className="animate-fade-up">
               <p className="label-caps mb-4 flex items-center gap-3">
-                <span className="w-7 h-px bg-amber-DEFAULT inline-block" />
+                <span className="w-7 h-px bg-amber inline-block" />
                 {t('eyebrow')}
               </p>
               <h2 className="heading-display text-4xl md:text-5xl mb-6">{t('headline')}</h2>
