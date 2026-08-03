@@ -185,6 +185,28 @@
       "meta": "Dina svar stannar hos grundaren. Ingen tracking, ingen återförsäljning, inget drip-nonsens."
     }
   },
+  "gembaDrill": {
+    "eyebrow": "Testa dig själv",
+    "headline": "Nittio sekunder på golvet. Sex bedömningar att göra.",
+    "lead": "Inga definitioner. Situationer — en linje som missar takten, ett kaizen som rullas tillbaka, ett andon ingen drar. Välj den tolkning du skulle försvara inför platschefen.",
+    "englishNote": "Drillen är på engelska tills vidare. De trettio fältanteckningarna är grundarens egna ord, och en maskinöversättning av dem vore sämre än att inte publicera dem alls.",
+    "metaQuestions": "6 frågor",
+    "metaLayers": "6 lager",
+    "metaNoSignup": "Ingen registrering",
+    "start": "Starta drillen",
+    "next": "Nästa",
+    "seeResult": "Se resultat",
+    "fieldNote": "Fältanteckning",
+    "byLayer": "Per lager",
+    "missed": "Ta med de här ut på golvet",
+    "again": "Dra sex nya",
+    "copy": "Kopiera mitt resultat",
+    "copied": "Kopierat",
+    "copyFallback": "Kopieringen gick inte — markera raden ovan och kopiera för hand.",
+    "share": "Jag fick {score}/{total} på LeanTheCompany Gemba Drill — {band}. Sex situationer från verkstadsgolvet, ingen registrering: leanthecompany.com",
+    "chaosLead": "Det mätte din kunskap. Chaos Score mäter din fabrik — samma sex lager, fast frågorna handlar om dina linjer i stället för om teorin.",
+    "chaosCta": "Kör Chaos Score"
+  },
   "pricing": {
     "eyebrow": "På väg",
     "headline": "Tre sätt att använda det. En produkt, byggd en gång.",
