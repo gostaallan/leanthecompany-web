@@ -185,6 +185,28 @@
       "meta": "您的答案只进创始人这里。没有埋点,没有转卖,没有无聊的 drip 邮件。"
     }
   },
+  "gembaDrill": {
+    "eyebrow": "测测你自己",
+    "headline": "九十秒的现场。六次判断。",
+    "lead": "不是定义，是场景——一条跟不上节拍的产线、一次被推翻的改善、一个没人拉的安灯。选出你敢在厂长面前为之辩护的那个判断。",
+    "englishNote": "本练习目前仅有英文版。那三十条现场笔记是创始人本人的原话，机器翻译反而不如不发。",
+    "metaQuestions": "6 道题",
+    "metaLayers": "6 个层面",
+    "metaNoSignup": "无需注册",
+    "start": "开始练习",
+    "next": "下一题",
+    "seeResult": "查看结果",
+    "fieldNote": "现场笔记",
+    "byLayer": "按层面",
+    "missed": "把这些带回现场",
+    "again": "再抽六题",
+    "copy": "复制我的成绩",
+    "copied": "已复制",
+    "copyFallback": "复制没成功——请选中上面这行手动复制。",
+    "share": "我在 LeanTheCompany Gemba Drill 拿到 {score}/{total}——{band}。六个车间现场场景，无需注册：leanthecompany.com",
+    "chaosLead": "这测的是你的知识。Chaos Score 测的是你的工厂——同样六个层面，但问的是你自己的产线，而不是理论。",
+    "chaosCta": "运行 Chaos Score"
+  },
   "pricing": {
     "eyebrow": "即将上线",
     "headline": "三种用法。一个产品,一次造好。",

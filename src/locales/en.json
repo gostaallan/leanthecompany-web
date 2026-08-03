@@ -185,6 +185,28 @@
       "meta": "Your answers stay with the founder. No tracking, no resell, no drip campaign nonsense."
     }
   },
+  "gembaDrill": {
+    "eyebrow": "Test yourself",
+    "headline": "Ninety seconds on the floor. Six calls to make.",
+    "lead": "Not definitions. Situations — a line that misses takt, a kaizen that unwinds, an andon nobody pulls. Pick the read you'd defend in front of the plant manager.",
+    "englishNote": "The drill is in English for now. The thirty field notes are the founder's own words, and a machine translation of them would be worse than not shipping them.",
+    "metaQuestions": "6 questions",
+    "metaLayers": "6 layers",
+    "metaNoSignup": "No sign-up",
+    "start": "Start the drill",
+    "next": "Next",
+    "seeResult": "See result",
+    "fieldNote": "Field note",
+    "byLayer": "By layer",
+    "missed": "Take these back to the floor",
+    "again": "Draw six new ones",
+    "copy": "Copy my score",
+    "copied": "Copied",
+    "copyFallback": "Copy didn't work — select the line above and copy it by hand.",
+    "share": "I scored {score}/{total} on the LeanTheCompany Gemba Drill — {band}. Six shop-floor scenarios, no sign-up: leanthecompany.com",
+    "chaosLead": "That scored your knowledge. The Chaos Score scores your plant — same six layers, except the questions are about your lines rather than the theory.",
+    "chaosCta": "Run the Chaos Score"
+  },
   "pricing": {
     "eyebrow": "What's coming",
     "headline": "Three ways to use it. One product, built once.",

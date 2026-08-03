@@ -6,6 +6,7 @@ import { Problem }      from '@/components/marketing/Problem'
 import { Platform }     from '@/components/marketing/Platform'
 import { WhatsComing }  from '@/components/marketing/WhatsComing'
 import { Diagnostic }   from '@/components/marketing/Diagnostic'
+import { GembaDrill }   from '@/components/marketing/GembaDrill'
 import { Pricing }      from '@/components/marketing/Pricing'
 import { About }        from '@/components/marketing/About'
 import { FinalCTA }     from '@/components/marketing/FinalCTA'
@@ -31,6 +32,7 @@ export default function HomePage({ params: { locale } }: Props) {
         <Platform />
         <WhatsComing />
         <Diagnostic />
+        <GembaDrill />
         <Pricing />
         <About />
         <FinalCTA />
