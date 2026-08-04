@@ -137,32 +137,97 @@
   "diagnostic": {
     "eyebrow": "Gratis diagnos",
     "headline": "Få din Chaos Score på 5 frågor.",
-    "lead": "En kort, pragmatisk självutvärdering. Besvara fem frågor om ditt nuvarande flöde — jag skickar tillbaka en en-sidig PDF med din Chaos Score, dina tre största läckage, och var du bör börja kartlägga.",
-    "steps": {
+    "lead": "Fem frågor om hur arbetet faktiskt rör sig genom din fabrik. Poängen står på skärmen när du är klar — ingen mejladress, ingen väntan. Varje svar följs av den kommentar jag skulle gett dig stående vid linjen.",
+    "spineLabel": "Det här mäts",
+    "areas": {
       "inventory": {
         "title": "Lager mellan stegen",
-        "body": "Hur många dagar ligger en typisk order och väntar kontra bearbetas?"
+        "ask": "Hur många dagar ligger en typisk order och väntar kontra bearbetas?",
+        "options": [
+          "Som mest några timmars väntan. Arbetet rör sig.",
+          "En dag eller två av väntan för några timmars arbete.",
+          "Flera dagars väntan. Bearbetningstiden får jag gissa mig till.",
+          "Jag vet faktiskt inte — ingen har någonsin mätt det."
+        ]
       },
       "handoffs": {
         "title": "Överlämningar per order",
-        "body": "Hur många personer eller system rör en order från offert till leverans?"
+        "ask": "Hur många personer eller system rör en order från offert till leverans?",
+        "options": [
+          "Färre än fem, och jag kan räkna upp dem.",
+          "Fem till tio.",
+          "Fler än tio.",
+          "Ingen har någonsin ritat upp den från början till slut."
+        ]
       },
       "shadow": {
         "title": "Skugg-Excelfiler",
-        "body": "Hur många kritiska Excel-filer lever på personliga enheter istället för i ordinarie system?"
+        "ask": "Hur många kritiska Excel-filer lever på personliga enheter istället för i ordinarie system?",
+        "options": [
+          "Inga som jag känner till.",
+          "En eller två, och vi vet vem som äger dem.",
+          "Flera, och minst en är affärskritisk.",
+          "Fabriken skulle få det svårt utan dem."
+        ]
       },
       "decisions": {
         "title": "Beslutsfördröjning",
-        "body": "När ett problem dyker upp i verkstaden — hur lång tid tills någon med befogenhet faktiskt beslutar?"
+        "ask": "När ett problem dyker upp i verkstaden — hur lång tid tills någon med befogenhet faktiskt beslutar?",
+        "options": [
+          "Inom skiftet.",
+          "En dag eller två.",
+          "Det får vänta på veckomötet.",
+          "Det beror helt på vem som är tillgänglig."
+        ]
       },
       "standards": {
         "title": "Standardiserat arbete",
-        "body": "Hur stor andel av dina nyckeloperationer har en en-sidig standard som alla följer?"
+        "ask": "Hur stor andel av dina nyckeloperationer har en en-sidig standard som alla följer?",
+        "options": [
+          "De flesta, och de är aktuella.",
+          "Ungefär hälften — en del är inaktuella.",
+          "Några få, och mest skrivna för en revision.",
+          "Nästan inga. Alla har sin egen metod."
+        ]
       }
     },
+    "bands": {
+      "firefighting": {
+        "name": "Brandsläckning",
+        "line": "Ni har ingen brist på kapacitet. Ni har brist på överblick."
+      },
+      "runningOnPeople": {
+        "name": "Drivs av personer",
+        "line": "Det fungerar för att vissa personer får det att fungera. Det är inget system — det är ett schema."
+      },
+      "drifting": {
+        "name": "På drift",
+        "line": "Inget brinner. Flera saker glöder, och de växer i det tysta."
+      },
+      "quietPlant": {
+        "name": "Lugn fabrik",
+        "line": "Ovanligt. Antingen är arbetet gjort, eller så har ingen tittat tillräckligt noga än."
+      }
+    },
+    "introTitle": "Sätt poäng på din egen fabrik.",
+    "introBody": "Svara som verkstaden hade svarat, inte som rapporten gör. Ingen ser det här utom du, om du inte själv väljer att skicka in det.",
+    "metaQuestions": "5 frågor",
+    "metaInstant": "Poäng på skärmen",
+    "metaNoSignup": "Ingen registrering",
+    "start": "Starta de fem frågorna",
+    "fieldNote": "Fältanteckning",
+    "notesEnglish": "Fältanteckningarna är på engelska tills vidare. Det är grundarens egna ord, och en maskinöversättning av dem vore sämre än att inte visa dem alls.",
+    "next": "Nästa",
+    "seeResult": "Visa min poäng",
+    "scoreLabel": "Chaos Score",
+    "leaksTitle": "Var det läcker",
+    "noLeaks": "Ingenting fick mer än noll. Det är ovanligt nog att vara värt en andra titt — gå igenom de fem frågorna igen med den som styr verkstaden, inte den som styr rapporten.",
+    "again": "Svara igen",
+    "drillLead": "Det satte poäng på din fabrik. Gemba-drillen sätter poäng på din läsning av en — sex situationer från verkstadsgolvet, nittio sekunder, ingen registrering.",
+    "drillCta": "Kör Gemba-drillen",
     "form": {
-      "title": "Beställ din Chaos Score",
-      "description": "Jag skickar frågeformuläret och din personliga PDF inom 24 timmar. Inget säljsamtal om du inte ber om det.",
+      "title": "Var du bör börja kartlägga",
+      "description": "Poängen säger hur mycket som läcker. Den säger inte vilken karta du ska rita först. Lämna en mejladress så läser jag dina fem svar och skriver tillbaka var jag skulle börja.",
       "namePlaceholder": "Ditt namn",
       "emailPlaceholder": "Jobbmejl",
       "companyPlaceholder": "Företag (valfritt)",
@@ -175,11 +240,11 @@
         "Konsult / Coach",
         "Annat"
       ],
-      "consent": "Jag vill ta emot Chaos Score och ibland e-post från LeanTheCompany. Jag kan avsluta prenumerationen när som helst.",
-      "submit": "Skicka min Chaos Score",
+      "consent": "Skicka mig gärna enstaka utskick från LeanTheCompany också. Avsluta när du vill.",
+      "submit": "Skicka var jag ska börja",
       "loading": "Skickar…",
       "thanksTitle": "Klart. Kolla inkorgen.",
-      "thanksBody": "Ditt Chaos Score-formulär är på väg. Svara på det mejlet om det inte kommer inom 24 timmar.",
+      "thanksBody": "Dina fem svar är hos mig. Jag läser dem själv och svarar för hand, så svaret kommer från en människa och inte från en mall. Din poäng ligger kvar på skärmen ovanför.",
       "error": "Något gick fel. Mejla hello@leanthecompany.com så hjälper vi dig.",
       "noEndpoint": "Formulärets endpoint är inte konfigurerad än. Mejla hello@leanthecompany.com.",
       "meta": "Dina svar stannar hos grundaren. Ingen tracking, ingen återförsäljning, inget drip-nonsens."
@@ -204,7 +269,7 @@
     "copied": "Kopierat",
     "copyFallback": "Kopieringen gick inte — markera raden ovan och kopiera för hand.",
     "share": "Jag fick {score}/{total} på LeanTheCompany Gemba Drill — {band}. Sex situationer från verkstadsgolvet, ingen registrering: leanthecompany.com",
-    "chaosLead": "Det mätte din kunskap. Chaos Score mäter din fabrik — samma sex lager, fast frågorna handlar om dina linjer i stället för om teorin.",
+    "chaosLead": "Det mätte din kunskap. Chaos Score mäter din fabrik — fem frågor om dina egna linjer i stället för om teorin.",
     "chaosCta": "Kör Chaos Score"
   },
   "pricing": {

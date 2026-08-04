@@ -137,32 +137,97 @@
   "diagnostic": {
     "eyebrow": "Free Diagnostic",
     "headline": "Get your Chaos Score in 5 questions.",
-    "lead": "A short, pragmatic self-assessment. Answer five questions about your current flow — I'll send back a one-page PDF with your Chaos Score, your three biggest leaks, and where to start mapping.",
-    "steps": {
+    "lead": "Five questions about how work actually moves through your plant. The score lands on the screen when you finish — no email, no waiting. Each answer comes back with the note I'd give you standing on the line next to you.",
+    "spineLabel": "What it scores",
+    "areas": {
       "inventory": {
         "title": "Inventory between steps",
-        "body": "How many days does a typical order spend waiting versus being worked on?"
+        "ask": "How many days does a typical order spend waiting versus being worked on?",
+        "options": [
+          "Hours of waiting, at most. Work moves.",
+          "A day or two of waiting for a few hours of work.",
+          "Several days waiting. I'd have to guess at the working time.",
+          "I genuinely don't know — nobody has ever measured it."
+        ]
       },
       "handoffs": {
         "title": "Handoffs per order",
-        "body": "How many different people or systems touch an order from quote to ship?"
+        "ask": "How many different people or systems touch an order from quote to ship?",
+        "options": [
+          "Under five, and I can name them.",
+          "Five to ten.",
+          "More than ten.",
+          "Nobody has ever drawn it end to end."
+        ]
       },
       "shadow": {
         "title": "Shadow spreadsheets",
-        "body": "How many critical Excel files live on personal drives instead of systems of record?"
+        "ask": "How many critical Excel files live on personal drives instead of systems of record?",
+        "options": [
+          "None that I know of.",
+          "One or two, and we know who owns them.",
+          "Several, and at least one is business-critical.",
+          "The plant would struggle without them."
+        ]
       },
       "decisions": {
         "title": "Decision cycle time",
-        "body": "When a problem surfaces on the floor, how long until someone empowered actually decides?"
+        "ask": "When a problem surfaces on the floor, how long until someone empowered actually decides?",
+        "options": [
+          "Within the shift.",
+          "A day or two.",
+          "It waits for a weekly meeting.",
+          "It depends entirely on who is available."
+        ]
       },
       "standards": {
         "title": "Standardised work",
-        "body": "What percentage of your key operations have a one-page standard everyone follows?"
+        "ask": "What percentage of your key operations have a one-page standard everyone follows?",
+        "options": [
+          "Most of them, and they're current.",
+          "About half — some are out of date.",
+          "A few, and mostly written for an audit.",
+          "Almost none. Everyone has their own method."
+        ]
       }
     },
+    "bands": {
+      "firefighting": {
+        "name": "Firefighting",
+        "line": "You are not short of capacity. You are short of visibility."
+      },
+      "runningOnPeople": {
+        "name": "Running on people",
+        "line": "It works because specific people make it work. That is not a system — it is a rota."
+      },
+      "drifting": {
+        "name": "Drifting",
+        "line": "Nothing is on fire. Several things are smouldering, and they compound quietly."
+      },
+      "quietPlant": {
+        "name": "Quiet plant",
+        "line": "Rare. Either the work has been done, or nobody has looked closely enough yet."
+      }
+    },
+    "introTitle": "Score your own plant.",
+    "introBody": "Answer the way the floor would answer, not the way the report does. Nobody sees this but you unless you choose to send it.",
+    "metaQuestions": "5 questions",
+    "metaInstant": "Score on screen",
+    "metaNoSignup": "No sign-up",
+    "start": "Start the five questions",
+    "fieldNote": "Field note",
+    "notesEnglish": "The field notes are in English for now. They are the founder's own words, and a machine translation of them would be worse than not shipping them.",
+    "next": "Next",
+    "seeResult": "See my score",
+    "scoreLabel": "Chaos Score",
+    "leaksTitle": "Where it's leaking",
+    "noLeaks": "Nothing scored above zero. That is rare enough to be worth a second look — walk the five questions again with the person who runs the floor, not the person who runs the report.",
+    "again": "Answer again",
+    "drillLead": "That scored your plant. The Gemba Drill scores your reading of one — six situations off the floor, ninety seconds, no sign-up.",
+    "drillCta": "Take the Gemba Drill",
     "form": {
-      "title": "Request your Chaos Score",
-      "description": "I'll send the 5-question form and your personalised PDF within 24 hours. No sales call unless you ask for one.",
+      "title": "Where to start mapping",
+      "description": "The score tells you how much is leaking. It doesn't tell you which map to draw first. Leave an email and I'll read your five answers and write back with where I'd start.",
       "namePlaceholder": "Your name",
       "emailPlaceholder": "Work email",
       "companyPlaceholder": "Company (optional)",
@@ -175,11 +240,11 @@
         "Consultant / Coach",
         "Other"
       ],
-      "consent": "I'd like to receive the Chaos Score and occasional emails from LeanTheCompany. You can unsubscribe anytime.",
-      "submit": "Send me my Chaos Score",
+      "consent": "Also send me occasional notes from LeanTheCompany. Unsubscribe anytime.",
+      "submit": "Send me where to start",
       "loading": "Sending…",
       "thanksTitle": "Got it. Check your inbox.",
-      "thanksBody": "Your Chaos Score questionnaire is on its way. Reply to that email if it doesn't land within 24 hours.",
+      "thanksBody": "Your five answers are with me. I read these myself and write back by hand, so the reply comes from a person rather than a template. Your score stays on the screen above.",
       "error": "Something went wrong. Please email hello@leanthecompany.com and we'll help.",
       "noEndpoint": "Form endpoint not configured yet. Please email hello@leanthecompany.com.",
       "meta": "Your answers stay with the founder. No tracking, no resell, no drip campaign nonsense."
@@ -204,7 +269,7 @@
     "copied": "Copied",
     "copyFallback": "Copy didn't work — select the line above and copy it by hand.",
     "share": "I scored {score}/{total} on the LeanTheCompany Gemba Drill — {band}. Six shop-floor scenarios, no sign-up: leanthecompany.com",
-    "chaosLead": "That scored your knowledge. The Chaos Score scores your plant — same six layers, except the questions are about your lines rather than the theory.",
+    "chaosLead": "That scored your knowledge. The Chaos Score scores your plant — five questions about your own lines rather than the theory.",
     "chaosCta": "Run the Chaos Score"
   },
   "pricing": {
