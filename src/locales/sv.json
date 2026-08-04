@@ -152,7 +152,7 @@
       },
       "handoffs": {
         "title": "Överlämningar per order",
-        "ask": "Hur många personer eller system rör en order från offert till leverans?",
+        "ask": "Hur många personer eller system hanterar en order från offert till leverans?",
         "options": [
           "Färre än fem, och jag kan räkna upp dem.",
           "Fem till tio.",
@@ -194,14 +194,14 @@
     "bands": {
       "firefighting": {
         "name": "Brandsläckning",
-        "line": "Ni har ingen brist på kapacitet. Ni har brist på överblick."
+        "line": "Du har ingen brist på kapacitet. Du har brist på överblick."
       },
       "runningOnPeople": {
-        "name": "Drivs av personer",
-        "line": "Det fungerar för att vissa personer får det att fungera. Det är inget system — det är ett schema."
+        "name": "Hänger på personer",
+        "line": "Det fungerar för att vissa personer får det att fungera. Det är inget system — det är ett bemanningsschema."
       },
       "drifting": {
-        "name": "På drift",
+        "name": "Glidning",
         "line": "Inget brinner. Flera saker glöder, och de växer i det tysta."
       },
       "quietPlant": {
@@ -241,7 +241,7 @@
         "Annat"
       ],
       "consent": "Skicka mig gärna enstaka utskick från LeanTheCompany också. Avsluta när du vill.",
-      "submit": "Skicka var jag ska börja",
+      "submit": "Mejla mig var jag ska börja",
       "loading": "Skickar…",
       "thanksTitle": "Klart. Kolla inkorgen.",
       "thanksBody": "Dina fem svar är hos mig. Jag läser dem själv och svarar för hand, så svaret kommer från en människa och inte från en mall. Din poäng ligger kvar på skärmen ovanför.",
