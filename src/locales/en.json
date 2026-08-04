@@ -240,7 +240,7 @@
         "Consultant / Coach",
         "Other"
       ],
-      "consent": "I'd like to receive the Chaos Score and occasional emails from LeanTheCompany. You can unsubscribe anytime.",
+      "consent": "Also send me occasional notes from LeanTheCompany. Unsubscribe anytime.",
       "submit": "Send me where to start",
       "loading": "Sending…",
       "thanksTitle": "Got it. Check your inbox.",
@@ -269,7 +269,7 @@
     "copied": "Copied",
     "copyFallback": "Copy didn't work — select the line above and copy it by hand.",
     "share": "I scored {score}/{total} on the LeanTheCompany Gemba Drill — {band}. Six shop-floor scenarios, no sign-up: leanthecompany.com",
-    "chaosLead": "That scored your knowledge. The Chaos Score scores your plant — same six layers, except the questions are about your lines rather than the theory.",
+    "chaosLead": "That scored your knowledge. The Chaos Score scores your plant — five questions about your own lines rather than the theory.",
     "chaosCta": "Run the Chaos Score"
   },
   "pricing": {

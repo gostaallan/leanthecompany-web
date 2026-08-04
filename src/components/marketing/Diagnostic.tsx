@@ -437,13 +437,19 @@ export function Diagnostic() {
                         ))}
                       </select>
 
-                      {/* GDPR artefact, not copy. `name` is what puts the record
-                          in the payload and `required` is the enforcement — both
-                          move together or the record becomes an absence of one.
-                          It now gates only the email: the score was already
-                          given, unconditionally, above. */}
+                      {/* GDPR artefact, not copy. `name` is the record — it is
+                          what puts the tick in the payload — and it must never
+                          be dropped in a refactor.
+
+                          NOT `required`, deliberately. This box covers the
+                          marketing list only. Someone who types their email
+                          under "I'll read your five answers and write back" has
+                          asked for that reply; making the tick a condition of
+                          getting it would be the same bundling this section just
+                          removed, one level further down. Unticked submits
+                          nothing and the reply still comes. */}
                       <label className="flex items-start gap-2 text-xs text-ink-soft pt-2">
-                        <input type="checkbox" name="consent" required className="mt-0.5" />
+                        <input type="checkbox" name="consent" className="mt-0.5" />
                         <span>{t('form.consent')}</span>
                       </label>
 

@@ -240,7 +240,7 @@
         "Konsult / Coach",
         "Annat"
       ],
-      "consent": "Jag vill ta emot Chaos Score och ibland e-post från LeanTheCompany. Jag kan avsluta prenumerationen när som helst.",
+      "consent": "Skicka mig gärna enstaka utskick från LeanTheCompany också. Avsluta när du vill.",
       "submit": "Skicka var jag ska börja",
       "loading": "Skickar…",
       "thanksTitle": "Klart. Kolla inkorgen.",
@@ -269,7 +269,7 @@
     "copied": "Kopierat",
     "copyFallback": "Kopieringen gick inte — markera raden ovan och kopiera för hand.",
     "share": "Jag fick {score}/{total} på LeanTheCompany Gemba Drill — {band}. Sex situationer från verkstadsgolvet, ingen registrering: leanthecompany.com",
-    "chaosLead": "Det mätte din kunskap. Chaos Score mäter din fabrik — samma sex lager, fast frågorna handlar om dina linjer i stället för om teorin.",
+    "chaosLead": "Det mätte din kunskap. Chaos Score mäter din fabrik — fem frågor om dina egna linjer i stället för om teorin.",
     "chaosCta": "Kör Chaos Score"
   },
   "pricing": {

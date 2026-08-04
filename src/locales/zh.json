@@ -240,7 +240,7 @@
         "咨询顾问 / 教练",
         "其他"
       ],
-      "consent": "我愿意收到混乱分数以及来自 LeanTheCompany 的偶尔邮件。我可以随时取消订阅。",
+      "consent": "也把 LeanTheCompany 的不定期来信发给我。您随时可以退订。",
       "submit": "告诉我从哪儿开始",
       "loading": "正在发送…",
       "thanksTitle": "收到了，请查收邮箱。",
@@ -269,7 +269,7 @@
     "copied": "已复制",
     "copyFallback": "复制没成功——请选中上面这行手动复制。",
     "share": "我在 LeanTheCompany Gemba Drill 拿到 {score}/{total}——{band}。六个车间现场场景，无需注册：leanthecompany.com",
-    "chaosLead": "这测的是你的知识。Chaos Score 测的是你的工厂——同样六个层面，但问的是你自己的产线，而不是理论。",
+    "chaosLead": "这测的是你的知识。Chaos Score 测的是你的工厂——五个问题，问的是你自己的产线，而不是理论。",
     "chaosCta": "运行 Chaos Score"
   },
   "pricing": {
