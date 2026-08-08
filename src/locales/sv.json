@@ -23,7 +23,7 @@
       "canvases": "10 min",
       "canvasesLabel": "Från inloggning till din första kartlagda process",
       "start": "100",
-      "startLabel": "Grundarplatser — livstidslåst pris + Grundarrunda"
+      "startLabel": "Grundarplatser — priset låst för livet om du går med före {closeLong}, och en stående plats vid Grundarrundan"
     }
   },
   "forWhom": {
@@ -131,7 +131,7 @@
         "body": "Det universella språket för varje TPS-genomgång på jorden. Skriv ut. Sätt upp. Gå igenom. Varje karta, kompass och kaizenrapport exporteras som profilerad A3 eller A4 — på EN, SV och ZH, redan idag."
       }
     },
-    "foundingNote": "Boka en grundarplats — 30 dagar gratis, sedan ditt pris låst för livet. Endast 100 platser.",
+    "foundingNote": "Boka en grundarplats — 30 dagar gratis, sedan ditt pris låst för livet om du går med före {closeLong}. Endast 100 platser.",
     "foundingCta": "Boka din plats"
   },
   "diagnostic": {
@@ -273,37 +273,86 @@
     "chaosCta": "Kör Chaos Score"
   },
   "pricing": {
-    "eyebrow": "På väg",
-    "headline": "Tre sätt att använda det. En produkt, byggd en gång.",
-    "lead": "Vi säljer inte plattformen ännu — vi bygger den. De första 100 grundarmedlemmarna får 30 dagar gratis när den öppnar, sedan sitt pris låst för livet. Privilegium, inte rabatt.",
-    "comingSoon": "Kommer snart",
-    "founding": {
-      "eyebrow": "De första 100",
-      "headline": "Bli en av de första 100. Betala fullt pris. Lås det priset för evigt.",
-      "body": "När åtkomsten öppnar får grundarmedlemmarna 30 dagar gratis — utan kort. Därefter betalar grundare sitt grundarpris för respektive nivå — och det priset rör sig aldrig för dem. Du får också en kvartalsvis Grundarrunda med mig, ditt företag på den officiella Founding 100-tavlan (med ditt godkännande), och första tjing på varje ny modul innan den lanseras. Vi valde privilegium framför rabatt — kunder som betalar fullt pris bygger en skarpare produkt. Säg upp när du vill — ingen långsiktig bindning från din sida, bara prislåsningen från vår.",
-      "spots": "100 grundarplatser"
+    "eyebrow": {
+      "A": "På väg",
+      "B": "Priser",
+      "C": "Priser"
     },
-    "meteringNote": "Sensei drivs av riktig AI, så vi mäter den — och du kan fylla på när som helst. Lagring kostar nästan inget, så canvas är inte begränsade på team-planer. Inga överraskningar på fakturan, någonsin.",
+    "headline": "En produkt, byggd en gång. Fyra steg — två av dem öppna idag.",
+    "lead": {
+      "A": "Vi säljer inte ännu — vi bygger. Försäljningen öppnar {salesOpenLong}. De första 100 grundarmedlemmarna betalar fullt pris och låser det priset för livet. Privilegium, inte rabatt.",
+      "B": "Försäljningen är öppen. De första 100 grundarmedlemmarna betalar fullt pris och låser det priset för livet — platserna stänger {closeLong}. Privilegium, inte rabatt.",
+      "C": "Trettio dagar gratis, sedan betalar du för det steg du står på. Säg upp när du vill."
+    },
+    "badges": {
+      "stateA": "Öppen beta · försäljningen öppnar {salesOpenShort}",
+      "stateB": "De första 100 · stänger {closeShort}",
+      "comingSoon": "Kommer snart",
+      "partnerTrack": "Partnerspår · ansökningar öppnar efter lansering"
+    },
+    "comparison": {
+      "headline": "Du skulle kunna göra det här på en whiteboard. Folk försöker.",
+      "p1": "Miro, Lucidchart, en PowerPoint-mall — €5 till €9 i månaden för former och pilar. Det är bra verktyg. De vet bara ingenting.",
+      "p2": "En tom canvas vet inte vad ett värdeflöde är. Den säger inte att din Makigami har en överlämningsloop i sig, den gör inte kartan till ett A3 som din styrgrupp faktiskt läser, och den står inte kvar om elva månader när konsulten är borta och ingen minns varför tavlan ritades som den gjordes.",
+      "p3": "Det är hela skillnaden. Inte canvasen — utan vad canvasen vet."
+    },
+    "founding": {
+      "eyebrow": {
+        "A": "De första 100 · öppnar {salesOpenLong}",
+        "B": "De första 100"
+      },
+      "headline": "Bli en av de första 100. Betala fullt pris. Lås det priset för livet.",
+      "bodyA": {
+        "p1": "Vi säljer inte ännu — vi bygger. Försäljningen öppnar {salesOpenLong}. Grundarplatserna stänger {closeLong}. Etthundra platser, och sedan är priset bara priset.",
+        "p2": "Betan är öppen nu och den är gratis till {closeLong}. Betamedlemmar får första tjing på en grundarplats när försäljningen öppnar."
+      },
+      "bodyB": {
+        "p1": "Grundarplatserna är öppna till {closeLong}. Därefter är priset bara priset.",
+        "p2": "Grundarmedlemmar får 30 dagar gratis och betalar sedan sin nivås fulla pris — och det priset rör sig aldrig så länge prenumerationen löper. Du får också en stående plats vid Grundarrundan med mig, ditt företag på Founding 100-hederslistan (med ditt godkännande), och första tjing på varje ny modul innan den lanseras.",
+        "p3": "Vi valde privilegium framför rabatt — kunder som betalar fullt pris bygger en skarpare produkt. Säg upp när du vill — ingen långsiktig bindning från din sida, bara prislåsningen från vår."
+      },
+      "chipSalesOpen": "Försäljningen öppnar {salesOpenLong}",
+      "chipClose": "Grundarplatserna stänger {closeLong}",
+      "countdown": "Grundarplatserna stänger {closeLong} · {days, plural, one {# dag kvar} other {# dagar kvar}}"
+    },
+    "priceLock": {
+      "title": "Vad prislåsningen omfattar.",
+      "body": "Ditt grundarpris är låst på den nivå du gick med på, så länge din prenumeration löper utan avbrott. Byter du nivå debiteras den nya nivån till sitt då gällande pris — med din grundarstatus överförd. Låter du prenumerationen upphöra tar låsningen slut med den. Grundarstatus tillhör dig eller ditt företag och överlåts inte vid en försäljning. Den gäller både månads- och årsbetalning på den nivån."
+    },
+    "cta": {
+      "A": "Starta den öppna betan",
+      "B": "Bli grundarmedlem",
+      "C": "Starta dina 30 dagar"
+    },
+    "microcopy": {
+      "A": "Gratis till {closeLong}. Inget kort. Betamedlemmar får första tjing på en grundarplats.",
+      "B": "30 dagar gratis, sedan €{price}/månad — låst för livet. Kort krävs. Säg upp när du vill före den första debiteringen.",
+      "C": "30 dagar gratis. Kort krävs. Säg upp när du vill före den första debiteringen."
+    },
     "tiers": {
       "contributor": {
         "title": "Contributor",
         "audience": "För dem som gör jobbet",
         "desc": "För operatören, analytikern eller teamledaren som vill kartlägga sin första process ikväll — på sin egen laptop, utan att be någon om lov. Börja där arbetet faktiskt sker.",
-        "cta": "Reservera en Contributor-plats",
+        "price": "€19 / månad",
+        "priceNumber": "19",
+        "lock": "€19 / månad — låst för livet om du går med före {closeLong}",
         "features": [
           "Upp till 15 canvas (Makigami idag, VSM när det landar)",
           "Export till A3-PDF (EN / SV / ZH)",
           "AI-sensei — 50 frågor / månad · fyll på när som helst",
           "Privat workspace — bara du",
           "Tillgång till community-forum",
-          "€19 / månad — låst för livet för grundarmedlemmar"
+          "Grundaren svarar inom två arbetsdagar"
         ]
       },
       "consultant": {
         "title": "Consultant",
         "audience": "För dem som coachar jobbet",
         "desc": "För den fristående konsulten eller Lean-coachen med sina första kunder. Varje kund i en egen, strikt separerad workspace — kliv in i workshopen med en levande canvas i stället för en PowerPoint, för mindre än en timme av ditt dagsarvode per månad.",
-        "cta": "Reservera en Consultant-plats",
+        "price": "€69 / månad",
+        "priceNumber": "69",
+        "lock": "€69 / månad — låst för livet om du går med före {closeLong}",
         "features": [
           "Allt i Contributor",
           "3 kund-workspaces, strikt åtskilda",
@@ -311,53 +360,38 @@
           "AI-sensei — 100 frågor / månad, delade · fyll på när som helst",
           "Kaizen-tracker med PDCA-cykler",
           "A3-export med LeanTheCompany-sidfot — white-label hör till Architect",
-          "€69 / månad — låst för livet för grundarmedlemmar"
+          "Grundaren svarar inom två arbetsdagar"
         ]
       },
       "processOwner": {
         "title": "Process Owner",
         "audience": "För dem som äger processen",
-        "desc": "För chefen eller teamet som äger en process från början till slut — över avdelningar, anläggningar eller skift. Ett fast pris, ingen inköpsavdelning som behöver blandas in. Delade canvas, riktiga roller, en sanningskälla i stället för en mapp med skärmdumpar.",
-        "cta": "Boka en Process Owner-plats",
-        "features": [
-          "Upp till 8 platser per team — skalar per plats över det",
-          "Obegränsat antal canvas & kaizen (fair use)",
-          "Delat workspace, roller och behörigheter",
-          "AI-sensei — 300 frågor / månad, delat i teamet · fyll på när som helst",
-          "Kaizen-tracker med PDCA-cykler",
-          "Compass & North Star-dashboard för styrgruppen",
-          "E-postsupport direkt från grundaren",
-          "€149 / månad — låst för livet för grundarmedlemmar"
-        ]
+        "price": "€249 / månad",
+        "desc": "För förbättringsteamet, inte den ensamma utövaren. Obegränsat antal projekt, obegränsat antal canvas, 300 Sensei-frågor i månaden delade i teamet, och en North Star-dashboard som fabrikschefen faktiskt öppnar.",
+        "note": "Inte tillgänglig vid lansering. Vi bygger teamsidan ordentligt i stället för att skeppa ett platsantal vi ännu inte kan hålla. Säg till att du vill ha den så står du först i kön — till grundarpriset.",
+        "cta": "Ställ dig i kön för Process Owner"
       },
       "architect": {
         "title": "Architect",
         "audience": "För dem som designar systemet",
         "desc": "För den ständiga-förbättringsledaren, verksamhetsarkitekten eller externa partnern som kör LeanTheCompany över många team eller kunder. Flera workspaces, white-label och en ren överlämning i slutet.",
-        "cta": "Boka en Architect-plats",
-        "features": [
-          "Allt i Process Owner",
-          "AI-sensei — 150 frågor / månad per aktiv kund · fyll på när som helst",
-          "Flera workspaces (kunder eller affärsenheter)",
-          "White-label A3-export",
-          "Överlämning av workspace till en Contributor-plats",
-          "Grundarens Slack-kanal + månatligt partnersamtal",
-          "Intäktsdelning för varje plats du hänvisar — betala ner det, ända till noll",
-          "€199 / månad — låst för livet för grundarmedlemmar"
-        ]
+        "note": "Architect är ingen prenumerationsnivå — det är ett partnerskap, och det prissätts som ett. Intäktsdelning för varje plats du hänvisar, flera workspaces över kunder eller affärsenheter, white-label A3-export, överlämning av workspace till en Contributor-plats, och en direktlinje till mig.",
+        "note2": "Vi öppnar ansökningarna efter lansering. Driver du Lean inom en konsultbyrå, en OEM-akademi eller ett universitetsprogram — säg till nu så står du först i kön.",
+        "cta": "Ansök till partnerspåret"
       }
     },
+    "annualNote": "Årsbetalning kommer efter lansering. Grundarmedlemmar får första tjing — och ditt låsta pris följer med.",
+    "meteringNote": "Sensei drivs av riktig AI, så vi mäter den — och du kan fylla på när som helst. Lagring kostar nästan inget, så canvas är inte begränsade på team-planer. Inga överraskningar på fakturan, någonsin.",
+    "responseBound": "Två arbetsdagar betyder måndag till fredag, undantaget svenska helgdagar och semesterperioden i juli.",
     "form": {
       "namePlaceholder": "Ditt namn",
       "emailPlaceholder": "Jobbmejl",
       "loading": "Bokar din plats…",
       "thanksTitle": "Plats bokad.",
-      "thanksBody": "Jag mejlar i samma sekund som vi öppnar — och du är med i de första 100. Inga drip-mejl däremellan.",
+      "thanksBody": "Du är på listan. Jag mejlar dig när försäljningen öppnar {salesOpenLong}, och ett par gånger innan grundarplatserna stänger {closeLong}. Inget efter det om du inte ber om det.",
       "error": "Något gick fel. Mejla hello@leanthecompany.com.",
       "noEndpoint": "Bokningsendpointen är inte konfigurerad än. Mejla hello@leanthecompany.com."
-    },
-    "partnerNote": "Driver du Lean inom en konsultbyrå, ett OEM-akademi eller ett universitetsprogram?",
-    "partnerCta": "Vi pratar partnerskap →"
+    }
   },
   "about": {
     "eyebrow": "Om grundaren",

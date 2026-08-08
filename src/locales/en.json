@@ -23,7 +23,7 @@
       "canvases": "10 min",
       "canvasesLabel": "From sign-in to your first mapped process",
       "start": "100",
-      "startLabel": "Founding seats — lifetime price-lock + Founders' Roundtable"
+      "startLabel": "Founding seats — price locked for life if you join before {closeLong}, and a standing seat at the Founders’ Roundtable"
     }
   },
   "forWhom": {
@@ -131,7 +131,7 @@
         "body": "The universal language of every Toyota Production System review on Earth. Print it. Pin it. Walk it. Every map, compass and kaizen report exports as a branded A3 or A4 — in EN, SV and ZH, today."
       }
     },
-    "foundingNote": "Reserve a founding seat — 30 days free, then your price locked for life. 100 seats only.",
+    "foundingNote": "Reserve a founding seat — 30 days free, then your price locked for life if you join before {closeLong}. 100 seats only.",
     "foundingCta": "Reserve your seat"
   },
   "diagnostic": {
@@ -273,37 +273,86 @@
     "chaosCta": "Run the Chaos Score"
   },
   "pricing": {
-    "eyebrow": "What's coming",
-    "headline": "Three ways to use it. One product, built once.",
-    "lead": "We're not selling the platform yet — we're building it. The first 100 founding members get 30 days free when it opens, then their price locked for life. Privilege, not discount.",
-    "comingSoon": "Coming soon",
-    "meteringNote": "Sensei runs on real AI, so we meter it — and you can top up anytime. Storage doesn't, so canvases aren't capped on team plans. No surprise bills, ever.",
+    "eyebrow": {
+      "A": "What's coming",
+      "B": "Pricing",
+      "C": "Pricing"
+    },
+    "headline": "One product, built once. Four rungs — two of them open today.",
+    "lead": {
+      "A": "We're not selling yet — we're building. Sales open {salesOpenLong}. The first 100 founding members pay full price and lock that price for life. Privilege, not discount.",
+      "B": "Sales are open. The first 100 founding members pay full price and lock that price for life — seats close {closeLong}. Privilege, not discount.",
+      "C": "Thirty days free, then pay for the rung you're on. Cancel any time."
+    },
+    "badges": {
+      "stateA": "Open beta · sales open {salesOpenShort}",
+      "stateB": "Founding 100 · closes {closeShort}",
+      "comingSoon": "Coming soon",
+      "partnerTrack": "Partner track · applications open after launch"
+    },
+    "comparison": {
+      "headline": "You could do this on a whiteboard. People try.",
+      "p1": "Miro, Lucidchart, a PowerPoint template — €5 to €9 a month for shapes and arrows. They’re good tools. They just don’t know anything.",
+      "p2": "A blank canvas doesn't know what a value stream is. It won't tell you your Makigami has a handoff loop in it, it won't turn the map into an A3 your steering group will actually read, and it won't still be there in eleven months when the consultant has gone and nobody remembers why the board was drawn that way.",
+      "p3": "That's the whole difference. Not the canvas — what the canvas knows."
+    },
     "founding": {
-      "eyebrow": "Founding 100",
-      "headline": "Be one of the first 100. Pay full price. Lock that price forever.",
-      "body": "When access opens, founding members get 30 days free — no card. After that, founders pay their tier's full founding rate — and that price never moves for them, ever. You also get a quarterly Founders' Roundtable with me, your company on the Founding 100 honour roll (with permission), and first call on every new module before it ships. We chose privilege over discount because customers who pay full price build a sharper product. Cancel anytime — no long-term commitment from your side, only the price-lock from ours.",
-      "spots": "100 founding seats"
+      "eyebrow": {
+        "A": "Founding 100 · opens {salesOpenLong}",
+        "B": "Founding 100"
+      },
+      "headline": "Be one of the first 100. Pay full price. Lock that price for life.",
+      "bodyA": {
+        "p1": "We're not selling yet — we're building. Sales open {salesOpenLong}. Founding seats close {closeLong}. One hundred seats, and then the price is just the price.",
+        "p2": "The beta is open now and it's free until {closeLong}. Beta members get first call on a founding seat when sales open."
+      },
+      "bodyB": {
+        "p1": "Founding seats are open until {closeLong}. After that the price is just the price.",
+        "p2": "Founding members get 30 days free, then pay their tier’s full rate — and that rate never moves for as long as the subscription runs. You also get a standing seat at the Founders’ Roundtable with me, your company on the Founding 100 honour roll (with permission), and first call on every new module before it ships.",
+        "p3": "We chose privilege over discount because customers who pay full price build a sharper product. Cancel any time — no long-term commitment from your side, only the price-lock from ours."
+      },
+      "chipSalesOpen": "Sales open {salesOpenLong}",
+      "chipClose": "Founding closes {closeLong}",
+      "countdown": "Founding seats close {closeLong} · {days, plural, one {# day left} other {# days left}}"
+    },
+    "priceLock": {
+      "title": "What the price lock covers.",
+      "body": "Your founding rate is locked on the tier you joined, for as long as your subscription runs without a break. Change tier and the new tier is charged at its then-current rate — with your founding status carried across. Let the subscription lapse and the lock ends with it. Founding status belongs to you or your company, and doesn't transfer in a sale. It applies to both monthly and annual billing on that tier."
+    },
+    "cta": {
+      "A": "Start the open beta",
+      "B": "Become a founding member",
+      "C": "Start your 30 days"
+    },
+    "microcopy": {
+      "A": "Free until {closeLong}. No card. Beta members get first call on a founding seat.",
+      "B": "30 days free, then €{price}/month — locked for life. Card required. Cancel any time before the first charge.",
+      "C": "30 days free. Card required. Cancel any time before the first charge."
     },
     "tiers": {
       "contributor": {
         "title": "Contributor",
         "audience": "For the people who do the work",
         "desc": "For the operator, analyst or team lead who wants to map their first process tonight — on their own laptop, with nobody asking permission. Start where the work actually happens.",
-        "cta": "Reserve a Contributor seat",
+        "price": "€19 / month",
+        "priceNumber": "19",
+        "lock": "€19 / month — locked for life if you join before {closeLong}",
         "features": [
           "Up to 15 canvases (Makigami today, VSM as it lands)",
           "Export to A3 PDF (EN / SV / ZH)",
           "AI Sensei — 50 questions / month · top up anytime",
           "Private workspace — just you",
           "Community forum access",
-          "€19 / month — locked for life for founding members"
+          "Founder replies within two business days"
         ]
       },
       "consultant": {
         "title": "Consultant",
         "audience": "For the people who coach the work",
         "desc": "For the independent consultant or Lean coach with a first client book. Each client in its own sealed workspace — walk into the workshop with a live canvas instead of a PowerPoint, for less than an hour of your day rate per month.",
-        "cta": "Reserve a Consultant seat",
+        "price": "€69 / month",
+        "priceNumber": "69",
+        "lock": "€69 / month — locked for life if you join before {closeLong}",
         "features": [
           "Everything in Contributor",
           "3 client workspaces, kept strictly separate",
@@ -311,53 +360,38 @@
           "AI Sensei — 100 questions / month, pooled · top up anytime",
           "Kaizen tracker with PDCA cycles",
           "A3 export with LeanTheCompany footer — white-label lives in Architect",
-          "€69 / month — locked for life for founding members"
+          "Founder replies within two business days"
         ]
       },
       "processOwner": {
         "title": "Process Owner",
         "audience": "For the people who own the process",
-        "desc": "For the manager or team that owns a process end to end — across departments, sites or shifts. One flat fee, no procurement headache. Shared canvases, real roles, one source of truth instead of a folder of screenshots.",
-        "cta": "Reserve a Process Owner seat",
-        "features": [
-          "Up to 8 seats per team — scales per seat above that",
-          "Unlimited canvases & kaizens (fair use)",
-          "Shared workspace, roles & permissions",
-          "AI Sensei — 300 questions / month, pooled across the team · top up anytime",
-          "Kaizen tracker with PDCA cycles",
-          "Compass & North Star dashboard for the steering team",
-          "Email support directly from the founder",
-          "€149 / month — locked for life for founding members"
-        ]
+        "price": "€249 / month",
+        "desc": "For the improvement team, not the lone practitioner. Unlimited projects, unlimited canvases, 300 Sensei questions a month pooled across the team, and a North Star dashboard the plant manager will actually open.",
+        "note": "Not available at launch. We're building the team side properly rather than shipping a seat count we can't yet honour. Tell me you want it and you'll be first in the queue — at the founding rate.",
+        "cta": "Join the Process Owner queue"
       },
       "architect": {
         "title": "Architect",
         "audience": "For the people who design the system",
         "desc": "For the continuous-improvement lead, business architect or external partner running LeanTheCompany across many teams or clients. Multi-workspace, white-label, with a clean handoff at the end.",
-        "cta": "Reserve an Architect seat",
-        "features": [
-          "Everything in Process Owner",
-          "AI Sensei — 150 questions / month per active client · top up anytime",
-          "Multi-workspace (clients or business units)",
-          "White-label A3 export",
-          "Workspace handoff to a Contributor seat",
-          "Founder Slack channel + monthly partner call",
-          "Revenue share on every seat you refer — earn it down, potentially to zero",
-          "€199 / month — locked for life for founding members"
-        ]
+        "note": "Architect isn't a subscription tier — it's a partnership, and it's priced as one. Revenue share on every seat you refer, multi-workspace across clients or business units, white-label A3 export, workspace handoff to a Contributor seat, and a direct line to me.",
+        "note2": "We're opening applications after launch. If you're running Lean inside a consultancy, an OEM academy or a university programme, tell me now and you'll be first in the queue.",
+        "cta": "Apply for the partner track"
       }
     },
+    "annualNote": "Annual billing arrives after launch. Founding members get first call — and your locked price comes with you.",
+    "meteringNote": "Sensei runs on real AI, so we meter it — and you can top up anytime. Storage doesn't, so canvases aren't capped on team plans. No surprise bills, ever.",
+    "responseBound": "Two business days means Monday to Friday, excluding Swedish public holidays and the July holiday period.",
     "form": {
       "namePlaceholder": "Your name",
       "emailPlaceholder": "Work email",
       "loading": "Reserving your seat…",
       "thanksTitle": "Seat reserved.",
-      "thanksBody": "I'll email you the moment we open access — and you'll be in the founding 100. No drip emails in between.",
+      "thanksBody": "You're on the list. I'll email you when sales open on {salesOpenLong}, and a couple of times before founding seats close on {closeLong}. Nothing after that unless you ask.",
       "error": "Something went wrong. Please email hello@leanthecompany.com.",
       "noEndpoint": "Reservation endpoint not configured yet. Please email hello@leanthecompany.com."
-    },
-    "partnerNote": "Running Lean inside a consultancy, an OEM academy, or a university programme?",
-    "partnerCta": "Let's talk partnership →"
+    }
   },
   "about": {
     "eyebrow": "About the Founder",
