@@ -70,7 +70,12 @@ const PREVIEWS: readonly Preview[] = [
   { key: 'pdf',      image: { src: '/previews/a3-print.png', width: 1440, height: 800 } },
 ]
 
-export function WhatsComing() {
+interface Props {
+  /** The founding close, already in this locale's own form. Dates the price lock. */
+  closeLong: string
+}
+
+export function WhatsComing({ closeLong }: Props) {
   const t = useTranslations('whatsComing')
 
   return (
@@ -128,7 +133,7 @@ export function WhatsComing() {
         <div className="mt-12 pt-8 border-t border-rule flex flex-wrap items-center justify-between gap-4">
           <p className="text-sm text-ink-soft flex items-center gap-2">
             <Sparkles size={14} className="text-amber-DEFAULT" strokeWidth={1.5} />
-            {t('foundingNote')}
+            {t('foundingNote', { closeLong })}
           </p>
           <a
             href="#pricing"
