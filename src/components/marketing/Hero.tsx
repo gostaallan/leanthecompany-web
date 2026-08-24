@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/Button'
 
 interface Props {
-  /** The founding close, already in this locale's own form. Dates the price lock. */
+  /** The Original 100 close, already in this locale's own form. Dates the price lock. */
   closeLong: string
 }
 

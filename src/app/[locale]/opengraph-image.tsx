@@ -57,7 +57,7 @@ export default function OpengraphImage() {
               textTransform: 'uppercase',
             }}
           >
-            Two canvases · Four maps · Founding-100 cohort
+            Two canvases · Four maps · Original 100 cohort
           </div>
           <div
             style={{

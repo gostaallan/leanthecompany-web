@@ -48,7 +48,7 @@ export function Pricing({ state, daysLeft, dates }: Props) {
   const [loading, setLoading] = useState(false)
   const [error, setError]     = useState<string | null>(null)
 
-  const foundingOpen = state === 'A' || state === 'B'
+  const originalOpen = state === 'A' || state === 'B'
 
   async function handleWaitlist(e: FormEvent<HTMLFormElement>, tierKey: string) {
     e.preventDefault()
@@ -89,12 +89,37 @@ export function Pricing({ state, daysLeft, dates }: Props) {
         <div className="max-w-3xl mb-10">
           <p className="label-caps mb-4 flex items-center gap-3">
             <span className="w-7 h-px bg-amber-DEFAULT inline-block" />
-            {t(`eyebrow.${state}`)}
+            {t(`eyebrow.${state}`, dates)}
           </p>
           <h2 className="heading-display text-4xl md:text-5xl mb-6">
             {t('headline')}
           </h2>
           <p className="body-lead">{t(`lead.${state}`, dates)}</p>
+        </div>
+
+        {/* The unit the whole ladder is denominated in, explained before it is
+            counted. Every tier below is priced in Spaces and the reader has
+            never seen the word. GTM 006 §2 — above the grid, below the intro.
+            No abbreviations and no canvas counts, deliberately. */}
+        <div className="max-w-3xl mb-10">
+          <h3 className="font-serif text-2xl mb-4">{t('space.headline')}</h3>
+          <p className="text-sm text-ink-soft leading-relaxed mb-3">{t('space.p1')}</p>
+          <p className="text-sm text-ink-soft leading-relaxed mb-3">{t('space.p2')}</p>
+          <p className="text-sm text-ink-soft leading-relaxed">{t('space.p3')}</p>
+        </div>
+
+        {/* The cap is on ACTIVE Spaces, and this block is why that is not a
+            restriction. It says what the USER decides — never what the product
+            detects (GTM 011 §1): maturity-triggered archiving is post-launch,
+            so "when a process is good enough, you archive it" is true today and
+            "we'll tell you when it's ready" would not be. The promise only
+            works unconditional, so there is no fair-use line and no counter. */}
+        <div className="max-w-3xl mb-12 bg-white/60 border border-rule rounded-lg p-6">
+          <h3 className="font-serif text-2xl mb-4">{t('archive.headline')}</h3>
+          <p className="text-sm text-ink-soft leading-relaxed mb-3">{t('archive.p1')}</p>
+          <p className="text-sm text-ink-soft leading-relaxed mb-3">{t('archive.p2')}</p>
+          <p className="text-sm text-ink-soft leading-relaxed mb-3">{t('archive.p3')}</p>
+          <p className="text-sm text-ink leading-relaxed font-semibold">{t('archive.p4')}</p>
         </div>
 
         {/* The €69-vs-Miro answer. Above the grid on purpose — the buyer asks
@@ -106,29 +131,29 @@ export function Pricing({ state, daysLeft, dates }: Props) {
           <p className="text-sm text-ink leading-relaxed font-semibold">{t('comparison.p3')}</p>
         </div>
 
-        {/* Founding-member banner — gone once the seats close. */}
-        {foundingOpen && (
+        {/* Original 100 banner — gone once the seats close. */}
+        {originalOpen && (
           <>
             <div className="bg-ink text-white rounded-lg p-6 md:p-7 mb-4 flex flex-col md:flex-row gap-5 md:items-center md:justify-between border border-amber-DEFAULT/40">
               <div className="flex gap-4 items-start md:items-center">
                 <Sparkles size={22} className="text-amber-light shrink-0 mt-1 md:mt-0" strokeWidth={1.5} />
                 <div>
                   <p className="font-mono text-xs text-amber-light tracking-widest uppercase mb-1.5">
-                    {t(`founding.eyebrow.${state}`, dates)}
+                    {t(`original.eyebrow.${state}`, dates)}
                   </p>
                   <h3 className="font-serif text-xl md:text-2xl text-white leading-snug">
-                    {t('founding.headline')}
+                    {t('original.headline')}
                   </h3>
                   {state === 'A' ? (
                     <>
-                      <p className="text-sm text-white/70 mt-2 leading-relaxed">{t('founding.bodyA.p1', dates)}</p>
-                      <p className="text-sm text-white/70 mt-2 leading-relaxed">{t('founding.bodyA.p2', dates)}</p>
+                      <p className="text-sm text-white/70 mt-2 leading-relaxed">{t('original.bodyA.p1', dates)}</p>
+                      <p className="text-sm text-white/70 mt-2 leading-relaxed">{t('original.bodyA.p2', dates)}</p>
                     </>
                   ) : (
                     <>
-                      <p className="text-sm text-white/70 mt-2 leading-relaxed">{t('founding.bodyB.p1', dates)}</p>
-                      <p className="text-sm text-white/70 mt-2 leading-relaxed">{t('founding.bodyB.p2', dates)}</p>
-                      <p className="text-sm text-white/70 mt-2 leading-relaxed">{t('founding.bodyB.p3', dates)}</p>
+                      <p className="text-sm text-white/70 mt-2 leading-relaxed">{t('original.bodyB.p1', dates)}</p>
+                      <p className="text-sm text-white/70 mt-2 leading-relaxed">{t('original.bodyB.p2', dates)}</p>
+                      <p className="text-sm text-white/70 mt-2 leading-relaxed">{t('original.bodyB.p3', dates)}</p>
                     </>
                   )}
                 </div>
@@ -141,15 +166,15 @@ export function Pricing({ state, daysLeft, dates }: Props) {
                 {state === 'A' ? (
                   <>
                     <span className="font-mono text-xs text-white/50 tracking-wider whitespace-nowrap">
-                      {t('founding.chipSalesOpen', dates)}
+                      {t('original.chipSalesOpen', dates)}
                     </span>
                     <span className="font-mono text-xs text-white/50 tracking-wider whitespace-nowrap">
-                      {t('founding.chipClose', dates)}
+                      {t('original.chipClose', dates)}
                     </span>
                   </>
                 ) : (
                   <span className="font-mono text-xs text-amber-light tracking-wider whitespace-nowrap">
-                    {t('founding.countdown', { ...dates, days: daysLeft })}
+                    {t('original.countdown', { ...dates, days: daysLeft })}
                   </span>
                 )}
               </div>
@@ -232,6 +257,21 @@ export function Pricing({ state, daysLeft, dates }: Props) {
                           stops being made the day the deadline passes. */}
                       <span>{state === 'C' ? t(`tiers.${key}.price`) : t(`tiers.${key}.lock`, dates)}</span>
                     </li>
+                    {/* Answers "is five enough?" with the buyer's own arithmetic
+                        rather than an adjective. GTM 006 §4. */}
+                    {key === 'contributor' && (
+                      <li className="pt-2 text-xs text-ink-soft leading-relaxed">
+                        {t('tiers.contributor.cycleNote')}
+                      </li>
+                    )}
+                    {/* Does more work than any feature bullet above it: it makes
+                        the €69 legible as a discount without saying "discount".
+                        GTM 006 §5. */}
+                    {key === 'consultant' && (
+                      <li className="pt-2 text-xs text-ink leading-relaxed font-semibold">
+                        {t('consultantNote')}
+                      </li>
+                    )}
                   </ul>
                 ) : (
                   <div className="mb-8 flex-1 space-y-3">
@@ -261,7 +301,7 @@ export function Pricing({ state, daysLeft, dates }: Props) {
                 ) : (
                   <form onSubmit={(e) => handleWaitlist(e, key)} className="space-y-2.5">
                     {/* Hidden meta — give Formspree real subject + reply-to to reduce spam scoring */}
-                    <input type="hidden" name="_subject" value={`LeanTheCompany — ${key} founding-member request`} />
+                    <input type="hidden" name="_subject" value={`LeanTheCompany — ${key} Original 100 request`} />
                     <input type="hidden" name="_format"  value="plain" />
                     <input type="hidden" name="tier"     value={key} />
                     {/* Honeypot — bots fill this, humans never see it. Paradoxically reduces false positives. */}
@@ -309,6 +349,12 @@ export function Pricing({ state, daysLeft, dates }: Props) {
             )
           })}
         </div>
+
+        {/* The add-ons ship on day one deliberately. Unremarkable published at
+            launch; it reads as a walk-back if it appears in year two. GTM 006 §6. */}
+        <p className="text-center text-sm text-ink-soft mt-10 max-w-2xl mx-auto">
+          {t('addOns')}
+        </p>
 
         {/* Annual is a lever we still have, not a thing we sell here. GTM 006 §2. */}
         <p className="text-center text-sm text-ink-soft mt-10 max-w-2xl mx-auto">

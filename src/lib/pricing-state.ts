@@ -2,11 +2,11 @@
  * The pricing page has three states, and they are driven by exactly two dates.
  *
  *   A  now → 14 Sept      open beta, nothing for sale
- *   B  15 Sept → 1 Oct    sales open, Founding 100 live, countdown running
- *   C  after the close    plain pricing, no founding block, no countdown
+ *   B  15 Sept → 1 Oct    sales open, Original 100 live, countdown running
+ *   C  after the close    plain pricing, no Original block, no countdown
  *
  * Nothing else on the page decides which state it is in. Change the two values
- * below and the eyebrow, the lead, the badges, the CTAs, the founding block,
+ * below and the eyebrow, the lead, the badges, the CTAs, the Original block,
  * the price-lock note and the countdown all move together — no code edit, no
  * second template. Brief 091 AC2.
  *
@@ -15,13 +15,13 @@
  * edge inside the window.
  */
 export const SALES_OPEN = new Date('2026-09-15T00:00:00+02:00')
-export const FOUNDING_CLOSE = new Date('2026-10-01T23:59:59+02:00')
+export const ORIGINAL_CLOSE = new Date('2026-10-01T23:59:59+02:00')
 
 export type PricingState = 'A' | 'B' | 'C'
 
 export function pricingState(now: Date): PricingState {
   if (now.getTime() < SALES_OPEN.getTime()) return 'A'
-  if (now.getTime() <= FOUNDING_CLOSE.getTime()) return 'B'
+  if (now.getTime() <= ORIGINAL_CLOSE.getTime()) return 'B'
   return 'C'
 }
 
@@ -33,7 +33,7 @@ export function pricingState(now: Date): PricingState {
  * about a deadline.
  */
 export function daysLeft(now: Date): number {
-  const ms = FOUNDING_CLOSE.getTime() - now.getTime()
+  const ms = ORIGINAL_CLOSE.getTime() - now.getTime()
   if (ms <= 0) return 0
   return Math.floor(ms / 86_400_000)
 }
@@ -86,8 +86,8 @@ export function pricingDates(locale: string): PricingDates {
   return {
     salesOpenLong:  long.format(SALES_OPEN),
     salesOpenShort: short.format(SALES_OPEN),
-    closeLong:      long.format(FOUNDING_CLOSE),
-    closeShort:     short.format(FOUNDING_CLOSE),
+    closeLong:      long.format(ORIGINAL_CLOSE),
+    closeShort:     short.format(ORIGINAL_CLOSE),
   }
 }
 

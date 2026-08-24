@@ -14,7 +14,7 @@
     "headlineSub": "One truth.",
     "lead": "Value Stream Mapping for the flow of goods. Makigami for the office. Each in current and future state — with takt time, lead time and waste calculated live while you draw. The map that does the math, and an embedded sensei that questions it.",
     "ctaPrimary": "Get your Chaos Score",
-    "ctaSecondary": "Reserve a founding seat",
+    "ctaSecondary": "Reserve an Original seat",
     "founderTitle": "Founder · Sensei",
     "founderBio": "25+ years on factory floors — Tetra Pak, Stora Enso, Oatly, Nobia, Galderma. Now a platform, not a consulting retainer.",
     "proof": {
@@ -23,7 +23,7 @@
       "canvases": "10 min",
       "canvasesLabel": "From sign-in to your first mapped process",
       "start": "100",
-      "startLabel": "Founding seats — lifetime price-lock + Founders' Roundtable"
+      "startLabel": "Original seats — lifetime price-lock + the Founder’s Roundtable"
     }
   },
   "forWhom": {
@@ -96,8 +96,8 @@
         "body": "Turn insights into PDCA cycles with owners, deadlines, before/after photos. Nothing gets lost in email. Nothing gets celebrated too early."
       },
       "warroom": {
-        "title": "Compass & North Star",
-        "body": "Set the North Star and the value priorities up top, so every map and every pilot below ties back to what the business actually needs. The CEO, the plant manager and the Lean coach finally read from one shared truth."
+        "title": "True North",
+        "body": "Set the True North and the value priorities up top, so every map and every pilot below ties back to what the business actually needs. The CEO, the plant manager and the Lean coach finally read from one shared truth."
       },
       "report": {
         "title": "One-page A3 report",
@@ -131,8 +131,8 @@
         "body": "The universal language of every Toyota Production System review on Earth. Print it. Pin it. Walk it. Every map, compass and kaizen report exports as a branded A3 or A4 — in EN, SV and ZH, today."
       }
     },
-    "foundingNote": "Reserve a founding seat — 30 days free, then your price locked for life. 100 seats only.",
-    "foundingCta": "Reserve your seat"
+    "originalNote": "Reserve an Original seat — 30 days free, then your price locked for life. 100 seats only.",
+    "originalCta": "Reserve your seat"
   },
   "diagnostic": {
     "eyebrow": "Free Diagnostic",
@@ -248,7 +248,9 @@
       "error": "Something went wrong. Please email hello@leanthecompany.com and we'll help.",
       "noEndpoint": "Form endpoint not configured yet. Please email hello@leanthecompany.com.",
       "meta": "Your answers stay with the founder. No tracking, no resell, no drip campaign nonsense."
-    }
+    },
+    "baselineTitle": "Write this number down, with today’s date.",
+    "baselineBody": "In six months you’ll want to know whether it moved."
   },
   "gembaDrill": {
     "eyebrow": "Test yourself",
@@ -273,78 +275,70 @@
     "chaosCta": "Run the Chaos Score"
   },
   "pricing": {
-    "eyebrow": "What's coming",
-    "headline": "Three ways to use it. One product, built once.",
-    "lead": "We're not selling the platform yet — we're building it. The first 100 founding members get 30 days free when it opens, then their price locked for life. Privilege, not discount.",
+    "eyebrow": {
+      "A": "Pricing — sales open {salesOpenLong}",
+      "B": "Pricing — Original 100 closes {closeLong}",
+      "C": "Pricing"
+    },
+    "headline": "Four ways to use it. One product, built once.",
+    "lead": {
+      "A": "We're not selling yet — we're building. Sales open {salesOpenLong}. Original seats close {closeLong}. A hundred seats, and then the price is just the price.",
+      "B": "The first 100 pay full price and lock it for life. Original seats are open until {closeLong}. After that the price is just the price.",
+      "C": "Contributor is a person. Consultant is a practice. Process Owner is a team. Architect is a partnership."
+    },
     "comingSoon": "Coming soon",
     "meteringNote": "Sensei runs on real AI, so we meter it — and you can top up anytime. Storage doesn't, so canvases aren't capped on team plans. No surprise bills, ever.",
-    "founding": {
-      "eyebrow": "Founding 100",
-      "headline": "Be one of the first 100. Pay full price. Lock that price forever.",
-      "body": "When access opens, founding members get 30 days free — no card. After that, founders pay their tier's full founding rate — and that price never moves for them, ever. You also get a quarterly Founders' Roundtable with me, your company on the Founding 100 honour roll (with permission), and first call on every new module before it ships. We chose privilege over discount because customers who pay full price build a sharper product. Cancel anytime — no long-term commitment from your side, only the price-lock from ours.",
-      "spots": "100 founding seats"
-    },
     "tiers": {
       "contributor": {
         "title": "Contributor",
         "audience": "For the people who do the work",
-        "desc": "For the operator, analyst or team lead who wants to map their first process tonight — on their own laptop, with nobody asking permission. Start where the work actually happens.",
-        "cta": "Reserve a Contributor seat",
+        "desc": "For the operator, analyst or engineer who wants to map their first process tonight — on their own laptop, with nobody asking permission. Start where the work actually happens.",
         "features": [
-          "Up to 15 canvases (Makigami today, VSM as it lands)",
+          "5 active Operational Spaces — five improvement projects running at once",
+          "Keep every Space you finish — archived Spaces stay free and never count against your five",
           "Export to A3 PDF (EN / SV / ZH)",
-          "AI Sensei — 50 questions / month · top up anytime",
+          "AI Sensei — 50 questions a month, top up any time",
           "Private workspace — just you",
-          "Community forum access",
-          "€19 / month — locked for life for founding members"
-        ]
+          "Community forum",
+          "Founder replies within two business days"
+        ],
+        "lock": "€19 / month — locked for life if you join by {closeLong}",
+        "price": "€19 / month",
+        "priceNumber": "€19",
+        "cycleNote": "An improvement cycle runs 12 to 15 weeks. Five Spaces at once is 17 to 22 projects a year — and the finished ones archive free, so the next five start clean."
       },
       "consultant": {
         "title": "Consultant",
         "audience": "For the people who coach the work",
-        "desc": "For the independent consultant or Lean coach with a first client book. Each client in its own sealed workspace — walk into the workshop with a live canvas instead of a PowerPoint, for less than an hour of your day rate per month.",
-        "cta": "Reserve a Consultant seat",
+        "desc": "For the independent consultant or lean coach with a first client book. Each client kept separate — walk into the workshop with a live canvas instead of a PowerPoint, for less than an hour of your day rate per month.",
         "features": [
           "Everything in Contributor",
-          "3 client workspaces, kept strictly separate",
-          "Up to 15 canvases per workspace",
-          "AI Sensei — 100 questions / month, pooled · top up anytime",
+          "5 clients",
+          "25 active Operational Spaces, pooled — put 12 on a big plant and 5 on a small one, your call",
+          "Keep every Space you finish, across every client",
+          "AI Sensei — 150 questions a month, pooled, top up any time",
           "Kaizen tracker with PDCA cycles",
-          "A3 export with LeanTheCompany footer — white-label lives in Architect",
-          "€69 / month — locked for life for founding members"
-        ]
+          "Founder replies within two business days"
+        ],
+        "lock": "€69 / month — locked for life if you join by {closeLong}",
+        "price": "€69 / month",
+        "priceNumber": "€69"
       },
       "processOwner": {
         "title": "Process Owner",
         "audience": "For the people who own the process",
-        "desc": "For the manager or team that owns a process end to end — across departments, sites or shifts. One flat fee, no procurement headache. Shared canvases, real roles, one source of truth instead of a folder of screenshots.",
-        "cta": "Reserve a Process Owner seat",
-        "features": [
-          "Up to 8 seats per team — scales per seat above that",
-          "Unlimited canvases & kaizens (fair use)",
-          "Shared workspace, roles & permissions",
-          "AI Sensei — 300 questions / month, pooled across the team · top up anytime",
-          "Kaizen tracker with PDCA cycles",
-          "Compass & North Star dashboard for the steering team",
-          "Email support directly from the founder",
-          "€149 / month — locked for life for founding members"
-        ]
+        "price": "€249 / month",
+        "desc": "For the manager or team that owns a process end to end — across departments, sites or shifts. One flat fee. No procurement headache. Shared canvases, real roles, one source of truth instead of a folder of screenshots.",
+        "note": "Not available at launch. We’re building the team side properly rather than shipping a seat count we can’t yet honour. Tell me you want it and you’ll be first in the queue — at the Original rate.",
+        "cta": "Join the Process Owner queue"
       },
       "architect": {
         "title": "Architect",
         "audience": "For the people who design the system",
-        "desc": "For the continuous-improvement lead, business architect or external partner running LeanTheCompany across many teams or clients. Multi-workspace, white-label, with a clean handoff at the end.",
-        "cta": "Reserve an Architect seat",
-        "features": [
-          "Everything in Process Owner",
-          "AI Sensei — 150 questions / month per active client · top up anytime",
-          "Multi-workspace (clients or business units)",
-          "White-label A3 export",
-          "Workspace handoff to a Contributor seat",
-          "Founder Slack channel + monthly partner call",
-          "Revenue share on every seat you refer — earn it down, potentially to zero",
-          "€199 / month — locked for life for founding members"
-        ]
+        "desc": "For the continuous-improvement lead, business architect or external partner running LeanTheCompany across many teams or clients. Multi-workspace, full white-label, with a clean handoff at the end.",
+        "note": "Architect isn’t a subscription tier — it’s a partnership, and it’s priced as one. Revenue share on every seat you refer, multi-workspace across clients or business units, white-label export with no LeanTheCompany mark, workspace handoff to a Contributor seat, and a direct line to me.",
+        "note2": "We’re opening applications after launch. If you’re running Lean inside a consultancy, an OEM academy or a university programme, tell me now and you’ll be first in the queue.",
+        "cta": "Apply for the partner track"
       }
     },
     "form": {
@@ -352,12 +346,74 @@
       "emailPlaceholder": "Work email",
       "loading": "Reserving your seat…",
       "thanksTitle": "Seat reserved.",
-      "thanksBody": "I'll email you the moment we open access — and you'll be in the founding 100. No drip emails in between.",
+      "thanksBody": "I’ll email you the moment we open access — and you’ll be in the Original 100. No drip emails in between.",
       "error": "Something went wrong. Please email hello@leanthecompany.com.",
       "noEndpoint": "Reservation endpoint not configured yet. Please email hello@leanthecompany.com."
     },
     "partnerNote": "Running Lean inside a consultancy, an OEM academy, or a university programme?",
-    "partnerCta": "Let's talk partnership →"
+    "partnerCta": "Let's talk partnership →",
+    "space": {
+      "headline": "One Space, one process, seen properly.",
+      "p1": "An Operational Space is one business process — mapped as it actually runs today, and as it should run instead.",
+      "p2": "You map the office flow with a Makigami and the material flow with a value stream map. You mark where the time really goes. Then you draw the future state, and the kaizen cards are the work that gets you from one to the other.",
+      "p3": "One Space holds all of it, including the record of what you tried and what happened. Add another Space for the next process. That is the whole system."
+    },
+    "archive": {
+      "headline": "A Space doesn't get abandoned. It graduates.",
+      "p1": "Your plan sets how many Spaces you can work in at once. It does not set how many you can keep.",
+      "p2": "When a process is good enough and stable enough to run without you, that Space is finished — so you archive it. It stays readable, printable, exportable, and it never counts against your active limit again. Bring it back whenever you want. Nothing is ever deleted.",
+      "p3": "Keep everything you finish. And if you stop subscribing, you keep read-only access to all of it for two years, with export available the whole time. We’ll remind you before anything goes.",
+      "p4": "You did the work. It’s yours."
+    },
+    "comparison": {
+      "headline": "You could do this on a whiteboard. People try.",
+      "p1": "Miro, Lucidchart, a PowerPoint template — €5 to €9 a month for shapes and arrows. They're good tools. They just don't know anything.",
+      "p2": "A blank canvas doesn't know what a value stream is. It won't tell you your Makigami has a handoff loop in it, it won't turn the map into an A3 your steering group will actually read, and it won't still be there in eleven months when the consultant has gone and nobody remembers why the board was drawn that way. And when you stop paying for one of those, your boards go read-only and you're told to delete some to get back in. We don't do that. Archive what you finish, keep it forever, and if you leave you still have two years and an export button.",
+      "p3": "That's the difference. Not the canvas — what the canvas knows, and whether it's still yours."
+    },
+    "original": {
+      "eyebrow": {
+        "A": "Original 100 · opens {salesOpenLong}",
+        "B": "Original 100"
+      },
+      "headline": "Be one of the first 100. Pay full price. Lock that price for life.",
+      "bodyA": {
+        "p1": "We're not selling yet — we're building. Sales open {salesOpenLong}. Original seats close {closeLong}. A hundred seats, and then the price is just the price.",
+        "p2": "The beta is open now and it’s free until {closeLong}. Beta members get first call on an Original seat when sales open."
+      },
+      "bodyB": {
+        "p1": "Original seats are open until {closeLong}. After that the price is just the price.",
+        "p2": "Original Subscribers get 30 days free, then pay their tier’s full rate — and that rate never moves for as long as the subscription runs. You also get a standing seat at the Founder’s Roundtable with me, your company on the Original 100 honour roll (with permission), and first call on every new module before it ships.",
+        "p3": "We chose privilege over discount because customers who pay full price build a sharper product. Cancel any time — no long-term commitment from your side, only the price-lock from ours."
+      },
+      "chipSalesOpen": "Sales open {salesOpenLong}",
+      "chipClose": "Original 100 closes {closeLong}",
+      "countdown": "Closes {closeLong} · {days} days left"
+    },
+    "priceLock": {
+      "title": "What the price lock covers.",
+      "body": "Your Original rate is locked on the tier you joined, for as long as your subscription runs without a break. Change tier and the new tier is charged at its then-current rate — with your Original Subscriber status carried across. Let the subscription lapse and the lock ends with it. Original Subscriber status belongs to you or your company, and doesn’t transfer in a sale. Add-ons — extra clients, extra Spaces, Sensei top-ups — are charged at their price when you add them."
+    },
+    "badges": {
+      "comingSoon": "Coming soon",
+      "partnerTrack": "Partner track",
+      "stateA": "Open beta · sales open {salesOpenShort}",
+      "stateB": "Original 100 · closes {closeShort}"
+    },
+    "cta": {
+      "A": "Start the open beta",
+      "B": "Become an Original Subscriber",
+      "C": "Start your 30 days"
+    },
+    "microcopy": {
+      "A": "Free while the beta runs. Sales open {salesOpenLong}.",
+      "B": "30 days free, then {price}/month — locked for life. Your first charge is 30 days after you join. We’ll email you before it happens.",
+      "C": "30 days free, then {price}/month. Your first charge is 30 days after you join. We’ll email you before it happens."
+    },
+    "consultantNote": "Consultant is five Contributor licences in one. Bought separately they’d be €95.",
+    "addOns": "Growing? Add a client for €12/month — five more Spaces come with it. Need more room on the clients you have? +5 Spaces for €6/month. Sensei top-ups are €12 per 100 questions, and credits never expire.",
+    "annualNote": "Annual billing arrives after launch. Original Subscribers get first call — and your locked price comes with you.",
+    "responseBound": "Founder replies within two business days — Monday to Friday, excluding Swedish public holidays and the July period."
   },
   "about": {
     "eyebrow": "About the Founder",
@@ -403,7 +459,7 @@
     "headlineSub": "Start piloting.",
     "lead": "Pick one value stream. Draw it with me this week. Ship your first visible improvement before the month is out.",
     "ctaPrimary": "Get your Chaos Score",
-    "ctaSecondary": "Reserve a founding seat",
+    "ctaSecondary": "Reserve an Original seat",
     "meta": "No login wall. No sales call. No obligation."
   },
   "footer": {
