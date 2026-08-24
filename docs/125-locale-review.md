@@ -284,10 +284,31 @@ and capital-O `Original` is the brand token per E2, so the branch keeps
 | E7 | sv *"till Originalpris"* → *"till ditt låsta pris"* — Original is the status, never the price |
 | E9 | punctuation and spacing fixes where the target text exists on this branch |
 
-**One instance NOT changed, flagged for your ruling:** `pricing.priceLock.body` (sv) still
-reads *"Ditt Originalpris är låst…"*, which is the same Original-as-price shape E7 kills.
-I left it because the **panel itself** writes `Ditt ”Original”-pris` in SP-1, so it is
-approved copy rather than a stray. E7 named only the PO-11 instance. Your call.
+### ⚠ E7 extended — `pricing.priceLock.body` (sv), and its Chinese twin
+
+I had left this one flagged rather than changed, because the **panel itself** writes
+`Ditt ”Original”-pris` in SP-1, so it was approved copy rather than a stray.
+**Gösta ruled 2026-08-24: E7 extends to it. The panel’s shape does not ship.**
+Reworded status-first:
+
+- was: `Ditt Originalpris är låst på den nivå du gick med på, …`
+- **now:** `Som Originalprenumerant är ditt pris låst på den nivå du gick med på, …`
+
+**Gösta’s pen polishes the exact wording here.** One thing to look at while you do:
+the paragraph now says **Originalprenumerant three times** — the new opener, then
+*"med din status som Originalprenumerant med dig"*, then *"Statusen som
+Originalprenumerant tillhör dig…"*. The opener already establishes the status, so the
+second mention is probably the one to thin. I kept the edit minimal deliberately rather
+than pre-empting your pen.
+
+**Still flagged, not changed — the Chinese carries the identical shape.**
+`pricing.priceLock.body` (zh) opens `您的 Original 价格锁定在…` — *your Original price*,
+exactly what E7 kills in Swedish. The ruling named sv, and 012 Q6’s principle
+(*Original is the status, never the price*) is not language-specific, so this looks like
+the same defect one locale over. Not touched without a ruling. Status-first would be
+something like `作为 Original 会员，您的价格锁定在…` — her pen, not mine.
+
+sv is now clean of the Original-as-price shape: zero occurrences of `Originalpris`.
 
 E1, E5, E8 and four E9 items found **no matching text on this branch** — the strings here
 are worded differently or already correct. Reported rather than silently skipped.
