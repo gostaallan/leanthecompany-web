@@ -301,14 +301,33 @@ Originalprenumerant tillhör dig…"*. The opener already establishes the status
 second mention is probably the one to thin. I kept the edit minimal deliberately rather
 than pre-empting your pen.
 
-**Still flagged, not changed — the Chinese carries the identical shape.**
-`pricing.priceLock.body` (zh) opens `您的 Original 价格锁定在…` — *your Original price*,
-exactly what E7 kills in Swedish. The ruling named sv, and 012 Q6’s principle
-(*Original is the status, never the price*) is not language-specific, so this looks like
-the same defect one locale over. Not touched without a ruling. Status-first would be
-something like `作为 Original 会员，您的价格锁定在…` — her pen, not mine.
+**The Chinese carried the identical shape, and is now fixed too** — ruled the same
+evening: 012 Q6 is not language-specific.
 
-sv is now clean of the Original-as-price shape: zero occurrences of `Originalpris`.
+- was: `您的 Original 价格锁定在您加入时所选的方案上，…` — *your Original price*
+- **now:** `作为 Original 会员，您的价格锁定在您加入时所选的方案上，…`
+
+**Same note as the Swedish, for the same reason:** the paragraph now says
+**`Original 会员` three times** — the new opener, then `Original 会员身份` twice. The
+opener establishes the status, so one of the later two is probably the one to thin.
+Left for your pen rather than pre-empted.
+
+### A second Chinese instance, found by sweeping rather than by the ruling
+
+`pricing.tiers.processOwner.note` (zh) ended `并享有 Original 价格` — *and enjoy the
+Original price*. **That is PO-11, the exact segment E7 was written about**, in Chinese.
+Its Swedish twin was fixed when E7 was first applied; this one was missed and only
+surfaced on a full sweep for the shape. Now symmetric with the Swedish:
+
+- sv: `… står du först i kön — till ditt låsta pris.`
+- zh: `… 您就排在队首 —— 并享有您的锁定价格。`
+
+**Both sv and zh are now clean of the Original-as-price shape — zero occurrences.**
+
+English is deliberately untouched: v6 §7 and §10 write *"at the Original rate"* and
+*"Your Original rate is locked"* as approved GTM copy, and E7 was raised against the
+translations. If 012 Q6 should reach the English too, that is a GTM change to v6, not
+a translation fix — flagging it rather than making it here.
 
 E1, E5, E8 and four E9 items found **no matching text on this branch** — the strings here
 are worded differently or already correct. Reported rather than silently skipped.
