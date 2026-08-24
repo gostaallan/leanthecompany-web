@@ -183,9 +183,20 @@ export function Pricing({ state, daysLeft, dates }: Props) {
             {/* This is what turns "for life" from an open-ended liability into
                 a bounded promise. It goes out on the same page as the claim it
                 bounds, never a click away. GTM 003 §2. */}
-            <p className="text-xs text-ink-soft leading-relaxed max-w-3xl mb-12">
+            <p className="text-xs text-ink-soft leading-relaxed max-w-3xl mb-3">
               <strong className="text-ink">{t('priceLock.title')}</strong>{' '}
               {t('priceLock.body')}
+            </p>
+
+            {/* The deliberate asymmetry, and it is the reason this paragraph is
+                separate rather than folded into the one above: the price lock
+                dies with the subscription, the archive does not. The lock is a
+                commercial privilege; the archive is the customer's own work.
+                GTM 006 §10 + errata E4 — EN had lost its opener while sv and zh
+                both carried one, on a legally binding block. */}
+            <p className="text-xs text-ink-soft leading-relaxed max-w-3xl mb-12">
+              <strong className="text-ink">{t('archiveNote.title')}</strong>{' '}
+              {t('archiveNote.body')}
             </p>
           </>
         )}
