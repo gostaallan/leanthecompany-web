@@ -392,7 +392,7 @@
     },
     "priceLock": {
       "title": "Vad prislåset omfattar.",
-      "body": "Som Originalprenumerant är ditt pris låst på den nivå du gick med på, så länge din prenumeration löper utan avbrott. Byter du nivå debiteras den nya nivån till sitt då gällande pris — med din status som Originalprenumerant med dig. Låter du prenumerationen upphöra tar låset slut med den. Statusen som Originalprenumerant tillhör dig eller ditt företag och följer inte med vid en försäljning. Tillägg — fler klienter, fler Spaces, Sensei-påfyllningar — debiteras till sitt pris när du lägger till dem."
+      "body": "Ditt ursprungliga pris är låst för den nivå du gick med i, så länge din prenumeration förblir oavbruten. Om du byter nivå debiteras den nya nivån enligt då gällande pris, medan din status som Originalprenumerant fortsätter att gälla. Om din prenumeration avslutas upphör det låsta priset med den. Statusen som Originalprenumerant tillhör dig eller ditt företag och följer inte med vid en försäljning. Tillägg – inklusive extra klienter, ytterligare Spaces och Sensei-påfyllningar – debiteras till det pris som gäller vid tidpunkten de läggs till."
     },
     "badges": {
       "comingSoon": "KOMMER SNART",

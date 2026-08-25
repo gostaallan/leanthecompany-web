@@ -392,7 +392,7 @@
     },
     "priceLock": {
       "title": "What the price lock covers.",
-      "body": "Your Original rate is locked on the tier you joined, for as long as your subscription runs without a break. Change tier and the new tier is charged at its then-current rate — with your Original Subscriber status carried across. Let the subscription lapse and the lock ends with it. Original Subscriber status belongs to you or your company, and doesn’t transfer in a sale. Add-ons — extra clients, extra Spaces, Sensei top-ups — are charged at their price when you add them."
+      "body": "Your Original rate is locked in for the tier you joined, for as long as your subscription remains uninterrupted. If you change tiers, the new tier will be charged at its then-current rate, while your Original Subscriber status carries over. If your subscription lapses, the locked rate ends with it. Original Subscriber status belongs to you or your company and cannot be transferred as part of a sale. Add-ons — including extra clients, additional Spaces, and Sensei top-ups — are charged at the applicable price at the time they are added."
     },
     "badges": {
       "comingSoon": "Coming soon",

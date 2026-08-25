@@ -284,7 +284,30 @@ and capital-O `Original` is the brand token per E2, so the branch keeps
 | E7 | sv *"till Originalpris"* → *"till ditt låsta pris"* — Original is the status, never the price |
 | E9 | punctuation and spacing fixes where the target text exists on this branch |
 
-### ⚠ E7 extended — `pricing.priceLock.body` (sv), and its Chinese twin
+### ✅ CLOSED — `pricing.priceLock.body`, all three, ruled by the pens
+
+**Both pens have ruled and the three bodies are now their exact text.** Nothing on this
+row is open. Recorded here because the route to it is worth keeping:
+
+- **EN keeps *"Your Original rate"*** — Gösta’s GTM ruling. The question I had parked for
+  v6.1 (*should 012 Q6 reach the English too?*) is **CLOSED: no.** E7 governs the
+  translations; the English is approved GTM copy.
+- **SV drops the brand from the price entirely** — *"Ditt **ursprungliga** pris"*,
+  descriptive rather than branded. That satisfies 012 Q6 **structurally**, which is a
+  better answer than the status-first rewrite I proposed: there is no Original-anything
+  attached to a price to argue about. Gösta’s text, with one ruled word-swap
+  (*dåvarande* → *då gällande*).
+- **ZH keeps her structure** with E2’s `Original 会员` restored and the brand detached
+  from 价格.
+
+The two "triple" notes I raised are resolved by the ruled text: the Swedish now says
+`Originalprenumerant` **twice**, not three times, because the opener no longer needs it.
+The Chinese still says `Original 会员` three times and that is **as ruled** — her
+structure, her call, not an oversight to re-raise.
+
+---
+
+### The route there, for the record
 
 I had left this one flagged rather than changed, because the **panel itself** writes
 `Ditt ”Original”-pris` in SP-1, so it was approved copy rather than a stray.
@@ -324,10 +347,8 @@ surfaced on a full sweep for the shape. Now symmetric with the Swedish:
 
 **Both sv and zh are now clean of the Original-as-price shape — zero occurrences.**
 
-English is deliberately untouched: v6 §7 and §10 write *"at the Original rate"* and
-*"Your Original rate is locked"* as approved GTM copy, and E7 was raised against the
-translations. If 012 Q6 should reach the English too, that is a GTM change to v6, not
-a translation fix — flagging it rather than making it here.
+English stays as approved v6 copy — *"at the Original rate"* in §7 and *"Your Original
+rate"* in §10. Ruled by Gösta: E7 governs the translations, not the English.
 
 E1, E5, E8 and four E9 items found **no matching text on this branch** — the strings here
 are worded differently or already correct. Reported rather than silently skipped.
