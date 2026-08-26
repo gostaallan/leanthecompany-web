@@ -1,7 +1,8 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { Home, Gauge, Layers } from 'lucide-react'
+import { cn } from '@/lib/utils'
 
 const CARDS = [
   { key: 'reshoring', Icon: Home },
@@ -11,19 +12,32 @@ const CARDS = [
 
 export function ForWhom() {
   const t = useTranslations('forWhom')
+  const locale = useLocale()
 
   return (
     <section id="for-whom" className="section">
       <div className="wrap">
-        <div className="max-w-3xl mb-16">
-          <p className="label-caps mb-4 flex items-center gap-3">
+        {/* The measure sits on each CHILD, not on the block, so one of them can
+            be wider than the others without moving the rest (130 §2.4). The
+            Chinese headline is 17 glyphs; at `text-5xl` that is 816px, and
+            `max-w-3xl` is 768px, so it dropped its last character to a second
+            line. `max-w-4xl` (896px) holds it, inside 1056px of `wrap`, with
+            no change to the type size. en and sv keep `max-w-3xl` on every
+            child and render byte-identically. */}
+        <div className="mb-16">
+          <p className="label-caps mb-4 flex items-center gap-3 max-w-3xl">
             <span className="w-7 h-px bg-amber-DEFAULT inline-block" />
             {t('eyebrow')}
           </p>
-          <h2 className="heading-display text-4xl md:text-5xl mb-6">
+          <h2
+            className={cn(
+              'heading-display text-4xl md:text-5xl mb-6 max-w-3xl',
+              locale === 'zh' && 'lg:max-w-4xl',
+            )}
+          >
             {t('headline')}
           </h2>
-          <p className="body-lead">{t('lead')}</p>
+          <p className="body-lead max-w-3xl">{t('lead')}</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">

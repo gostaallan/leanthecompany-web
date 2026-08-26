@@ -3,15 +3,20 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { Button } from '@/components/ui/Button'
-import { GraduationCap, Briefcase, Globe2, Languages } from 'lucide-react'
+import { GraduationCap, Briefcase } from 'lucide-react'
 
+/**
+ * The two schools. `lean` and `china` went in 130 Amendment 1 — the experience
+ * they listed is in the bio now, and their EN bodies were internal comments
+ * that had reached the live page. Two cards fill `sm:grid-cols-2` as one row.
+ */
 const CREDENTIALS = [
   { key: 'edu',    Icon: GraduationCap },
   { key: 'mba',    Icon: Briefcase     },
-  { key: 'lean',   Icon: Globe2        },
-  { key: 'china',  Icon: Languages     },
 ] as const
 
+// ⚠ `china` here is `about.geo.china` — a different key path from the deleted
+// `about.credentials.china`. It stays.
 const GEO = ['malmo', 'china', 'seasia', 'europe'] as const
 
 export function About() {

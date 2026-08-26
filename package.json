@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/vocab-gate.mjs && node scripts/parity-gate.mjs",
+    "prebuild": "node scripts/vocab-gate.mjs && node scripts/parity-gate.mjs && node scripts/residue-gate.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
     "vocab": "node scripts/vocab-gate.mjs",
-    "parity": "node scripts/parity-gate.mjs"
+    "parity": "node scripts/parity-gate.mjs",
+    "residue": "node scripts/residue-gate.mjs"
   },
   "dependencies": {
     "next": "14.2.3",
