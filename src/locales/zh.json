@@ -11,11 +11,11 @@
   "hero": {
     "eyebrow": "面向工厂与办公室的精益平台",
     "headline": "两块画布。四张地图。",
-    "headlineSub": "一个真相。",
+    "headlineSub": "唯一事实来源",
     "lead": "价值流图用于物料流，Makigami 用于事务流程。支持现状图与未来状态图，在绘制过程中实时计算节拍时间、前置时间与流程浪费。流程图负责计算，内置 Sensei 负责提问。",
     "ctaPrimary": "获取您的 Chaos Score",
     "ctaSecondary": "预定 Original 席位",
-    "founderTitle": "创始人 · 老师傅",
+    "founderTitle": "创始人 · Sensei",
     "founderBio": "25 年以上制造现场实践经验，覆盖 Tetra Pak、Danone、FrieslandCampina、Nestlé、Heineken、Stora Enso、Oatly、Nobia 与 Galderma。如今，这些经验已沉淀为平台，而非持续顾问服务。",
     "proof": {
       "years": "25+",
@@ -287,7 +287,7 @@
       "C": "Contributor 是一个人。Consultant 是一间事务所。Process Owner 是一个团队。Architect 是一段合作关系。"
     },
     "comingSoon": "即将上线",
-    "meteringNote": "老师傅由真正的 AI 驱动,所以我们对它计量——您可以随时充值加量。存储几乎不花钱,所以团队套餐的画布不设上限。绝不会有意外账单。",
+    "meteringNote": "Sensei 由真正的 AI 驱动,所以我们对它计量——您可以随时充值加量。存储几乎不花钱,所以团队套餐的画布不设上限。绝不会有意外账单。",
     "tiers": {
       "contributor": {
         "title": "Contributor",
@@ -422,7 +422,7 @@
   "about": {
     "eyebrow": "关于创始人",
     "headline": "三个行业，反复出现的同一个问题。这正是 LeanTheCompany 存在的原因",
-    "title": "创始人 · 老师傅",
+    "title": "创始人 · Sensei",
     "tagline": "工程师、现场管理者、精益教练。25 年以上横跨欧洲与亚洲的实践经验——从生产现场到企业管理层——在写下第一行代码之前，这些经历已历练为 LeanTheCompany 的根基。",
     "linkedinCta": "在 LinkedIn 上与我联系",
     "lead": "我的运营管理职业生涯始于 Tetra Pak。在这里工作的十年，让我深入生产现场，在制造、运营和持续改善中积累了扎实的一线实践经验，也逐渐形成了我至今仍在使用的观察方式——看工作的实际流动，看生产现场真正发生了什么，也看流程设计与实际运行之间存在怎样的差距。\n\n从 2009 年起，这些经验进一步拓展到东亚和东南亚。在 EFESO Consulting 期间，我参与并推动了多家大型乳制品、食品及饮料企业的精益转型与运营改善，包括 FrieslandCampina、Nestlé、Danone 和 Heineken，同时也有机会从企业内部深入参与实际运营。2014 年以后，我的实践进一步拓展到更多行业和地区，以 EFESO 顾问身份推动 WCOM（World Class Operations Management，世界级运营管理）与 TPM 的落地实施——从林业与包装领域的 Stora Enso、SCA 和 BillerudKorsnäs，到食品生产领域的 Oatly、制药领域的 Galderma，以及厨房制造领域的 Nobia。在 Oatly，我还参与了其瑞典、荷兰、美国和中国多家工厂的日常管理体系和支柱架构建设，以支持企业快速扩张，相关工作一直延续到整个新冠疫情期间。\n\n企业在变，产品在变，国家在变，但背后的深层问题始终高度相似。超过 25 年的运营诊断与改善实践，让这些反复出现的规律逐渐沉淀为一套方法——无论面对什么行业、什么工厂，都能够更快看清问题，并判断应该从哪里着手。",

@@ -40,6 +40,14 @@
  *        eleven legitimate strings including 创始人圆桌, the Roundtable. The
  *        negative lookahead is the whole point of the term.
  *
+ *   zh — `老师傅` is the SECOND zh term, and it is a brand rule rather than a
+ *        retired programme name. **Sensei is a token and is never translated.**
+ *        In today's register 老师傅 addresses a taxi driver or a street-food
+ *        seller; it is not the word for a master of a craft. It needs no
+ *        lookahead — there is no legitimate use of it on this site.
+ *        Ruled 2026-08-26, after the R2 redrafts reintroduced it once already:
+ *        the gate is what makes the ruling permanent rather than a memory.
+ *
  * A gate that cries wolf gets switched off, and a gate that misses the live
  * string was never a gate. Both failure modes are one edit away from each other.
  */
@@ -62,6 +70,11 @@ const TERMS = [
   { lang: 'sv', re: /grundarrunda/gi, note: 'use grundarens rundabordssamtal' },
   { lang: 'sv', re: /grundarpris/gi, note: 'use Original-pris' },
   { lang: 'zh', re: /创始(?!人)/g, note: 'use Original — 创始人 (the person) is legal' },
+  {
+    lang: 'zh',
+    re: /老师傅/g,
+    note: 'Sensei is a brand token — never translated (ruling 2026-08-26)',
+  },
 ];
 
 /** Every tracked-ish source file under src/. node_modules and .next never appear here. */
