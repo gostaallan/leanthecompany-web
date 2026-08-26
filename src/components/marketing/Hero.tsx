@@ -4,7 +4,12 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { Button } from '@/components/ui/Button'
 
-export function Hero() {
+interface Props {
+  /** The Original 100 close, already in this locale's own form. Dates the price lock. */
+  closeLong: string
+}
+
+export function Hero({ closeLong }: Props) {
   const t = useTranslations('hero')
 
   return (
@@ -55,7 +60,9 @@ export function Hero() {
               </div>
               <div>
                 <strong className="block font-serif text-3xl text-amber-light">{t('proof.start')}</strong>
-                <span className="text-xs text-white/50 mt-1 block">{t('proof.startLabel')}</span>
+                <span className="text-xs text-white/50 mt-1 block">
+                  {t('proof.startLabel', { closeLong })}
+                </span>
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Sparkles } from 'lucide-react'
 
 /**
- * WhatsComing — previews of what founding members get.
+ * WhatsComing — previews of what Original Subscribers get.
  *
  * Since 2026-07-13 three of the four cards show REAL platform screenshots
  * (public/previews/*.png — cropped from dev, refreshed manually when the UI
@@ -70,7 +70,12 @@ const PREVIEWS: readonly Preview[] = [
   { key: 'pdf',      image: { src: '/previews/a3-print.png', width: 1440, height: 800 } },
 ]
 
-export function WhatsComing() {
+interface Props {
+  /** The Original 100 close, already in this locale's own form. Dates the price lock. */
+  closeLong: string
+}
+
+export function WhatsComing({ closeLong }: Props) {
   const t = useTranslations('whatsComing')
 
   return (
@@ -124,17 +129,17 @@ export function WhatsComing() {
           ))}
         </div>
 
-        {/* Founding-member strip */}
+        {/* Original 100 strip */}
         <div className="mt-12 pt-8 border-t border-rule flex flex-wrap items-center justify-between gap-4">
           <p className="text-sm text-ink-soft flex items-center gap-2">
             <Sparkles size={14} className="text-amber-DEFAULT" strokeWidth={1.5} />
-            {t('foundingNote')}
+            {t('originalNote', { closeLong })}
           </p>
           <a
             href="#pricing"
             className="text-sm font-semibold text-amber-DEFAULT hover:text-ink transition-colors"
           >
-            {t('foundingCta')} →
+            {t('originalCta')} →
           </a>
         </div>
       </div>

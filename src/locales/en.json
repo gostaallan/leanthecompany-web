@@ -12,18 +12,18 @@
     "eyebrow": "The lean platform for factory and office",
     "headline": "Two canvases. Four maps.",
     "headlineSub": "One truth.",
-    "lead": "Value Stream Mapping for the flow of goods. Makigami for the office. Each in current and future state — with takt time, lead time and waste calculated live while you draw. The map that does the math, and an embedded sensei that questions it.",
+    "lead": "Value Stream Mapping for material flow. Makigami for office processes. Both in current and future state, with takt time, lead time and waste calculated live as you map. A process map that does the maths. An embedded Sensei that challenges it.",
     "ctaPrimary": "Get your Chaos Score",
-    "ctaSecondary": "Reserve a founding seat",
+    "ctaSecondary": "Reserve an Original seat",
     "founderTitle": "Founder · Sensei",
-    "founderBio": "25+ years on factory floors — Tetra Pak, Stora Enso, Oatly, Nobia, Galderma. Now a platform, not a consulting retainer.",
+    "founderBio": "25+ years on factory floors — from Tetra Pak, Danone, FrieslandCampina, Nestlé, Heineken, Stora Enso, Oatly, Nobia and Galderma. Now built into a platform, not a consulting retainer.",
     "proof": {
       "years": "25+",
-      "yearsLabel": "Years of Lean, hands on the shop floor",
+      "yearsLabel": "Years of Lean, hands-on the shop floor",
       "canvases": "10 min",
       "canvasesLabel": "From sign-in to your first mapped process",
       "start": "100",
-      "startLabel": "Founding seats — lifetime price-lock + Founders' Roundtable"
+      "startLabel": "Original seats — lifetime price-lock + the Founder’s Roundtable"
     }
   },
   "forWhom": {
@@ -56,7 +56,7 @@
       "chaos": {
         "label": "01 · Chaos",
         "title": "Nobody knows the real process.",
-        "body": "Ask five people to describe the order-to-ship flow and you'll get five different maps. The one on the wall is three years and two ERPs out of date. Decisions get made against fiction."
+        "body": "Ask five people to map the order-to-ship flow and you’ll get five different versions. The current-state map on the wall is three years old and two ERP migrations out of date. You’re making decisions against a process that no longer exists."
       },
       "handoffs": {
         "title": "Handoffs eat more time than the work.",
@@ -89,15 +89,15 @@
       },
       "sensei": {
         "title": "Embedded AI Sensei",
-        "body": "Ask \"where's my biggest waste?\" and get a direct answer grounded in your own map — your takt, your handoffs, your losses. Not a chatbot with lean books in its prompt: a coach that reads what you drew."
+        "body": "Ask, “Where’s my biggest waste?” and get an answer grounded in your actual process data — your takt, your handoffs, your losses. Not generic Lean advice from a chatbot, but a coach that reads what you mapped."
       },
       "tracker": {
         "title": "Kaizen tracker",
         "body": "Turn insights into PDCA cycles with owners, deadlines, before/after photos. Nothing gets lost in email. Nothing gets celebrated too early."
       },
       "warroom": {
-        "title": "Compass & North Star",
-        "body": "Set the North Star and the value priorities up top, so every map and every pilot below ties back to what the business actually needs. The CEO, the plant manager and the Lean coach finally read from one shared truth."
+        "title": "True North",
+        "body": "Set the True North and the value priorities up top, so every map and every pilot below ties back to what the business actually needs. The CEO, the plant manager and the Lean coach finally read from one shared truth."
       },
       "report": {
         "title": "One-page A3 report",
@@ -113,7 +113,7 @@
       "vsm": {
         "tag": "Live in beta",
         "title": "Value Stream Mapping canvas",
-        "body": "Drag process boxes, draw flow arrows, drop inventory triangles and kanban loops. Takt, lead time and inventory cover roll up automatically — current state and future state, side by side."
+        "body": "Drag process boxes, draw flow arrows, drop inventory triangles and kanban loops. Takt, lead time and inventory cover roll up automatically —Build current state and future state, side by side."
       },
       "makigami": {
         "tag": "Live now",
@@ -128,36 +128,36 @@
       "pdf": {
         "tag": "Live in beta",
         "title": "One-page A3 export",
-        "body": "The universal language of every Toyota Production System review on Earth. Print it. Pin it. Walk it. Every map, compass and kaizen report exports as a branded A3 or A4 — in EN, SV and ZH, today."
+        "body": "The universal language of Toyota Production System reviews worldwide. Print it. Pin it. Walk it. Every map, compass, and kaizen report exports as a branded A3 or A4 — in English, Swedish, or Chinese, today."
       }
     },
-    "foundingNote": "Reserve a founding seat — 30 days free, then your price locked for life. 100 seats only.",
-    "foundingCta": "Reserve your seat"
+    "originalNote": "Reserve an Original seat — 30 days free, then your price locked for life. 100 seats only.",
+    "originalCta": "Reserve your seat"
   },
   "diagnostic": {
     "eyebrow": "Free Diagnostic",
-    "headline": "Get your Chaos Score in 5 questions.",
+    "headline": "Measure your process chaos in 5 questions.",
     "lead": "Five questions about how work actually moves through your plant. The score lands on the screen when you finish — no email, no waiting. Each answer comes back with the note I'd give you standing on the line next to you.",
-    "spineLabel": "What it scores",
+    "spineLabel": "What the Score Measures",
     "areas": {
       "inventory": {
         "title": "Inventory between steps",
-        "ask": "How many days does a typical order spend waiting versus being worked on?",
+        "ask": "How much of an order’s lead time is waiting versus actual processing time?",
         "options": [
-          "Hours of waiting, at most. Work moves.",
+          "Work keeps moving.",
           "A day or two of waiting for a few hours of work.",
-          "Several days waiting. I'd have to guess at the working time.",
-          "I genuinely don't know — nobody has ever measured it."
+          "Several days of waiting. I don’t really know how much of that time is actual work.",
+          "I don’t know — we’ve never measured the waiting time against the actual work time."
         ]
       },
       "handoffs": {
         "title": "Handoffs per order",
-        "ask": "How many different people or systems touch an order from quote to ship?",
+        "ask": "How many different people or systems touch an order from quote to shipment?",
         "options": [
-          "Under five, and I can name them.",
+          "Fewer than five, and I know exactly who or what they are.",
           "Five to ten.",
           "More than ten.",
-          "Nobody has ever drawn it end to end."
+          "Färre än fem, och jag vet exakt vilka eller vad de är."
         ]
       },
       "shadow": {
@@ -165,63 +165,63 @@
         "ask": "How many critical Excel files live on personal drives instead of systems of record?",
         "options": [
           "None that I know of.",
-          "One or two, and we know who owns them.",
-          "Several, and at least one is business-critical.",
-          "The plant would struggle without them."
+          "One or two, with clear ownership.",
+          "Several, and at least one is critical to the operation.",
+          "The plant would struggle to operate without them."
         ]
       },
       "decisions": {
         "title": "Decision cycle time",
-        "ask": "When a problem surfaces on the floor, how long until someone empowered actually decides?",
+        "ask": "When a problem surfaces on the shop floor, how long does it take to reach someone with the authority to make a decision?",
         "options": [
           "Within the shift.",
           "A day or two.",
-          "It waits for a weekly meeting.",
+          "The decision waits for the weekly meeting.",
           "It depends entirely on who is available."
         ]
       },
       "standards": {
         "title": "Standardised work",
-        "ask": "What percentage of your key operations have a one-page standard everyone follows?",
+        "ask": "What percentage of your key operations have a one-page standard that is understood and followed by everyone?",
         "options": [
-          "Most of them, and they're current.",
-          "About half — some are out of date.",
-          "A few, and mostly written for an audit.",
-          "Almost none. Everyone has their own method."
+          "Most of them, and the standards are kept up to date.",
+          "About half — and some of those standards are out of date.",
+          "Only a few — and most were created for audit compliance rather than daily use.",
+          "Almost none. Everyone works to their own method."
         ]
       }
     },
     "bands": {
       "firefighting": {
         "name": "Firefighting",
-        "line": "You are not short of capacity. You are short of visibility."
+        "line": "Your problem isn’t capacity. It’s visibility."
       },
       "runningOnPeople": {
-        "name": "Running on people",
-        "line": "It works because specific people make it work. That is not a system — it is a rota."
+        "name": "Dependent on People",
+        "line": "The process works because specific people keep it running. That’s not a system — it’s dependency disguised as one."
       },
       "drifting": {
         "name": "Drifting",
-        "line": "Nothing is on fire. Several things are smouldering, and they compound quietly."
+        "line": "Nothing is on fire. But several problems are smouldering beneath the surface, and their effects compound over time."
       },
       "quietPlant": {
         "name": "Quiet plant",
-        "line": "Rare. Either the work has been done, or nobody has looked closely enough yet."
+        "line": "Rare. Either the process is genuinely under control, or nobody has looked closely enough yet."
       }
     },
     "introTitle": "Score your own plant.",
-    "introBody": "Answer the way the floor would answer, not the way the report does. Nobody sees this but you unless you choose to send it.",
+    "introBody": "Answer from the reality on the floor, not from what the report says. Your results stay private unless you choose to share them.",
     "metaQuestions": "5 questions",
-    "metaInstant": "Score on screen",
+    "metaInstant": "Instant Score",
     "metaNoSignup": "No sign-up",
     "start": "Start the five questions",
     "fieldNote": "Field note",
-    "notesEnglish": "The field notes are in English for now. They are the founder's own words, and a machine translation of them would be worse than not shipping them.",
+    "notesEnglish": "The field notes remain in English for now. They’re the founder’s own words, drawn from real-world experience, and we’d rather leave them untranslated than dilute them with machine translation.",
     "next": "Next",
     "seeResult": "See my score",
     "scoreLabel": "Chaos Score",
-    "leaksTitle": "Where it's leaking",
-    "noLeaks": "Nothing scored above zero. That is rare enough to be worth a second look — walk the five questions again with the person who runs the floor, not the person who runs the report.",
+    "leaksTitle": "Where You’re Losing Capacity",
+    "noLeaks": "Nothing scored above zero. That’s unusual enough to verify at the gemba — go through the five questions again with the person closest to the work, not the person closest to the report..",
     "again": "Answer again",
     "drillLead": "That scored your plant. The Gemba Drill scores your reading of one — six situations off the floor, ninety seconds, no sign-up.",
     "drillCta": "Take the Gemba Drill",
@@ -241,20 +241,22 @@
         "Other"
       ],
       "consent": "Also send me occasional notes from LeanTheCompany. Unsubscribe anytime.",
-      "submit": "Send me where to start",
+      "submit": "Tell Me Where to Start",
       "loading": "Sending…",
       "thanksTitle": "Got it. Check your inbox.",
       "thanksBody": "Your five answers are with me. I read these myself and write back by hand, so the reply comes from a person rather than a template. Your score stays on the screen above.",
-      "error": "Something went wrong. Please email hello@leanthecompany.com and we'll help.",
-      "noEndpoint": "Form endpoint not configured yet. Please email hello@leanthecompany.com.",
-      "meta": "Your answers stay with the founder. No tracking, no resell, no drip campaign nonsense."
-    }
+      "error": "Something went wrong？ Please email hello@leanthecompany.com and we'll help.",
+      "noEndpoint": "This form isn’t live yet. For now, please email hello@leanthecompany.com",
+      "meta": "Your answers stay with the founder. No tracking. No reselling. No automated marketing sequences."
+    },
+    "baselineTitle": "Write this number down, with today’s date.",
+    "baselineBody": "In six months you’ll want to know whether it moved."
   },
   "gembaDrill": {
     "eyebrow": "Test yourself",
     "headline": "Ninety seconds on the floor. Six calls to make.",
-    "lead": "Not definitions. Situations — a line that misses takt, a kaizen that unwinds, an andon nobody pulls. Pick the read you'd defend in front of the plant manager.",
-    "englishNote": "The drill is in English for now. The thirty field notes are the founder's own words, and a machine translation of them would be worse than not shipping them.",
+    "lead": "Not definitions. Real situations — a line missing takt, an improvement that doesn’t sustain, an andon nobody pulls. Choose the call you’d defend in front of the plant manager.",
+    "englishNote": "The drill is in English for now. The thirty field notes are the founder’s own words, and we’d rather leave them untranslated than lose their meaning to machine translation.",
     "metaQuestions": "6 questions",
     "metaLayers": "6 layers",
     "metaNoSignup": "No sign-up",
@@ -273,78 +275,70 @@
     "chaosCta": "Run the Chaos Score"
   },
   "pricing": {
-    "eyebrow": "What's coming",
-    "headline": "Three ways to use it. One product, built once.",
-    "lead": "We're not selling the platform yet — we're building it. The first 100 founding members get 30 days free when it opens, then their price locked for life. Privilege, not discount.",
+    "eyebrow": {
+      "A": "Pricing — sales open {salesOpenLong}",
+      "B": "Pricing — Original 100 closes {closeLong}",
+      "C": "Pricing"
+    },
+    "headline": "Four ways to use it. One product, built once.",
+    "lead": {
+      "A": "We're not selling yet — we're building. Sales open {salesOpenLong}. Original seats close {closeLong}. A hundred seats, and then the price is just the price.",
+      "B": "The first 100 pay full price and lock it for life. Original seats are open until {closeLong}. After that the price is just the price.",
+      "C": "Contributor is a person. Consultant is a practice. Process Owner is a team. Architect is a partnership."
+    },
     "comingSoon": "Coming soon",
     "meteringNote": "Sensei runs on real AI, so we meter it — and you can top up anytime. Storage doesn't, so canvases aren't capped on team plans. No surprise bills, ever.",
-    "founding": {
-      "eyebrow": "Founding 100",
-      "headline": "Be one of the first 100. Pay full price. Lock that price forever.",
-      "body": "When access opens, founding members get 30 days free — no card. After that, founders pay their tier's full founding rate — and that price never moves for them, ever. You also get a quarterly Founders' Roundtable with me, your company on the Founding 100 honour roll (with permission), and first call on every new module before it ships. We chose privilege over discount because customers who pay full price build a sharper product. Cancel anytime — no long-term commitment from your side, only the price-lock from ours.",
-      "spots": "100 founding seats"
-    },
     "tiers": {
       "contributor": {
         "title": "Contributor",
         "audience": "For the people who do the work",
-        "desc": "For the operator, analyst or team lead who wants to map their first process tonight — on their own laptop, with nobody asking permission. Start where the work actually happens.",
-        "cta": "Reserve a Contributor seat",
+        "desc": "For the operator, analyst or engineer who wants to map their first process tonight — on their own laptop, with nobody asking permission. Start where the work actually happens.",
         "features": [
-          "Up to 15 canvases (Makigami today, VSM as it lands)",
+          "5 active Operational Spaces — five improvement projects running at once",
+          "Keep every Space you finish — archived Spaces stay free and never count against your five",
           "Export to A3 PDF (EN / SV / ZH)",
-          "AI Sensei — 50 questions / month · top up anytime",
+          "AI Sensei — 50 questions a month, top up any time",
           "Private workspace — just you",
-          "Community forum access",
-          "€19 / month — locked for life for founding members"
-        ]
+          "Community forum",
+          "Founder replies within two business days"
+        ],
+        "lock": "€19 / month — locked for life if you join by {closeLong}",
+        "price": "€19 / month",
+        "priceNumber": "€19",
+        "cycleNote": "An improvement cycle runs 12 to 15 weeks. Five Spaces at once is 17 to 22 projects a year — and the finished ones archive free, so the next five start clean."
       },
       "consultant": {
         "title": "Consultant",
         "audience": "For the people who coach the work",
-        "desc": "For the independent consultant or Lean coach with a first client book. Each client in its own sealed workspace — walk into the workshop with a live canvas instead of a PowerPoint, for less than an hour of your day rate per month.",
-        "cta": "Reserve a Consultant seat",
+        "desc": "For the independent consultant or lean coach with a first client book. Each client kept separate — walk into the workshop with a live canvas instead of a PowerPoint, for less than an hour of your day rate per month.",
         "features": [
           "Everything in Contributor",
-          "3 client workspaces, kept strictly separate",
-          "Up to 15 canvases per workspace",
-          "AI Sensei — 100 questions / month, pooled · top up anytime",
+          "5 clients",
+          "25 active Operational Spaces, pooled — put 12 on a big plant and 5 on a small one, your call",
+          "Keep every Space you finish, across every client",
+          "AI Sensei — 150 questions a month, pooled, top up any time",
           "Kaizen tracker with PDCA cycles",
-          "A3 export with LeanTheCompany footer — white-label lives in Architect",
-          "€69 / month — locked for life for founding members"
-        ]
+          "Founder replies within two business days"
+        ],
+        "lock": "€69 / month — locked for life if you join by {closeLong}",
+        "price": "€69 / month",
+        "priceNumber": "€69"
       },
       "processOwner": {
         "title": "Process Owner",
         "audience": "For the people who own the process",
-        "desc": "For the manager or team that owns a process end to end — across departments, sites or shifts. One flat fee, no procurement headache. Shared canvases, real roles, one source of truth instead of a folder of screenshots.",
-        "cta": "Reserve a Process Owner seat",
-        "features": [
-          "Up to 8 seats per team — scales per seat above that",
-          "Unlimited canvases & kaizens (fair use)",
-          "Shared workspace, roles & permissions",
-          "AI Sensei — 300 questions / month, pooled across the team · top up anytime",
-          "Kaizen tracker with PDCA cycles",
-          "Compass & North Star dashboard for the steering team",
-          "Email support directly from the founder",
-          "€149 / month — locked for life for founding members"
-        ]
+        "price": "€249 / month",
+        "desc": "For the manager or team that owns a process end to end — across departments, sites or shifts. One flat fee. No procurement headache. Shared canvases, real roles, one source of truth instead of a folder of screenshots.",
+        "note": "Not available at launch. We’re building the team side properly rather than shipping a seat count we can’t yet honour. Tell me you want it and you’ll be first in the queue — at the Original rate.",
+        "cta": "Join the Process Owner queue"
       },
       "architect": {
         "title": "Architect",
         "audience": "For the people who design the system",
-        "desc": "For the continuous-improvement lead, business architect or external partner running LeanTheCompany across many teams or clients. Multi-workspace, white-label, with a clean handoff at the end.",
-        "cta": "Reserve an Architect seat",
-        "features": [
-          "Everything in Process Owner",
-          "AI Sensei — 150 questions / month per active client · top up anytime",
-          "Multi-workspace (clients or business units)",
-          "White-label A3 export",
-          "Workspace handoff to a Contributor seat",
-          "Founder Slack channel + monthly partner call",
-          "Revenue share on every seat you refer — earn it down, potentially to zero",
-          "€199 / month — locked for life for founding members"
-        ]
+        "desc": "For the continuous-improvement lead, business architect or external partner running LeanTheCompany across many teams or clients. Multi-workspace, full white-label, with a clean handoff at the end.",
+        "note": "Architect isn’t a subscription tier — it’s a partnership, and it’s priced as one. Revenue share on every seat you refer, multi-workspace across clients or business units, white-label export with no LeanTheCompany mark, workspace handoff to a Contributor seat, and a direct line to me.",
+        "note2": "We’re opening applications after launch. If you’re running Lean inside a consultancy, an OEM academy or a university programme, tell me now and you’ll be first in the queue.",
+        "cta": "Apply for the partner track"
       }
     },
     "form": {
@@ -352,42 +346,108 @@
       "emailPlaceholder": "Work email",
       "loading": "Reserving your seat…",
       "thanksTitle": "Seat reserved.",
-      "thanksBody": "I'll email you the moment we open access — and you'll be in the founding 100. No drip emails in between.",
+      "thanksBody": "I’ll email you the moment we open access — and you’ll be in the Original 100. No drip emails in between.",
       "error": "Something went wrong. Please email hello@leanthecompany.com.",
       "noEndpoint": "Reservation endpoint not configured yet. Please email hello@leanthecompany.com."
     },
     "partnerNote": "Running Lean inside a consultancy, an OEM academy, or a university programme?",
-    "partnerCta": "Let's talk partnership →"
+    "partnerCta": "Let's talk partnership →",
+    "space": {
+      "headline": "One Space, one process, seen properly.",
+      "p1": "An Operational Space is one business process — mapped as it actually runs today, and as it should run instead.",
+      "p2": "You map the office flow with a Makigami and the material flow with a value stream map. You mark where the time really goes. Then you draw the future state, and the kaizen cards are the work that gets you from one to the other.",
+      "p3": "One Space holds all of it, including the record of what you tried and what happened. Add another Space for the next process. That is the whole system."
+    },
+    "archive": {
+      "headline": "A Space doesn't get abandoned. It graduates.",
+      "p1": "Your plan sets how many Spaces you can work in at once. It does not set how many you can keep.",
+      "p2": "When a process is good enough and stable enough to run without you, that Space is finished — so you archive it. It stays readable, printable, exportable, and it never counts against your active limit again. Bring it back whenever you want. Nothing is ever deleted.",
+      "p3": "Keep everything you finish. And if you stop subscribing, you keep read-only access to all of it for two years, with export available the whole time. We’ll remind you before anything goes.",
+      "p4": "You did the work. It’s yours."
+    },
+    "comparison": {
+      "headline": "You could do this on a whiteboard. People try.",
+      "p1": "Miro, Lucidchart, a PowerPoint template — €5 to €9 a month for shapes and arrows. They're good tools. They just don't know anything.",
+      "p2": "A blank canvas doesn't know what a value stream is. It won't tell you your Makigami has a handoff loop in it, it won't turn the map into an A3 your steering group will actually read, and it won't still be there in eleven months when the consultant has gone and nobody remembers why the board was drawn that way. And when you stop paying for one of those, your boards go read-only and you're told to delete some to get back in. We don't do that. Archive what you finish, keep it forever, and if you leave you still have two years and an export button.",
+      "p3": "That's the difference. Not the canvas — what the canvas knows, and whether it's still yours."
+    },
+    "original": {
+      "eyebrow": {
+        "A": "Original 100 · opens {salesOpenLong}",
+        "B": "Original 100"
+      },
+      "headline": "Be one of the first 100. Pay full price. Lock that price for life.",
+      "bodyA": {
+        "p1": "We're not selling yet — we're building. Sales open {salesOpenLong}. Original seats close {closeLong}. A hundred seats, and then the price is just the price.",
+        "p2": "The beta is open now and it’s free until {closeLong}. Beta members get first call on an Original seat when sales open."
+      },
+      "bodyB": {
+        "p1": "Original seats are open until {closeLong}. After that the price is just the price.",
+        "p2": "Original Subscribers get 30 days free, then pay their tier’s full rate — and that rate never moves for as long as the subscription runs. You also get a standing seat at the Founder’s Roundtable with me, your company on the Original 100 honour roll (with permission), and first call on every new module before it ships.",
+        "p3": "We chose privilege over discount because customers who pay full price build a sharper product. Cancel any time — no long-term commitment from your side, only the price-lock from ours."
+      },
+      "chipSalesOpen": "Sales open {salesOpenLong}",
+      "chipClose": "Original 100 closes {closeLong}",
+      "countdown": "Closes {closeLong} · {days} days left"
+    },
+    "priceLock": {
+      "title": "What the price lock covers.",
+      "body": "Your Original rate is locked in for the tier you joined, for as long as your subscription remains uninterrupted. If you change tiers, the new tier will be charged at its then-current rate, while your Original Subscriber status carries over. If your subscription lapses, the locked rate ends with it. Original Subscriber status belongs to you or your company and cannot be transferred as part of a sale. Add-ons — including extra clients, additional Spaces, and Sensei top-ups — are charged at the applicable price at the time they are added."
+    },
+    "badges": {
+      "comingSoon": "Coming soon",
+      "partnerTrack": "Partner track",
+      "stateA": "Open beta · sales open {salesOpenShort}",
+      "stateB": "Original 100 · closes {closeShort}"
+    },
+    "cta": {
+      "A": "Start the open beta",
+      "B": "Become an Original Subscriber",
+      "C": "Start your 30 days"
+    },
+    "microcopy": {
+      "A": "Free while the beta runs. Sales open {salesOpenLong}.",
+      "B": "30 days free, then {price}/month — locked for life. Your first charge is 30 days after you join. We’ll email you before it happens.",
+      "C": "30 days free, then {price}/month. Your first charge is 30 days after you join. We’ll email you before it happens."
+    },
+    "consultantNote": "Consultant is five Contributor licences in one. Bought separately they’d be €95.",
+    "addOns": "Growing? Add a client for €12/month — five more Spaces come with it. Need more room on the clients you have? +5 Spaces for €6/month. Sensei top-ups are €12 per 100 questions, and credits never expire.",
+    "annualNote": "Annual billing arrives after launch. Original Subscribers get first call — and your locked price comes with you.",
+    "responseBound": "Founder replies within two business days — Monday to Friday, excluding Swedish public holidays and the July period.",
+    "archiveNote": {
+      "title": "What the archive covers.",
+      "body": "Archived Operational Spaces are free while you're a member and never count against your active limit. If you stop subscribing you keep read-only access and export for 24 months, and we’ll send two reminders before anything is removed. Export is available at any time, subscribed or not."
+    }
   },
   "about": {
     "eyebrow": "About the Founder",
-    "headline": "Three industries. One repeating problem. That's why this exists.",
+    "headline": "Three industries. The same problem keeps surfacing. That’s why LeanTheCompany exists.",
     "title": "Founder · Sensei",
-    "tagline": "Engineer, operator, coach. Malmö ↔ Shanghai. 25+ years on the shop floor before I wrote a line of code.",
+    "tagline": "Engineer, operator, coach. 25+ years across Europe and Asia — from the shop floor to the boardroom — before I wrote a single line of code.",
     "linkedinCta": "Connect on LinkedIn",
-    "lead": "Ten years at Tetra Pak. Five at Efeso Consulting. Twelve more as an Efeso contractor running WCOM and TPM rollouts at Stora Enso, SCA, BillerudKorsnäs, Oatly, Galderma and Nobia — Sweden, Finland, the Netherlands, the United States, China, UK. Different industries — the same three problems on every shop floor.",
+    "lead": "My operational career began with Tetra Pak, where I spent ten years building hands-on experience in manufacturing, operations, and continuous improvement. It was there that I developed the foundation for how I still look at a plant today — through the flow of work, the realities of the shop floor, and the gap between how a process is designed and how it actually runs.\n\nFrom 2009, that experience expanded across East and Southeast Asia. With EFESO Consulting, I led and supported Lean transformations and operational improvement programs for major dairy, food, and beverage producers including FrieslandCampina, Nestlé, Danone, and Heineken, while also gaining operational experience from inside the businesses themselves.\n\nFrom 2014 onward, the work broadened further across industries and geographies as an EFESO contractor leading WCOM (World Class Operations Management) and TPM implementations — from Stora Enso, SCA, and BillerudKorsnäs in forest products and packaging, to Oatly in food production, Galderma in pharmaceuticals, and Nobia in kitchen manufacturing. The work took me across Europe, Asia, China, and the United States, into very different plants, processes, and operating environments.\n\nThe companies changed. The products changed. The countries changed. The underlying problems did not. More than 25 years of diagnosing and improving operations gradually turned those recurring patterns into a method I could take into virtually any plant, in any sector — and know where to start looking.",
     "bio": [
-      "I started at Tetra Pak in 1999 and spent a decade inside one of the world's most disciplined food-packaging machinery businesses. Lean wasn't an initiative there — it was how the lifts worked, how meetings ended, how line-side parts were laid out. That's where I learned the trade.",
+      "I started at Tetra Pak in 1999 and spent a decade inside one of the world's most disciplined food-packaging machinery businesses practising Lean and continuous improvement. That's where I learned the craft.",
       "From 2009 to 2014 I was at Efeso Consulting, running lean transformations across Europe and Asia. During those same years I also took operator stints at FrieslandCampina and Heineken via Asia Pacific Breweries. Same period, two angles — client-side and consultant-side. The same three failure patterns showed up in every diagnostic. Nobody could see the real flow. Handoffs ate more time than the work. The best operators ran shadow systems that left with them when they retired.",
       "From 2014 onwards I've worked as an Efeso contractor leading WCOM (World Class Operations Management) and TPM rollouts. Stora Enso across Sweden, Finland and China. SCA and BillerudKorsnäs in Sweden — three forest & packaging giants, each running the same playbook against the same gravity. Oatly across their plants in Sweden, the Netherlands, the United States and China — building the daily management system and pillar structure that scaled with them through Covid, when they were one of the few clients who could still get me onto site (they hired me direct for a stretch). Galderma in pharma. Nobia in kitchens, UK and Sweden. Twelve more years of the same diagnostics, refined into a method I could run in any plant in any sector.",
-      "Consultants solve this one plant at a time, at €2,000 a day, and the moment they leave the gravity reasserts. I wanted a tool a 26-year-old shift supervisor could open on a Sunday evening, map her own line, and walk in Monday with a better standard. That is what LeanTheCompany is."
+      "Consultants solve this one plant at a time, at €2,000 a day. But once they leave, sustaining the improvement becomes the plant’s responsibility. I wanted to build a tool that a 26-year-old shift supervisor could open when they need it, map their own line, and walk into the next shift with a better standard — without waiting for the next consulting engagement. That’s what LeanTheCompany is."
     ],
     "credentials": {
       "edu": {
         "title": "MSc Electrical Engineering",
-        "body": "Lund University of Technology (LTH). Systems, control, measurement — the numerical spine under every good lean diagnosis."
+        "body": "Lund University of Technology (LTH). Systems, control, and measurement — the engineering foundation behind every good Lean diagnosis."
       },
       "mba": {
         "title": "MBA",
-        "body": "Uppsala University. Built the commercial and leadership lens on top of the engineering one."
+        "body": "Uppsala University. Added a commercial and leadership perspective to the engineering foundation."
       },
       "lean": {
         "title": "Stora Enso · SCA · BillerudKorsnäs · Oatly · Galderma · Nobia",
-        "body": "Six blue-chip WCOM and TPM rollouts as an Efeso contractor (Oatly even brought me in-house for a stretch). On top of ten years inside Tetra Pak, five at Efeso direct, and operator stints at FrieslandCampina and Heineken APB."
+        "body": "(Do you need this part still?)"
       },
       "china": {
         "title": "China & SE Asia 2004–2014",
-        "body": "A decade based out of Shanghai and across Asia Pacific. Mandarin-capable. Comfortable where schematics, standards and soy sauce meet."
+        "body": "(not going to do anything about this part)"
       }
     },
     "geo": {
@@ -399,18 +459,18 @@
   },
   "finalCta": {
     "eyebrow": "Next step",
-    "headline": "Stop firefighting.",
-    "headlineSub": "Start piloting.",
-    "lead": "Pick one value stream. Draw it with me this week. Ship your first visible improvement before the month is out.",
+    "headline": "Stop Reacting. Start Improving.",
+    "headlineSub": "Start your pilot",
+    "lead": "Pick one value stream. Map it with me this week. Deliver your first visible improvement before the end of the month.",
     "ctaPrimary": "Get your Chaos Score",
-    "ctaSecondary": "Reserve a founding seat",
+    "ctaSecondary": "Reserve an Original seat",
     "meta": "No login wall. No sales call. No obligation."
   },
   "footer": {
-    "tagline": "Two canvases. Four maps. One truth. Built by a factory engineer, not a software studio.",
+    "tagline": "Two canvases. Four maps. One operational truth. Built by a factory engineer, not a software studio.",
     "linkedin": "Follow Gösta on LinkedIn",
-    "copyright": "Made with care in Malmö & Shanghai",
-    "disclaimer": "LeanTheCompany is an independent product. Lean, Toyota Production System, Value Stream Mapping, Makigami and kaizen are methodologies developed over decades by practitioners across the world; we stand on their shoulders and cite them where we can. Every pilot and every result shown has the customer's permission.",
+    "copyright": "Built with precision in Malmö & Shanghai",
+    "disclaimer": "LeanTheCompany is an independent product. Lean, the Toyota Production System, Value Stream Mapping, Makigami, and kaizen are methodologies and practices developed and refined over decades by practitioners around the world. We build on that body of knowledge and credit our sources wherever possible. Every customer pilot and result featured on this site is shown with the customer’s permission.",
     "cols": {
       "product": {
         "title": "Platform",

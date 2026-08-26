@@ -5,19 +5,50 @@ import { Button } from '@/components/ui/Button'
 import { Check, Sparkles } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useState, type FormEvent } from 'react'
+import type { PricingDates, PricingState } from '@/lib/pricing-state'
 
+/** Where a buyer actually goes once there is something to buy. GTM 007 §6. */
+const APP_URL = 'https://app.leanthecompany.com'
+
+/**
+ * One card component, four tiers, three states — no fork.
+ *
+ * `badge` and `cta`, when present, are the tier's OWN and beat the page state:
+ * Process Owner reads COMING SOON in every state and Architect reads PARTNER
+ * TRACK in every state, because neither is for sale on any date. The two tiers
+ * that are for sale carry no badge or CTA of their own, so they fall through to
+ * whatever the state says.
+ *
+ * `shape` picks how the card reads, not which component renders it. GTM 006 §1
+ * and 003 §3 replaced Process Owner and Architect with prose: a price or an
+ * audience line, a paragraph, a note, and a CTA — no tick list, because a queue
+ * and a partner application are not feature comparisons.
+ *
+ * `sellable` is the one that matters on 15 September: it is what turns the CTA
+ * from a Formspree form into a link to the app.
+ */
 const TIERS = [
-  { key: 'contributor',  highlight: false },
-  { key: 'consultant',   highlight: false },
-  { key: 'processOwner', highlight: true  },
-  { key: 'architect',    highlight: false },
+  { key: 'contributor',  highlight: false, shape: 'list',  sellable: true  },
+  { key: 'consultant',   highlight: false, shape: 'list',  sellable: true  },
+  { key: 'processOwner', highlight: true,  shape: 'prose', sellable: false, badge: 'comingSoon',   cta: true },
+  { key: 'architect',    highlight: false, shape: 'prose', sellable: false, badge: 'partnerTrack', cta: true },
 ] as const
 
-export function Pricing() {
+interface Props {
+  state: PricingState
+  /** Whole days to the close. Only rendered in state B. */
+  daysLeft: number
+  /** Both dates, already formatted in this locale's own form by the server. */
+  dates: PricingDates
+}
+
+export function Pricing({ state, daysLeft, dates }: Props) {
   const t = useTranslations('pricing')
   const [sentFor, setSentFor] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError]     = useState<string | null>(null)
+
+  const originalOpen = state === 'A' || state === 'B'
 
   async function handleWaitlist(e: FormEvent<HTMLFormElement>, tierKey: string) {
     e.preventDefault()
@@ -58,38 +89,137 @@ export function Pricing() {
         <div className="max-w-3xl mb-10">
           <p className="label-caps mb-4 flex items-center gap-3">
             <span className="w-7 h-px bg-amber-DEFAULT inline-block" />
-            {t('eyebrow')}
+            {t(`eyebrow.${state}`, dates)}
           </p>
           <h2 className="heading-display text-4xl md:text-5xl mb-6">
             {t('headline')}
           </h2>
-          <p className="body-lead">{t('lead')}</p>
+          <p className="body-lead">{t(`lead.${state}`, dates)}</p>
         </div>
 
-        {/* Founding-member banner */}
-        <div className="bg-ink text-white rounded-lg p-6 md:p-7 mb-12 flex flex-col md:flex-row gap-5 md:items-center md:justify-between border border-amber-DEFAULT/40">
-          <div className="flex gap-4 items-start md:items-center">
-            <Sparkles size={22} className="text-amber-light shrink-0 mt-1 md:mt-0" strokeWidth={1.5} />
-            <div>
-              <p className="font-mono text-xs text-amber-light tracking-widest uppercase mb-1.5">
-                {t('founding.eyebrow')}
-              </p>
-              <h3 className="font-serif text-xl md:text-2xl text-white leading-snug">
-                {t('founding.headline')}
-              </h3>
-              <p className="text-sm text-white/70 mt-2 leading-relaxed">
-                {t('founding.body')}
-              </p>
-            </div>
-          </div>
-          <span className="font-mono text-xs text-white/50 tracking-wider whitespace-nowrap shrink-0 self-start md:self-center">
-            {t('founding.spots')}
-          </span>
+        {/* The unit the whole ladder is denominated in, explained before it is
+            counted. Every tier below is priced in Spaces and the reader has
+            never seen the word. GTM 006 §2 — above the grid, below the intro.
+            No abbreviations and no canvas counts, deliberately. */}
+        <div className="max-w-3xl mb-10">
+          <h3 className="font-serif text-2xl mb-4">{t('space.headline')}</h3>
+          <p className="text-sm text-ink-soft leading-relaxed mb-3">{t('space.p1')}</p>
+          <p className="text-sm text-ink-soft leading-relaxed mb-3">{t('space.p2')}</p>
+          <p className="text-sm text-ink-soft leading-relaxed">{t('space.p3')}</p>
         </div>
+
+        {/* The cap is on ACTIVE Spaces, and this block is why that is not a
+            restriction. It says what the USER decides — never what the product
+            detects (GTM 011 §1): maturity-triggered archiving is post-launch,
+            so "when a process is good enough, you archive it" is true today and
+            "we'll tell you when it's ready" would not be. The promise only
+            works unconditional, so there is no fair-use line and no counter. */}
+        <div className="max-w-3xl mb-12 bg-white/60 border border-rule rounded-lg p-6">
+          <h3 className="font-serif text-2xl mb-4">{t('archive.headline')}</h3>
+          <p className="text-sm text-ink-soft leading-relaxed mb-3">{t('archive.p1')}</p>
+          <p className="text-sm text-ink-soft leading-relaxed mb-3">{t('archive.p2')}</p>
+          <p className="text-sm text-ink-soft leading-relaxed mb-3">{t('archive.p3')}</p>
+          <p className="text-sm text-ink leading-relaxed font-semibold">{t('archive.p4')}</p>
+        </div>
+
+        {/* The €69-vs-Miro answer. Above the grid on purpose — the buyer asks
+            this before they read a single price. GTM 003 §5. */}
+        <div className="max-w-3xl mb-12 border-l-2 border-amber-DEFAULT/40 pl-6">
+          <h3 className="font-serif text-2xl mb-4">{t('comparison.headline')}</h3>
+          <p className="text-sm text-ink-soft leading-relaxed mb-3">{t('comparison.p1')}</p>
+          <p className="text-sm text-ink-soft leading-relaxed mb-3">{t('comparison.p2')}</p>
+          <p className="text-sm text-ink leading-relaxed font-semibold">{t('comparison.p3')}</p>
+        </div>
+
+        {/* Original 100 banner — gone once the seats close. */}
+        {originalOpen && (
+          <>
+            <div className="bg-ink text-white rounded-lg p-6 md:p-7 mb-4 flex flex-col md:flex-row gap-5 md:items-center md:justify-between border border-amber-DEFAULT/40">
+              <div className="flex gap-4 items-start md:items-center">
+                <Sparkles size={22} className="text-amber-light shrink-0 mt-1 md:mt-0" strokeWidth={1.5} />
+                <div>
+                  <p className="font-mono text-xs text-amber-light tracking-widest uppercase mb-1.5">
+                    {t(`original.eyebrow.${state}`, dates)}
+                  </p>
+                  <h3 className="font-serif text-xl md:text-2xl text-white leading-snug">
+                    {t('original.headline')}
+                  </h3>
+                  {state === 'A' ? (
+                    <>
+                      <p className="text-sm text-white/70 mt-2 leading-relaxed">{t('original.bodyA.p1', dates)}</p>
+                      <p className="text-sm text-white/70 mt-2 leading-relaxed">{t('original.bodyA.p2', dates)}</p>
+                    </>
+                  ) : (
+                    <>
+                      <p className="text-sm text-white/70 mt-2 leading-relaxed">{t('original.bodyB.p1', dates)}</p>
+                      <p className="text-sm text-white/70 mt-2 leading-relaxed">{t('original.bodyB.p2', dates)}</p>
+                      <p className="text-sm text-white/70 mt-2 leading-relaxed">{t('original.bodyB.p3', dates)}</p>
+                    </>
+                  )}
+                </div>
+              </div>
+
+              {/* State A shows two flat dates: a day count toward a door that
+                  has not opened yet is a countdown to nothing. The real
+                  countdown starts when the seats do. GTM 006 §5. */}
+              <div className="flex flex-col gap-2 shrink-0 self-start md:self-center">
+                {state === 'A' ? (
+                  <>
+                    <span className="font-mono text-xs text-white/50 tracking-wider whitespace-nowrap">
+                      {t('original.chipSalesOpen', dates)}
+                    </span>
+                    <span className="font-mono text-xs text-white/50 tracking-wider whitespace-nowrap">
+                      {t('original.chipClose', dates)}
+                    </span>
+                  </>
+                ) : (
+                  <span className="font-mono text-xs text-amber-light tracking-wider whitespace-nowrap">
+                    {t('original.countdown', { ...dates, days: daysLeft })}
+                  </span>
+                )}
+              </div>
+            </div>
+
+            {/* This is what turns "for life" from an open-ended liability into
+                a bounded promise. It goes out on the same page as the claim it
+                bounds, never a click away. GTM 003 §2. */}
+            <p className="text-xs text-ink-soft leading-relaxed max-w-3xl mb-3">
+              <strong className="text-ink">{t('priceLock.title')}</strong>{' '}
+              {t('priceLock.body')}
+            </p>
+
+            {/* The deliberate asymmetry, and it is the reason this paragraph is
+                separate rather than folded into the one above: the price lock
+                dies with the subscription, the archive does not. The lock is a
+                commercial privilege; the archive is the customer's own work.
+                GTM 006 §10 + errata E4 — EN had lost its opener while sv and zh
+                both carried one, on a legally binding block. */}
+            <p className="text-xs text-ink-soft leading-relaxed max-w-3xl mb-12">
+              <strong className="text-ink">{t('archiveNote.title')}</strong>{' '}
+              {t('archiveNote.body')}
+            </p>
+          </>
+        )}
 
         <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
-          {TIERS.map(({ key, highlight }) => {
-            const features = t.raw(`tiers.${key}.features`) as string[]
+          {TIERS.map((tier) => {
+            const { key, highlight, shape, sellable } = tier
+            const ownBadge = 'badge' in tier ? tier.badge : undefined
+
+            // The tier's own badge wins; otherwise the state's; otherwise none,
+            // which is what state C looks like on a tier that is simply for sale.
+            const badge =
+              ownBadge ? t(`badges.${ownBadge}`)
+              : state === 'A' ? t('badges.stateA', dates)
+              : state === 'B' ? t('badges.stateB', dates)
+              : null
+
+            // Formspree in state A for everyone, and in every state for the two
+            // tiers that are not for sale. A link to the app only where there is
+            // genuinely something to buy. GTM 007 §6.
+            const linkToApp = sellable && state !== 'A'
+            const ctaLabel = 'cta' in tier ? t(`tiers.${key}.cta`) : t(`cta.${state}`)
+
             return (
               <div
                 key={key}
@@ -98,37 +228,91 @@ export function Pricing() {
                   highlight ? 'border-amber-DEFAULT shadow-md' : 'border-rule'
                 )}
               >
-                <span className="inline-block self-start text-xs font-semibold px-2.5 py-1 rounded-full mb-5 uppercase tracking-wide bg-amber-pale text-amber-DEFAULT border border-amber-DEFAULT/30">
-                  {t('comingSoon')}
-                </span>
+                {badge ? (
+                  <span className="inline-block self-start text-xs font-semibold px-2.5 py-1 rounded-full mb-5 uppercase tracking-wide bg-amber-pale text-amber-DEFAULT border border-amber-DEFAULT/30">
+                    {badge}
+                  </span>
+                ) : (
+                  // Keeps the four cards on one baseline once the badges go.
+                  <span className="block mb-5 h-[1.75rem]" aria-hidden="true" />
+                )}
 
                 <h3 className="font-serif text-2xl mb-2">{t(`tiers.${key}.title`)}</h3>
-                <p className="text-xs text-ink-soft mb-5 font-mono tracking-wide uppercase">
+                <p className="text-xs text-ink-soft mb-2 font-mono tracking-wide uppercase">
                   {t(`tiers.${key}.audience`)}
                 </p>
-                <p className="text-sm text-ink-soft leading-relaxed mb-6">{t(`tiers.${key}.desc`)}</p>
 
-                <ul className="space-y-2 mb-8 list-none flex-1">
-                  {features.map((feat) => (
-                    <li key={feat} className="flex gap-2 text-sm text-ink">
+                {/* Process Owner keeps its number even though it has a queue and
+                    not a checkout. A tier with a queue and a price is a ladder
+                    rung; a tier with a queue and no price makes €69 look like
+                    the ceiling. GTM 006 §1. */}
+                {key === 'processOwner' && (
+                  <p className="font-serif text-xl text-ink mb-4">{t('tiers.processOwner.price')}</p>
+                )}
+
+                <p className={cn('text-sm text-ink-soft leading-relaxed mb-6', key !== 'processOwner' && 'mt-3')}>
+                  {t(`tiers.${key}.desc`)}
+                </p>
+
+                {shape === 'list' ? (
+                  <ul className="space-y-2 mb-8 list-none flex-1">
+                    {(t.raw(`tiers.${key}.features`) as string[]).map((feat) => (
+                      <li key={feat} className="flex gap-2 text-sm text-ink">
+                        <Check size={16} className="text-amber-DEFAULT shrink-0 mt-0.5" strokeWidth={2} />
+                        <span>{feat}</span>
+                      </li>
+                    ))}
+                    <li className="flex gap-2 text-sm text-ink font-semibold">
                       <Check size={16} className="text-amber-DEFAULT shrink-0 mt-0.5" strokeWidth={2} />
-                      <span>{feat}</span>
+                      {/* The dated lock is a claim with a deadline in it, so it
+                          stops being made the day the deadline passes. */}
+                      <span>{state === 'C' ? t(`tiers.${key}.price`) : t(`tiers.${key}.lock`, dates)}</span>
                     </li>
-                  ))}
-                </ul>
+                    {/* Answers "is five enough?" with the buyer's own arithmetic
+                        rather than an adjective. GTM 006 §4. */}
+                    {key === 'contributor' && (
+                      <li className="pt-2 text-xs text-ink-soft leading-relaxed">
+                        {t('tiers.contributor.cycleNote')}
+                      </li>
+                    )}
+                    {/* Does more work than any feature bullet above it: it makes
+                        the €69 legible as a discount without saying "discount".
+                        GTM 006 §5. */}
+                    {key === 'consultant' && (
+                      <li className="pt-2 text-xs text-ink leading-relaxed font-semibold">
+                        {t('consultantNote')}
+                      </li>
+                    )}
+                  </ul>
+                ) : (
+                  <div className="mb-8 flex-1 space-y-3">
+                    <p className="text-sm text-ink leading-relaxed">{t(`tiers.${key}.note`)}</p>
+                    {key === 'architect' && (
+                      <p className="text-sm text-ink leading-relaxed">{t('tiers.architect.note2')}</p>
+                    )}
+                  </div>
+                )}
 
-                {/* Per-tier waitlist form — always visible, no click-to-reveal */}
-                {sentFor === key ? (
+                {linkToApp ? (
+                  <div className="space-y-2.5">
+                    <Button asChild variant="softCta" size="full">
+                      <a href={APP_URL}>{ctaLabel}</a>
+                    </Button>
+                    <p className="text-xs text-ink-soft leading-relaxed">
+                      {t(`microcopy.${state}`, { ...dates, price: t(`tiers.${key}.priceNumber`) })}
+                    </p>
+                  </div>
+                ) : sentFor === key ? (
                   <div className="bg-teal-DEFAULT/10 border border-teal-DEFAULT/30 rounded p-4 text-center">
                     <p className="text-sm font-semibold text-teal-DEFAULT mb-1">
                       {t('form.thanksTitle')}
                     </p>
-                    <p className="text-xs text-ink-soft">{t('form.thanksBody')}</p>
+                    <p className="text-xs text-ink-soft">{t('form.thanksBody', dates)}</p>
                   </div>
                 ) : (
                   <form onSubmit={(e) => handleWaitlist(e, key)} className="space-y-2.5">
                     {/* Hidden meta — give Formspree real subject + reply-to to reduce spam scoring */}
-                    <input type="hidden" name="_subject" value={`LeanTheCompany — ${key} founding-member request`} />
+                    <input type="hidden" name="_subject" value={`LeanTheCompany — ${key} Original 100 request`} />
                     <input type="hidden" name="_format"  value="plain" />
                     <input type="hidden" name="tier"     value={key} />
                     {/* Honeypot — bots fill this, humans never see it. Paradoxically reduces false positives. */}
@@ -160,8 +344,16 @@ export function Pricing() {
                       size="full"
                       disabled={loading}
                     >
-                      {loading ? t('form.loading') : t(`tiers.${key}.cta`)}
+                      {loading ? t('form.loading') : ctaLabel}
                     </Button>
+                    {/* Only the two sellable tiers carry an under-button line.
+                        A queue and a partner application are not purchases, so
+                        neither gets card-and-cancellation wording. GTM 007 §5. */}
+                    {sellable && (
+                      <p className="text-xs text-ink-soft leading-relaxed">
+                        {t(`microcopy.${state}`, { ...dates, price: t(`tiers.${key}.priceNumber`) })}
+                      </p>
+                    )}
                   </form>
                 )}
               </div>
@@ -169,17 +361,25 @@ export function Pricing() {
           })}
         </div>
 
-        {/* Metering note — explains why Sensei is capped + top-up, so a limit reads as fair */}
+        {/* The add-ons ship on day one deliberately. Unremarkable published at
+            launch; it reads as a walk-back if it appears in year two. GTM 006 §6. */}
         <p className="text-center text-sm text-ink-soft mt-10 max-w-2xl mx-auto">
+          {t('addOns')}
+        </p>
+
+        {/* Annual is a lever we still have, not a thing we sell here. GTM 006 §2. */}
+        <p className="text-center text-sm text-ink-soft mt-10 max-w-2xl mx-auto">
+          {t('annualNote')}
+        </p>
+
+        {/* Metering note — explains why Sensei is capped + top-up, so a limit reads as fair */}
+        <p className="text-center text-sm text-ink-soft mt-6 max-w-2xl mx-auto">
           {t('meteringNote')}
         </p>
 
-        {/* Partner strip */}
-        <p className="text-center text-sm text-ink-soft mt-6">
-          {t('partnerNote')}{' '}
-          <a href="mailto:hello@leanthecompany.com" className="font-semibold text-amber-DEFAULT hover:text-ink transition-colors">
-            {t('partnerCta')}
-          </a>
+        {/* Publish the bound or don't publish the promise. GTM 006 §3. */}
+        <p className="text-center text-xs text-ink-soft mt-6 max-w-2xl mx-auto">
+          {t('responseBound')}
         </p>
       </div>
     </section>

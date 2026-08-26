@@ -311,6 +311,20 @@ export function Diagnostic() {
                   {t(`bands.${band.id}.line`)}
                 </p>
 
+                {/* Two lines, zero build, and the only thing on this screen that
+                    pays off six months from now. The in-product Chaos Score is
+                    post-launch; when it ships, the story it tells needs a
+                    baseline that ALREADY EXISTS. Every visitor who writes the
+                    number down today is that baseline. GTM 006 §13b.
+
+                    On how the eventual comparison may be phrased, see GTM 011
+                    §2: the front-door number is a hook, not a measurement, so
+                    only a measured-to-measured delta is ever claimed. */}
+                <div className="mt-6 border-l-2 border-amber-DEFAULT/40 pl-4">
+                  <p className="text-sm text-ink font-semibold">{t('baselineTitle')}</p>
+                  <p className="text-sm text-ink-soft leading-relaxed">{t('baselineBody')}</p>
+                </div>
+
                 {/* Where it's leaking — up to three, worst first, zero-point
                     areas excluded. A plant with nothing above zero gets a
                     different line rather than three phantom leaks. */}

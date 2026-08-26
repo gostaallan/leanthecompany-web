@@ -14,22 +14,22 @@
     "headlineSub": "En sanning.",
     "lead": "Value Stream Mapping för varuflödet. Makigami för kontoret. Båda i nuläge och börläge — med takttid, ledtid och slöseri beräknade live medan du ritar. Kartan som räknar själv, och en inbäddad sensei som ifrågasätter den.",
     "ctaPrimary": "Få din Chaos Score",
-    "ctaSecondary": "Boka en grundarplats",
+    "ctaSecondary": "Boka en Originalplats",
     "founderTitle": "Grundare · Sensei",
-    "founderBio": "25+ år på verkstadsgolv — Tetra Pak, Stora Enso, Oatly, Nobia, Galderma. Nu en plattform — inte ett konsultavtal.",
+    "founderBio": "25+ år på verkstadsgolv — Tetra Pak, Danone, FrieslandCampina, Nestlé, Heineken, Stora Enso, Oatly, Nobia och Galderma. Nu en plattform — inte ett konsultavtal.",
     "proof": {
       "years": "25+",
-      "yearsLabel": "År av Lean, med händerna på verkstadsgolvet",
+      "yearsLabel": "År av Lean, hands-on på verkstadsgolvet",
       "canvases": "10 min",
       "canvasesLabel": "Från inloggning till din första kartlagda process",
       "start": "100",
-      "startLabel": "Grundarplatser — livstidslåst pris + Grundarrunda"
+      "startLabel": "Originalplatser — livstidslåst pris + grundarens rundabordssamtal"
     }
   },
   "forWhom": {
     "eyebrow": "För vem",
-    "headline": "Tre ögonblick då processen brister snabbare än organisationsträdet hinner reparera.",
-    "lead": "Makigami fungerar för alla administrativa processer. VSM fungerar för alla som tillverkar varor. Verktygen är universella — men tre triggersituationer brinner hårdast just nu.",
+    "headline": "Tre ögonblick då processen brister snabbare än organisationsstrukturen hinner reparera.",
+    "lead": "Makigami fungerar för alla administrativa processer. VSM fungerar för alla som tillverkar varor. Verktygen är universella — men tre utlösande situationer bränner som hetast just nu.",
     "cards": {
       "reshoring": {
         "title": "AI-direktivet",
@@ -37,7 +37,7 @@
       },
       "surge": {
         "title": "Efterfrågechocken",
-        "body": "Pharma, försvar, medtech, energi — efterfrågan dubblades. Kapaciteten gjorde inte det. Övertid döljer slöseriet; att kartlägga flödet visar var timmarna faktiskt försvinner så du ökar throughput, inte headcount."
+        "body": "Läkemedel, försvar, medtech, energi — efterfrågan fördubblades. Kapaciteten gjorde det inte. Övertid döljer slöseriet; att kartlägga flödet visar var timmarna faktiskt försvinner så du ökar throughput, inte headcount."
       },
       "outgrown": {
         "title": "Processen du vuxit ur",
@@ -50,18 +50,18 @@
   "problem": {
     "eyebrow": "Problemet",
     "headline": "Du har inget människoproblem. Du har ett synlighetsproblem.",
-    "quote": "\"Där det inte finns en standard kan det inte finnas någon kaizen.\" — Taiichi Ohno",
+    "quote": "”Där det inte finns en standard kan det inte finnas någon kaizen.” — Taiichi Ohno",
     "lead": "Varje fabrik och varje kontor drivs av tre sorters slöseri som ingen skriver ner, därför att ingen kan se det. Förrän du ritar det.",
     "items": {
       "chaos": {
         "label": "01 · Kaos",
         "title": "Ingen känner till den riktiga processen.",
-        "body": "Be fem personer beskriva flödet från order till leverans — du får fem olika kartor. Den på väggen är tre år och två ERP-system gammal. Beslut tas mot fiktion."
+        "body": "Be fem personer att kartlägga flödet från order till leverans, så får du fem olika versioner. Nulägeskartan på väggen är tre år gammal och två ERP-migreringar är föråldrade. Du fattar beslut mot en process som inte längre existerar."
       },
       "handoffs": {
         "title": "Överlämningarna äter mer tid än arbetet.",
         "label": "02 · Överlämningar",
-        "body": "Maskincykeln är 40 sekunder. Ordern tillbringar 11 dagar mellan människor, inkorgar och \"väntar på svar\". Tempot lever i mellanrummen, inte i de värdeskapande stegen."
+        "body": "Maskincykeln är 40 sekunder. Ordern tillbringar 11 dagar mellan människor, inkorgar och ”väntar på svar”. Tempot lever i mellanrummen, inte i de värdeskapande stegen."
       },
       "shadow": {
         "label": "03 · Skugga",
@@ -81,26 +81,26 @@
     "items": {
       "vsm": {
         "title": "Value Stream Mapping-canvas",
-        "body": "Dra-och-släpp processrutor, lagertrianglar, kaizenblixtar och informationsflöden. Cykeltid, ledtid och %C&A räknas själva. Nuläge och börläge, sida vid sida."
+        "body": "Dra-och-släpp processrutor, lagertrianglar, kaizenblixtar och informationsflöden. Cykeltid, ledtid och %C&A räknas ut själva. Nuläge och börläge, sida vid sida."
       },
       "makigami": {
         "title": "Makigami-canvas för administration",
-        "body": "Simbane för det osynliga kontoret — sälj, konstruktion, inköp, ekonomi. Se varje överlämning, varje beslut, varje vänte-triangel som aldrig syns i verkstaden."
+        "body": "Simbanor för det osynliga kontoret — sälj, konstruktion, inköp, ekonomi. Se varje överlämning, varje beslut, varje vänte-triangel som aldrig syns i verkstaden."
       },
       "sensei": {
         "title": "Inbäddad AI-sensei",
-        "body": "Fråga \"var är mitt största slöseri?\" och få ett direkt svar grundat i din egen karta — din takt, dina överlämningar, dina förluster. Ingen chatbot med lean-böcker i prompten: en coach som läser det du ritat."
+        "body": "Fråga ”var är mitt största slöseri?” och få ett direkt svar grundat i din egen karta — din takt, dina överlämningar, dina förluster. Ingen chatbot med lean-böcker i prompten: en coach som läser av det du kartlagt."
       },
       "tracker": {
         "title": "Kaizen-tracker",
         "body": "Förvandla insikter till PDCA-cykler med ägare, deadlines, före/efter-bilder. Inget försvinner i mejl. Inget firas för tidigt."
       },
       "warroom": {
-        "title": "Compass & North Star",
-        "body": "Sätt North Star och värdeprioriteringarna högst upp, så att varje karta och varje pilot under hänger ihop med vad verksamheten faktiskt behöver. Vd, platschef och Lean-coach läser äntligen från samma sanning."
+        "title": "True North",
+        "body": "Sätt True North och värdeprioriteringarna högst upp, så att varje karta och varje pilot under knyter tillbaka till vad verksamheten faktiskt behöver. VD:n, fabrikschefen och lean-coachen läser äntligen från en gemensam sanning."
       },
       "report": {
-        "title": "En-sidig A3-rapport",
+        "title": "A3-rapport på en sida",
         "body": "Exportera varje pilot som en utskrivbar A3 på engelska, svenska eller kinesiska. Toyotas universella språk, klart för din nästa ledningsgenomgång."
       }
     }
@@ -108,12 +108,12 @@
   "whatsComing": {
     "eyebrow": "Det du får",
     "headline": "Det här är live idag — och det här kommer härnäst.",
-    "lead": "Makigami, value-stream-canvasen, den inbäddade sensein, kaizen-trackern och en-sidiga A3-exporten är alla live i beta idag. Det du ser nedan är den riktiga plattformen — verkliga skärmbilder, inte mockuper.",
+    "lead": "Makigami, value-stream-canvasen, den inbäddade sensein, kaizen-trackern och A3-exporten på en sida är alla live i beta idag. Det du ser nedan är den riktiga plattformen — verkliga skärmbilder, inte mockuper.",
     "previews": {
       "vsm": {
         "tag": "Live i beta",
         "title": "Value Stream Mapping-canvas",
-        "body": "Dra processrutor, rita flödespilar, släpp lagertrianglar och kanban-loopar. Takt, ledtid och lagertäckning räknas själva — nuläge och börläge, sida vid sida."
+        "body": "Dra processrutor, rita flödespilar, släpp lagertrianglar och kanban-loopar. Takt, ledtid och lagertäckning räknas själva — bygg nuläge och börläge, sida vid sida."
       },
       "makigami": {
         "tag": "Live nu",
@@ -127,34 +127,34 @@
       },
       "pdf": {
         "tag": "Live i beta",
-        "title": "En-sidig A3-export",
-        "body": "Det universella språket för varje TPS-genomgång på jorden. Skriv ut. Sätt upp. Gå igenom. Varje karta, kompass och kaizenrapport exporteras som profilerad A3 eller A4 — på EN, SV och ZH, redan idag."
+        "title": "A3-export på en sida",
+        "body": "Det universella språket för Toyota Production System-granskningar världen över. Skriv ut det. Nåla fast det. Gå varje steg. Varje karta, kompass och kaizen-rapport exporteras som ett varumärkesbyggt A3 eller A4 – på engelska, svenska eller kinesiska, idag."
       }
     },
-    "foundingNote": "Boka en grundarplats — 30 dagar gratis, sedan ditt pris låst för livet. Endast 100 platser.",
-    "foundingCta": "Boka din plats"
+    "originalNote": "Boka en Originalplats — 30 dagar gratis, sedan ditt pris låst för livet. Endast 100 platser.",
+    "originalCta": "Boka din plats"
   },
   "diagnostic": {
     "eyebrow": "Gratis diagnos",
     "headline": "Få din Chaos Score på 5 frågor.",
     "lead": "Fem frågor om hur arbetet faktiskt rör sig genom din fabrik. Poängen står på skärmen när du är klar — ingen mejladress, ingen väntan. Varje svar följs av den kommentar jag skulle gett dig stående vid linjen.",
-    "spineLabel": "Det här mäts",
+    "spineLabel": "Vad poängen mäter",
     "areas": {
       "inventory": {
         "title": "Lager mellan stegen",
-        "ask": "Hur många dagar ligger en typisk order och väntar kontra bearbetas?",
+        "ask": "Hur mycket av en orders ledtid är väntetid jämfört med faktisk handläggningstid?",
         "options": [
-          "Som mest några timmars väntan. Arbetet rör sig.",
+          "Som mest några timmars väntan. Arbetet rör på sig.",
           "En dag eller två av väntan för några timmars arbete.",
-          "Flera dagars väntan. Bearbetningstiden får jag gissa mig till.",
-          "Jag vet faktiskt inte — ingen har någonsin mätt det."
+          "Flera dagars väntan. Jag vet inte riktigt hur mycket av den tiden som faktiskt är arbete.",
+          "Jag vet inte – vi har aldrig mätt väntetiden mot den faktiska arbetstiden."
         ]
       },
       "handoffs": {
         "title": "Överlämningar per order",
         "ask": "Hur många personer eller system hanterar en order från offert till leverans?",
         "options": [
-          "Färre än fem, och jag kan räkna upp dem.",
+          "Färre än fem, och jag vet exakt vilka eller vad de är.",
           "Fem till tio.",
           "Fler än tio.",
           "Ingen har någonsin ritat upp den från början till slut."
@@ -165,28 +165,28 @@
         "ask": "Hur många kritiska Excel-filer lever på personliga enheter istället för i ordinarie system?",
         "options": [
           "Inga som jag känner till.",
-          "En eller två, och vi vet vem som äger dem.",
+          "En eller två, med tydligt ägarskap.",
           "Flera, och minst en är affärskritisk.",
-          "Fabriken skulle få det svårt utan dem."
+          "Fabriken skulle ha svårt att fungera utan dem."
         ]
       },
       "decisions": {
-        "title": "Beslutsfördröjning",
-        "ask": "När ett problem dyker upp i verkstaden — hur lång tid tills någon med befogenhet faktiskt beslutar?",
+        "title": "Beslutscykeltid",
+        "ask": "När ett problem uppstår i verkstaden, hur lång tid tar det att nå någon med befogenhet att fatta ett beslut?",
         "options": [
           "Inom skiftet.",
           "En dag eller två.",
-          "Det får vänta på veckomötet.",
+          "Beslutet väntar till veckomötet.",
           "Det beror helt på vem som är tillgänglig."
         ]
       },
       "standards": {
         "title": "Standardiserat arbete",
-        "ask": "Hur stor andel av dina nyckeloperationer har en en-sidig standard som alla följer?",
+        "ask": "Hur stor andel av era nyckeloperationer har en standard på en sida som alla förstår och följer?",
         "options": [
-          "De flesta, och de är aktuella.",
+          "De flesta av dem, och standarderna hålls uppdaterade.",
           "Ungefär hälften — en del är inaktuella.",
-          "Några få, och mest skrivna för en revision.",
+          "Endast ett fåtal – och de flesta skapades för en revision snarare än daglig användning.",
           "Nästan inga. Alla har sin egen metod."
         ]
       }
@@ -198,19 +198,19 @@
       },
       "runningOnPeople": {
         "name": "Hänger på personer",
-        "line": "Det fungerar för att vissa personer får det att fungera. Det är inget system — det är ett bemanningsschema."
+        "line": "Det fungerar för att vissa personer får det att fungera. Det är inget system — det är ett bemanningsschema. förklätt till ett."
       },
       "drifting": {
         "name": "Glidning",
-        "line": "Inget brinner. Flera saker glöder, och de växer i det tysta."
+        "line": "Inget brinner. Men flera problem pyr under ytan, och deras effekter förstärks med tiden.."
       },
       "quietPlant": {
         "name": "Lugn fabrik",
-        "line": "Ovanligt. Antingen är arbetet gjort, eller så har ingen tittat tillräckligt noga än."
+        "line": "Sällsynt. Antingen är processen verkligen under kontroll, eller så har ingen tittat tillräckligt noga än."
       }
     },
     "introTitle": "Sätt poäng på din egen fabrik.",
-    "introBody": "Svara som verkstaden hade svarat, inte som rapporten gör. Ingen ser det här utom du, om du inte själv väljer att skicka in det.",
+    "introBody": "Svara utifrån verkligheten, inte utifrån vad rapporten säger. Dina resultat förblir privata om du inte väljer att dela dem.",
     "metaQuestions": "5 frågor",
     "metaInstant": "Poäng på skärmen",
     "metaNoSignup": "Ingen registrering",
@@ -220,8 +220,8 @@
     "next": "Nästa",
     "seeResult": "Visa min poäng",
     "scoreLabel": "Chaos Score",
-    "leaksTitle": "Var det läcker",
-    "noLeaks": "Ingenting fick mer än noll. Det är ovanligt nog att vara värt en andra titt — gå igenom de fem frågorna igen med den som styr verkstaden, inte den som styr rapporten.",
+    "leaksTitle": "Var du förlorar kapacitet",
+    "noLeaks": "Ingenting fick poäng över noll. Det är ovanligt nog att verifiera vid gemba – gå igenom de fem frågorna igen med personen som är närmast arbetet, inte personen som är närmast rapporten.",
     "again": "Svara igen",
     "drillLead": "Det satte poäng på din fabrik. Gemba-drillen sätter poäng på din läsning av en — sex situationer från verkstadsgolvet, nittio sekunder, ingen registrering.",
     "drillCta": "Kör Gemba-drillen",
@@ -241,19 +241,21 @@
         "Annat"
       ],
       "consent": "Skicka mig gärna enstaka utskick från LeanTheCompany också. Avsluta när du vill.",
-      "submit": "Mejla mig var jag ska börja",
+      "submit": "Säg mig var jag ska börja",
       "loading": "Skickar…",
       "thanksTitle": "Klart. Kolla inkorgen.",
       "thanksBody": "Dina fem svar är hos mig. Jag läser dem själv och svarar för hand, så svaret kommer från en människa och inte från en mall. Din poäng ligger kvar på skärmen ovanför.",
       "error": "Något gick fel. Mejla hello@leanthecompany.com så hjälper vi dig.",
-      "noEndpoint": "Formulärets endpoint är inte konfigurerad än. Mejla hello@leanthecompany.com.",
-      "meta": "Dina svar stannar hos grundaren. Ingen tracking, ingen återförsäljning, inget drip-nonsens."
-    }
+      "noEndpoint": "Det här formuläret är inte tillgängligt än. För tillfället, vänligen maila hello@leanthecompany.com.",
+      "meta": "Dina svar stannar hos grundaren. Ingen spårning. Ingen försäljning. Inga automatiserade marknadsföringssekvenser."
+    },
+    "baselineTitle": "Skriv ner den här siffran, med dagens datum.",
+    "baselineBody": "Om sex månader vill du veta om den rört sig."
   },
   "gembaDrill": {
     "eyebrow": "Testa dig själv",
     "headline": "Nittio sekunder på golvet. Sex bedömningar att göra.",
-    "lead": "Inga definitioner. Situationer — en linje som missar takten, ett kaizen som rullas tillbaka, ett andon ingen drar. Välj den tolkning du skulle försvara inför platschefen.",
+    "lead": "Inte definitioner. Verkliga situationer – en linje som missar takten, en förbättring som inte håller, en andon som ingen tar. Välj det beslut du skulle försvara inför fabrikschefen.",
     "englishNote": "Drillen är på engelska tills vidare. De trettio fältanteckningarna är grundarens egna ord, och en maskinöversättning av dem vore sämre än att inte publicera dem alls.",
     "metaQuestions": "6 frågor",
     "metaLayers": "6 lager",
@@ -273,113 +275,171 @@
     "chaosCta": "Kör Chaos Score"
   },
   "pricing": {
-    "eyebrow": "På väg",
-    "headline": "Tre sätt att använda det. En produkt, byggd en gång.",
-    "lead": "Vi säljer inte plattformen ännu — vi bygger den. De första 100 grundarmedlemmarna får 30 dagar gratis när den öppnar, sedan sitt pris låst för livet. Privilegium, inte rabatt.",
-    "comingSoon": "Kommer snart",
-    "founding": {
-      "eyebrow": "De första 100",
-      "headline": "Bli en av de första 100. Betala fullt pris. Lås det priset för evigt.",
-      "body": "När åtkomsten öppnar får grundarmedlemmarna 30 dagar gratis — utan kort. Därefter betalar grundare sitt grundarpris för respektive nivå — och det priset rör sig aldrig för dem. Du får också en kvartalsvis Grundarrunda med mig, ditt företag på den officiella Founding 100-tavlan (med ditt godkännande), och första tjing på varje ny modul innan den lanseras. Vi valde privilegium framför rabatt — kunder som betalar fullt pris bygger en skarpare produkt. Säg upp när du vill — ingen långsiktig bindning från din sida, bara prislåsningen från vår.",
-      "spots": "100 grundarplatser"
+    "eyebrow": {
+      "A": "Priser — försäljningen öppnar {salesOpenLong}",
+      "B": "Priser — Original 100 stänger {closeLong}",
+      "C": "Priser"
     },
+    "headline": "Fyra sätt att använda det. En produkt, byggd en gång.",
+    "lead": {
+      "A": "Vi säljer inte än — vi bygger. Försäljningen öppnar {salesOpenLong}. Originalplatserna stänger {closeLong}. Hundra platser, sedan är priset bara priset.",
+      "B": "De första 100 betalar fullpris och låser det för livet. Originalplatserna är öppna till {closeLong}. Därefter är priset bara priset.",
+      "C": "Contributor är en person. Consultant är en praktik. Process Owner är ett team. Architect är ett partnerskap."
+    },
+    "comingSoon": "KOMMER SNART",
     "meteringNote": "Sensei drivs av riktig AI, så vi mäter den — och du kan fylla på när som helst. Lagring kostar nästan inget, så canvas är inte begränsade på team-planer. Inga överraskningar på fakturan, någonsin.",
     "tiers": {
       "contributor": {
         "title": "Contributor",
-        "audience": "För dem som gör jobbet",
-        "desc": "För operatören, analytikern eller teamledaren som vill kartlägga sin första process ikväll — på sin egen laptop, utan att be någon om lov. Börja där arbetet faktiskt sker.",
-        "cta": "Reservera en Contributor-plats",
+        "audience": "Designat för de som gör jobbet",
+        "desc": "För operatören, analytikern eller ingenjören som vill kartlägga sin första process direkt – på sin egen bärbara dator, med utrymme att tänka och skapa. Börja där arbetet faktiskt utförs.",
         "features": [
-          "Upp till 15 canvas (Makigami idag, VSM när det landar)",
+          "5 aktiva Operational Space — fem aktiva förbättringsprojekt igång samtidigt",
+          "Behåll varje Space du blir klar med — arkiverade Spaces är gratis och räknas aldrig mot dina fem",
           "Export till A3-PDF (EN / SV / ZH)",
-          "AI-sensei — 50 frågor / månad · fyll på när som helst",
-          "Privat workspace — bara du",
-          "Tillgång till community-forum",
-          "€19 / månad — låst för livet för grundarmedlemmar"
-        ]
+          "AI Sensei — 50 frågor i månaden, fyll på när du vill",
+          "Privat arbetsyta — bara för dig",
+          "Communityforum",
+          "Grundaren svarar inom två arbetsdagar"
+        ],
+        "lock": "19 € / månad — låst för livet om du prenumererar senast {closeLong}",
+        "price": "19 € / månad",
+        "priceNumber": "19 €",
+        "cycleNote": "En förbättringscykel tar 12 till 15 veckor. Fem Spaces samtidigt är 17 till 22 projekt om året — och de färdiga arkiveras gratis, så nästa fem börjar rent."
       },
       "consultant": {
         "title": "Consultant",
-        "audience": "För dem som coachar jobbet",
-        "desc": "För den fristående konsulten eller Lean-coachen med sina första kunder. Varje kund i en egen, strikt separerad workspace — kliv in i workshopen med en levande canvas i stället för en PowerPoint, för mindre än en timme av ditt dagsarvode per månad.",
-        "cta": "Reservera en Consultant-plats",
+        "audience": "För dem som coachar arbetet",
+        "desc": "För den oberoende konsulten eller lean-coachen med en första kundbok. Varje kund hålls separat — gå in i workshoppen med en levande canvas i stället för en PowerPoint, för mindre än en timme av ditt dagsarvode i månaden.",
         "features": [
           "Allt i Contributor",
-          "3 kund-workspaces, strikt åtskilda",
-          "Upp till 15 canvas per workspace",
-          "AI-sensei — 100 frågor / månad, delade · fyll på när som helst",
-          "Kaizen-tracker med PDCA-cykler",
-          "A3-export med LeanTheCompany-sidfot — white-label hör till Architect",
-          "€69 / månad — låst för livet för grundarmedlemmar"
-        ]
+          "5 klienter",
+          "25 aktiva Operational Spaces i en gemensam pott — lägg 12 på en stor fabrik och 5 på en liten, du bestämmer",
+          "Behåll varje Space du blir klar med, hos varje kund",
+          "AI Sensei — 150 frågor i månaden, delade mellan alla i dina arbetsytor. Fyll på när du vill.",
+          "Kaizen-uppföljning med PDCA-cykler",
+          "Grundaren svarar inom två arbetsdagar"
+        ],
+        "lock": "69 € / månad — låst för livet om du prenumererar senast {closeLong}",
+        "price": "69 € / månad",
+        "priceNumber": "69 €"
       },
       "processOwner": {
         "title": "Process Owner",
         "audience": "För dem som äger processen",
-        "desc": "För chefen eller teamet som äger en process från början till slut — över avdelningar, anläggningar eller skift. Ett fast pris, ingen inköpsavdelning som behöver blandas in. Delade canvas, riktiga roller, en sanningskälla i stället för en mapp med skärmdumpar.",
-        "cta": "Boka en Process Owner-plats",
-        "features": [
-          "Upp till 8 platser per team — skalar per plats över det",
-          "Obegränsat antal canvas & kaizen (fair use)",
-          "Delat workspace, roller och behörigheter",
-          "AI-sensei — 300 frågor / månad, delat i teamet · fyll på när som helst",
-          "Kaizen-tracker med PDCA-cykler",
-          "Compass & North Star-dashboard för styrgruppen",
-          "E-postsupport direkt från grundaren",
-          "€149 / månad — låst för livet för grundarmedlemmar"
-        ]
+        "price": "249 € / månad",
+        "desc": "För chefen eller teamet som äger en process från början till slut — över avdelningar, siter eller skift. En fast avgift. Inget upphandlingskrångel. Delade canvasar, riktiga roller, en sanning i stället för en mapp med skärmdumpar.",
+        "note": "Inte tillgänglig vid lanseringen. Vi bygger teamdelen ordentligt i stället för att skeppa ett platsantal vi ännu inte kan hålla. Säg till att du vill ha den så står du först i kön — till ditt låsta pris.",
+        "cta": "[ Ställ dig i kön för Process Owner ]"
       },
       "architect": {
         "title": "Architect",
         "audience": "För dem som designar systemet",
-        "desc": "För den ständiga-förbättringsledaren, verksamhetsarkitekten eller externa partnern som kör LeanTheCompany över många team eller kunder. Flera workspaces, white-label och en ren överlämning i slutet.",
-        "cta": "Boka en Architect-plats",
-        "features": [
-          "Allt i Process Owner",
-          "AI-sensei — 150 frågor / månad per aktiv kund · fyll på när som helst",
-          "Flera workspaces (kunder eller affärsenheter)",
-          "White-label A3-export",
-          "Överlämning av workspace till en Contributor-plats",
-          "Grundarens Slack-kanal + månatligt partnersamtal",
-          "Intäktsdelning för varje plats du hänvisar — betala ner det, ända till noll",
-          "€199 / månad — låst för livet för grundarmedlemmar"
-        ]
+        "desc": "För förbättringsledaren, verksamhetsarkitekten eller den externa partnern som kör LeanTheCompany över många team eller kunder. Flera arbetsytor, full white-label, med en ren överlämning på slutet.",
+        "note": "Architect är ingen prenumerationsnivå — det är ett partnerskap, och det prissätts som ett. Intäktsdelning på varje plats du hänvisar, flera arbetsytor över kunder eller affärsenheter, white-label-export utan LeanTheCompany-märke, överlämning av arbetsytan till en Contributor-plats, och en direktlinje till mig.",
+        "note2": "Ansökan öppnar efter lanseringen. Om du arbetar med Lean-implementering via ett konsultföretag, en OEM-akademi eller ett universitetsprogram kan du anmäla ditt intresse redan nu för att hamna först i kön.",
+        "cta": "[ Ansök till partnerspåret ]"
       }
     },
     "form": {
       "namePlaceholder": "Ditt namn",
       "emailPlaceholder": "Jobbmejl",
       "loading": "Bokar din plats…",
-      "thanksTitle": "Plats bokad.",
-      "thanksBody": "Jag mejlar i samma sekund som vi öppnar — och du är med i de första 100. Inga drip-mejl däremellan.",
+      "thanksTitle": "Plats reserverad.",
+      "thanksBody": "Jag mejlar dig så fort vi öppnar åtkomsten — och du är med i Original 100. Inga utskick däremellan.",
       "error": "Något gick fel. Mejla hello@leanthecompany.com.",
       "noEndpoint": "Bokningsendpointen är inte konfigurerad än. Mejla hello@leanthecompany.com."
     },
     "partnerNote": "Driver du Lean inom en konsultbyrå, ett OEM-akademi eller ett universitetsprogram?",
-    "partnerCta": "Vi pratar partnerskap →"
+    "partnerCta": "Vi pratar partnerskap →",
+    "space": {
+      "headline": "Ett Space, en process, ordentligt sedd.",
+      "p1": "Ett Operational Space är en affärsprocess — kartlagd som den faktiskt fungerar idag, och som den borde fungera i stället.",
+      "p2": "Du kartlägger kontorsflödet med en Makigami och materialflödet med en värdeflödesanalys. Du markerar var tiden faktiskt tar vägen. Sedan ritar du det framtida läget, och kaizenkorten är arbetet som tar dig från det ena till det andra.",
+      "p3": "Ett Space rymmer allt, inklusive noteringen om vad du provade och vad som hände. Lägg till ett Space till för nästa process. Det är hela systemet."
+    },
+    "archive": {
+      "headline": "Ett Space överges inte. Det tar examen.",
+      "p1": "Din plan avgör hur många Spaces du kan arbeta i samtidigt. Den avgör inte hur många du får behålla.",
+      "p2": "När en process är tillräckligt bra och tillräckligt stabil för att gå utan dig är det Spacet färdigt — så du arkiverar det. Det förblir läsbart, utskrivbart och exporterbart, och det räknas aldrig mot din aktiva gräns igen. Ta tillbaka det när du vill. Ingenting raderas någonsin.",
+      "p3": "Behåll allt du blir klar med. Och om du slutar prenumerera behåller du läsrättigheter till allt i två år, med export tillgänglig hela tiden. Vi påminner dig innan något försvinner.",
+      "p4": "Du gjorde jobbet. Det är ditt."
+    },
+    "comparison": {
+      "headline": "Du skulle kunna göra det här på en whiteboard. Det fungerar – ett tag.",
+      "p1": "Miro, Lucidchart, en PowerPoint-mall — 5 till 9 euro i månaden för former och pilar. Bra verktyg. De vet bara ingenting.",
+      "p2": "En tom canvas vet inte vad ett värdeflöde är. Den säger inte att din Makigami har en överlämningsloop i sig, den gör inte kartan till en A3 som din styrgrupp faktiskt läser, och den finns inte kvar om elva månader när konsulten är borta och ingen minns varför tavlan ritades som den gjordes. Och när du slutar betala för ett av dem blir dina tavlor skrivskyddade och du blir ombedd att radera några för att komma in igen. Så gör inte vi. Arkivera det du blir klar med, behåll det för alltid, och om du lämnar har du fortfarande två år och en exportknapp.",
+      "p3": "Det är skillnaden. Inte canvasen — vad canvasen vet, och om den fortfarande är din."
+    },
+    "original": {
+      "eyebrow": {
+        "A": "Original 100 · öppnar {salesOpenLong}",
+        "B": "Original 100"
+      },
+      "headline": "Bli en av de första 100. Betala fullt pris. Behåll samma pris för alltid.",
+      "bodyA": {
+        "p1": "Vi säljer inte än — vi bygger. Försäljningen öppnar {salesOpenLong}. Originalplatserna stänger {closeLong}. Hundra platser, sedan är priset bara priset.",
+        "p2": "Betan är öppen nu och den är gratis till {closeLong}. Betamedlemmar får förtur till en Originalplats när försäljningen öppnar."
+      },
+      "bodyB": {
+        "p1": "Originalplatser är tillgängliga till {closeLong}. Därefter är priset bara priset.",
+        "p2": "Originalprenumeranter får 30 dagar gratis och betalar sedan sin nivås fulla pris — och det priset rör sig aldrig så länge prenumerationen löper. Du får också en stående plats vid grundarens rundabordssamtal med mig, ditt företag på hederslistan för Original 100 (med tillstånd), och förtur till varje ny modul innan den släpps.",
+        "p3": "Vi valde privilegium framför rabatt, eftersom kunder som betalar fullpris bygger en skarpare produkt. Säg upp när du vill — ingen långsiktig bindning från din sida, bara prislåset från vår."
+      },
+      "chipSalesOpen": "Försäljningen öppnar {salesOpenLong}",
+      "chipClose": "Original 100 stänger {closeLong}",
+      "countdown": "Stänger {closeLong} · {days} dagar kvar"
+    },
+    "priceLock": {
+      "title": "Vad prislåset omfattar.",
+      "body": "Ditt ursprungliga pris är låst för den nivå du gick med i, så länge din prenumeration förblir oavbruten. Om du byter nivå debiteras den nya nivån enligt då gällande pris, medan din status som Originalprenumerant fortsätter att gälla. Om din prenumeration avslutas upphör det låsta priset med den. Statusen som Originalprenumerant tillhör dig eller ditt företag och följer inte med vid en försäljning. Tillägg – inklusive extra klienter, ytterligare Spaces och Sensei-påfyllningar – debiteras till det pris som gäller vid tidpunkten de läggs till."
+    },
+    "badges": {
+      "comingSoon": "KOMMER SNART",
+      "partnerTrack": "Partnerspår",
+      "stateA": "Öppen beta · försäljning öppnar {salesOpenShort}",
+      "stateB": "Original 100 · stänger {closeShort}"
+    },
+    "cta": {
+      "A": "Starta den öppna beta",
+      "B": "Bli originalprenumerant",
+      "C": "Starta dina 30 dagar"
+    },
+    "microcopy": {
+      "A": "Gratis så länge betan pågår. Försäljningen öppnar {salesOpenLong}.",
+      "B": "30 dagar gratis, sedan {price}/månad — låst för livet. Din första debitering sker 30 dagar efter att du gått med. Vi mejlar dig innan det händer.",
+      "C": "30 dagar gratis, sedan {price}/månad. Din första debitering sker 30 dagar efter att du gått med. Vi mejlar dig innan det händer."
+    },
+    "consultantNote": "Consultant inkluderar fem Contributor-licenser. Köpta separat skulle de kosta 95 euro.",
+    "addOns": "Växer ni? Lägg till en klient för 12 €/månad, inklusive 5 extra Spaces. Behöver ni mer kapacitet? Lägg till 5 Spaces för 6 €/månad. Påfyllning av AI Sensei kostar 12 € per 100 frågor och dess kredit går aldrig ut.",
+    "annualNote": "Årsvis fakturering kommer efter lanseringen. Originalprenumeranter får förtur — och ditt låsta pris följer med.",
+    "responseBound": "Grundaren svarar inom två arbetsdagar — måndag till fredag, utom svenska helgdagar och juliperioden.",
+    "archiveNote": {
+      "title": "Vad arkivet omfattar.",
+      "body": "Arkiverade Operational Spaces är gratis och obegränsade så länge du prenumererar, och räknas aldrig mot din gräns för aktiva. Om du avslutar prenumerationen behåller du skrivskyddad åtkomst och export i 24 månader, och vi skickar två påminnelser innan något tas bort."
+    }
   },
   "about": {
     "eyebrow": "Om grundaren",
     "headline": "Tre branscher. Samma återkommande problem. Det är därför LeanTheCompany finns.",
     "title": "Grundare · Sensei",
-    "tagline": "Ingenjör, operatör, coach. Malmö ↔ Shanghai. 25+ år på verkstadsgolvet innan jag skrev en rad kod.",
+    "tagline": "Ingenjör, operatör, coach. Över 25 år i Europa och Asien – från verkstadsgolvet till styrelserummet – innan jag skrev en enda rad kod.",
     "linkedinCta": "Anslut på LinkedIn",
-    "lead": "Tio år på Tetra Pak. Fem på Efeso Consulting. Tolv till som Efeso-kontraktor med WCOM- och TPM-utrullningar på Stora Enso, SCA, BillerudKorsnäs, Oatly, Galderma och Nobia — Sverige, Finland, Nederländerna, USA, Kina, Storbritannien. Olika branscher — samma tre problem på varje produktionsgolv.",
+    "lead": "Min operativa karriär började på Tetra Pak, där jag tillbringade tio år med att bygga upp praktisk erfarenhet inom tillverkning, drift och kontinuerlig förbättring. Det var där jag lade grunden för hur jag fortfarande ser på en fabrik idag – genom arbetsflödet, verkligheten på verkstadsgolvet och gapet mellan hur en process är utformad och hur den faktiskt fungerar.\n\nFrån 2009 expanderade den erfarenheten till Öst- och Sydostasien. Med EFESO Consulting ledde och stödde jag Lean-transformationer och operativa förbättringsprogram för stora mejeri-, livsmedels- och dryckesproducenter, inklusive FrieslandCampina, Nestlé, Danone och Heineken, samtidigt som jag fick operativ erfarenhet inifrån själva företagen.\n\nFrån 2014 och framåt breddades arbetet ytterligare över branscher och geografiska områden som EFESO-entreprenör som ledde WCOM (World Class Operations Management) och TPM-implementeringar – från Stora Enso, SCA och BillerudKorsnäs inom skogsprodukter och förpackningar, till Oatly inom livsmedelsproduktion, Galderma inom läkemedel och Nobia inom kökstillverkning. Arbetet tog mig genom Europa, Asien, Kina och USA, till väldigt olika anläggningar, processer och driftsmiljöer.\n\nFöretagen förändrades. Produkterna förändrades. Länderna förändrades. De underliggande problemen gjorde det inte. Mer än 25 års arbete med att diagnostisera och förbättra verksamheten förvandlade gradvis dessa återkommande mönster till en metod jag kunde använda i stort sett vilken fabrik som helst, i vilken sektor som helst – och veta var jag skulle börja leta.",
     "bio": [
-      "Jag började på Tetra Pak 1999 och tillbringade ett decennium på en av världens mest disciplinerade tillverkare av livsmedelsförpackningsmaskiner. Lean var inte ett initiativ där — det var hur hissarna fungerade, hur möten avslutades, hur material lades ut vid linjen. Det var där jag lärde mig hantverket.",
+      "Jag började på Tetra Pak 1999 och tillbringade ett decennium inom ett av världens mest disciplinerade företag för livsmedelsförpackningsmaskiner, där jag arbetade med Lean och ständiga förbättringar. Det var där jag lärde mig hantverket.",
       "Mellan 2009 och 2014 var jag på Efeso Consulting och drev lean-transformationer i Europa och Asien. Under samma år hade jag också operatörsroller på FrieslandCampina och Heineken via Asia Pacific Breweries. Samma period, två vinklar — kundsidan och konsultsidan. Samma tre misslyckandemönster dök upp i varje diagnos. Ingen kunde se det verkliga flödet. Överlämningar åt mer tid än själva arbetet. De bästa operatörerna körde skuggsystem som försvann med dem när de gick i pension.",
       "Från 2014 och framåt har jag arbetat som Efeso-kontraktor med WCOM (World Class Operations Management) och TPM-utrullningar. Stora Enso i Sverige, Finland och Kina. SCA och BillerudKorsnäs i Sverige — tre jättar inom skog och förpackning, var och en med samma återkommande problem. Oatly på deras fabriker i Sverige, Nederländerna, USA och Kina — där jag byggde upp det dagliga styrningssystemet och pelarstrukturen som följde dem genom Covid, en period då de var en av de få kunder som fortfarande lyckades få in mig på plats (de anställde mig direkt under en stund). Galderma inom läkemedel. Nobia inom kök, i Storbritannien och Sverige. Tolv år till av samma diagnostik, förfinad till en metod jag kan köra i vilken fabrik som helst i vilken bransch som helst.",
-      "Konsulter löser detta en fabrik i taget, för 2 000 € om dagen, och i samma stund de lämnar återtar tyngdkraften sin plats. Jag ville ha ett verktyg som en 26-årig skiftledare kan öppna en söndagskväll, kartlägga sin egen linje och gå in på måndagen med en bättre standard. Det är vad LeanTheCompany är."
+      "Konsulter löser detta i en fabrik i taget, för 2 000 euro per dag. Men när de väl slutar blir det fabrikens ansvar att upprätthålla förbättringen. Jag ville bygga ett verktyg som en 26-årig skiftchef kunde öppna när de behövde det, kartlägga sin egen linje och gå in i nästa skift med en bättre standard – utan att vänta på nästa konsultuppdrag. Det är vad LeanTheCompany är."
     ],
     "credentials": {
       "edu": {
         "title": "Civilingenjör, elektroteknik",
-        "body": "Lunds Tekniska Högskola (LTH). System, reglerteknik, mätteknik — den numeriska ryggraden under varje bra Lean-diagnos."
+        "body": "Lunds tekniska högskola (LTH). System, styrning och mätning — den tekniska grunden bakom varje bra Lean-diagnos."
       },
       "mba": {
         "title": "MBA",
-        "body": "Uppsala universitet. Byggde den kommersiella och ledarskapsmässiga linsen ovanpå ingenjörens."
+        "body": "Uppsala universitet. Tillförde ett kommersiellt och ledarskapsperspektiv till den tekniska grunden."
       },
       "lean": {
         "title": "Stora Enso · SCA · BillerudKorsnäs · Oatly · Galderma · Nobia",
@@ -400,23 +460,23 @@
   "finalCta": {
     "eyebrow": "Nästa steg",
     "headline": "Sluta släcka bränder.",
-    "headlineSub": "Börja pilota.",
-    "lead": "Välj ett värdeflöde. Rita det med mig den här veckan. Leverera din första synliga förbättring innan månaden är slut.",
+    "headlineSub": "Starta din pilot.",
+    "lead": "Välj ett värdeflöde. Kartlägg det med mig denna vecka. Leverera din första synliga förbättring före månadens slut.",
     "ctaPrimary": "Få din Chaos Score",
-    "ctaSecondary": "Boka en grundarplats",
+    "ctaSecondary": "Boka en Originalplats",
     "meta": "Ingen inloggningsvägg. Inget säljsamtal. Inget åtagande."
   },
   "footer": {
     "tagline": "Två canvaser. Fyra kartor. En sanning. Byggt av en fabriksingenjör, inte en mjukvarustudio.",
     "linkedin": "Följ Gösta på LinkedIn",
-    "copyright": "Gjort med omsorg i Malmö & Shanghai",
-    "disclaimer": "LeanTheCompany är en oberoende produkt. Lean, Toyota Production System, Value Stream Mapping, Makigami och kaizen är metoder som utvecklats över decennier av praktiker över hela världen; vi står på deras axlar och refererar dem där vi kan. Varje pilot och varje resultat som visas har kundens tillåtelse.",
+    "copyright": "Byggt med precision i Malmö och Shanghai",
+    "disclaimer": "LeanTheCompany är en oberoende produkt. Lean, Toyota Production System, Value Stream Mapping, Makigami och Kaizen är metoder och praxis som utvecklats och förfinats under årtionden av utövare runt om i världen. Vi bygger vidare på den kunskapen och anger våra källor där det är möjligt. Varje kundpilotprojekt och resultat som presenteras på denna webbplats visas med kundens tillstånd.",
     "cols": {
       "product": {
         "title": "Plattform",
         "platform": "Hur det fungerar",
         "pricing": "Pris",
-        "diagnostic": "Kaosbedömning"
+        "diagnostic": "Chaos Score"
       },
       "learn": {
         "title": "Lär dig",
