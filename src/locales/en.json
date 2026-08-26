@@ -329,16 +329,14 @@
         "audience": "For the people who own the process",
         "price": "€249 / month",
         "desc": "For the manager or team that owns a process end to end — across departments, sites or shifts. One flat fee. No procurement headache. Shared canvases, real roles, one source of truth instead of a folder of screenshots.",
-        "note": "Not available at launch. We’re building the team side properly rather than shipping a seat count we can’t yet honour. Tell me you want it and you’ll be first in the queue — at the Original rate.",
-        "cta": "Join the Process Owner queue"
+        "note": "Not available at launch. We’re building the team side properly rather than shipping a seat count we can’t yet honour. Tell me you want it and you’ll be first in the queue — at the Original rate."
       },
       "architect": {
         "title": "Architect",
         "audience": "For the people who design the system",
         "desc": "For the continuous-improvement lead, business architect or external partner running LeanTheCompany across many teams or clients. Multi-workspace, full white-label, with a clean handoff at the end.",
         "note": "Architect isn’t a subscription tier — it’s a partnership, and it’s priced as one. Revenue share on every seat you refer, multi-workspace across clients or business units, white-label export with no LeanTheCompany mark, workspace handoff to a Contributor seat, and a direct line to me.",
-        "note2": "We’re opening applications after launch. If you’re running Lean inside a consultancy, an OEM academy or a university programme, tell me now and you’ll be first in the queue.",
-        "cta": "Apply for the partner track"
+        "note2": "We’re opening applications after launch. If you’re running Lean inside a consultancy, an OEM academy or a university programme, tell me now and you’ll be first in the queue."
       }
     },
     "form": {
@@ -425,11 +423,11 @@
     "title": "Founder · Sensei",
     "tagline": "Engineer, operator, coach. 25+ years across Europe and Asia — from the shop floor to the boardroom — before I wrote a single line of code.",
     "linkedinCta": "Connect on LinkedIn",
-    "lead": "My operational career began with Tetra Pak, where I spent ten years building hands-on experience in manufacturing, operations, and continuous improvement. It was there that I developed the foundation for how I still look at a plant today — through the flow of work, the realities of the shop floor, and the gap between how a process is designed and how it actually runs.\n\nFrom 2009, that experience expanded across East and Southeast Asia. With EFESO Consulting, I led and supported Lean transformations and operational improvement programs for major dairy, food, and beverage producers including FrieslandCampina, Nestlé, Danone, and Heineken, while also gaining operational experience from inside the businesses themselves.\n\nFrom 2014 onward, the work broadened further across industries and geographies as an EFESO contractor leading WCOM (World Class Operations Management) and TPM implementations — from Stora Enso, SCA, and BillerudKorsnäs in forest products and packaging, to Oatly in food production, Galderma in pharmaceuticals, and Nobia in kitchen manufacturing. The work took me across Europe, Asia, China, and the United States, into very different plants, processes, and operating environments.\n\nThe companies changed. The products changed. The countries changed. The underlying problems did not. More than 25 years of diagnosing and improving operations gradually turned those recurring patterns into a method I could take into virtually any plant, in any sector — and know where to start looking.",
+    "lead": "My operational career began with Tetra Pak, where I spent ten years building hands-on experience in manufacturing, operations, and continuous improvement. It was there that I developed the foundation for how I still look at a plant today — through the flow of work, the realities of the shop floor, and the gap between how a process is designed and how it actually runs.",
     "bio": [
-      "I started at Tetra Pak in 1999 and spent a decade inside one of the world's most disciplined food-packaging machinery businesses practising Lean and continuous improvement. That's where I learned the craft.",
-      "From 2009 to 2014 I was at Efeso Consulting, running lean transformations across Europe and Asia. During those same years I also took operator stints at FrieslandCampina and Heineken via Asia Pacific Breweries. Same period, two angles — client-side and consultant-side. The same three failure patterns showed up in every diagnostic. Nobody could see the real flow. Handoffs ate more time than the work. The best operators ran shadow systems that left with them when they retired.",
-      "From 2014 onwards I've worked as an Efeso contractor leading WCOM (World Class Operations Management) and TPM rollouts. Stora Enso across Sweden, Finland and China. SCA and BillerudKorsnäs in Sweden — three forest & packaging giants, each running the same playbook against the same gravity. Oatly across their plants in Sweden, the Netherlands, the United States and China — building the daily management system and pillar structure that scaled with them through Covid, when they were one of the few clients who could still get me onto site (they hired me direct for a stretch). Galderma in pharma. Nobia in kitchens, UK and Sweden. Twelve more years of the same diagnostics, refined into a method I could run in any plant in any sector.",
+      "From 2009, that experience expanded across East and Southeast Asia. With EFESO Consulting, I led and supported Lean transformations and operational improvement programs for major dairy, food, and beverage producers including FrieslandCampina, Nestlé, Danone, and Heineken, while also gaining operational experience from inside the businesses themselves.",
+      "From 2014 onward, the work broadened further across industries and geographies as an EFESO contractor leading WCOM (World Class Operations Management) and TPM implementations — from Stora Enso, SCA, and BillerudKorsnäs in forest products and packaging, to Oatly in food production, Galderma in pharmaceuticals, and Nobia in kitchen manufacturing. The work took me across Europe, Asia, China, and the United States, into very different plants, processes, and operating environments.",
+      "The companies changed. The products changed. The countries changed. The underlying problems did not. More than 25 years of diagnosing and improving operations gradually turned those recurring patterns into a method I could take into virtually any plant, in any sector — and know where to start looking.",
       "Consultants solve this one plant at a time, at €2,000 a day. But once they leave, sustaining the improvement becomes the plant’s responsibility. I wanted to build a tool that a 26-year-old shift supervisor could open when they need it, map their own line, and walk into the next shift with a better standard — without waiting for the next consulting engagement. That’s what LeanTheCompany is."
     ],
     "credentials": {
@@ -440,14 +438,6 @@
       "mba": {
         "title": "MBA",
         "body": "Uppsala University. Added a commercial and leadership perspective to the engineering foundation."
-      },
-      "lean": {
-        "title": "Stora Enso · SCA · BillerudKorsnäs · Oatly · Galderma · Nobia",
-        "body": "(Do you need this part still?)"
-      },
-      "china": {
-        "title": "China & SE Asia 2004–2014",
-        "body": "(not going to do anything about this part)"
       }
     },
     "geo": {

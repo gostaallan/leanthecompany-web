@@ -30,8 +30,11 @@ const APP_URL = 'https://app.leanthecompany.com'
 const TIERS = [
   { key: 'contributor',  highlight: false, shape: 'list',  sellable: true  },
   { key: 'consultant',   highlight: false, shape: 'list',  sellable: true  },
-  { key: 'processOwner', highlight: true,  shape: 'prose', sellable: false, badge: 'comingSoon',   cta: true },
-  { key: 'architect',    highlight: false, shape: 'prose', sellable: false, badge: 'partnerTrack', cta: true },
+  // No `cta` on the two non-sellable tiers since 130: they carry no form and
+  // no button at all, so they have no label to name. The keys they used to
+  // point at are deleted from the catalogues in the same commit.
+  { key: 'processOwner', highlight: true,  shape: 'prose', sellable: false, badge: 'comingSoon'   },
+  { key: 'architect',    highlight: false, shape: 'prose', sellable: false, badge: 'partnerTrack' },
 ] as const
 
 interface Props {
@@ -218,6 +221,13 @@ export function Pricing({ state, daysLeft, dates }: Props) {
             // tiers that are not for sale. A link to the app only where there is
             // genuinely something to buy. GTM 007 §6.
             const linkToApp = sellable && state !== 'A'
+            // ⚠ `cta.A` / `cta.B` / `cta.C` ARE LIVE KEYS — do not delete them.
+            // Since 130 no tier carries its own `cta`, so this always takes the
+            // state branch, and it reads as dead code twice over: the `'cta' in
+            // tier` arm is unreachable, and the two non-sellable tiers never
+            // render a label at all. The two SELLABLE tiers do, on every card,
+            // in every state. The unreachable arm is left standing because a
+            // tier may earn its own label again; the keys are not orphans.
             const ctaLabel = 'cta' in tier ? t(`tiers.${key}.cta`) : t(`cta.${state}`)
 
             return (
@@ -302,6 +312,16 @@ export function Pricing({ state, daysLeft, dates }: Props) {
                       {t(`microcopy.${state}`, { ...dates, price: t(`tiers.${key}.priceNumber`) })}
                     </p>
                   </div>
+                ) : !sellable ? (
+                  /* Nothing at all (130 §2.1). A queue you cannot join and a
+                     partner track you cannot apply to had a name/email form
+                     each, and the sv/zh labels on those buttons were review-
+                     sheet rows that reached the page. The ruling was to remove
+                     the forms rather than repair labels for tiers that are not
+                     for sale. The card keeps its badge, title, audience line,
+                     price line, desc and notes; the prose block above holds
+                     `flex-1`, so the four cards stay on one baseline. */
+                  null
                 ) : sentFor === key ? (
                   <div className="bg-teal-DEFAULT/10 border border-teal-DEFAULT/30 rounded p-4 text-center">
                     <p className="text-sm font-semibold text-teal-DEFAULT mb-1">
