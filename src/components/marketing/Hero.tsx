@@ -25,21 +25,9 @@ export function Hero({ closeLong }: Props) {
 
           {/* ── Left: core message ── */}
           <div>
-            <p className="font-mono text-xs text-amber-light tracking-widest uppercase mb-5 flex items-center gap-3">
+            <p className="font-mono text-xs text-amber-light tracking-widest uppercase mb-6 flex items-center gap-3">
               <span className="w-7 h-px bg-amber-DEFAULT inline-block" />
               {t('eyebrow')}
-            </p>
-
-            {/*
-              The answer, above the riddle (GTM 014 §4 B). "Two canvases. Four
-              maps." is the HOW; a first-time reader needs the WHAT in the same
-              breath, and a live ICP prospect proved he did not get it. Set
-              larger than the mono eyebrow and clearly smaller than the headline
-              it introduces — sans, so it does not compete with the serif h1
-              directly beneath it.
-            */}
-            <p className="text-xl md:text-2xl text-white/85 leading-snug mb-5 max-w-[44ch] text-balance">
-              {t('answer')}
             </p>
 
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight font-normal mb-7">
