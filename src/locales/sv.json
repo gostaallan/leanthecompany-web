@@ -10,9 +10,10 @@
   },
   "hero": {
     "eyebrow": "Lean-plattformen för fabrik och kontor",
+    "answer": "Se var ditt företag bryter sina löften till kunderna — och åtgärda det.",
     "headline": "Två canvaser. Fyra kartor.",
     "headlineSub": "En sanning.",
-    "lead": "Value Stream Mapping för varuflödet. Makigami för kontoret. Båda i nuläge och börläge — med takttid, ledtid och slöseri beräknade live medan du ritar. Kartan som räknar själv, och en inbäddad sensei som ifrågasätter den.",
+    "lead": "Value Stream Mapping för varuflödet. Makigami för kontoret, en karta över hur kontorsarbetet faktiskt flyter. Båda i nuläge och börläge — med takttid, ledtid och slöseri beräknade live medan du ritar. Kartan som räknar själv, och en inbäddad sensei som ifrågasätter den.",
     "ctaPrimary": "Få din Chaos Score",
     "ctaSecondary": "Boka en Originalplats",
     "founderTitle": "Grundare · Sensei",
@@ -56,7 +57,7 @@
       "chaos": {
         "label": "01 · Kaos",
         "title": "Ingen känner till den riktiga processen.",
-        "body": "Be fem personer att kartlägga flödet från order till leverans, så får du fem olika versioner. Nulägeskartan på väggen är tre år gammal och två ERP-migreringar är föråldrade. Du fattar beslut mot en process som inte längre existerar."
+        "body": "Be fem personer att kartlägga flödet från order till leverans, så får du fem olika versioner. Nulägeskartan på väggen är tre år gammal och två ERP-migreringar är föråldrade. Du fattar beslut mot en process som inte längre existerar — och ingen kan säga varför reklamationsgraden inte går ner, eller vad ”gott nog” egentligen betyder."
       },
       "handoffs": {
         "title": "Överlämningarna äter mer tid än arbetet.",
@@ -70,22 +71,54 @@
       }
     }
   },
+  "howItConnects": {
+    "eyebrow": "Så hänger det ihop",
+    "headline": "De flesta verktyg börjar med kartan. Vi börjar med löftet.",
+    "steps": [
+      {
+        "title": "Säg vad du lovat.",
+        "body": "Välj din bransch, så finns de fem sakerna dina kunder faktiskt bedömer dig på redan där — för en livsmedelsproducent: färskhet, livsmedelssäkerhet, pris, jämnhet, ledtid. Med dina ord, inte våra."
+      },
+      {
+        "title": "Betygsätt dig själv, 1 till 5.",
+        "body": "Nuläge mot mål, på var och en av de fem. Varje nivå har skrivna kriterier, så det blir ett samtal med underlag — inte en handuppräckning. Gapen är din True North."
+      },
+      {
+        "title": "Knyt varje gap till ett tal.",
+        "body": "Vilket mått skulle bevisa gapet — reklamationsgrad, rätt från början, utbyte, leveransprecision? Hur stor är förlusten bakom det, och hur mycket litar du på datan? Nu vet du var du ska gräva, innan du ritar något. Value–KPI Bridge rangordnar varje gap åt dig — och talar om vilken karta du ska rita."
+      },
+      {
+        "title": "Kartlägg var förlusten sitter.",
+        "body": "Förluster i pappersarbetet → Makigami, en karta över hur kontorsarbetet faktiskt flyter. Förluster i produkten → Value Stream Map, varuflödet med tider. Nuläge och börläge, med räknandet gjort live medan du ritar."
+      },
+      {
+        "title": "Åtgärda, och håll det åtgärdat.",
+        "body": "Det du hittat blir förbättringsarbete med ägare och datum. A3:n — rapporten på en sida som chefer faktiskt läser — bär resultatet till uppföljningen."
+      }
+    ],
+    "closing": "Riktning först. Sedan kartan. Sedan förbättringen. Aldrig tvärtom."
+  },
   "platform": {
     "eyebrow": "Plattformen",
     "headline": "Kartan som räknar själv.",
     "lead": "Ett ritverktyg ritar. LeanTheCompany räknar: takttid, effektiv cykeltid, lagertäckning, ur-takt-flaggor — live, varje gång kartan ändras. Webbaserat, ingen konsultretainer, ingen sex-månaders rollout. Börja kartlägga på tio minuter, coacha dig själv med en inbäddad sensei tränad på 25+ år av kaizen från verkstadsgolvet.",
+    "chainLine": "Sex delar, en linje — riktning, kartor, förbättring, bevis.",
     "status": {
       "live": "Live i beta",
       "dev": "Under utveckling"
     },
     "items": {
-      "vsm": {
-        "title": "Value Stream Mapping-canvas",
-        "body": "Dra-och-släpp processrutor, lagertrianglar, kaizenblixtar och informationsflöden. Cykeltid, ledtid och %C&A räknas ut själva. Nuläge och börläge, sida vid sida."
+      "warroom": {
+        "title": "True North",
+        "body": "Steg 0 i varje Space. Betygsätt dig mot det dina kunder faktiskt bedömer dig på — fem värden, 1 till 5, nuläge mot mål. Gapen sätter riktningen, och de definierar rätt kvalitet: gott nog, inte överarbetat."
       },
       "makigami": {
         "title": "Makigami-canvas för administration",
         "body": "Simbanor för det osynliga kontoret — sälj, konstruktion, inköp, ekonomi. Se varje överlämning, varje beslut, varje vänte-triangel som aldrig syns i verkstaden."
+      },
+      "vsm": {
+        "title": "Value Stream Mapping-canvas",
+        "body": "Dra-och-släpp processrutor, lagertrianglar, kaizenblixtar och informationsflöden. Cykeltid, ledtid och %C&A räknas ut själva. Nuläge och börläge, sida vid sida."
       },
       "sensei": {
         "title": "Inbäddad AI-sensei",
@@ -94,10 +127,6 @@
       "tracker": {
         "title": "Kaizen-tracker",
         "body": "Förvandla insikter till PDCA-cykler med ägare, deadlines, före/efter-bilder. Inget försvinner i mejl. Inget firas för tidigt."
-      },
-      "warroom": {
-        "title": "True North",
-        "body": "Sätt True North och värdeprioriteringarna högst upp, så att varje karta och varje pilot under knyter tillbaka till vad verksamheten faktiskt behöver. VD:n, fabrikschefen och lean-coachen läser äntligen från en gemensam sanning."
       },
       "report": {
         "title": "A3-rapport på en sida",

@@ -10,9 +10,10 @@
   },
   "hero": {
     "eyebrow": "The lean platform for factory and office",
+    "answer": "See where your company breaks its promises to customers — and fix it.",
     "headline": "Two canvases. Four maps.",
     "headlineSub": "One truth.",
-    "lead": "Value Stream Mapping for material flow. Makigami for office processes. Both in current and future state, with takt time, lead time and waste calculated live as you map. A process map that does the maths. An embedded Sensei that challenges it.",
+    "lead": "Value Stream Mapping for material flow. Makigami for office processes — a map of how office work actually flows. Both in current and future state, with takt time, lead time and waste calculated live as you map. A process map that does the maths. An embedded Sensei that challenges it.",
     "ctaPrimary": "Get your Chaos Score",
     "ctaSecondary": "Reserve an Original seat",
     "founderTitle": "Founder · Sensei",
@@ -56,7 +57,7 @@
       "chaos": {
         "label": "01 · Chaos",
         "title": "Nobody knows the real process.",
-        "body": "Ask five people to map the order-to-ship flow and you’ll get five different versions. The current-state map on the wall is three years old and two ERP migrations out of date. You’re making decisions against a process that no longer exists."
+        "body": "Ask five people to map the order-to-ship flow and you’ll get five different versions. The current-state map on the wall is three years old and two ERP migrations out of date. You’re making decisions against a process that no longer exists — and nobody can say why the complaint rate won’t come down, or what \"good enough\" actually means."
       },
       "handoffs": {
         "title": "Handoffs eat more time than the work.",
@@ -70,22 +71,54 @@
       }
     }
   },
+  "howItConnects": {
+    "eyebrow": "How it connects",
+    "headline": "Most tools start with the map. We start with the promise.",
+    "steps": [
+      {
+        "title": "Say what you promised.",
+        "body": "Pick your industry and the five things your customers actually judge you on are already there — for a food producer: freshness, food safety, price, consistency, lead time. In your words, not ours."
+      },
+      {
+        "title": "Grade yourself, 1 to 5.",
+        "body": "Current score against target, on every one of the five. Each level has written criteria, so it is a conversation with evidence, not a show of hands. The gaps are your True North."
+      },
+      {
+        "title": "Tie each gap to a number.",
+        "body": "Which measure would prove the gap — complaint rate, first-time-right, yield, on-time delivery? How big is the loss behind it, and how far do you trust the data? Now you know where to dig, before you draw anything. The Value–KPI Bridge ranks every gap for you — and tells you which map to draw."
+      },
+      {
+        "title": "Map where the loss lives.",
+        "body": "Losses in the paperwork → Makigami, a map of how office work actually flows. Losses in the product → Value Stream Map, the flow of goods, timed. Current state and future state, with the arithmetic done live while you draw."
+      },
+      {
+        "title": "Fix it, and keep it fixed.",
+        "body": "What you found becomes improvement work with an owner and a date. The A3 — the one-page report managers actually read — carries the result to the review."
+      }
+    ],
+    "closing": "Direction first. Then the map. Then the improvement. Never the other way round."
+  },
   "platform": {
     "eyebrow": "The Platform",
     "headline": "The map that does the math.",
     "lead": "A drawing tool draws. LeanTheCompany computes: takt time, effective cycle time, inventory cover, out-of-takt flags — live, every time the map changes. Browser-based, no consulting retainer, no six-month rollout. Start mapping in ten minutes, coach yourself with an embedded sensei trained on 25+ years of shop-floor kaizen.",
+    "chainLine": "Six parts, one line — direction, maps, improvement, proof.",
     "status": {
       "live": "Live in beta",
       "dev": "In development"
     },
     "items": {
-      "vsm": {
-        "title": "Value Stream Mapping canvas",
-        "body": "Drag-and-drop process boxes, inventory triangles, kaizen bursts and information flows. Cycle time, lead time and %C&A calculate themselves. Current state, future state, side by side."
+      "warroom": {
+        "title": "True North",
+        "body": "Step 0 of every Space. Grade yourself against what your customers judge you on — five values, scored 1 to 5, current against target. The gaps set direction, and they define right quality: good enough, not gold-plated."
       },
       "makigami": {
         "title": "Makigami canvas for admin flow",
         "body": "Swim-lane the invisible back office — sales, engineering, purchasing, finance. See every handoff, every decision, every waiting triangle that doesn't show up on the shop floor."
+      },
+      "vsm": {
+        "title": "Value Stream Mapping canvas",
+        "body": "Drag-and-drop process boxes, inventory triangles, kaizen bursts and information flows. Cycle time, lead time and %C&A calculate themselves. Current state, future state, side by side."
       },
       "sensei": {
         "title": "Embedded AI Sensei",
@@ -94,10 +127,6 @@
       "tracker": {
         "title": "Kaizen tracker",
         "body": "Turn insights into PDCA cycles with owners, deadlines, before/after photos. Nothing gets lost in email. Nothing gets celebrated too early."
-      },
-      "warroom": {
-        "title": "True North",
-        "body": "Set the True North and the value priorities up top, so every map and every pilot below ties back to what the business actually needs. The CEO, the plant manager and the Lean coach finally read from one shared truth."
       },
       "report": {
         "title": "One-page A3 report",

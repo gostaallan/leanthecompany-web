@@ -11,12 +11,22 @@ interface PlatformItem {
   status: PlatformStatus
 }
 
+/**
+ * THE ORDER IS THE ARGUMENT (GTM 014 §4 C).
+ *
+ * These six used to run canvases-first, with True North — the start of the
+ * whole method — at position five, reading like an accessory dashboard. They
+ * are stations on the chain the section above draws, and they are now numbered
+ * as such: direction, then the maps, then the coach, then the improvement, then
+ * the proof. The card numerals come from this array's index, so reordering here
+ * renumbers the grid; the catalogue key order follows suit for the reviewer.
+ */
 const ITEMS: readonly PlatformItem[] = [
+  { key: 'warroom',   status: 'live' },
   { key: 'makigami',  status: 'live' },
   { key: 'vsm',       status: 'live' },
   { key: 'sensei',    status: 'live' },
   { key: 'tracker',   status: 'live' },
-  { key: 'warroom',   status: 'live' },
   { key: 'report',    status: 'live' },
 ]
 
@@ -36,6 +46,11 @@ export function Platform() {
           </h2>
           <p className="body-lead text-white/70">{t('lead')}</p>
         </div>
+
+        {/* The one sentence that says the six are a line and not a list. */}
+        <p className="font-serif text-xl md:text-2xl text-amber-light mb-8 leading-snug">
+          {t('chainLine')}
+        </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {ITEMS.map((item, idx) => (

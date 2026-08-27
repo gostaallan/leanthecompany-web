@@ -5,18 +5,19 @@ import {
   pricingState,
   resolveNow,
 } from '@/lib/pricing-state'
-import { Navbar }       from '@/components/marketing/Navbar'
-import { Hero }         from '@/components/marketing/Hero'
-import { ForWhom }      from '@/components/marketing/ForWhom'
-import { Problem }      from '@/components/marketing/Problem'
-import { Platform }     from '@/components/marketing/Platform'
-import { WhatsComing }  from '@/components/marketing/WhatsComing'
-import { Diagnostic }   from '@/components/marketing/Diagnostic'
-import { GembaDrill }   from '@/components/marketing/GembaDrill'
-import { Pricing }      from '@/components/marketing/Pricing'
-import { About }        from '@/components/marketing/About'
-import { FinalCTA }     from '@/components/marketing/FinalCTA'
-import { Footer }       from '@/components/marketing/Footer'
+import { Navbar }        from '@/components/marketing/Navbar'
+import { Hero }          from '@/components/marketing/Hero'
+import { ForWhom }       from '@/components/marketing/ForWhom'
+import { Problem }       from '@/components/marketing/Problem'
+import { HowItConnects } from '@/components/marketing/HowItConnects'
+import { Platform }      from '@/components/marketing/Platform'
+import { WhatsComing }   from '@/components/marketing/WhatsComing'
+import { Diagnostic }    from '@/components/marketing/Diagnostic'
+import { GembaDrill }    from '@/components/marketing/GembaDrill'
+import { Pricing }       from '@/components/marketing/Pricing'
+import { About }         from '@/components/marketing/About'
+import { FinalCTA }      from '@/components/marketing/FinalCTA'
+import { Footer }        from '@/components/marketing/Footer'
 
 interface Props {
   params: { locale: string }
@@ -53,6 +54,7 @@ export default function HomePage({ params: { locale } }: Props) {
         <Hero closeLong={dates.closeLong} />
         <ForWhom />
         <Problem />
+        <HowItConnects />
         <Platform />
         <WhatsComing closeLong={dates.closeLong} />
         <Diagnostic />
