@@ -71,28 +71,28 @@
     }
   },
   "howItConnects": {
-    "eyebrow": "Så hänger det ihop",
+    "eyebrow": "Hur allt hänger ihop",
     "headline": "De flesta verktyg börjar med kartan. Vi börjar med löftet.",
     "steps": [
       {
-        "title": "Säg vad du lovat.",
-        "body": "Välj din bransch, så finns de fem sakerna dina kunder faktiskt bedömer dig på redan där — för en livsmedelsproducent: färskhet, livsmedelssäkerhet, pris, jämnhet, ledtid. Med dina ord, inte våra."
+        "title": "Definiera vad du lovade.",
+        "body": "Välj din bransch och de fem saker som dina kunder faktiskt bedömer dig utifrån finns redan där. För en livsmedelsproducent: färskhet, livsmedelssäkerhet, pris, konsistens och ledtid. Definiera sedan vad var och en betyder i din verksamhet – med dina ord, inte våra."
       },
       {
         "title": "Betygsätt dig själv, 1 till 5.",
-        "body": "Nuläge mot mål, på var och en av de fem. Varje nivå har skrivna kriterier, så det blir ett samtal med underlag — inte en handuppräckning. Gapen är din True North."
+        "body": "Poängsätt nuvarande prestanda mot målet för var och en av de fem. Varje nivå har tydligt definierade kriterier, så bedömningen baseras på bevis – inte handuppräckning. Gapen visar dig var du ska fokusera förbättringar och sätter riktningen mot din True North."
       },
       {
-        "title": "Knyt varje gap till ett tal.",
-        "body": "Vilket mått skulle bevisa gapet — reklamationsgrad, rätt från början, utbyte, leveransprecision? Hur stor är förlusten bakom det, och hur mycket litar du på datan? Nu vet du var du ska gräva, innan du ritar något. Value–KPI Bridge rangordnar varje gap åt dig — och talar om vilken karta du ska rita."
+        "title": "Sätt en siffra på varje gap",
+        "body": "Vilket mått bevisar bäst gapet – klagomålsfrekvens, rätt resultat vid första försöket, avkastning eller leverans i tid? Hur stor är förlusten bakom den, och hur mycket förtroende har du för data? Nu vet du var du ska undersöka innan du ritar en enda karta. Värde-KPI-bryggan rangordnar varje skillnad efter prioritet – och pekar dig till rätt karta för att undersöka den."
       },
       {
         "title": "Kartlägg var förlusten sitter.",
-        "body": "Förluster i pappersarbetet → Makigami, en karta över hur kontorsarbetet faktiskt flyter. Förluster i produkten → Value Stream Map, varuflödet med tider. Nuläge och börläge, med räknandet gjort live medan du ritar."
+        "body": "Förluster i informations- eller administrativt flöde → Makigami, som visar hur arbetet faktiskt rör sig mellan personer, funktioner och överlämningar.\n\nFörluster i materialflödet → Värdeflödeskartläggning, som visar hur produkter och material faktiskt rör sig genom processen – med tillhörande tid."
       },
       {
         "title": "Åtgärda, och håll det åtgärdat.",
-        "body": "Det du hittat blir förbättringsarbete med ägare och datum. A3:n — rapporten på en sida som chefer faktiskt läser — bär resultatet till uppföljningen."
+        "body": "Det du hittar blir förbättringsarbete – med en tydlig ägare och ett tydligt deadline. A3-rapporten – rapporten på en sida som cheferna faktiskt läser – tar med problemet, åtgärden och resultatet i ledningens granskning."
       }
     ],
     "closing": "Riktning först. Sedan kartan. Sedan förbättringen. Aldrig tvärtom."
@@ -101,7 +101,7 @@
     "eyebrow": "Plattformen",
     "headline": "Kartan som räknar själv.",
     "lead": "Ett ritverktyg ritar. LeanTheCompany räknar: takttid, effektiv cykeltid, lagertäckning, ur-takt-flaggor — live, varje gång kartan ändras. Webbaserat, ingen konsultretainer, ingen sex-månaders rollout. Börja kartlägga på tio minuter, coacha dig själv med en inbäddad sensei tränad på 25+ år av kaizen från verkstadsgolvet.",
-    "chainLine": "Sex delar, en linje — riktning, kartor, förbättring, bevis.",
+    "chainLine": "Sex delar. En kontinuerlig linje – från riktning till kartläggning, förbättring och bevis",
     "status": {
       "live": "Live i beta",
       "dev": "Under utveckling"
@@ -109,7 +109,7 @@
     "items": {
       "warroom": {
         "title": "True North",
-        "body": "Steg 0 i varje Space. Betygsätt dig mot det dina kunder faktiskt bedömer dig på — fem värden, 1 till 5, nuläge mot mål. Gapen sätter riktningen, och de definierar rätt kvalitet: gott nog, inte överarbetat."
+        "body": "Steg 0 i varje Space. Bedöm din nuvarande prestanda mot vad dina kunder faktiskt bedömer dig utifrån – fem kundvärderingar, poängsatta från 1 till 5, nuvarande tillstånd mot mål. Gapen anger riktningen och definierar rätt kvalitetsnivå: tillräckligt bra för att möta behovet, utan överbearbetning eller överkonstruktion."
       },
       "makigami": {
         "title": "Makigami-canvas för administration",

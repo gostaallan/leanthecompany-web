@@ -12,7 +12,7 @@
     "eyebrow": "The lean platform for factory and office",
     "headline": "Two canvases. Four maps.",
     "headlineSub": "One truth.",
-    "lead": "Value Stream Mapping for material flow. Makigami for office processes — a map of how office work actually flows. Both in current and future state, with takt time, lead time and waste calculated live as you map. A process map that does the maths. An embedded Sensei that challenges it.",
+    "lead": "Value Stream Mapping for material flow. Makigami for administrative and office processes — making the real flow of work visible. Map both the current and future state, with takt time, lead time, and waste calculated in real time as you work. A process map with the analysis built in. An embedded Sensei that challenges your thinking.",
     "ctaPrimary": "Get your Chaos Score",
     "ctaSecondary": "Reserve an Original seat",
     "founderTitle": "Founder · Sensei",
@@ -56,7 +56,7 @@
       "chaos": {
         "label": "01 · Chaos",
         "title": "Nobody knows the real process.",
-        "body": "Ask five people to map the order-to-ship flow and you’ll get five different versions. The current-state map on the wall is three years old and two ERP migrations out of date. You’re making decisions against a process that no longer exists — and nobody can say why the complaint rate won’t come down, or what \"good enough\" actually means."
+        "body": "Ask five people to map the order-to-ship flow and you’ll get five different versions. The current-state map on the wall is three years old and two ERP migrations out of date. You’re making decisions based on a process that no longer exists — and nobody can explain why the complaint rate isn’t improving, or even agree on what “good enough” looks like."
       },
       "handoffs": {
         "title": "Handoffs eat more time than the work.",
@@ -71,28 +71,28 @@
     }
   },
   "howItConnects": {
-    "eyebrow": "How it connects",
+    "eyebrow": "How It All Connects",
     "headline": "Most tools start with the map. We start with the promise.",
     "steps": [
       {
-        "title": "Say what you promised.",
-        "body": "Pick your industry and the five things your customers actually judge you on are already there — for a food producer: freshness, food safety, price, consistency, lead time. In your words, not ours."
+        "title": "Define what you promised.",
+        "body": "Choose your industry and the five things your customers actually judge you on are already there. For a food producer: freshness, food safety, price, consistency, and lead time. Then define what each one means in your operation — in your words, not ours."
       },
       {
         "title": "Grade yourself, 1 to 5.",
-        "body": "Current score against target, on every one of the five. Each level has written criteria, so it is a conversation with evidence, not a show of hands. The gaps are your True North."
+        "body": "Score current performance against the target for each of the five. Every level has clearly defined criteria, so the assessment is based on evidence — not a show of hands. The gaps show you where to focus improvement and set the direction toward your True North."
       },
       {
-        "title": "Tie each gap to a number.",
-        "body": "Which measure would prove the gap — complaint rate, first-time-right, yield, on-time delivery? How big is the loss behind it, and how far do you trust the data? Now you know where to dig, before you draw anything. The Value–KPI Bridge ranks every gap for you — and tells you which map to draw."
+        "title": "Put a Number on Every Gap",
+        "body": "Which measure best proves the gap — complaint rate, first-time-right, yield, or on-time delivery? How large is the loss behind it, and how much confidence do you have in the data? Now you know where to investigate before you draw a single map. The Value–KPI Bridge ranks every gap by priority — and points you to the right map to investigate it."
       },
       {
         "title": "Map where the loss lives.",
-        "body": "Losses in the paperwork → Makigami, a map of how office work actually flows. Losses in the product → Value Stream Map, the flow of goods, timed. Current state and future state, with the arithmetic done live while you draw."
+        "body": "Losses in the information or administrative flow → Makigami, showing how the work actually moves across people, functions, and handoffs.\n\nLosses in the material flow → Value Stream Mapping, showing how products and materials actually move through the process — with time attached."
       },
       {
         "title": "Fix it, and keep it fixed.",
-        "body": "What you found becomes improvement work with an owner and a date. The A3 — the one-page report managers actually read — carries the result to the review."
+        "body": "What you find becomes improvement work — with a clear owner and due date. The A3 — the one-page report managers actually read — brings the problem, action, and result into the management review."
       }
     ],
     "closing": "Direction first. Then the map. Then the improvement. Never the other way round."
@@ -101,7 +101,7 @@
     "eyebrow": "The Platform",
     "headline": "The map that does the math.",
     "lead": "A drawing tool draws. LeanTheCompany computes: takt time, effective cycle time, inventory cover, out-of-takt flags — live, every time the map changes. Browser-based, no consulting retainer, no six-month rollout. Start mapping in ten minutes, coach yourself with an embedded sensei trained on 25+ years of shop-floor kaizen.",
-    "chainLine": "Six parts, one line — direction, maps, improvement, proof.",
+    "chainLine": "Six parts. One continuous line — from direction to mapping, improvement, and proof.",
     "status": {
       "live": "Live in beta",
       "dev": "In development"
@@ -109,7 +109,7 @@
     "items": {
       "warroom": {
         "title": "True North",
-        "body": "Step 0 of every Space. Grade yourself against what your customers judge you on — five values, scored 1 to 5, current against target. The gaps set direction, and they define right quality: good enough, not gold-plated."
+        "body": "Step 0 in every Space. Assess your current performance against what your customers actually judge you on — five customer values, scored from 1 to 5, current state against target. The gaps set the direction and define the right level of quality: good enough to meet the need, without overprocessing or overengineering."
       },
       "makigami": {
         "title": "Makigami canvas for admin flow",
