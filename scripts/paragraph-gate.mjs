@@ -134,15 +134,160 @@ for (const locale of LOCALES) {
   }
 }
 
+
+// ═══════════════════════════════════════════════════════════════════════════
+// ZH HEADLINE CHECK — no 。 in a headline (GTM zh-sv-copy-rules.md R1 / R1a)
+// ═══════════════════════════════════════════════════════════════════════════
+//
+// Ruled by Gösta, 1 Sept 2026: "We should not have any full stop anywhere in a
+// headline." Not between clauses, not at the end. Where English separates two
+// short clauses with a period, Chinese uses a space.
+//
+// The ruling already existed and was written down NOWHERE, so the next spec
+// contradicted it — which is why zh-sv-copy-rules.md now exists and why this
+// check does too. A rule that lives only in someone's memory is a rule the next
+// person breaks in good faith.
+//
+// ── TWO LAYERS, AND NEITHER ALONE WOULD HAVE FOUND THE 23 ──────────────────
+//
+// PINS are the ruling: the exact keys Gösta confirmed. Explicit, auditable, and
+// blind to any key nobody added.
+//
+// The NET is the countermeasure for that blindness, and it classifies THE WAY
+// THE CLASSIFICATION WAS ACTUALLY MADE (R1a): by how the value renders, not by
+// what the key is called. The key names lie — two values named `tagline` are
+// three-sentence body paragraphs, and `platform.chainLine` is not named like a
+// headline while rendering in the same display family as the h2s.
+//
+// ── THE ALLOWLIST CARRIES A REQUIRED `ruledBy`, AND THAT IS THE POINT ───────
+//
+// The net will eventually meet a display-type value that legitimately wants a
+// 。. Without required attribution the allowlist is the quiet escape hatch: an
+// entry appears, the gate goes green, and nobody knows who decided or when.
+// Same shape as RULED_IDENTICAL_BY_DESIGN in the platform repo, for the same
+// reason. AN ENTRY WITH NO `ruledBy` FAILS THIS GATE.
+const FULL_STOP = '。';
+
+/** The 23 swept on 1 Sept. Pins are the ruling; they do not classify. */
+const HEADLINE_PINS = [
+  'hero.headline', 'hero.headlineSub',
+  'problem.items.chaos.title', 'problem.items.handoffs.title',
+  'howItConnects.headline', 'howItConnects.steps.1.title',
+  'howItConnects.steps.4.title', 'howItConnects.closing',
+  'platform.chainLine', 'whatsComing.headline',
+  'diagnostic.introTitle', 'diagnostic.form.thanksTitle', 'diagnostic.baselineTitle',
+  'gembaDrill.headline',
+  'pricing.headline', 'pricing.form.thanksTitle', 'pricing.space.headline',
+  'pricing.archive.headline', 'pricing.comparison.headline',
+  'pricing.original.headline', 'pricing.priceLock.title',
+  'about.headline', 'finalCta.headline',
+];
+
+/**
+ * Display type, as R1a defines headline-class: `heading-display`,
+ * `heading-section`, `label-caps` (the eyebrows), or `font-serif` at text-xl
+ * and up. Body type keeps its 。 whatever the key is called.
+ */
+const DISPLAY = /(heading-display|heading-section|label-caps|font-serif[^"]*text-(xl|2xl|3xl|4xl|5xl|6xl))/;
+
+/**
+ * Ruled exemptions from the NET. `{ text, reason, ruledBy }` — `ruledBy` is
+ * REQUIRED and non-empty, naming the person and the date.
+ * Empty today, deliberately: there are zero legitimate matches, and the entry
+ * that is ever needed is a one-line ruling made with the string in hand, which
+ * is worth more than a guess made now about a string nobody has written.
+ */
+const HEADLINE_ALLOW = [];
+
+for (const [i, entry] of HEADLINE_ALLOW.entries()) {
+  if (!entry || typeof entry.ruledBy !== 'string' || entry.ruledBy.trim() === '') {
+    problems.push(
+      `HEADLINE_ALLOW[${i}] has no \`ruledBy\`. An exemption without an owner and a date is` +
+        ' the escape hatch this list exists to avoid — name who ruled it and when.',
+    );
+  }
+  if (!entry || typeof entry.reason !== 'string' || entry.reason.trim() === '') {
+    problems.push(`HEADLINE_ALLOW[${i}] has no \`reason\`. Say what was decided, not that a gate was red.`);
+  }
+}
+let netScanned = 0;
+const allowed = new Set(HEADLINE_ALLOW.filter((e) => e && e.ruledBy && e.reason).map((e) => e.text));
+
+{
+  const zh = flat(JSON.parse(readFileSync(join(ROOT, 'src', 'locales', 'zh.json'), 'utf8')));
+
+  // ── pins ────────────────────────────────────────────────────────────────
+  for (const key of HEADLINE_PINS) {
+    const value = zh[key];
+    if (value === undefined) {
+      problems.push(`[zh] HEADLINE_PINS names ${key}, which is not in the catalogue — a pin that points at nothing.`);
+      continue;
+    }
+    if (value.includes(FULL_STOP)) {
+      problems.push(
+        `[zh] ${key} — a headline holds ${value.split(FULL_STOP).length - 1} full stop(s).` +
+          ` R1: none anywhere, terminal or between clauses. "${value.slice(0, 50)}…"`,
+      );
+    }
+  }
+
+  // ── net ─────────────────────────────────────────────────────────────────
+  const htmlPath = join(ROOT, '.next', 'server', 'app', 'zh.html');
+  if (existsSync(htmlPath)) {
+    const page = readFileSync(htmlPath, 'utf8');
+
+    // ⚠ A QUOTATION IS NOT A HEADLINE, and the net found that out on its first
+    // run. `problem.quote` is Ohno's sentence, set in `font-serif text-2xl
+    // italic` — display type by every measure the rule names, and stripping its
+    // 。 would be editing a quotation.
+    //
+    // It is excluded STRUCTURALLY, by the <blockquote> it sits in, rather than
+    // by an allowlist entry. R1a classifies by render, and a blockquote renders
+    // as a quotation rather than as a headline — so this is the classification
+    // getting more precise, not an exemption from it. An allowlist entry would
+    // have needed a `ruledBy` naming someone who never ruled on this value: the
+    // confirmed list did not mention it, because neither Sensei nor CC
+    // surfaced it. The net did, which is what a net is for.
+    const quoted = [...page.matchAll(/<blockquote\b[\s\S]*?<\/blockquote>/g)].map((q) => [
+      q.index,
+      q.index + q[0].length,
+    ]);
+    const inBlockquote = (i) => quoted.some(([a, b]) => i >= a && i < b);
+
+    const el = /<(h1|h2|h3|h4|p|span|li)\b[^>]*class="([^"]*)"[^>]*>([^<]+)</g;
+    let m;
+    while ((m = el.exec(page)) !== null) {
+      const [, , cls, text] = m;
+      if (!DISPLAY.test(cls)) continue;
+      if (inBlockquote(m.index)) continue;
+      netScanned++;
+      if (!text.includes(FULL_STOP)) continue;
+      if (allowed.has(text)) continue;
+      problems.push(
+        `[zh] NET — display-type <${m[1]}> renders a full stop: "${text.slice(0, 50)}…"` +
+          ` (class "${cls.slice(0, 60)}"). Either it is a headline and R1 applies, or it is` +
+          ' an allowlist entry with a `ruledBy`.',
+      );
+    }
+  }
+}
+
 if (problems.length === 0) {
+  // The success line NAMES BOTH CHECKS AND THEIR COUNTS. A gate that runs two
+  // things and reports one is a green that describes half of itself — and a
+  // check whose count silently drops to zero (a renamed key, a moved HTML path)
+  // still prints "clean".
   console.log(
-    `paragraph-gate: clean — ${checked} value(s) with a blank line, each rendering as its own` +
-      ` paragraphs across ${LOCALES.length} locales`,
+    `render-gate: clean` +
+      ` — paragraphs: ${checked} value(s) with a blank line render as their own paragraphs` +
+      ` across ${LOCALES.length} locales` +
+      ` · zh headlines: ${HEADLINE_PINS.length} pinned keys carry no ${FULL_STOP},` +
+      ` ${netScanned} display-type element(s) scanned, ${HEADLINE_ALLOW.length} ruled exemption(s)`,
   );
   process.exit(0);
 }
 
-console.error(`\nparagraph-gate: ${problems.length} problem(s)\n`);
+console.error(`\nrender-gate: ${problems.length} problem(s)\n`);
 for (const p of problems) console.error(`  ${p}`);
 console.error('\nA blank line in the copy is a paragraph the writer asked for. If it renders as a');
 console.error('space, the page is not the text that was signed off. Fix the COMPONENT — never');
