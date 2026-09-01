@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
+import { Paragraphs } from '@/components/ui/Paragraphs'
 
 // Status type kept wide so individual items can be flipped to 'live'
 // later without re-typing this array.
@@ -44,7 +45,7 @@ export function Platform() {
           <h2 className="heading-display text-4xl md:text-5xl mb-6 text-white">
             {t('headline')}
           </h2>
-          <p className="body-lead text-white/70">{t('lead')}</p>
+          <Paragraphs text={t('lead')} className="body-lead text-white/70" />
         </div>
 
         {/* The one sentence that says the six are a line and not a list. */}
@@ -76,9 +77,10 @@ export function Platform() {
               <h3 className="font-serif text-lg mb-3 text-white leading-snug">
                 {t(`items.${item.key}.title`)}
               </h3>
-              <p className="text-sm text-white/60 leading-relaxed">
-                {t(`items.${item.key}.body`)}
-              </p>
+              <Paragraphs
+                text={t(`items.${item.key}.body`)}
+                className="text-sm text-white/60 leading-relaxed"
+              />
             </div>
           ))}
         </div>

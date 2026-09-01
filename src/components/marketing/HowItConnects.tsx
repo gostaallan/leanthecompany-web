@@ -1,6 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+import { Paragraphs } from '@/components/ui/Paragraphs'
 
 /**
  * The chain — GTM 014 §3, the spine the page was missing.
@@ -60,7 +61,10 @@ export function HowItConnects() {
               <h3 className="font-serif text-xl mb-2 text-ink leading-snug">
                 {t(`steps.${i}.title`)}
               </h3>
-              <p className="text-ink-soft leading-relaxed">{t(`steps.${i}.body`)}</p>
+              <Paragraphs
+                text={t(`steps.${i}.body`)}
+                className="text-ink-soft leading-relaxed"
+              />
             </li>
           ))}
         </ol>

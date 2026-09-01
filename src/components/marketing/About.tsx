@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { Button } from '@/components/ui/Button'
 import { GraduationCap, Briefcase } from 'lucide-react'
+import { Paragraphs } from '@/components/ui/Paragraphs'
 
 /**
  * The two schools. `lean` and `china` went in 130 Amendment 1 — the experience
@@ -81,8 +82,10 @@ export function About() {
             <p className="body-lead mb-6">{t('lead')}</p>
 
             <div className="space-y-4 text-base text-ink-soft leading-relaxed mb-10">
+              {/* `space-y-4` on the wrapper already spaces siblings, so the
+                  splitter adds no margin of its own here. */}
               {(t.raw('bio') as string[]).map((para, i) => (
-                <p key={i}>{para}</p>
+                <Paragraphs key={i} text={para} gapClass="" />
               ))}
             </div>
 
