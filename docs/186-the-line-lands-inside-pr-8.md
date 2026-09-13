@@ -38,15 +38,22 @@ was read off the working tree at `C:\CLAUDE PROJECTS\PLATFORM\web\leanthecompany
 |---|---|---|
 | 2.1 | **`howItConnects` is ABSENT from `src/locales/en.json`.** Top-level namespaces are `nav · hero · forWhom · problem · platform · whatsComing · diagnostic · gembaDrill · pricing · about · finalCta · footer` — twelve, no thirteenth. | `json.load` over the file, printing the key set — not a grep |
 | 2.2 | **No `HowItConnects.tsx` exists** in `src/components/marketing/`. The directory holds `About · Diagnostic · FinalCTA · Footer · ForWhom · GembaDrill · Hero · Navbar · Platform · Pricing · Problem · WhatsComing` — twelve components. | directory listing, enumerated |
-| 2.3 | **`app/[locale]/page.tsx` composes twelve sections and `HowItConnects` is not one of them.** `<Platform />` sits between `<Problem />` and `<WhatsComing />`. | read the `HomePage` return |
+| 2.3 | ⚠ **AMENDED — see A1.3.** `<Platform />` sits between `<Problem />` and `<WhatsComing />` and `HowItConnects` is not composed. The count "twelve sections" was wrong: twelve *components*, **ten sections inside `<main>`** — Navbar and Footer sit outside it. | read the `HomePage` return |
 | 2.4 | ⇒ **The section is INTRODUCED by PR #8.** It is not a change to an existing section. | 2.1 + 2.2 + 2.3 |
-| 2.5 | **`Platform.tsx` does NOT render `chainLine` on main.** The `Platform` component renders `t('eyebrow')`, `t('headline')`, `t('lead')` and six cards over the `ITEMS` array (`makigami · vsm · sensei · tracker · warroom · report`), each `t('items.<key>.title')` / `.body`. There is no `t('chainLine')` call anywhere in the file. | read the whole component — it is 2,586 bytes, so this is an enumeration, not a sample |
+| 2.5 | **`Platform.tsx` does NOT render `chainLine` on main.** The `Platform` component renders `t('eyebrow')`, `t('headline')`, `t('lead')` and six cards over the `ITEMS` array (`makigami · vsm · sensei · tracker · warroom · report`), each `t('items.<key>.title')` / `.body`. There is no `t('chainLine')` call anywhere in the file. | read the whole component. ⚠ **The "2,586 bytes" I wrote was the CRLF WORKING COPY; the blob is 2,513** (`git ls-files --eol` → `i/lf w/crlf`). **The finding holds, the number did not** — and it was decoration, offered as proof of enumeration while proving nothing. See A1.1. |
 | 2.6 | **`platform.chainLine` is therefore a NEW key added by PR #8**, consistent with the workbook's own section banner: *"howItConnects + platform.chainLine · 17 rows · session 133, the story section · **14 new keys**, 3 changed values · catalogue count 318 → 332"*. | 2.5 + workbook row 237 |
 | 2.7 | **`platform.headline` = "The map that does the math."** — the line 015 §5 says must not be silently dropped. | read `en.json` `platform.headline` |
 
 ---
 
 ## 3 · The copy defects, measured against `GTM/zh-sv-copy-rules.md`
+
+> ⛔ **AMENDED 2026-09-13, AND THIS IS THE BIGGEST CORRECTION IN THE BRIEF — READ A1 BEFORE §3.**
+> **Everything below was measured against the WORKBOOK. None of it was measured against the PR
+> branch, and the branch already holds every fix in §3.1, §3.2 and §3.3 — landed 1 September.**
+> §3 is kept, not deleted, because it is the evidence that **the workbook is stale and §4.4 would
+> have reverted that work.** Read it as a description of `117landingsvzhreview-260908.xlsx`, never
+> as a description of the code.
 
 ### 3.1 ⛔ R1 — the `。` sweep never reached this block
 
@@ -192,12 +199,19 @@ station 5's PDCA chips; and `lead` restates `hero.lead` almost clause for clause
 ⚠ **But `whatsComing.previews.pdf.body` still carries the old name in prose** (`kompass` / `罗盘`)
 and is NOT in the deleted section. **That one still has to be fixed.**
 
-### 4.4 Apply the workbook SV/ZH for the rows that survive
-Everything in `117landingsvzhreview-260908.xlsx` whose key still exists after 4.3.
+### 4.4 ⛔ DROPPED — see A1.2
+**Applying the workbook would revert 1 September's work.** CC diffed all 237 workbook rows against
+the branch: 19 EN, 12 SV and 44 ZH differ, and **in all 75 the branch holds the later value.**
+The surviving half of this item is in §5: the workbook must be **regenerated from the branch**
+before the Chinese reviewer ever sees it.
 
 ---
 
 ## 5 · Scope (out → later)
+
+> ⚠ **AMENDED (A1.2):** the first bullet is now load-bearing rather than a courtesy. The workbook is
+> **older than the branch in all 75 rows where the two differ**, so it is not a source for anything;
+> it must be **regenerated from the branch** before it is sent to anyone.
 
 - **The Chinese reviewer's pass — after 15 September, and ON THE POST-015 BODIES ONLY.** Do not send
   her the current workbook. Regenerate the `howItConnects` rows from the shipped EN first.
@@ -213,6 +227,11 @@ Everything in `117landingsvzhreview-260908.xlsx` whose key still exists after 4.
 ---
 
 ## 6 · ⚠ The structural item, and it is the point of this brief
+
+> ⛔ **AMENDED (A1.8): THE TEST ALREADY EXISTS AND I DID NOT LOOK.** `scripts/paragraph-gate.mjs`
+> has carried a **"ZH HEADLINE CHECK"** section since `fcfcde2`, 1 September, running as postbuild.
+> **The argument below survives; the deliverable inverts** — the job is to WIDEN an existing gate,
+> not to write a new one, and it moves **into** this PR (A1.8).
 
 **R1 has now failed twice on the same catalogue.** Ruled 1 September. Swept 1 September. A block
 added 8 September walked straight past it, and `hero.headline` — the string the rule uses as its own
@@ -246,9 +265,9 @@ specified here so it is not lost:
 5. **Zero `。` in any ZH value CC's render-derived scan classes as headline-class.** Report the
    population size and the number fixed — both numbers, with the method beside each.
 6. `platform` section deleted: `Platform.tsx` gone, `platform` block gone from all three catalogues,
-   `<Platform />` gone from `page.tsx`. **`platform.headline` relocated to `diagnostic`, not lost.**
-7. `whatsComing.previews.pdf.body` no longer carries the old feature name in any locale.
-8. **Zero `\n\n` in the `howItConnects` block in all three locales** (§3.4), reported as a count.
+   `<Platform />` gone from `page.tsx`. **`platform.headline` relocated to `whatsComing` as `whatsComing.mapLine` (A1.5), not lost.**
+7. ⚠ **AMENDED (A1.7): RENAME, DO NOT REMOVE.** `whatsComing.previews.pdf.body` says **True North** where it said *compass / kompass / 战略罗盘*, in all three locales. **The claim is true and must survive** — `ProjectDocId` in `modules/print/queries.ts` includes `'compass'` and `'maturity'`, so True North does export from the A3 hub (ADR 0011).
+8. ⚠ **AMENDED (A1.6) — the original wording contradicted AC 3.** EN carries **zero** `\n\n` after the cuts; **SV and ZH keep theirs** (SV 1, ZH 4) because they stay on the old bodies, and those blank lines must **render as paragraphs** with the paragraph gate green. Report all three counts.
 9. Placeholder parity EN↔SV and EN↔ZH holds across every key touched.
 10. `pnpm build` green; the page renders in all three locales with no console error.
 
@@ -266,9 +285,13 @@ specified here so it is not lost:
   everything else is an edit. A reflow of files you only touched buries the real change.
 - ⛔ **`git add -A` is forbidden.** Explicit paths only. This checkout sits under
   `C:\CLAUDE PROJECTS\PLATFORM\web\` and has its own `.git`.
-- ⛔ **Do not translate anything.** SV and ZH values come from the workbook or from the mechanical
-  `。` removal in §3.1. **A removal is not a translation.** Anything that would be a new SV or ZH
-  *sentence* stops and comes back to Sensei.
+- ⛔ **AMENDED — MY ORIGINAL "DO NOT TRANSLATE ANYTHING" WAS WRONG AND CONTRADICTED A RULED
+  PROCESS (A1.4).** The 2026-08-08 ruling is: **Claude Code writes all three languages in the PR,
+  then humans verify before merge — Gösta reads the Swedish, his wife reads the Chinese.**
+  ⇒ **Write SV and ZH for the new labels**, under the constraints in A1.4, and **produce the review
+  sheet `docs/186-locale-review.md`** — one row per changed key, columns **EN | SV | ZH | notes**.
+  Precedent in this repo: `docs/125-locale-review.md`. **Do not merge on a green build alone.**
+  ⚠ **Flag, don't guess** — every uncertain row carries a note rather than a confident invention.
 - ⚠ **Cite the file and the SYMBOL, not the line.** A line number only if you read it at the sha you
   name beside it.
 - ⚠ **Enumerate, do not sample.** If your search returns N hits, open N — and say which it was.
@@ -315,3 +338,201 @@ feat/133-the-story-section
 | 015 §7 | 015 follows PR #8 | **015 lands INSIDE PR #8** | Gösta, 2026-09-13 — the translation-ordering trap in §1 |
 | 015 §3 | *"Reference rendering: the artifact in Gösta's gallery"* | Unchanged, and the artifact was read back in full on 2026-09-13 to write §4.1 | — |
 | — | *(not in 015)* | **§3.1's R1 regression and §6's test** | `zh-sv-copy-rules.md` R1/R1a; found 2026-09-13 |
+
+
+---
+
+# AMENDMENT 1 — 2026-09-13, on CC's confirm-back
+
+**CC stopped before any branch work and falsified a large part of this brief. That is the process
+working.** Nine of my claims moved. The amendment is written into the sections above so no reader
+meets a false one, and recorded here with what overruled it.
+
+⚑ **The through-line, and it is the same error the manual audit taught on this very day:
+§2 measured `main`, §3 measured the WORKBOOK, and neither measured the BRANCH — which is the
+artefact the PR ships.** *A measurement was taken of something adjacent to the question and reported
+as an answer to it.* The brief's own §2 caveat said `git` could not be run and asked CC to confirm;
+it did not occur to me that the same gap made **§3 describe a file rather than the code.**
+
+## A1.1 · The byte count that was decoration
+
+`Platform.tsx` is **2,513 bytes** as a blob; my 2,586 was the CRLF working copy. The finding — no
+`t('chainLine')` on `main` — stands, re-derived by CC with `git grep` on the origin ref.
+**I offered the number as proof I had enumerated rather than sampled. A number that is wrong proves
+neither.** → ways-of-working, *cite the symbol, not the line*; the same rule reaches byte counts.
+
+## A1.2 · §4.4 is DROPPED — the workbook is older than the branch
+
+CC diffed all 237 workbook rows against `fcfcde2` (`wb-compare.cjs`) and read all 75 that differ:
+**19 EN, 12 SV, 44 ZH — the branch holds the later value in every one.** Applying §4.4 would have:
+restored **14** `。` in ZH headlines · reverted **13** rows from 您 to 你 against R2 · removed the SV
+periods on `chainLine` and `steps.2.title` · undone the pen-pass cuts in `steps.3.body` (all three)
+and `steps.4.body` (SV) · restored the old SV bio and *"grundarplats"* · and put **"Compass & North
+Star"**, **"reads what you drew"** and **"orginal"** back into EN.
+
+⚑ **My §3.1 called `hero.headline` a REGRESSION. It is not. The branch reads `两块画布 四张地图`,
+correct since 1 September.** The workbook is simply stale — and the **14** it would restore is two
+more than my twelve: I also missed `diagnostic.introTitle` and `diagnostic.form.thanksTitle`.
+**The real finding was never a regression in the product. It was that §4.4 was a regression vector,
+and that is the more dangerous shape of the same observation.** → ways-of-working, *a falsified
+premise does not automatically falsify the finding — re-derive, do not withdraw.*
+
+**Surviving obligation:** the workbook must be **regenerated from the branch** before the Chinese
+reviewer sees it. It also carries **6 rows for keys that no longer exist**
+(`whatsComing.founding{Note,Cta}`, `about.credentials.{lean,china}.{title,body}`).
+
+## A1.3 · §2's small corrections
+
+- **2.3:** twelve *components*, **ten sections inside `<main>`** — Navbar and Footer are outside it.
+- **2.6:** true for EN and SV (14 added, 3 changed); **ZH is 14 added and 21 changed** — the 3 plus
+  18 from the 1 September R1 sweep.
+- **2.1, 2.2, 2.4, 2.7 confirmed true** against `origin/main` at `eaa73d8`.
+
+## A1.4 · ⛔ My "do not translate anything" was wrong
+
+It contradicts the **ruled process of 2026-08-08**: *Claude Code writes all three languages in the
+PR; Gösta reads the Swedish, his wife reads the Chinese, before merge*, and **the PR produces a
+review sheet.** My instruction would have frozen the PR on `parity-gate.mjs`, which fails the build
+when an EN key has no SV or ZH — so **015 §7's "leave SV/ZH on the old bodies" holds for EXISTING
+keys and cannot hold for NEW ones.** CC was right to stop.
+
+**RULED — the eleven new labels:**
+
+| Label | SV | ZH |
+|---|---|---|
+| `True North` · `Value–KPI Bridge` · `Makigami` · `A3` | **identical** | **identical** |
+| `Value Stream Mapping` | **identical** | **identical** |
+| `5 values` · `current → target` · `ranked` · `Information & admin flow` · `Material flow` | CC writes | CC writes |
+| `Embedded Sensei` | *Sensei* stays Latin, *Embedded* translates | same |
+| `sensei.body` | CC writes | CC writes |
+
+- **`Value Stream Mapping` is Latin in all three**, parallel with `Makigami` in the same fork.
+  R3 and translation-rule 5 both list VSM as do-not-translate, and **two branches of one fork, one
+  translated and one not, reads as an accident rather than a decision.**
+  ⚠ **Raise in the sheet, do not fix here:** the branch already carries `价值流图` and a Swedish
+  `Värdeflödeskartläggning` elsewhere. That inconsistency predates this PR and is the reviewer's.
+- ⚠ **Makigami's Chinese rendering is the reviewer's call, not ours** — translation-rule 5's last
+  line is explicit about Japanese terms. Raise it; don't decide it.
+- **The chips are `font-mono` ~10px — NOT display type**, so R1a's headline class does not reach
+  them. They are labels with no sentence, so **no terminal punctuation in any locale** regardless.
+- **`sensei.body` is body copy:** normal punctuation, **keeps its `。`**, and takes **您** per R2.
+- **Swedish is `du`** (translation-rule 6).
+
+## A1.5 · Q6 — `whatsComing.mapLine`, and 015 §5 names the wrong section
+
+**CC caught an error in 015 itself: the screenshot cards are `whatsComing.previews.*`, not
+`diagnostic`.** `diagnostic` is the Chaos Score quiz and holds no screenshots. 015 §5's coverage
+table is wrong; its conclusion still holds. **My "relocate to `diagnostic`" inherited that error.**
+
+**RULED: `whatsComing.mapLine`**, a display line between the header block and the `PREVIEWS` grid,
+in `chainLine`'s shape (`font-serif text-xl md:text-2xl`). Values move **verbatim, no new words** —
+EN `The map that does the math.` · SV `Kartan som räknar själv.` · ZH `不只看流程，更能算清流程`.
+**I verified the ZH independently: it carries no `。` on `main` either.** Add it to `HEADLINE_PINS`.
+**It goes in the deletion commit, so a revert brings the section and the line back together.**
+
+## A1.6 · AC 8 contradicted AC 3
+
+Correct, and mine. Zero `\n\n` in all three locales is impossible while SV and ZH stay on the old
+bodies. Restated in AC 8. **Keep `<Paragraphs>` in the rail for exactly that reason.**
+
+## A1.7 · ⛔ Q7.7 — RENAME, DO NOT REMOVE. The claim is TRUE.
+
+CC proposed deleting the word: *"Every map, compass, and kaizen report"* → *"Every map and kaizen
+report"*, and asked whether True North exports as an A3. **It does, and I measured it rather than
+passing the question back.**
+
+`ProjectDocId` in `apps/ltc-os-platform/modules/print/queries.ts` enumerates
+`vsm · makigami · compass · maturity · kaizen-stats · bridge · problem-records · flow-workshops`,
+and `getProjectDocuments` emits a `doc: 'compass'` row. The hub is **ADR 0011, print-a3-document-hub**.
+⇒ **Removing the word would drop a TRUE claim from the page to avoid a rename.**
+
+**RULED — the rename, which invents no new SV or ZH words because `True North` is on the
+do-not-translate list (R3 / translation-rule 5):**
+
+- EN: `Every map, compass, and kaizen report` → **`Every map, True North, and kaizen report`**
+- SV: `Varje karta, kompass och kaizen-rapport` → **`Varje karta, True North och kaizen-rapport`**
+- ZH: `每一张流程图、战略罗盘和改善报告` → **`每一张流程图、True North 和改善报告`**
+
+## A1.8 · Q4 and §6 — the gate exists; widen it, and it comes INTO this PR
+
+CC derived the population **over the render tree**, not by key name: **45 display-type values, and
+ZERO carry a `。` on the branch.** My twelve were workbook artefacts. 45 is 3.75× my name-shaped 65
+candidates' yield — **the scan under-counted the population and over-counted the defects, both.**
+
+**The real finding is CC's gap:** of the 45, **9 are covered by neither the pins nor the net** —
+`finalCta.headlineSub` (in an `<em>`), `hero.proof.*` (3, in `<strong>`), `diagnostic.bands.*.name`
+(4) and `diagnostic.form.title` (both render only in the result phase) — **and the net skips
+`font-mono` eyebrows entirely.** All 9 are clean today.
+
+**RULED: widen the gate in THIS PR**, against my own Scope (out). Reason: the PR already opens
+`paragraph-gate.mjs` to drop the `platform.chainLine` pin and to add `whatsComing.mapLine`, and it
+adds new display strings to the page. **Leaving a known blind spot open in the same commit that
+feeds it new values is how the blind spot gets exercised.** ⚠ **Verify by reverting one fix and
+watching it go red** — a test that has never failed has not been tested.
+
+## A1.9 · Q5 — the two dead anchors
+
+`#platform` is the target of `Navbar.tsx` `links` and `Footer.tsx` `navCols`. **RULED: point both at
+`#how-it-connects`.** The footer label `footer.cols.product.platform` is already *"How it works" /
+"Hur det fungerar" / "运作方式"* — **accurate for the rail, and already ruled in all three locales.**
+
+**`nav.platform` takes those same three values verbatim** — "Platform / Plattformen / 平台" names a
+section that no longer exists. **Copying the footer's ruled strings invents nothing in any locale.**
+⚠ **Keep the KEY name.** Renaming it churns three catalogues, the parity gate and the workbook for
+no behaviour; leave a one-line comment at the `links` site and let a later sweep rename it.
+*R1a's lesson exactly: the key names lie, and that is survivable as long as the render is right.*
+
+## A1.10 · Q7.3 — the ZH PDCA chips
+
+**There are no PDCA keys to reuse in this repo** — R4's `RULED_IDENTICAL_BY_DESIGN` lives in the
+monorepo. My "reuse the existing keys" was false here.
+
+**RULED: a component constant, `PLAN ▸ DO ▸ CHECK ▸ ACT`, identical in all three locales** — the
+same treatment as `EN · SV · 中文`, and what the reference artifact does. R4 already makes Swedish
+identical to English; making Chinese identical keeps the row **one constant rather than a
+translatable set**, which is what stops a second, divergent Swedish set being minted later.
+⚠ **ZH is UNRULED and this is my call, not a precedent — put it in the review sheet for the Chinese
+reviewer to overturn.** PDCA is current in Chinese manufacturing in Latin, which is why I ruled it
+this way rather than translating it.
+
+## A1.11 · Accepted without change
+
+Q1 (`chainLine` dies with the section; **fix nothing on it**, and **drop its `HEADLINE_PINS` entry in
+the deletion commit or the postbuild gate fails on a pin pointing at nothing**) · Q3 (the branch
+matches the workbook exactly: 14 added, 318 → 332, no PR #8 key untranslated) · Q7.1 (rewrite of the
+existing 78-line `HowItConnects.tsx`, hand-matched style, no Prettier) · Q7.5 (Tailwind arbitrary
+variants, no new token) · Q7.6 (smoke the long SV/ZH bodies at 1280 px **on the Vercel preview**) ·
+CC's R2 note (branch `steps.0.title`, `steps.0.body`, `steps.2.body` use 你 — verified pen-pass text;
+**leave it and raise it in the sheet**).
+
+## A1.12 · The commits
+
+CC's four-becomes-three stands, plus the sheet:
+
+1. `feat(page)` — the rail, the EN cuts, the eleven labels with SV/ZH, the PDCA constant.
+2. `copy(page)` — the A1.7 rename.
+3. `feat(page)` — delete `platform`; `whatsComing.mapLine`; retarget both anchors; `nav.platform`
+   revalued; drop the `chainLine` pin; fix the false docstring. **Its own commit, revertable alone.**
+4. `test(gate)` — A1.8's nine pins plus the `font-mono` eyebrows.
+5. `docs(186)` — `docs/186-locale-review.md`, the review sheet.
+
+---
+
+## Amendment table — Amendment 1
+
+| Said | Now says | Overruled by |
+|---|---|---|
+| §2.5 `Platform.tsx` is 2,586 bytes | **2,513** (blob; 2,586 was the CRLF working copy) | CC, `git cat-file -s` + `git ls-files --eol` |
+| §2.3 twelve sections | twelve components, **ten sections** in `<main>` | CC, `git show origin/main:…/page.tsx` |
+| §2.6 ZH 14 added, 3 changed | 14 added, **21 changed** | CC, `keys.cjs` across both refs |
+| §3.1 `hero.headline` **regressed** | **It did not.** The branch has been correct since `fcfcde2`; the WORKBOOK is stale | CC, `git show` on the branch catalogues |
+| §3.1 twelve ZH values carry `。` | **Zero on the branch.** Twelve was a workbook count, and even there it was **14** | CC, render-tree derivation |
+| §3.2, §3.3 are work to do | **Already done** on the branch — `308b74d`, `494fa74` | CC |
+| §4.4 apply the workbook | ⛔ **DROPPED** — it reverts 1 Sept in all 75 differing rows | CC, `wb-compare.cjs` |
+| §6 write the `。` test | **It exists** (`scripts/paragraph-gate.mjs`, 1 Sept). **Widen it, in this PR** | CC |
+| §8 "do not translate anything" | ⛔ **Wrong.** CC writes all three + a review sheet | the ruled process of 2026-08-08 |
+| AC 6 move the headline to `diagnostic` | **`whatsComing.mapLine`** — `diagnostic` holds no screenshots | CC; 015 §5's own coverage table is wrong |
+| AC 7 remove the old feature name | ⛔ **RENAME to True North.** The claim is true | `ProjectDocId` in `modules/print/queries.ts`; ADR 0011 |
+| AC 8 zero `\n\n` in all three | EN 0; SV/ZH keep theirs and must render as paragraphs | CC — it contradicted AC 3 |
+| 015 §4.2 labels ship EN-only | **Impossible** — `parity-gate.mjs` fails the build | CC |
+| 015 §4.2 "reuse the PDCA keys" | **There are none in this repo.** Component constant, Latin ×3 | CC |
