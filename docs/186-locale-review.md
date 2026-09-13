@@ -155,7 +155,7 @@ It is a cut and not a fix because two defects retire with it:
    bodies anyway; **the title and `hero.lead` are the ones that stay.**
    - [ ] rephrase to avoid direct address   [ ] 您
 6. **The `6566bf4` residue in `diagnostic` — now split.** `handoffs.options.3` (EN + ZH) and EN `form.error`
-   are restored in this PR, and the two ZH scoring defects are at the top of this sheet. **Still open:** ZH
+   are restored in this PR, and the two ZH scoring answers, now applied — see the applied-rows table. **Still open:** ZH
    `diagnostic.form.error` reads `发出了问题？` — a fullwidth `？`, and wording that does not plainly say
    "something went wrong". The residue gate's three signatures match none of these; widening it is brief 187.
    - [ ] reviewer rewrites ZH `form.error`   [ ] leave
