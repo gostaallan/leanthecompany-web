@@ -185,6 +185,18 @@ const HEADLINE_PINS = [
   'pricing.archive.headline', 'pricing.comparison.headline',
   'pricing.original.headline', 'pricing.priceLock.title',
   'about.headline', 'finalCta.headline',
+
+  // ── display type the NET cannot see in the prerender (brief 186 A1.8) ──
+  // Rendered only after an interaction — the Chaos Score result phase — so
+  // zh.html never holds them and a pin is the only check there can be.
+  'diagnostic.bands.firefighting.name', 'diagnostic.bands.runningOnPeople.name',
+  'diagnostic.bands.drifting.name', 'diagnostic.bands.quietPlant.name',
+  'diagnostic.form.title',
+  // In the prerender, inside elements the first net could not read: a <strong>,
+  // and an <em> nested in the h2. The widened net reaches them now; the pins
+  // stay because they do not depend on the HTML being there at all.
+  'hero.proof.years', 'hero.proof.canvases', 'hero.proof.start',
+  'finalCta.headlineSub',
 ];
 
 /**
@@ -193,6 +205,14 @@ const HEADLINE_PINS = [
  * and up. Body type keeps its 。 whatever the key is called.
  */
 const DISPLAY = /(heading-display|heading-section|label-caps|font-serif[^"]*text-(xl|2xl|3xl|4xl|5xl|6xl))/;
+
+/**
+ * Mono caps: `font-mono` + `uppercase`, class order free. The Hero, FinalCTA and
+ * Original-banner eyebrows are set this way rather than in `label-caps`, and so
+ * are the rail's fork labels and Sensei tag. A label has no sentence, so a 。 in
+ * one is wrong whatever R1a calls the type (brief 186 A1.8).
+ */
+const isMonoCaps = (cls) => /\bfont-mono\b/.test(cls) && /\buppercase\b/.test(cls);
 
 /**
  * Ruled exemptions from the NET. `{ text, reason, ruledBy }` — `ruledBy` is
@@ -258,20 +278,51 @@ const allowed = new Set(HEADLINE_ALLOW.filter((e) => e && e.ruledBy && e.reason)
     ]);
     const inBlockquote = (i) => quoted.some(([a, b]) => i >= a && i < b);
 
-    const el = /<(h1|h2|h3|h4|p|span|li)\b[^>]*class="([^"]*)"[^>]*>([^<]+)</g;
+    // ⚠ THE FIRST NET READ ONLY TEXT THAT STARTED RIGHT AFTER THE OPENING TAG
+    // (`>([^<]+)<`), and measured on the 186 build that missed every eyebrow on
+    // the page — each `label-caps` eyebrow opens with its amber hairline <span>,
+    // so the text begins after a child tag — plus the <em> under the Hero and
+    // FinalCTA headlines and the <strong> proof numbers. It scanned 38 elements
+    // and reported "clean" about all of them, which was true and was not the page.
+    //
+    // So: take the element's whole inner HTML up to its own matching close tag,
+    // strip the child tags, and test that text. An <em> inside a display h2 is
+    // then read as part of the h2, which is how it renders.
+    const OPEN = /<(h1|h2|h3|h4|h5|h6|p|span|li|div|strong|em)\b[^>]*\bclass="([^"]*)"[^>]*>/g;
+    const innerText = (tag, from) => {
+      const tagRe = new RegExp(`<(/?)${tag}\\b[^>]*>`, 'g');
+      tagRe.lastIndex = from;
+      let depth = 1;
+      let t;
+      while ((t = tagRe.exec(page)) !== null) {
+        if (t[0].endsWith('/>')) continue;
+        depth += t[1] ? -1 : 1;
+        if (depth === 0) return page.slice(from, t.index).replace(/<[^>]*>/g, '');
+      }
+      return null;
+    };
+
     let m;
-    while ((m = el.exec(page)) !== null) {
-      const [, , cls, text] = m;
-      if (!DISPLAY.test(cls)) continue;
+    while ((m = OPEN.exec(page)) !== null) {
+      const [open, tag, cls] = m;
+      if (!DISPLAY.test(cls) && !isMonoCaps(cls)) continue;
       if (inBlockquote(m.index)) continue;
+      const text = (innerText(tag, m.index + open.length) ?? '').trim();
+      if (text === '') continue;
       netScanned++;
       if (!text.includes(FULL_STOP)) continue;
       if (allowed.has(text)) continue;
       problems.push(
-        `[zh] NET — display-type <${m[1]}> renders a full stop: "${text.slice(0, 50)}…"` +
+        `[zh] NET — display-type <${tag}> renders a full stop: "${text.slice(0, 50)}…"` +
           ` (class "${cls.slice(0, 60)}"). Either it is a headline and R1 applies, or it is` +
           ' an allowlist entry with a `ruledBy`.',
       );
+    }
+
+    // A net that parses nothing prints "clean" about nothing. The prerender is
+    // present, so zero elements means the pattern broke, not that the page is clean.
+    if (netScanned === 0) {
+      problems.push('[zh] NET — zh.html exists but no display-type element was read. The net is blind.');
     }
   }
 }
