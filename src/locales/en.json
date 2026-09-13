@@ -165,7 +165,7 @@
         "title": "Inventory between steps",
         "ask": "How much of an order’s lead time is waiting versus actual processing time?",
         "options": [
-          "Hours of waiting, at most. Work keeps moving.",
+          "Work keeps moving.",
           "A day or two of waiting for a few hours of work.",
           "Several days of waiting. I don’t really know how much of that time is actual work.",
           "I don’t know — we’ve never measured the waiting time against the actual work time."
