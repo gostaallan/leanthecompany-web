@@ -165,7 +165,7 @@
         "title": "Inventory between steps",
         "ask": "How much of an order’s lead time is waiting versus actual processing time?",
         "options": [
-          "Work keeps moving.",
+          "Hours of waiting, at most. Work keeps moving.",
           "A day or two of waiting for a few hours of work.",
           "Several days of waiting. I don’t really know how much of that time is actual work.",
           "I don’t know — we’ve never measured the waiting time against the actual work time."
@@ -444,12 +444,10 @@
     "title": "Founder · Sensei",
     "tagline": "Engineer, operator, coach. 25+ years across Europe and Asia — from the shop floor to the boardroom — before I wrote a single line of code.",
     "linkedinCta": "Connect on LinkedIn",
-    "lead": "My operational career began with Tetra Pak, where I spent ten years building hands-on experience in manufacturing, operations, and continuous improvement. It was there that I developed the foundation for how I still look at a plant today — through the flow of work, the realities of the shop floor, and the gap between how a process is designed and how it actually runs.",
+    "lead": "My career in operations management began at Tetra Pak. Ten years of hands-on experience on the production line gave me a solid foundation in manufacturing, operations and continuous improvement, and shaped the working methods I still use today: seeing the actual workflow, understanding the real problems that arise on site and the gap between process design and actual operation.",
     "bio": [
-      "From 2009, that experience expanded across East and Southeast Asia. With EFESO Consulting, I led and supported Lean transformations and operational improvement programs for major dairy, food, and beverage producers including FrieslandCampina, Nestlé, Danone, and Heineken, while also gaining operational experience from inside the businesses themselves.",
-      "From 2014 onward, the work broadened further across industries and geographies as an EFESO contractor leading WCOM (World Class Operations Management) and TPM implementations — from Stora Enso, SCA, and BillerudKorsnäs in forest products and packaging, to Oatly in food production, Galderma in pharmaceuticals, and Nobia in kitchen manufacturing. The work took me across Europe, Asia, China, and the United States, into very different plants, processes, and operating environments.",
-      "The companies changed. The products changed. The countries changed. The underlying problems did not. More than 25 years of diagnosing and improving operations gradually turned those recurring patterns into a method I could take into virtually any plant, in any sector — and know where to start looking.",
-      "Consultants solve this one plant at a time, at €2,000 a day. But once they leave, sustaining the improvement becomes the plant’s responsibility. I wanted to build a tool that a 26-year-old shift supervisor could open when they need it, map their own line, and walk into the next shift with a better standard — without waiting for the next consulting engagement. That’s what LeanTheCompany is."
+      "Companies change. Products change. Operating environments change. Yet the underlying process problems are often remarkably similar. Years of practice reinforced a simple principle: consultants can help solve individual problems, but sustainable improvement depends on an organization’s ability to see how work actually flows, identify the gaps between current and target performance, and improve the system continuously.",
+      "That is why I created LeanTheCompany — a management system shaped by more than two decades of operational practice, tested and refined across different industries and operating environments. It gives teams a structured way to see the process, set improvement priorities, and turn improvement into an internal capability — not an external dependency."
     ],
     "credentials": {
       "edu": {

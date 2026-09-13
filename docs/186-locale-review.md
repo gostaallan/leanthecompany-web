@@ -10,7 +10,8 @@ until someone rules.
 
 ⚠ **Do not review from `GTM/117landingsvzhreview-260908.xlsx`.** It is older than this branch in all 75
 rows where the two differ (brief 186 A1.2) and carries 6 rows for keys that no longer exist. Regenerate it
-from the branch first.
+from the branch first. **The one exception is §4:** Gösta ruled #183–#185 and #86 applied from it, verbatim,
+and none of those values had ever existed on the branch.
 
 ## ⛔ SCORING DEFECT — two ZH answer sets score wrong. NOT fixed here: they need new Chinese
 
@@ -109,6 +110,35 @@ half-width space between `True North` and 和. **Reviewer: confirm the spacing r
 | `whatsComing.mapLine` | The map that does the math. | Kartan som räknar själv. | 不只看流程，更能算清流程 | **Moved verbatim** from `platform.headline`. Display type — no `。` in ZH (R1), pinned by the gate |
 | `nav.platform` | How it works | Hur det fungerar | 运作方式 | **Copied verbatim** from `footer.cols.product.platform` (A1.9). Was *Platform / Plattformen / 平台*. Key name kept on purpose |
 | `platform.*` (18 keys) | — | — | — | Deleted: `eyebrow`, `headline`, `lead`, `chainLine`, `status.{live,dev}`, `items.{warroom,makigami,vsm,sensei,tracker,report}.{title,body}`. **Nothing to review; delete their rows from the workbook** |
+
+---
+
+## 4 · `about` and one Chaos Score option — the 117 workbook, applied verbatim (commit 7)
+
+Gösta ruled option A, 2026-09-13: apply #183–#185, cut #186 and #187. **These are the reviewer's own approved
+redraft, copied cell for cell** from the workbook's Review tab (EN · SV — redraft · ZH — redraft) and checked
+codepoint for codepoint against it. Claude Code wrote and translated nothing here. **None of these values
+existed anywhere in the repo's history before this commit**, so none of them reverts later work.
+
+| # | key | EN | SV | ZH | notes |
+|---|---|---|---|---|---|
+| 183 | `about.lead` | My career in operations management began at Tetra Pak. Ten years of hands-on experience on the production line gave me a solid foundation in manufacturing, operations and continuous improvement, and shaped the working methods I still use today: seeing the actual workflow, understanding the real problems that arise on site and the gap between process design and actual operation. | Min karriär inom verksamhetsledning började på Tetra Pak. Tio års praktisk erfarenhet från produktionslinjen gav mig en solid grund inom tillverkning, drift och kontinuerlig förbättring, och formade de arbetsmetoder jag fortfarande använder idag: att se det faktiska arbetsflödet, förstå de verkliga problemen som uppstår på plats och gapet mellan processdesign och faktisk drift. | 我的运营管理职业生涯始于 Tetra Pak。十年的生产一线实践，让我建立了制造、运营与持续改善的扎实基础，也形成了至今沿用的工作方式：看清工作的实际流动，理解现场真正发生的问题，以及流程设计与实际运行之间的差距。 | Replaces the longer Tetra Pak lead |
+| 184 | `about.bio.0` | Companies change. Products change. Operating environments change. Yet the underlying process problems are often remarkably similar. Years of practice reinforced a simple principle: consultants can help solve individual problems, but sustainable improvement depends on an organization’s ability to see how work actually flows, identify the gaps between current and target performance, and improve the system continuously. | Företag förändras, produkter förändras, arbetsplatser förändras, men många djupt rotade problem återkommer ständigt. Åratal av praktik har gradvis fått mig att inse att konsulter kan hjälpa företag att lösa individuella problem, men deras verkliga värde ligger i att ge företag möjlighet att identifiera problem, förstå processer och kontinuerligt förbättra systemet. | 企业在变，产品在变，现场在变，但许多深层问题却一再出现。这些经历让我逐渐明白：顾问可以帮助企业解决一个问题，但真正有价值的，是让企业拥有自己发现问题、看清流程、持续改善的能力。 | Was the 2009 East and Southeast Asia paragraph (EFESO, FrieslandCampina, Nestlé, Danone, Heineken). The company names remain in `hero.founderBio` |
+| 185 | `about.bio.1` | That is why I created LeanTheCompany — a management system shaped by more than two decades of operational practice, tested and refined across different industries and operating environments. It gives teams a structured way to see the process, set improvement priorities, and turn improvement into an internal capability — not an external dependency. | Det är därför jag skapade LeanTheCompany – ett ledningssystem format av mer än två decenniers operativ praxis, testat och förfinat inom olika branscher och verksamhetsmiljöer. Det ger team ett strukturerat sätt att se processen, sätta förbättringsprioriteringar och omvandla förbättring till en intern förmåga – inte ett externt beroende. | 这就是我创建 LeanTheCompany 的原因——把二十多年从现场学到、在不同企业中反复验证的方法，沉淀成一套企业自己能够掌握并持续使用的改善方法。 | Was the 2014-onward paragraph (WCOM and TPM, Stora Enso to Nobia) |
+| 86 | `diagnostic.areas.inventory.options.0` | Hours of waiting, at most. Work keeps moving. | *unchanged:* Som mest några timmars väntan. Arbetet rör på sig. | *unchanged:* 最多等几个小时。活是在往前走的。 | EN was `Work keeps moving.`, the only locale without the first sentence. It was lost in 125 (`docs/125-locale-review.md` §10: `Hours of waiting, at most. Work moves.` → `Work keeps moving.`). This exact string is the workbook's. Index 0, 0 points: **no score changes** |
+
+### Cut — `about.bio.2` and `about.bio.3` deleted in all three locales
+
+`bio` is now a **2-element array** in EN, SV and ZH; parity checks the length. The keys are **removed, not
+blanked**: #187 holds a single space (`' '`, and `' \r\n'` in ZH), which would have kept the key alive and
+rendered an empty paragraph. `About.tsx` maps over `t.raw('bio')`, so nothing reads an index that is gone.
+
+It is a cut and not a fix because two defects retire with it:
+
+- **#186 ZH is marked pink in the workbook** (fill `FCE4EC`) — a defect, not a style choice.
+- **#186's EN and SV are not the same paragraph.** EN is a new proposal (*"…turns proven patterns into a
+  practical method…"*); SV is the old live text (*"Företagen förändrades. Produkterna förändrades. Länderna
+  förändrades…"*). They were never translations of each other.
 
 ---
 
