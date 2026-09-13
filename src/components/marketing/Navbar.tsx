@@ -38,7 +38,10 @@ export function Navbar() {
   const links = [
     { href: '#for-whom',   label: t('forWhom')    },
     { href: '#problem',    label: t('problem')    },
-    { href: '#platform',   label: t('platform')   },
+    // `nav.platform` is named for the section it used to point at. It points at
+    // the rail now and carries the footer's ruled label; a later sweep renames
+    // the key (brief 186 A1.9).
+    { href: '#how-it-connects', label: t('platform') },
     { href: '#diagnostic', label: t('diagnostic') },
     { href: '#pricing',    label: t('pricing')    },
     { href: '#about',      label: t('about')      },

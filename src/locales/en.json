@@ -2,7 +2,7 @@
   "nav": {
     "forWhom": "For Whom",
     "problem": "The Problem",
-    "platform": "Platform",
+    "platform": "How it works",
     "diagnostic": "Diagnostic",
     "pricing": "Pricing",
     "about": "About",
@@ -12,7 +12,7 @@
     "eyebrow": "The lean platform for factory and office",
     "headline": "Two canvases. Four maps.",
     "headlineSub": "One truth.",
-    "lead": "Value Stream Mapping for material flow. Makigami for office processes. Both in current and future state, with takt time, lead time and waste calculated live as you map. A process map that does the maths. An embedded Sensei that challenges it.",
+    "lead": "Value Stream Mapping for material flow. Makigami for administrative and office processes — making the real flow of work visible. Map both the current and future state, with takt time, lead time, and waste calculated in real time as you work. A process map with the analysis built in. An embedded Sensei that challenges your thinking.",
     "ctaPrimary": "Get your Chaos Score",
     "ctaSecondary": "Reserve an Original seat",
     "founderTitle": "Founder · Sensei",
@@ -56,7 +56,7 @@
       "chaos": {
         "label": "01 · Chaos",
         "title": "Nobody knows the real process.",
-        "body": "Ask five people to map the order-to-ship flow and you’ll get five different versions. The current-state map on the wall is three years old and two ERP migrations out of date. You’re making decisions against a process that no longer exists."
+        "body": "Ask five people to map the order-to-ship flow and you’ll get five different versions. The current-state map on the wall is three years old and two ERP migrations out of date. You’re making decisions based on a process that no longer exists — and nobody can explain why the complaint rate isn’t improving, or even agree on what “good enough” looks like."
       },
       "handoffs": {
         "title": "Handoffs eat more time than the work.",
@@ -70,45 +70,66 @@
       }
     }
   },
-  "platform": {
-    "eyebrow": "The Platform",
-    "headline": "The map that does the math.",
-    "lead": "A drawing tool draws. LeanTheCompany computes: takt time, effective cycle time, inventory cover, out-of-takt flags — live, every time the map changes. Browser-based, no consulting retainer, no six-month rollout. Start mapping in ten minutes, coach yourself with an embedded sensei trained on 25+ years of shop-floor kaizen.",
-    "status": {
-      "live": "Live in beta",
-      "dev": "In development"
-    },
-    "items": {
-      "vsm": {
-        "title": "Value Stream Mapping canvas",
-        "body": "Drag-and-drop process boxes, inventory triangles, kaizen bursts and information flows. Cycle time, lead time and %C&A calculate themselves. Current state, future state, side by side."
+  "howItConnects": {
+    "eyebrow": "How It All Connects",
+    "headline": "Most tools start with the map. We start with the promise.",
+    "steps": [
+      {
+        "title": "Define what you promised.",
+        "body": "Choose your industry — the five things your customers judge you on are already there.",
+        "tools": [
+          "True North"
+        ]
       },
-      "makigami": {
-        "title": "Makigami canvas for admin flow",
-        "body": "Swim-lane the invisible back office — sales, engineering, purchasing, finance. See every handoff, every decision, every waiting triangle that doesn't show up on the shop floor."
+      {
+        "title": "Grade yourself, 1 to 5.",
+        "body": "Current against target, with defined criteria at every level. Evidence, not a show of hands.",
+        "tools": [
+          "5 values",
+          "current → target"
+        ]
       },
-      "sensei": {
-        "title": "Embedded AI Sensei",
-        "body": "Ask, “Where’s my biggest waste?” and get an answer grounded in your actual process data — your takt, your handoffs, your losses. Not generic Lean advice from a chatbot, but a coach that reads what you mapped."
+      {
+        "title": "Put a number on every gap.",
+        "body": "Which measure proves it, how large the loss is, how much you trust the data. Now you know where to look — before you draw anything.",
+        "tools": [
+          "Value–KPI Bridge",
+          "ranked"
+        ]
       },
-      "tracker": {
-        "title": "Kaizen tracker",
-        "body": "Turn insights into PDCA cycles with owners, deadlines, before/after photos. Nothing gets lost in email. Nothing gets celebrated too early."
+      {
+        "title": "Map where the loss lives.",
+        "body": "The flow the loss sits in decides the map.",
+        "fork": {
+          "info": {
+            "label": "Information & admin flow",
+            "tool": "Makigami"
+          },
+          "material": {
+            "label": "Material flow",
+            "tool": "Value Stream Mapping"
+          }
+        }
       },
-      "warroom": {
-        "title": "True North",
-        "body": "Set the True North and the value priorities up top, so every map and every pilot below ties back to what the business actually needs. The CEO, the plant manager and the Lean coach finally read from one shared truth."
-      },
-      "report": {
-        "title": "One-page A3 report",
-        "body": "Export every pilot as a printable A3 in English, Swedish or Chinese. The universal language of Toyota, fit for your next management review."
+      {
+        "title": "Fix it, and keep it fixed.",
+        "body": "Improvement work with an owner and a due date — then the one page your management review actually reads.",
+        "tools": [
+          "A3"
+        ]
       }
-    }
+    ],
+    "sensei": {
+      "tag": "Embedded Sensei",
+      "body": "Not a step — it runs the length of the line. Ask where your biggest waste is at any point, and the answer comes from your takt, your handoffs, your losses."
+    },
+    "closing": "Direction first. Then the map. Then the improvement. Never the other way round."
   },
   "whatsComing": {
     "eyebrow": "What you get",
     "headline": "What's live today — and what's landing next.",
     "lead": "Makigami, the value-stream canvas, the embedded sensei, the kaizen tracker and the one-page A3 export are all live in beta today. What you see below is the real platform — actual screenshots, not mockups.",
+    "mapLine": "The map that does the math.",
     "previews": {
       "vsm": {
         "tag": "Live in beta",
@@ -128,7 +149,7 @@
       "pdf": {
         "tag": "Live in beta",
         "title": "One-page A3 export",
-        "body": "The universal language of Toyota Production System reviews worldwide. Print it. Pin it. Walk it. Every map, compass, and kaizen report exports as a branded A3 or A4 — in English, Swedish, or Chinese, today."
+        "body": "The universal language of Toyota Production System reviews worldwide. Print it. Pin it. Walk it. Every map, True North, and kaizen report exports as a branded A3 or A4 — in English, Swedish, or Chinese, today."
       }
     },
     "originalNote": "Reserve an Original seat — 30 days free, then your price locked for life. 100 seats only.",
@@ -157,7 +178,7 @@
           "Fewer than five, and I know exactly who or what they are.",
           "Five to ten.",
           "More than ten.",
-          "Färre än fem, och jag vet exakt vilka eller vad de är."
+          "Nobody has ever drawn it end to end."
         ]
       },
       "shadow": {
@@ -221,7 +242,7 @@
     "seeResult": "See my score",
     "scoreLabel": "Chaos Score",
     "leaksTitle": "Where You’re Losing Capacity",
-    "noLeaks": "Nothing scored above zero. That’s unusual enough to verify at the gemba — go through the five questions again with the person closest to the work, not the person closest to the report..",
+    "noLeaks": "Nothing scored above zero. That’s unusual enough to verify at the gemba — go through the five questions again with the person closest to the work, not the person closest to the report.",
     "again": "Answer again",
     "drillLead": "That scored your plant. The Gemba Drill scores your reading of one — six situations off the floor, ninety seconds, no sign-up.",
     "drillCta": "Take the Gemba Drill",
@@ -245,7 +266,7 @@
       "loading": "Sending…",
       "thanksTitle": "Got it. Check your inbox.",
       "thanksBody": "Your five answers are with me. I read these myself and write back by hand, so the reply comes from a person rather than a template. Your score stays on the screen above.",
-      "error": "Something went wrong？ Please email hello@leanthecompany.com and we'll help.",
+      "error": "Something went wrong. Please email hello@leanthecompany.com and we'll help.",
       "noEndpoint": "This form isn’t live yet. For now, please email hello@leanthecompany.com",
       "meta": "Your answers stay with the founder. No tracking. No reselling. No automated marketing sequences."
     },
@@ -423,12 +444,10 @@
     "title": "Founder · Sensei",
     "tagline": "Engineer, operator, coach. 25+ years across Europe and Asia — from the shop floor to the boardroom — before I wrote a single line of code.",
     "linkedinCta": "Connect on LinkedIn",
-    "lead": "My operational career began with Tetra Pak, where I spent ten years building hands-on experience in manufacturing, operations, and continuous improvement. It was there that I developed the foundation for how I still look at a plant today — through the flow of work, the realities of the shop floor, and the gap between how a process is designed and how it actually runs.",
+    "lead": "My career in operations management began at Tetra Pak. Ten years of hands-on experience on the production line gave me a solid foundation in manufacturing, operations and continuous improvement, and shaped the working methods I still use today: seeing the actual workflow, understanding the real problems that arise on site and the gap between process design and actual operation.",
     "bio": [
-      "From 2009, that experience expanded across East and Southeast Asia. With EFESO Consulting, I led and supported Lean transformations and operational improvement programs for major dairy, food, and beverage producers including FrieslandCampina, Nestlé, Danone, and Heineken, while also gaining operational experience from inside the businesses themselves.",
-      "From 2014 onward, the work broadened further across industries and geographies as an EFESO contractor leading WCOM (World Class Operations Management) and TPM implementations — from Stora Enso, SCA, and BillerudKorsnäs in forest products and packaging, to Oatly in food production, Galderma in pharmaceuticals, and Nobia in kitchen manufacturing. The work took me across Europe, Asia, China, and the United States, into very different plants, processes, and operating environments.",
-      "The companies changed. The products changed. The countries changed. The underlying problems did not. More than 25 years of diagnosing and improving operations gradually turned those recurring patterns into a method I could take into virtually any plant, in any sector — and know where to start looking.",
-      "Consultants solve this one plant at a time, at €2,000 a day. But once they leave, sustaining the improvement becomes the plant’s responsibility. I wanted to build a tool that a 26-year-old shift supervisor could open when they need it, map their own line, and walk into the next shift with a better standard — without waiting for the next consulting engagement. That’s what LeanTheCompany is."
+      "Companies change. Products change. Operating environments change. Yet the underlying process problems are often remarkably similar. Years of practice reinforced a simple principle: consultants can help solve individual problems, but sustainable improvement depends on an organization’s ability to see how work actually flows, identify the gaps between current and target performance, and improve the system continuously.",
+      "That is why I created LeanTheCompany — a management system shaped by more than two decades of operational practice, tested and refined across different industries and operating environments. It gives teams a structured way to see the process, set improvement priorities, and turn improvement into an internal capability — not an external dependency."
     ],
     "credentials": {
       "edu": {

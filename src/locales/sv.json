@@ -2,7 +2,7 @@
   "nav": {
     "forWhom": "För vem",
     "problem": "Problemet",
-    "platform": "Plattformen",
+    "platform": "Hur det fungerar",
     "diagnostic": "Diagnos",
     "pricing": "Priser",
     "about": "Om oss",
@@ -12,7 +12,7 @@
     "eyebrow": "Lean-plattformen för fabrik och kontor",
     "headline": "Två canvaser. Fyra kartor.",
     "headlineSub": "En sanning.",
-    "lead": "Value Stream Mapping för varuflödet. Makigami för kontoret. Båda i nuläge och börläge — med takttid, ledtid och slöseri beräknade live medan du ritar. Kartan som räknar själv, och en inbäddad sensei som ifrågasätter den.",
+    "lead": "Value Stream Mapping för varuflödet. Makigami för kontoret, en karta över hur kontorsarbetet faktiskt flyter. Båda i nuläge och börläge — med takttid, ledtid och slöseri beräknade live medan du ritar. Kartan som räknar själv, och en inbäddad sensei som ifrågasätter den.",
     "ctaPrimary": "Få din Chaos Score",
     "ctaSecondary": "Boka en Originalplats",
     "founderTitle": "Grundare · Sensei",
@@ -56,7 +56,7 @@
       "chaos": {
         "label": "01 · Kaos",
         "title": "Ingen känner till den riktiga processen.",
-        "body": "Be fem personer att kartlägga flödet från order till leverans, så får du fem olika versioner. Nulägeskartan på väggen är tre år gammal och två ERP-migreringar är föråldrade. Du fattar beslut mot en process som inte längre existerar."
+        "body": "Be fem personer att kartlägga flödet från order till leverans, så får du fem olika versioner. Nulägeskartan på väggen är tre år gammal och två ERP-migreringar är föråldrade. Du fattar beslut mot en process som inte längre existerar — och ingen kan säga varför reklamationsgraden inte går ner, eller vad ”gott nog” egentligen betyder."
       },
       "handoffs": {
         "title": "Överlämningarna äter mer tid än arbetet.",
@@ -70,45 +70,66 @@
       }
     }
   },
-  "platform": {
-    "eyebrow": "Plattformen",
-    "headline": "Kartan som räknar själv.",
-    "lead": "Ett ritverktyg ritar. LeanTheCompany räknar: takttid, effektiv cykeltid, lagertäckning, ur-takt-flaggor — live, varje gång kartan ändras. Webbaserat, ingen konsultretainer, ingen sex-månaders rollout. Börja kartlägga på tio minuter, coacha dig själv med en inbäddad sensei tränad på 25+ år av kaizen från verkstadsgolvet.",
-    "status": {
-      "live": "Live i beta",
-      "dev": "Under utveckling"
-    },
-    "items": {
-      "vsm": {
-        "title": "Value Stream Mapping-canvas",
-        "body": "Dra-och-släpp processrutor, lagertrianglar, kaizenblixtar och informationsflöden. Cykeltid, ledtid och %C&A räknas ut själva. Nuläge och börläge, sida vid sida."
+  "howItConnects": {
+    "eyebrow": "Hur allt hänger ihop",
+    "headline": "De flesta verktyg börjar med kartan. Vi börjar med löftet.",
+    "steps": [
+      {
+        "title": "Definiera vad du lovade.",
+        "body": "Välj din bransch och de fem saker som dina kunder faktiskt bedömer dig utifrån finns redan där. För en livsmedelsproducent: färskhet, livsmedelssäkerhet, pris, konsistens och ledtid. Definiera sedan vad var och en betyder i din verksamhet – med dina ord, inte våra.",
+        "tools": [
+          "True North"
+        ]
       },
-      "makigami": {
-        "title": "Makigami-canvas för administration",
-        "body": "Simbanor för det osynliga kontoret — sälj, konstruktion, inköp, ekonomi. Se varje överlämning, varje beslut, varje vänte-triangel som aldrig syns i verkstaden."
+      {
+        "title": "Betygsätt dig själv, 1 till 5.",
+        "body": "Poängsätt nuvarande prestanda mot målet för var och en av de fem. Varje nivå har tydligt definierade kriterier, så bedömningen baseras på bevis – inte handuppräckning. Gapen visar dig var du ska fokusera förbättringar och sätter riktningen mot din True North.",
+        "tools": [
+          "5 värden",
+          "nuläge → mål"
+        ]
       },
-      "sensei": {
-        "title": "Inbäddad AI-sensei",
-        "body": "Fråga ”var är mitt största slöseri?” och få ett direkt svar grundat i din egen karta — din takt, dina överlämningar, dina förluster. Ingen chatbot med lean-böcker i prompten: en coach som läser av det du kartlagt."
+      {
+        "title": "Sätt en siffra på varje gap.",
+        "body": "Vilket mått bevisar bäst gapet – klagomålsfrekvens, rätt resultat vid första försöket, avkastning eller leverans i tid? Hur stor är förlusten bakom den, och hur mycket förtroende har du för data? Nu vet du var du ska undersöka innan du ritar en enda karta. Värde-KPI-bryggan rangordnar varje skillnad efter prioritet – och pekar dig till rätt karta för att undersöka den.",
+        "tools": [
+          "Value–KPI Bridge",
+          "rangordnade"
+        ]
       },
-      "tracker": {
-        "title": "Kaizen-tracker",
-        "body": "Förvandla insikter till PDCA-cykler med ägare, deadlines, före/efter-bilder. Inget försvinner i mejl. Inget firas för tidigt."
+      {
+        "title": "Kartlägg var förlusten sitter.",
+        "body": "Förluster i informations- eller administrativt flöde → Makigami, som visar hur arbetet faktiskt rör sig mellan personer, funktioner och överlämningar.\n\nFörluster i materialflödet → Värdeflödeskartläggning, som visar hur produkter och material faktiskt rör sig genom processen – med tillhörande tid.",
+        "fork": {
+          "info": {
+            "label": "Informations- och administrativt flöde",
+            "tool": "Makigami"
+          },
+          "material": {
+            "label": "Materialflöde",
+            "tool": "Value Stream Mapping"
+          }
+        }
       },
-      "warroom": {
-        "title": "True North",
-        "body": "Sätt True North och värdeprioriteringarna högst upp, så att varje karta och varje pilot under knyter tillbaka till vad verksamheten faktiskt behöver. VD:n, fabrikschefen och lean-coachen läser äntligen från en gemensam sanning."
-      },
-      "report": {
-        "title": "A3-rapport på en sida",
-        "body": "Exportera varje pilot som en utskrivbar A3 på engelska, svenska eller kinesiska. Toyotas universella språk, klart för din nästa ledningsgenomgång."
+      {
+        "title": "Åtgärda, och håll det åtgärdat.",
+        "body": "Det du hittar blir förbättringsarbete – med en tydlig ägare och ett tydligt deadline. A3-rapporten – rapporten på en sida som cheferna faktiskt läser – tar med problemet, åtgärden och resultatet i ledningens granskning.",
+        "tools": [
+          "A3"
+        ]
       }
-    }
+    ],
+    "sensei": {
+      "tag": "Inbäddad Sensei",
+      "body": "Inte ett steg – den följer hela linjen. Fråga när som helst var ditt största slöseri finns, så kommer svaret från din takt, dina överlämningar, dina förluster."
+    },
+    "closing": "Riktning först. Sedan kartan. Sedan förbättringen. Aldrig tvärtom."
   },
   "whatsComing": {
     "eyebrow": "Det du får",
     "headline": "Det här är live idag — och det här kommer härnäst.",
     "lead": "Makigami, value-stream-canvasen, den inbäddade sensein, kaizen-trackern och A3-exporten på en sida är alla live i beta idag. Det du ser nedan är den riktiga plattformen — verkliga skärmbilder, inte mockuper.",
+    "mapLine": "Kartan som räknar själv.",
     "previews": {
       "vsm": {
         "tag": "Live i beta",
@@ -128,7 +149,7 @@
       "pdf": {
         "tag": "Live i beta",
         "title": "A3-export på en sida",
-        "body": "Det universella språket för Toyota Production System-granskningar världen över. Skriv ut det. Nåla fast det. Gå varje steg. Varje karta, kompass och kaizen-rapport exporteras som ett varumärkesbyggt A3 eller A4 – på engelska, svenska eller kinesiska, idag."
+        "body": "Det universella språket för Toyota Production System-granskningar världen över. Skriv ut det. Nåla fast det. Gå varje steg. Varje karta, True North och kaizen-rapport exporteras som ett varumärkesbyggt A3 eller A4 – på engelska, svenska eller kinesiska, idag."
       }
     },
     "originalNote": "Boka en Originalplats — 30 dagar gratis, sedan ditt pris låst för livet. Endast 100 platser.",
@@ -198,11 +219,11 @@
       },
       "runningOnPeople": {
         "name": "Hänger på personer",
-        "line": "Det fungerar för att vissa personer får det att fungera. Det är inget system — det är ett bemanningsschema. förklätt till ett."
+        "line": "Det fungerar för att vissa personer får det att fungera. Det är inget system — det är ett bemanningsschema förklätt till ett."
       },
       "drifting": {
         "name": "Glidning",
-        "line": "Inget brinner. Men flera problem pyr under ytan, och deras effekter förstärks med tiden.."
+        "line": "Inget brinner. Men flera problem pyr under ytan, och deras effekter förstärks med tiden."
       },
       "quietPlant": {
         "name": "Lugn fabrik",
@@ -423,12 +444,10 @@
     "title": "Grundare · Sensei",
     "tagline": "Ingenjör, operatör, coach. Över 25 år i Europa och Asien – från verkstadsgolvet till styrelserummet – innan jag skrev en enda rad kod.",
     "linkedinCta": "Anslut på LinkedIn",
-    "lead": "Min operativa karriär började på Tetra Pak, där jag tillbringade tio år med att bygga upp praktisk erfarenhet inom tillverkning, drift och kontinuerlig förbättring. Det var där jag lade grunden för hur jag fortfarande ser på en fabrik idag – genom arbetsflödet, verkligheten på verkstadsgolvet och gapet mellan hur en process är utformad och hur den faktiskt fungerar.",
+    "lead": "Min karriär inom verksamhetsledning började på Tetra Pak. Tio års praktisk erfarenhet från produktionslinjen gav mig en solid grund inom tillverkning, drift och kontinuerlig förbättring, och formade de arbetsmetoder jag fortfarande använder idag: att se det faktiska arbetsflödet, förstå de verkliga problemen som uppstår på plats och gapet mellan processdesign och faktisk drift.",
     "bio": [
-      "Från 2009 expanderade den erfarenheten till Öst- och Sydostasien. Med EFESO Consulting ledde och stödde jag Lean-transformationer och operativa förbättringsprogram för stora mejeri-, livsmedels- och dryckesproducenter, inklusive FrieslandCampina, Nestlé, Danone och Heineken, samtidigt som jag fick operativ erfarenhet inifrån själva företagen.",
-      "Från 2014 och framåt breddades arbetet ytterligare över branscher och geografiska områden som EFESO-entreprenör som ledde WCOM (World Class Operations Management) och TPM-implementeringar – från Stora Enso, SCA och BillerudKorsnäs inom skogsprodukter och förpackningar, till Oatly inom livsmedelsproduktion, Galderma inom läkemedel och Nobia inom kökstillverkning. Arbetet tog mig genom Europa, Asien, Kina och USA, till väldigt olika anläggningar, processer och driftsmiljöer.",
-      "Företagen förändrades. Produkterna förändrades. Länderna förändrades. De underliggande problemen gjorde det inte. Mer än 25 års arbete med att diagnostisera och förbättra verksamheten förvandlade gradvis dessa återkommande mönster till en metod jag kunde använda i stort sett vilken fabrik som helst, i vilken sektor som helst – och veta var jag skulle börja leta.",
-      "Konsulter löser detta i en fabrik i taget, för 2 000 euro per dag. Men när de väl slutar blir det fabrikens ansvar att upprätthålla förbättringen. Jag ville bygga ett verktyg som en 26-årig skiftchef kunde öppna när de behövde det, kartlägga sin egen linje och gå in i nästa skift med en bättre standard – utan att vänta på nästa konsultuppdrag. Det är vad LeanTheCompany är."
+      "Företag förändras, produkter förändras, arbetsplatser förändras, men många djupt rotade problem återkommer ständigt. Åratal av praktik har gradvis fått mig att inse att konsulter kan hjälpa företag att lösa individuella problem, men deras verkliga värde ligger i att ge företag möjlighet att identifiera problem, förstå processer och kontinuerligt förbättra systemet.",
+      "Det är därför jag skapade LeanTheCompany – ett ledningssystem format av mer än två decenniers operativ praxis, testat och förfinat inom olika branscher och verksamhetsmiljöer. Det ger team ett strukturerat sätt att se processen, sätta förbättringsprioriteringar och omvandla förbättring till en intern förmåga – inte ett externt beroende."
     ],
     "credentials": {
       "edu": {

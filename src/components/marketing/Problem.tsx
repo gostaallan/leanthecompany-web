@@ -1,6 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+import { Paragraphs } from '@/components/ui/Paragraphs'
 
 const ITEMS = ['chaos', 'handoffs', 'shadow'] as const
 
@@ -37,9 +38,10 @@ export function Problem() {
               <h3 className="font-serif text-lg mb-3 text-ink leading-snug">
                 {t(`items.${key}.title`)}
               </h3>
-              <p className="text-sm text-ink-soft leading-relaxed">
-                {t(`items.${key}.body`)}
-              </p>
+              <Paragraphs
+                text={t(`items.${key}.body`)}
+                className="text-sm text-ink-soft leading-relaxed"
+              />
             </div>
           ))}
         </div>
