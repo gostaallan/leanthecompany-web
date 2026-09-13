@@ -10,7 +10,6 @@ import { Hero }          from '@/components/marketing/Hero'
 import { ForWhom }       from '@/components/marketing/ForWhom'
 import { Problem }       from '@/components/marketing/Problem'
 import { HowItConnects } from '@/components/marketing/HowItConnects'
-import { Platform }      from '@/components/marketing/Platform'
 import { WhatsComing }   from '@/components/marketing/WhatsComing'
 import { Diagnostic }    from '@/components/marketing/Diagnostic'
 import { GembaDrill }    from '@/components/marketing/GembaDrill'
@@ -55,7 +54,6 @@ export default function HomePage({ params: { locale } }: Props) {
         <ForWhom />
         <Problem />
         <HowItConnects />
-        <Platform />
         <WhatsComing closeLong={dates.closeLong} />
         <Diagnostic />
         <GembaDrill />

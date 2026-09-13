@@ -92,6 +92,12 @@ export function WhatsComing({ closeLong }: Props) {
           <p className="body-lead">{t('lead')}</p>
         </div>
 
+        {/* The Platform section's headline, kept where the screenshots prove
+            it (brief 186 A1.5). Display type, so R1 applies to its Chinese. */}
+        <p className="font-serif text-xl md:text-2xl text-ink mb-8 leading-snug">
+          {t('mapLine')}
+        </p>
+
         <div className="grid md:grid-cols-2 gap-6">
           {PREVIEWS.map((entry) => (
             <div

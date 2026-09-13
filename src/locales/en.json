@@ -2,7 +2,7 @@
   "nav": {
     "forWhom": "For Whom",
     "problem": "The Problem",
-    "platform": "Platform",
+    "platform": "How it works",
     "diagnostic": "Diagnostic",
     "pricing": "Pricing",
     "about": "About",
@@ -125,46 +125,11 @@
     },
     "closing": "Direction first. Then the map. Then the improvement. Never the other way round."
   },
-  "platform": {
-    "eyebrow": "The Platform",
-    "headline": "The map that does the math.",
-    "lead": "A drawing tool draws. LeanTheCompany computes: takt time, effective cycle time, inventory cover, out-of-takt flags — live, every time the map changes. Browser-based, no consulting retainer, no six-month rollout. Start mapping in ten minutes, coach yourself with an embedded sensei trained on 25+ years of shop-floor kaizen.",
-    "chainLine": "Six parts. One continuous line — from direction to mapping, improvement, and proof.",
-    "status": {
-      "live": "Live in beta",
-      "dev": "In development"
-    },
-    "items": {
-      "warroom": {
-        "title": "True North",
-        "body": "Step 0 in every Space. Assess your current performance against what your customers actually judge you on — five customer values, scored from 1 to 5, current state against target. The gaps set the direction and define the right level of quality: good enough to meet the need, without overprocessing or overengineering."
-      },
-      "makigami": {
-        "title": "Makigami canvas for admin flow",
-        "body": "Swim-lane the invisible back office — sales, engineering, purchasing, finance. See every handoff, every decision, every waiting triangle that doesn't show up on the shop floor."
-      },
-      "vsm": {
-        "title": "Value Stream Mapping canvas",
-        "body": "Drag-and-drop process boxes, inventory triangles, kaizen bursts and information flows. Cycle time, lead time and %C&A calculate themselves. Current state, future state, side by side."
-      },
-      "sensei": {
-        "title": "Embedded AI Sensei",
-        "body": "Ask, “Where’s my biggest waste?” and get an answer grounded in your actual process data — your takt, your handoffs, your losses. Not generic Lean advice from a chatbot, but a coach that reads what you mapped."
-      },
-      "tracker": {
-        "title": "Kaizen tracker",
-        "body": "Turn insights into PDCA cycles with owners, deadlines, before/after photos. Nothing gets lost in email. Nothing gets celebrated too early."
-      },
-      "report": {
-        "title": "One-page A3 report",
-        "body": "Export every pilot as a printable A3 in English, Swedish or Chinese. The universal language of Toyota, fit for your next management review."
-      }
-    }
-  },
   "whatsComing": {
     "eyebrow": "What you get",
     "headline": "What's live today — and what's landing next.",
     "lead": "Makigami, the value-stream canvas, the embedded sensei, the kaizen tracker and the one-page A3 export are all live in beta today. What you see below is the real platform — actual screenshots, not mockups.",
+    "mapLine": "The map that does the math.",
     "previews": {
       "vsm": {
         "tag": "Live in beta",

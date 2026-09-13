@@ -156,8 +156,8 @@ for (const locale of LOCALES) {
 // The NET is the countermeasure for that blindness, and it classifies THE WAY
 // THE CLASSIFICATION WAS ACTUALLY MADE (R1a): by how the value renders, not by
 // what the key is called. The key names lie — two values named `tagline` are
-// three-sentence body paragraphs, and `platform.chainLine` is not named like a
-// headline while rendering in the same display family as the h2s.
+// three-sentence body paragraphs, and `howItConnects.closing` is not named like
+// a headline while rendering in the same display family as the h2s.
 //
 // ── THE ALLOWLIST CARRIES A REQUIRED `ruledBy`, AND THAT IS THE POINT ───────
 //
@@ -168,13 +168,17 @@ for (const locale of LOCALES) {
 // reason. AN ENTRY WITH NO `ruledBy` FAILS THIS GATE.
 const FULL_STOP = '。';
 
-/** The 23 swept on 1 Sept. Pins are the ruling; they do not classify. */
+/**
+ * The 23 swept on 1 Sept, less `platform.chainLine` (deleted with its section)
+ * and plus `whatsComing.mapLine` (the Platform headline, moved) — brief 186.
+ * Pins are the ruling; they do not classify.
+ */
 const HEADLINE_PINS = [
   'hero.headline', 'hero.headlineSub',
   'problem.items.chaos.title', 'problem.items.handoffs.title',
   'howItConnects.headline', 'howItConnects.steps.1.title',
   'howItConnects.steps.4.title', 'howItConnects.closing',
-  'platform.chainLine', 'whatsComing.headline',
+  'whatsComing.headline', 'whatsComing.mapLine',
   'diagnostic.introTitle', 'diagnostic.form.thanksTitle', 'diagnostic.baselineTitle',
   'gembaDrill.headline',
   'pricing.headline', 'pricing.form.thanksTitle', 'pricing.space.headline',

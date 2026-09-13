@@ -2,7 +2,7 @@
   "nav": {
     "forWhom": "För vem",
     "problem": "Problemet",
-    "platform": "Plattformen",
+    "platform": "Hur det fungerar",
     "diagnostic": "Diagnos",
     "pricing": "Priser",
     "about": "Om oss",
@@ -125,46 +125,11 @@
     },
     "closing": "Riktning först. Sedan kartan. Sedan förbättringen. Aldrig tvärtom."
   },
-  "platform": {
-    "eyebrow": "Plattformen",
-    "headline": "Kartan som räknar själv.",
-    "lead": "Ett ritverktyg ritar. LeanTheCompany räknar: takttid, effektiv cykeltid, lagertäckning, ur-takt-flaggor — live, varje gång kartan ändras. Webbaserat, ingen konsultretainer, ingen sex-månaders rollout. Börja kartlägga på tio minuter, coacha dig själv med en inbäddad sensei tränad på 25+ år av kaizen från verkstadsgolvet.",
-    "chainLine": "Sex delar. En kontinuerlig linje – från riktning till kartläggning, förbättring och bevis.",
-    "status": {
-      "live": "Live i beta",
-      "dev": "Under utveckling"
-    },
-    "items": {
-      "warroom": {
-        "title": "True North",
-        "body": "Steg 0 i varje Space. Bedöm din nuvarande prestanda mot vad dina kunder faktiskt bedömer dig utifrån – fem kundvärderingar, poängsatta från 1 till 5, nuvarande tillstånd mot mål. Gapen anger riktningen och definierar rätt kvalitetsnivå: tillräckligt bra för att möta behovet, utan överbearbetning eller överkonstruktion."
-      },
-      "makigami": {
-        "title": "Makigami-canvas för administration",
-        "body": "Simbanor för det osynliga kontoret — sälj, konstruktion, inköp, ekonomi. Se varje överlämning, varje beslut, varje vänte-triangel som aldrig syns i verkstaden."
-      },
-      "vsm": {
-        "title": "Value Stream Mapping-canvas",
-        "body": "Dra-och-släpp processrutor, lagertrianglar, kaizenblixtar och informationsflöden. Cykeltid, ledtid och %C&A räknas ut själva. Nuläge och börläge, sida vid sida."
-      },
-      "sensei": {
-        "title": "Inbäddad AI-sensei",
-        "body": "Fråga ”var är mitt största slöseri?” och få ett direkt svar grundat i din egen karta — din takt, dina överlämningar, dina förluster. Ingen chatbot med lean-böcker i prompten: en coach som läser av det du kartlagt."
-      },
-      "tracker": {
-        "title": "Kaizen-tracker",
-        "body": "Förvandla insikter till PDCA-cykler med ägare, deadlines, före/efter-bilder. Inget försvinner i mejl. Inget firas för tidigt."
-      },
-      "report": {
-        "title": "A3-rapport på en sida",
-        "body": "Exportera varje pilot som en utskrivbar A3 på engelska, svenska eller kinesiska. Toyotas universella språk, klart för din nästa ledningsgenomgång."
-      }
-    }
-  },
   "whatsComing": {
     "eyebrow": "Det du får",
     "headline": "Det här är live idag — och det här kommer härnäst.",
     "lead": "Makigami, value-stream-canvasen, den inbäddade sensein, kaizen-trackern och A3-exporten på en sida är alla live i beta idag. Det du ser nedan är den riktiga plattformen — verkliga skärmbilder, inte mockuper.",
+    "mapLine": "Kartan som räknar själv.",
     "previews": {
       "vsm": {
         "tag": "Live i beta",

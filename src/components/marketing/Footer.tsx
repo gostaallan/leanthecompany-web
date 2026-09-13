@@ -15,7 +15,7 @@ export function Footer() {
     {
       title: t('cols.product.title'),
       links: [
-        { label: t('cols.product.platform'),   href: '#platform'   },
+        { label: t('cols.product.platform'),   href: '#how-it-connects' },
         { label: t('cols.product.pricing'),    href: '#pricing'    },
         { label: t('cols.product.diagnostic'), href: '#diagnostic' },
       ],

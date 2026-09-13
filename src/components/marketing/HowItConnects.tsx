@@ -10,8 +10,9 @@ import { cn } from '@/lib/utils'
  * A quality manager inside the ICP read this page and could not work out what
  * the concept is (GTM 013): the site opened with the instruments and never told
  * the causal chain that makes them make sense. This section is that chain, and
- * it sits between the Problem and the Platform on purpose — the reader has just
- * been shown what is invisible, and is about to be shown the parts.
+ * it sits right after the Problem on purpose — the reader has just been shown
+ * what is invisible — and right before What you get, where the tools on this
+ * line appear as real screenshots.
  *
  * ── FIVE STATIONS ON ONE RAIL, AND NO NUMERALS ─────────────────────────────
  *
