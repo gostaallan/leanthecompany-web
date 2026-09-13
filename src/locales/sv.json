@@ -76,25 +76,53 @@
     "steps": [
       {
         "title": "Definiera vad du lovade.",
-        "body": "Välj din bransch och de fem saker som dina kunder faktiskt bedömer dig utifrån finns redan där. För en livsmedelsproducent: färskhet, livsmedelssäkerhet, pris, konsistens och ledtid. Definiera sedan vad var och en betyder i din verksamhet – med dina ord, inte våra."
+        "body": "Välj din bransch och de fem saker som dina kunder faktiskt bedömer dig utifrån finns redan där. För en livsmedelsproducent: färskhet, livsmedelssäkerhet, pris, konsistens och ledtid. Definiera sedan vad var och en betyder i din verksamhet – med dina ord, inte våra.",
+        "tools": [
+          "True North"
+        ]
       },
       {
         "title": "Betygsätt dig själv, 1 till 5.",
-        "body": "Poängsätt nuvarande prestanda mot målet för var och en av de fem. Varje nivå har tydligt definierade kriterier, så bedömningen baseras på bevis – inte handuppräckning. Gapen visar dig var du ska fokusera förbättringar och sätter riktningen mot din True North."
+        "body": "Poängsätt nuvarande prestanda mot målet för var och en av de fem. Varje nivå har tydligt definierade kriterier, så bedömningen baseras på bevis – inte handuppräckning. Gapen visar dig var du ska fokusera förbättringar och sätter riktningen mot din True North.",
+        "tools": [
+          "5 värden",
+          "nuläge → mål"
+        ]
       },
       {
         "title": "Sätt en siffra på varje gap.",
-        "body": "Vilket mått bevisar bäst gapet – klagomålsfrekvens, rätt resultat vid första försöket, avkastning eller leverans i tid? Hur stor är förlusten bakom den, och hur mycket förtroende har du för data? Nu vet du var du ska undersöka innan du ritar en enda karta. Värde-KPI-bryggan rangordnar varje skillnad efter prioritet – och pekar dig till rätt karta för att undersöka den."
+        "body": "Vilket mått bevisar bäst gapet – klagomålsfrekvens, rätt resultat vid första försöket, avkastning eller leverans i tid? Hur stor är förlusten bakom den, och hur mycket förtroende har du för data? Nu vet du var du ska undersöka innan du ritar en enda karta. Värde-KPI-bryggan rangordnar varje skillnad efter prioritet – och pekar dig till rätt karta för att undersöka den.",
+        "tools": [
+          "Value–KPI Bridge",
+          "rangordnade"
+        ]
       },
       {
         "title": "Kartlägg var förlusten sitter.",
-        "body": "Förluster i informations- eller administrativt flöde → Makigami, som visar hur arbetet faktiskt rör sig mellan personer, funktioner och överlämningar.\n\nFörluster i materialflödet → Värdeflödeskartläggning, som visar hur produkter och material faktiskt rör sig genom processen – med tillhörande tid."
+        "body": "Förluster i informations- eller administrativt flöde → Makigami, som visar hur arbetet faktiskt rör sig mellan personer, funktioner och överlämningar.\n\nFörluster i materialflödet → Värdeflödeskartläggning, som visar hur produkter och material faktiskt rör sig genom processen – med tillhörande tid.",
+        "fork": {
+          "info": {
+            "label": "Informations- och administrativt flöde",
+            "tool": "Makigami"
+          },
+          "material": {
+            "label": "Materialflöde",
+            "tool": "Value Stream Mapping"
+          }
+        }
       },
       {
         "title": "Åtgärda, och håll det åtgärdat.",
-        "body": "Det du hittar blir förbättringsarbete – med en tydlig ägare och ett tydligt deadline. A3-rapporten – rapporten på en sida som cheferna faktiskt läser – tar med problemet, åtgärden och resultatet i ledningens granskning."
+        "body": "Det du hittar blir förbättringsarbete – med en tydlig ägare och ett tydligt deadline. A3-rapporten – rapporten på en sida som cheferna faktiskt läser – tar med problemet, åtgärden och resultatet i ledningens granskning.",
+        "tools": [
+          "A3"
+        ]
       }
     ],
+    "sensei": {
+      "tag": "Inbäddad Sensei",
+      "body": "Inte ett steg – den följer hela linjen. Fråga när som helst var ditt största slöseri finns, så kommer svaret från din takt, dina överlämningar, dina förluster."
+    },
     "closing": "Riktning först. Sedan kartan. Sedan förbättringen. Aldrig tvärtom."
   },
   "platform": {

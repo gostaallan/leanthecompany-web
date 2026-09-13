@@ -76,25 +76,53 @@
     "steps": [
       {
         "title": "Define what you promised.",
-        "body": "Choose your industry and the five things your customers actually judge you on are already there. For a food producer: freshness, food safety, price, consistency, and lead time. Then define what each one means in your operation — in your words, not ours."
+        "body": "Choose your industry — the five things your customers judge you on are already there.",
+        "tools": [
+          "True North"
+        ]
       },
       {
         "title": "Grade yourself, 1 to 5.",
-        "body": "Score current performance against the target for each of the five. Every level has clearly defined criteria, so the assessment is based on evidence — not a show of hands. The gaps show you where to focus improvement and set the direction toward your True North."
+        "body": "Current against target, with defined criteria at every level. Evidence, not a show of hands.",
+        "tools": [
+          "5 values",
+          "current → target"
+        ]
       },
       {
         "title": "Put a number on every gap.",
-        "body": "Which measure best proves the gap — complaint rate, first-time-right, yield, or on-time delivery? How large is the loss behind it, and how much confidence do you have in the data? Now you know where to investigate before you draw a single map. The Value–KPI Bridge ranks every gap by priority — and points you to the right map to investigate it."
+        "body": "Which measure proves it, how large the loss is, how much you trust the data. Now you know where to look — before you draw anything.",
+        "tools": [
+          "Value–KPI Bridge",
+          "ranked"
+        ]
       },
       {
         "title": "Map where the loss lives.",
-        "body": "Losses in the information or administrative flow → Makigami, showing how the work actually moves across people, functions, and handoffs.\n\nLosses in the material flow → Value Stream Mapping, showing how products and materials actually move through the process — with time attached."
+        "body": "The flow the loss sits in decides the map.",
+        "fork": {
+          "info": {
+            "label": "Information & admin flow",
+            "tool": "Makigami"
+          },
+          "material": {
+            "label": "Material flow",
+            "tool": "Value Stream Mapping"
+          }
+        }
       },
       {
         "title": "Fix it, and keep it fixed.",
-        "body": "What you find becomes improvement work — with a clear owner and due date. The A3 — the one-page report managers actually read — brings the problem, action, and result into the management review."
+        "body": "Improvement work with an owner and a due date — then the one page your management review actually reads.",
+        "tools": [
+          "A3"
+        ]
       }
     ],
+    "sensei": {
+      "tag": "Embedded Sensei",
+      "body": "Not a step — it runs the length of the line. Ask where your biggest waste is at any point, and the answer comes from your takt, your handoffs, your losses."
+    },
     "closing": "Direction first. Then the map. Then the improvement. Never the other way round."
   },
   "platform": {
