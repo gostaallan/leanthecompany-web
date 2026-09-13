@@ -13,30 +13,22 @@ rows where the two differ (brief 186 A1.2) and carries 6 rows for keys that no l
 from the branch first. **The one exception is §4:** Gösta ruled #183–#185 applied from it, verbatim, and none of
 those values had ever existed on the branch.
 
-## ⛔ SCORING DEFECT — two ZH answer sets score wrong. NOT fixed here: they need new Chinese
+## Applied in this PR — the `6566bf4` residue, and Gösta's rulings of 2026-09-13
 
 `chaos-score.ts` scores by **index**: every area's `points` is `[0, 1, 2, 3]` and `scoreFor` reads
-`area.points[picked]`. **A label at the wrong index is a wrong score**, not a style question.
-
-| key | points | EN (the rung that should be there) | ZH now | defect |
-|---|---|---|---|---|
-| `diagnostic.areas.inventory.options.1` | 1 | A day or two of waiting for a few hours of work. | 最多只等几个小时，工作基本不会停下来 | Carries option 0's meaning. **The "a day or two" rung does not exist in Chinese** |
-| `diagnostic.areas.decisions.options.3` | 3 | It depends entirely on who is available. | 通常要等到每周例会才能作出决定 | Carries option 2's meaning. **"Wait for the weekly meeting" appears twice, at 2 points and at 3; "depends entirely on who is available" is missing** |
-
-Both arrived in `6566bf4` (24 Aug, the 117 R2 apply). For history only, not as a proposal — the values
-before it, at `43ecdd5` (4 Aug): `inventory.options.1` = 几个小时的活，要等上一两天。 ·
-`decisions.options.3` = 完全看那会儿谁在。
-
-- [ ] `inventory.options.1` — reviewer writes the "a day or two" rung
-- [ ] `decisions.options.3` — reviewer writes the "depends on who is available" rung
-
-## Restored in this PR — the same `6566bf4` residue, no new copy
+`area.points[picked]`. **A label at the wrong index is a wrong score** — which is why the two ZH answer rows
+below were scoring defects, not style questions. Both arrived in `6566bf4` (24 Aug, the 117 R2 apply).
 
 | key | locale | was on the branch | now | source |
 |---|---|---|---|---|
 | `diagnostic.areas.handoffs.options.3` | EN | Färre än fem, och jag vet exakt vilka eller vad de är. | Nobody has ever drawn it end to end. | **Restored from `43ecdd5`.** The Swedish was SV `options.0` verbatim — the healthiest answer at the 3-point index |
 | `diagnostic.areas.handoffs.options.3` | ZH | 从来没人从开始到结束梳理过一遍。/我们从未对整个流程进行过端到端的梳理 | 从来没人从开始到结束梳理过一遍。 | **Removal** of the second candidate. ⚠ The `43ecdd5` value was 从来没人从头到尾画过一遍。 — 画 (drawn) matches EN *drawn* and SV *ritat upp* more closely than 梳理. **Reviewer:** [ ] keep 梳理 [ ] 画 |
 | `diagnostic.form.error` | EN | Something went wrong？ Please email… | Something went wrong. Please email… | **Restored from `9dafafd`** (30 Apr); matches SV *Något gick fel.* Gösta ruled the full stop over `?`, 2026-09-13 |
+| `diagnostic.areas.inventory.options.1` | ZH | 最多只等几个小时，工作基本不会停下来 | 等了一两天，才可以工作几个小时。 | **Ruled by Gösta, 2026-09-13** (workbook #87). The old value carried option 0's meaning, so the 1-point "a day or two" rung did not exist in Chinese. ⚠ **Gösta supplied it in Traditional characters; Sensei converted it to Simplified. The Chinese reviewer should still read it.** Body copy: the terminal 。 stays |
+| `diagnostic.areas.decisions.options.3` | ZH | 通常要等到每周例会才能作出决定 | 这完全取决于谁有空。 | **Ruled by Gösta, 2026-09-13** (workbook #107). The old value carried option 2's meaning, so "wait for the weekly meeting" scored at 2 and at 3, and "depends on who is available" did not exist. ⚠ **Gösta supplied it in Traditional characters; Sensei converted it to Simplified. The Chinese reviewer should still read it.** Body copy: the terminal 。 stays |
+| `diagnostic.noLeaks` | EN | …not the person closest to the report.. | …not the person closest to the report. | **Ruled by Gösta, 2026-09-13.** Doubled stop removed |
+| `diagnostic.bands.drifting.line` | SV | …och deras effekter förstärks med tiden.. | …och deras effekter förstärks med tiden. | **Ruled by Gösta, 2026-09-13.** Doubled stop removed |
+| `diagnostic.bands.runningOnPeople.line` | SV | …det är ett bemanningsschema. förklätt till ett. | …det är ett bemanningsschema förklätt till ett. | **Ruled by Gösta, 2026-09-13.** Stray stop removed; no comma added |
 
 ## What must NOT be "corrected" back
 
