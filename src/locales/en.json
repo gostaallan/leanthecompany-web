@@ -178,7 +178,7 @@
           "Fewer than five, and I know exactly who or what they are.",
           "Five to ten.",
           "More than ten.",
-          "Färre än fem, och jag vet exakt vilka eller vad de är."
+          "Nobody has ever drawn it end to end."
         ]
       },
       "shadow": {
@@ -266,7 +266,7 @@
       "loading": "Sending…",
       "thanksTitle": "Got it. Check your inbox.",
       "thanksBody": "Your five answers are with me. I read these myself and write back by hand, so the reply comes from a person rather than a template. Your score stays on the screen above.",
-      "error": "Something went wrong？ Please email hello@leanthecompany.com and we'll help.",
+      "error": "Something went wrong. Please email hello@leanthecompany.com and we'll help.",
       "noEndpoint": "This form isn’t live yet. For now, please email hello@leanthecompany.com",
       "meta": "Your answers stay with the founder. No tracking. No reselling. No automated marketing sequences."
     },

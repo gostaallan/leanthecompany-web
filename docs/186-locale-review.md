@@ -12,6 +12,31 @@ until someone rules.
 rows where the two differ (brief 186 A1.2) and carries 6 rows for keys that no longer exist. Regenerate it
 from the branch first.
 
+## ⛔ SCORING DEFECT — two ZH answer sets score wrong. NOT fixed here: they need new Chinese
+
+`chaos-score.ts` scores by **index**: every area's `points` is `[0, 1, 2, 3]` and `scoreFor` reads
+`area.points[picked]`. **A label at the wrong index is a wrong score**, not a style question.
+
+| key | points | EN (the rung that should be there) | ZH now | defect |
+|---|---|---|---|---|
+| `diagnostic.areas.inventory.options.1` | 1 | A day or two of waiting for a few hours of work. | 最多只等几个小时，工作基本不会停下来 | Carries option 0's meaning. **The "a day or two" rung does not exist in Chinese** |
+| `diagnostic.areas.decisions.options.3` | 3 | It depends entirely on who is available. | 通常要等到每周例会才能作出决定 | Carries option 2's meaning. **"Wait for the weekly meeting" appears twice, at 2 points and at 3; "depends entirely on who is available" is missing** |
+
+Both arrived in `6566bf4` (24 Aug, the 117 R2 apply). For history only, not as a proposal — the values
+before it, at `43ecdd5` (4 Aug): `inventory.options.1` = 几个小时的活，要等上一两天。 ·
+`decisions.options.3` = 完全看那会儿谁在。
+
+- [ ] `inventory.options.1` — reviewer writes the "a day or two" rung
+- [ ] `decisions.options.3` — reviewer writes the "depends on who is available" rung
+
+## Restored in this PR — the same `6566bf4` residue, no new copy
+
+| key | locale | was on the branch | now | source |
+|---|---|---|---|---|
+| `diagnostic.areas.handoffs.options.3` | EN | Färre än fem, och jag vet exakt vilka eller vad de är. | Nobody has ever drawn it end to end. | **Restored from `43ecdd5`.** The Swedish was SV `options.0` verbatim — the healthiest answer at the 3-point index |
+| `diagnostic.areas.handoffs.options.3` | ZH | 从来没人从开始到结束梳理过一遍。/我们从未对整个流程进行过端到端的梳理 | 从来没人从开始到结束梳理过一遍。 | **Removal** of the second candidate. ⚠ The `43ecdd5` value was 从来没人从头到尾画过一遍。 — 画 (drawn) matches EN *drawn* and SV *ritat upp* more closely than 梳理. **Reviewer:** [ ] keep 梳理 [ ] 画 |
+| `diagnostic.form.error` | EN | Something went wrong？ Please email… | Something went wrong. Please email… | **Restored from `9dafafd`** (30 Apr); matches SV *Något gick fel.* Gösta ruled the full stop over `?`, 2026-09-13 |
+
 ## What must NOT be "corrected" back
 
 | Term | sv | zh | Why |
@@ -108,8 +133,8 @@ half-width space between `True North` and 和. **Reviewer: confirm the spacing r
    `hero.lead` also says 帮助你检验判断. `steps.0.body` and `steps.2.body` are replaced by the new short
    bodies anyway; **the title and `hero.lead` are the ones that stay.**
    - [ ] rephrase to avoid direct address   [ ] 您
-6. **Pre-existing, outside this PR — found while reading, not touched:** ZH
-   `diagnostic.areas.handoffs.options.3` holds two versions joined by `/`
-   (`从来没人从开始到结束梳理过一遍。/我们从未对整个流程进行过端到端的梳理`), and ZH
-   `diagnostic.areas.inventory.options` carries two near-duplicate first options. Review-sheet residue that
-   the residue gate's three signatures do not match. **Needs its own fix.**
+6. **The `6566bf4` residue in `diagnostic` — now split.** `handoffs.options.3` (EN + ZH) and EN `form.error`
+   are restored in this PR, and the two ZH scoring defects are at the top of this sheet. **Still open:** ZH
+   `diagnostic.form.error` reads `发出了问题？` — a fullwidth `？`, and wording that does not plainly say
+   "something went wrong". The residue gate's three signatures match none of these; widening it is brief 187.
+   - [ ] reviewer rewrites ZH `form.error`   [ ] leave
